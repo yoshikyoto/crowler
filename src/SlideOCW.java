@@ -10,8 +10,10 @@ import java.io.PrintWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
+import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Queue;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -22,10 +24,12 @@ class SlideOCW{
 	public String domain;
 	public HashSet<String> history;
 	public static final boolean DEBUG = false;
+	public Queue<String> urlQueue;
 	
 	SlideOCW(String d){
 		domain = d;
 		history = new HashSet<String>();
+		urlQueue = new ArrayDeque<String>();
 	}
 	
 	public void startCrawling(){
@@ -37,6 +41,20 @@ class SlideOCW{
 	public void crawl(String domain, String path){
 		String url_str = "http://" + domain + "/" + path;
 		crawl(url_str);
+	}
+	
+	public String[] parseURL(String url_str){
+		String result[] = new String[4];
+		Pattern pattern = Pattern.compile("(https?://)([^/]+?)(/.*/?)([^/]*)$");
+		Matcher matcher = pattern.matcher(url_str);
+		
+		if(matcher.find()){
+			System.out.println(matcher.group(1));
+			System.out.println(matcher.group(2));
+			System.out.println(matcher.group(3));
+			System.out.println(matcher.group(4));
+		}
+		return result;
 	}
 	
 	public void crawl(String url_str){
@@ -79,10 +97,13 @@ class SlideOCW{
 			if(sharp_index >= 0)
 				url_str = url_str.substring(0, sharp_index);
 			
-			if(url_str.indexOf("http://" + domain) == 0){
+			if(url_str.indexOf("https?://" + domain) == 0){
 				// full URL in kyoto-u domain
 				urls.add(url_str);
+			}else if(url_str.charAt(0) == '/'){
+				urls.add("http://" + domain + url_str);
 			}else{
+				
 			}
 		}
 		return urls;
