@@ -18,8 +18,6 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 
-
-
 class SlideOCW{
 	public String domain;
 	public HashSet<String> history;
@@ -90,7 +88,7 @@ class SlideOCW{
 		
 		while(matcher.find()){
 			String url_str = matcher.group(1);
-			// System.out.println(url_str);
+			if(DEBUG) System.out.println(url_str);
 			
 			// remove after #
 			int sharp_index = url_str.indexOf("#");
@@ -99,8 +97,10 @@ class SlideOCW{
 			
 			if(url_str.indexOf("https?://" + domain) == 0){
 				// full URL in kyoto-u domain
+				if(DEBUG) System.out.println("Find Full Path URL");
 				urls.add(url_str);
 			}else if(url_str.charAt(0) == '/'){
+				if(DEBUG) System.out.println("Find / start URL");
 				urls.add("http://" + domain + url_str);
 			}else{
 				
