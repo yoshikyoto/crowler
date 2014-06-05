@@ -23,7 +23,7 @@ import java.util.regex.Pattern;
 class SlideOCW{
 	public String domain;
 	public HashSet<String> history;
-	public static final boolean DEBUG = false;
+	public static final boolean DEBUG = true;
 	public Queue<String> urlQueue;
 	
 	SlideOCW(String d){
@@ -35,12 +35,68 @@ class SlideOCW{
 	public void startCrawling(){
 		File domaindir = new File(domain);
 		domaindir.mkdir();
-		crawl(domain, "");
+		
+		// スタートページを Queue に突っ込む
+		String start_url = "http://" + domain + "/";
+		urlQueue.add(start_url);
+		
+		// デバッグ用にページを適当に突っ込む
+		if(DEBUG){
+			urlQueue.add("http://ocw.kyoto-u.ac.jp/ja/09-faculty-of-engineering-jp/image-processing/pdf/dip_01.pdf");
+			urlQueue.add("aaaa");
+		}
+		
+		// Queueが空になるまでCrawl
+		while(urlQueue.size() != 0){
+			crawl();
+		}
 	}
 	
-	public void crawl(String domain, String path){
-		String url_str = "http://" + domain + "/" + path;
-		crawl(url_str);
+	public void crawl(){
+		// キューからURLを取り出してキューの中身は削除
+		String url_str = urlQueue.poll();
+		// 履歴にURLを追加（一回のクローリングで一度行ったページは2度訪問しない）
+		history.add(url_str);
+		
+		// pdf か ppt(x) かをチェックし、そうだった場合はローカルに保存
+		Pattern pattern = Pattern.compile("[^/]+?\\.(pdf|pptx?)$");
+		Matcher matcher = pattern.matcher(url_str);
+		if(matcher.find()){
+			if(DEBUG) System.out.println("pdf/ppt(x) file");
+			if(DEBUG) System.out.println("Binary file name:" + matcher.group());
+			getBinary(url_str, matcher.group());
+			return;
+		}
+		
+		// 普通のWebページの場合
+		String response_strs[] = get(url_str);
+		if(response_strs == null) return; // エラーの場合はnullが帰ってくる
+		
+		// リンクを見つけてくる
+	}
+	
+	private String[] get(String url_str){
+		try{
+			String response_strs[] = new String[2];
+			URL url = new URL(url_str);
+			System.out.println("GET " + url);
+			
+			HttpURLConnection http_connection = (HttpURLConnection)url.openConnection();
+			http_connection.connect();
+			InputStreamReader isr = new InputStreamReader(http_connection.getInputStream(), "UTF-8");
+			BufferedReader br = new BufferedReader(isr);
+
+			String line = new String();
+			while((line = br.readLine()) != null){
+				response_strs[0] += line + "\n";
+			}
+			if(DEBUG) System.out.println(response_strs[0]);
+			return response_strs;
+			
+		} catch (IOException e) {
+			System.err.println(e);
+			return null;
+		}
 	}
 	
 	public String[] parseURL(String url_str){
@@ -65,11 +121,11 @@ class SlideOCW{
 		
 		// pdfだった場合
 		if(matcher.find()){
-			getPDF(url_str, matcher.group(0));
+			getBinary(url_str, matcher.group(0));
 			return;
 		}
 
-		String http_result = get(url_str);
+		//String http_result = get(url_str);
 		HashSet<String> urls = getURLs(http_result);
 		for(String next_url : urls){
 			// 次
@@ -102,14 +158,12 @@ class SlideOCW{
 				urls.add(url_str);
 			}else if(url_str.charAt(0) == '/'){
 				urls.add("http://" + domain + url_str);
-			}else{
-				
 			}
 		}
 		return urls;
 	}
 	
-	private void getPDF(String url_str, String name){
+	private void getBinary(String url_str, String name){
 		try {
 			URL url = new URL(url_str);
 			URLConnection url_connection = url.openConnection();
@@ -123,34 +177,13 @@ class SlideOCW{
 			}
 			fos.flush();
 			fos.close();
+			
+			System.out.println("Save at: " + domain + "/" + name);
 		} catch (IOException e) {
 			System.out.println("DL失敗: " + url_str);
 		}
 	}
 	
-	private String get(String url_str){
-		try{
-			URL url = new URL(url_str);
-			System.out.println("GET " + url);
-			
-			HttpURLConnection http_connection = (HttpURLConnection)url.openConnection();
-			http_connection.connect();
-			InputStreamReader isr = new InputStreamReader(http_connection.getInputStream(), "UTF-8");
-			BufferedReader br = new BufferedReader(isr);
-
-			String line = new String();
-			String http_result = new String();
-			while((line = br.readLine()) != null){
-				http_result += line + "\n";
-			}
-			if(DEBUG) System.out.println(http_result);
-			return http_result;
-			
-		} catch (Exception e) {
-			System.err.println(e);
-			return "";
-		}
-	}
 	
 	private void printArray(ArrayList<String> array){
 		for(String str : array){
