@@ -23,7 +23,7 @@ import java.util.regex.Pattern;
 class SlideOCW{
 	public String domain;
 	public HashSet<String> history;
-	public static final boolean DEBUG = true;
+	public static final boolean DEBUG = false;
 	public Queue<String> urlQueue;
 	
 	SlideOCW(String d){
@@ -33,6 +33,7 @@ class SlideOCW{
 	}
 	
 	public void startCrawling(){
+
 		File domaindir = new File(domain);
 		domaindir.mkdir();
 		
@@ -40,15 +41,13 @@ class SlideOCW{
 		String start_url = "http://" + domain + "/";
 		urlQueue.add(start_url);
 		
-		// デバッグ用にページを適当に突っ込む
-		if(DEBUG){
-			urlQueue.add("http://ocw.kyoto-u.ac.jp/ja/09-faculty-of-engineering-jp/image-processing/pdf/dip_01.pdf");
-			urlQueue.add("aaaa");
-		}
-		
 		// Queueが空になるまでCrawl
 		while(urlQueue.size() != 0){
 			crawl();
+			try{
+				Thread.sleep(1000);
+			}catch(Exception e){ }
+			System.out.println("Queue Size: " + urlQueue.size());
 		}
 	}
 	
@@ -72,7 +71,8 @@ class SlideOCW{
 		String response_strs[] = get(url_str);
 		if(response_strs == null) return; // エラーの場合はnullが帰ってくる
 		
-		// リンクを見つけてくる
+		// リンクを見つけてキューにpushしてくれる
+		retrieveURLs(response_strs[0], url_str);
 	}
 	
 	private String[] get(String url_str){
@@ -80,6 +80,11 @@ class SlideOCW{
 			String response_strs[] = new String[2];
 			URL url = new URL(url_str);
 			System.out.println("GET " + url);
+			
+			if(DEBUG){
+				System.out.println("URL getFile: " + url.getFile());
+				System.out.println("URL getPath: " + url.getPath());
+			}
 			
 			HttpURLConnection http_connection = (HttpURLConnection)url.openConnection();
 			http_connection.connect();
@@ -90,79 +95,63 @@ class SlideOCW{
 			while((line = br.readLine()) != null){
 				response_strs[0] += line + "\n";
 			}
-			if(DEBUG) System.out.println(response_strs[0]);
+			// if(DEBUG) System.out.println(response_strs[0]);
 			return response_strs;
 			
-		} catch (IOException e) {
-			System.err.println(e);
+		} catch (Exception e) {
+			System.out.println(e);
 			return null;
 		}
 	}
 	
-	public String[] parseURL(String url_str){
-		String result[] = new String[4];
-		Pattern pattern = Pattern.compile("(https?://)([^/]+?)(/.*/?)([^/]*)$");
-		Matcher matcher = pattern.matcher(url_str);
-		
-		if(matcher.find()){
-			System.out.println(matcher.group(1));
-			System.out.println(matcher.group(2));
-			System.out.println(matcher.group(3));
-			System.out.println(matcher.group(4));
-		}
-		return result;
-	}
-	
-	public void crawl(String url_str){
-		history.add(url_str);
-		
-		Pattern pattern = Pattern.compile("[^/]+?\\.pdf$");
-		Matcher matcher = pattern.matcher(url_str);
-		
-		// pdfだった場合
-		if(matcher.find()){
-			getBinary(url_str, matcher.group(0));
-			return;
-		}
-
-		//String http_result = get(url_str);
-		HashSet<String> urls = getURLs(http_result);
-		for(String next_url : urls){
-			// 次
-			if(history.contains(next_url)) continue;
-			// wait 1000 msec
-			try{
-				Thread.sleep(1000);
-			}catch(InterruptedException e){ System.err.println(e); }
-			// GET Again
-			crawl(next_url);
-		}
-	}
-	
-	private HashSet<String> getURLs(String str){
-		HashSet<String> urls = new HashSet<String>();
+	private void retrieveURLs(String str, String current_url_str){
 		Pattern pattern = Pattern.compile("<a .*?href *?= *?\"(.+?)\".*?>");
 		Matcher matcher = pattern.matcher(str);
 		
 		while(matcher.find()){
 			String url_str = matcher.group(1);
-			// System.out.println(url_str);
+			if(DEBUG) System.out.println("Find URL: " + url_str);
 			
 			// remove after #
 			int sharp_index = url_str.indexOf("#");
 			if(sharp_index >= 0)
 				url_str = url_str.substring(0, sharp_index);
 			
-			if(url_str.indexOf("https?://" + domain) == 0){
+			if(url_str.length() == 0) continue;
+			
+			// httpから始まる場合
+			if(url_str.indexOf("http://") == 0){
+				// 同じドメインかどうか
+				if(url_str.indexOf("http://" + domain) != 0) continue;
 				// full URL in kyoto-u domain
-				urls.add(url_str);
+				if(DEBUG) System.out.println("Find Full Path URL");
+				if(!history.contains(url_str) && !urlQueue.contains(url_str)){
+					if(DEBUG) System.out.println("Add to urlQueue: " + url_str);
+					urlQueue.add(url_str);
+				}
+			// httpから始まらない場合
 			}else if(url_str.charAt(0) == '/'){
-				urls.add("http://" + domain + url_str);
+				// 絶対パスの場合
+				url_str = "http://" + domain + url_str;
+				if(!history.contains(url_str) && !urlQueue.contains(url_str)){
+					if(DEBUG) System.out.println("Find Absolute Path URL");
+					if(DEBUG) System.out.println("Add to urlQueue: " + url_str);
+					urlQueue.add(url_str);
+				}
+			}else{
+				// 相対パスであろう場合
+				if(DEBUG) System.out.println("Find Relatevily Path URL");
+				Pattern currentpath_pattern = Pattern.compile("(.+/)([^/]+?$)");
+				Matcher currentpath_matcher = currentpath_pattern.matcher(current_url_str);
+				if(currentpath_matcher.find()){
+					url_str = currentpath_matcher.group(1) + url_str;
+					if(DEBUG) System.out.println("Add to urlQueue: " + url_str);
+					urlQueue.add(url_str);
+				}
 			}
 		}
-		return urls;
 	}
-	
+
 	private void getBinary(String url_str, String name){
 		try {
 			URL url = new URL(url_str);
@@ -181,13 +170,6 @@ class SlideOCW{
 			System.out.println("Save at: " + domain + "/" + name);
 		} catch (IOException e) {
 			System.out.println("DL失敗: " + url_str);
-		}
-	}
-	
-	
-	private void printArray(ArrayList<String> array){
-		for(String str : array){
-			System.out.println(str);
 		}
 	}
 }

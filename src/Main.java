@@ -1,6 +1,17 @@
 class Main{
+	
+	/*
+	 * Kyoto University: ocw.kyoto-u.ac.jp
+	 * University of Tokyo: ocw.u-tokyo.ac.jp
+	 */
 	public static void main(String args[]){
-		SlideOCW ocw = new SlideOCW("ocw.kyoto-u.ac.jp");
-		ocw.startCrawling();
+		String domains[] = {
+			"ocw.kyoto-u.ac.jp"
+		};
+		
+		for(String domain : domains){
+			SlideOCW ocw = new SlideOCW(domain);
+			ocw.startCrawling();
+		}
 	}
 }
