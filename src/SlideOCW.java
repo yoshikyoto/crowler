@@ -72,7 +72,8 @@ class SlideOCW{
 		if(response_strs == null) return; // エラーの場合はnullが帰ってくる
 		
 		// リンクを見つけてキューにpushしてくれる
-		retrieveURLs(response_strs[0], url_str);
+		if(response_strs[1].indexOf("html") != -1)
+			retrieveURLs(response_strs[0], url_str);
 	}
 	
 	private String[] get(String url_str){
@@ -90,6 +91,9 @@ class SlideOCW{
 			http_connection.connect();
 			InputStreamReader isr = new InputStreamReader(http_connection.getInputStream(), "UTF-8");
 			BufferedReader br = new BufferedReader(isr);
+			
+		    response_strs[1] = http_connection.getContentType();
+		    System.out.println("Content-Type: " + response_strs[1]);
 
 			String line = new String();
 			while((line = br.readLine()) != null){
