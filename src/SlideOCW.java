@@ -58,6 +58,7 @@ class SlideOCW{
 		history.add(url_str);
 		
 		// pdf か ppt(x) かをチェックし、そうだった場合はローカルに保存
+		/*
 		Pattern pattern = Pattern.compile("[^/]+?\\.(pdf|pptx?)$");
 		Matcher matcher = pattern.matcher(url_str);
 		if(matcher.find()){
@@ -66,14 +67,28 @@ class SlideOCW{
 			getBinary(url_str, matcher.group());
 			return;
 		}
+		*/
 		
 		// 普通のWebページの場合
 		String response_strs[] = get(url_str);
 		if(response_strs == null) return; // エラーの場合はnullが帰ってくる
-		
-		// リンクを見つけてキューにpushしてくれる
-		if(response_strs[1].indexOf("html") != -1)
+
+		// htmlだった場合、リンクを見つけてキューにpush
+		if(response_strs[1].indexOf("html") != -1){
 			retrieveURLs(response_strs[0], url_str);
+			
+		// ppt,pdfの場合保存
+		}else if(response_strs[1].indexOf("pdf") != -1 || response_strs[1].indexOf("ppt") != -1){
+			Pattern pattern = Pattern.compile("[^/]+?\\.(pdf|pptx?)");
+			Matcher matcher = pattern.matcher(url_str);
+			if(matcher.find()){
+				if(DEBUG) System.out.println("pdf/ppt(x) file");
+				if(DEBUG) System.out.println("Binary file name:" + matcher.group());
+				getBinary(url_str, matcher.group());
+				return;
+			}
+			getBinary(url_str, matcher.group());
+		}
 	}
 	
 	private String[] get(String url_str){
