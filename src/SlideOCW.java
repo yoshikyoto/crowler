@@ -77,6 +77,8 @@ class SlideOCW{
 			
 		// ppt,pdfの場合保存
 		}else if(response_strs[1].indexOf("pdf") != -1 || response_strs[1].indexOf("ppt") != -1){
+			pattern = Pattern.compile("[^/]+?\\.(pdf|pptx?)");
+			matcher = pattern.matcher(url_str);
 			if(matcher.find()){
 				if(DEBUG) System.out.println("pdf/ppt(x) file");
 				if(DEBUG) System.out.println("Binary file name:" + matcher.group());
