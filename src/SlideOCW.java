@@ -106,6 +106,10 @@ class SlideOCW{
 			
 		    response_strs[1] = http_connection.getContentType();
 		    System.out.println("Content-Type: " + response_strs[1]);
+		    if(response_strs[1].indexOf("html") == -1){
+		    	response_strs[0] = "";
+		    	return response_strs;
+		    }
 
 			String line = new String();
 			while((line = br.readLine()) != null){
