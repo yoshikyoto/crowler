@@ -147,6 +147,7 @@ class SlideOCW{
 				if(url_str.indexOf("http://" + domain) != 0) continue;
 				// full URL in kyoto-u domain
 				if(DEBUG) System.out.println("Find Full Path URL");
+				// TODO: 
 				if(!history.contains(url_str) && !urlQueue.contains(url_str)){
 					if(DEBUG) System.out.println("Add to urlQueue: " + url_str);
 					urlQueue.add(url_str);

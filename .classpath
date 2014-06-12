@@ -3,5 +3,9 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry kind="lib" path="/Users/admin/eclipse/plugins/org.eclipse.jst.server.tomcat.core_1.1.405.v20131208_1453.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-adapters-1.1.3.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-api-1.1.3.jar"/>
+	<classpathentry kind="lib" path="lib/pdfbox-app-1.8.5.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
