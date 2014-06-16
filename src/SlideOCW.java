@@ -85,7 +85,6 @@ class SlideOCW{
 				getBinary(url_str, matcher.group());
 				return;
 			}
-			getBinary(url_str, matcher.group());
 		}
 		System.out.println();
 	}
