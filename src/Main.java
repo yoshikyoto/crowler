@@ -12,9 +12,9 @@ class Main{
 	 */
 	public static void main(String args[]){
 		String domains[] = {
-			"ocw.u-tokyo.ac.jp",
-			"ocw.nagoya-u.jp",
 			"ocw.kyoto-u.ac.jp",
+			"ocw.u-tokyo.ac.jp",
+			"ocw.nagoya-u.jp"
 		};
 		
 		for(String domain : domains){
