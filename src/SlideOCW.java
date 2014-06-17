@@ -32,13 +32,13 @@ class SlideOCW{
 		urlQueue = new ArrayDeque<String>();
 	}
 	
-	public void startCrawling(){
+	public void startCrawling(String path){
 
 		File domaindir = new File(domain);
 		domaindir.mkdir();
 		
 		// スタートページを Queue に突っ込む
-		String start_url = "http://" + domain + "/";
+		String start_url = "http://" + domain + "/" + path;
 		urlQueue.add(start_url);
 		
 		// Queueが空になるまでCrawl
@@ -51,9 +51,18 @@ class SlideOCW{
 		}
 	}
 	
+	public void startCrawling(){
+		startCrawling("");
+	}
+	
+	public void startCrowling(String path){
+	}
+	
 	public void crawl(){
 		// キューからURLを取り出してキューの中身は削除
 		String url_str = urlQueue.poll();
+		// ここで一応チェック
+		if(history.contains(url_str)) return;
 		// 履歴にURLを追加（一回のクローリングで一度行ったページは2度訪問しない）
 		history.add(url_str);
 		
