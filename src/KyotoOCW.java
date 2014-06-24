@@ -135,7 +135,7 @@ class KyotoOCW{
 		Pattern pattern = Pattern.compile("[^/]+?\\.(pdf|pptx?)");
 		Matcher matcher = pattern.matcher(url_str);
 		if(matcher.find()){
-			getBinary(url_str, matcher.group(1));
+			getBinary(url_str, matcher.group());
 		}else{
 			lecturenum++;
 			getBinary(url_str, "noname_lecturenote" + lecturenum + ".pdf");
