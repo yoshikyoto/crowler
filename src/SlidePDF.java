@@ -1,5 +1,9 @@
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileWriter;
+import java.io.PrintStream;
+import java.io.PrintWriter;
 import java.util.List;
 
 import org.apache.pdfbox.pdfparser.PDFParser;
@@ -30,16 +34,37 @@ class SlidePDF{
 			PDFTextStripper pdf_text_stripper = new PDFTextStripper();
 			String text = pdf_text_stripper.getText(document);
 			
-			System.out.println(text);
+			// System.out.println(text);
 			
 			page = document.getNumberOfPages();
-			pageList = document.getDocumentCatalog().getAllPages();
 			
-			for(int i = 0; i < page; i++){
-				PDPage target_page = pageList.get(i);
-				PDResources resources = target_page.getResources();
+
+			try{
+				FileWriter fw = new FileWriter("text.xml");
+				BufferedWriter bw = new BufferedWriter(fw);
+				PrintWriter pw = new PrintWriter(bw);
+			
+				pw.println("<presentation language=\"ja\">");
+				for(int i = 1; i <= page; i++){
+					pw.println("<slide page=\"" + i + "\">");
+					
+					PDPage pdpage = (PDPage) document.getDocumentCatalog().getAllPages().get(i-1);
 				
+					pdf_text_stripper.setStartPage(i);
+					pdf_text_stripper.setEndPage(i);
+					String str = pdf_text_stripper.getText(document);
+					
+					pw.print(str);
+					
+					pw.println("</slide>");
+				}
+				pw.println("</presentation>");
+				
+				pw.close();
+			}catch(Exception e){
+				e.printStackTrace();
 			}
+
 				
 		}catch(Exception e){
 			e.printStackTrace();

@@ -17,12 +17,10 @@ class Main{
 			"ocw.kyoto-u.ac.jp",
 		};
 		
-		/*
 		for(String domain : domains){
 			SlideOCW ocw = new SlideOCW(domain);
 			ocw.startCrawling();
 		}
-		*/
 		
 		SlidePDF slide_pdf = new SlidePDF("ocw.kyoto-u.ac.jp/dip_01.pdf");
 		slide_pdf.parse();
