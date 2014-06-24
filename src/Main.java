@@ -17,10 +17,18 @@ class Main{
 			"ocw.nagoya-u.jp"
 		};
 		
+		KyotoOCW k = new KyotoOCW();
+		k.getCourseList();
+		k.printQueue();
+		k.getLecturenoteURL();
+		k.getPDFs();
+		
+		/*
 		for(String domain : domains){
 			SlideOCW ocw = new SlideOCW(domain);
 			ocw.startCrawling("courselist");
 		}
+		*/
 		
 		// SlidePDF slide_pdf = new SlidePDF("ocw.kyoto-u.ac.jp/dip_01.pdf");
 		// slide_pdf.parse();

@@ -35,6 +35,7 @@ class SlideOCW{
 		domaindir.mkdir();
 		
 		// スタートページを Queue に突っ込む
+		urlQueue.add("http://ocw.kyoto-u.ac.jp/ja/frp7an/005-007/pdf/eea1.pdf");
 		String start_url = "http://" + domain + "/" + path;
 		urlQueue.add(start_url);
 		
