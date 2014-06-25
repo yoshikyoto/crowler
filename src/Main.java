@@ -18,7 +18,7 @@ class Main{
 		};
 		
 		KyotoOCW k = new KyotoOCW();
-		k.getCourseList();
+		k.getCourseLists();
 		k.getLectures();
 		k.getPDFs();
 		

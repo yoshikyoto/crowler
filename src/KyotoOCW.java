@@ -23,12 +23,20 @@ class KyotoOCW{
 	private static final boolean DEBUG = false;
 	public int lecturenum = 0;
 	
-	public void getCourseList(){
-		String courselist_url_str = "http://ocw.kyoto-u.ac.jp/courselist";
-		// ディレクトリは作っておく
+	public void getCourseLists(){
+		// ディレクトリを作成して
 		File domaindir = new File(domain);
 		domaindir.mkdir();
+		// キューを初期化して
 		urlQueue = new ArrayDeque<String>();
+		getCourseList("http://ocw.kyoto-u.ac.jp/courselist");
+		getCourseList("http://ocw.kyoto-u.ac.jp/courselist?b_start:int=20");
+		getCourseList("http://ocw.kyoto-u.ac.jp/courselist?b_start:int=40");
+	}
+	
+	public void getCourseList(String courselist_url_str){
+		// String courselist_url_str = "http://ocw.kyoto-u.ac.jp/courselist";
+		// ディレクトリは作っておく
 		// String http_result[] = get(courselist_url);
 		// retrieveURLs(http_result[0], courselist_url);
 		
