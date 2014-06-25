@@ -98,13 +98,11 @@ class KyotoOCW{
 			// 講義名を取得
 			Pattern pattern = Pattern.compile("<h1.*?>(.+?)</h1>");
 			Matcher matcher = pattern.matcher(http_results[0]);
-			String lecture_name = "";
-			if(matcher.find()){
+			lecturenum++;
+			String lecture_name = "lecture" + lecturenum;
+			if(matcher.find())
 				lecture_name = matcher.group(1);
-			}else{
-				lecturenum++;
-				lecture_name = "lecture" + lecturenum;
-			}
+			
 			System.out.println("講義名: " + lecture_name);
 			
 			// 講義のノートのページのURL取得 FIXME: 必ずしもlecturenoteという名前じゃない
