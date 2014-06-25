@@ -20,7 +20,7 @@ class Main{
 		KyotoOCW k = new KyotoOCW();
 		k.getCourseList();
 		k.printQueue();
-		k.getLecturenoteURL();
+		k.getLectures();
 		k.getPDFs();
 		
 		/*

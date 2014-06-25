@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -7,6 +8,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayDeque;
+import java.util.ArrayList;
 import java.util.Queue;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -17,11 +19,15 @@ class KyotoOCW{
 	public Queue<String> urlQueue;
 	public Queue<String> lecturenoteQueue;
 	public Queue<String> pdfQueue;
+	public Queue<Lecture> lectureQueue;
 	private static final boolean DEBUG = false;
 	public int lecturenum = 0;
 	
 	public void getCourseList(){
 		String courselist_url_str = "http://ocw.kyoto-u.ac.jp/courselist";
+		// ディレクトリは作っておく
+		File domaindir = new File(domain);
+		domaindir.mkdir();
 		urlQueue = new ArrayDeque<String>();
 		// String http_result[] = get(courselist_url);
 		// retrieveURLs(http_result[0], courselist_url);
@@ -60,34 +66,59 @@ class KyotoOCW{
 				}
 				
 				if(url_str.length() != 0 && !urlQueue.contains(url_str))
-					urlQueue.add(url_str + "/lecturenote");
+					urlQueue.add(url_str);
 			}
 		}catch(Exception e){
 			System.err.println(e);
 		}
 	}
 	
-	public void getLecturenoteURL(){
+	public void getLectures(){
 		lecturenoteQueue = new ArrayDeque<String>();
 		pdfQueue = new ArrayDeque<String>();
+		lectureQueue = new ArrayDeque<Lecture>();
 		while(urlQueue.size() > 0){
 			System.out.println("\nSize of urlQueue: " + urlQueue.size());
 			System.out.println("Size of pdfQueue: " + pdfQueue.size());
 			
+			// まずは講義ページのhtmlを取得
 			String url_str = urlQueue.poll();
 			System.out.println(url_str);
 			String http_results[] = get(url_str);
 			if(http_results == null) continue;
-			retrievePDF(http_results[0]);
+			
+			// 講義名を取得
+			Pattern pattern = Pattern.compile("<h1.*?>(.+?)</h1>");
+			Matcher matcher = pattern.matcher(http_results[0]);
+			String lecture_name = "";
+			if(matcher.find()){
+				lecture_name = matcher.group(1);
+			}else{
+				lecturenum++;
+				lecture_name = "lecture" + lecturenum;
+			}
+			System.out.println("講義名: " + lecture_name);
+			
+			// 講義のノートのページのURL取得 FIXME: 必ずしもlecturenoteという名前じゃない
+			http_results = get(url_str + "/lecturenote");
+			if(http_results == null) continue;
+			
+			ArrayList<String> pdf_urls = retrievePDF(http_results[0]);
+			
+			Lecture lecture = new Lecture(lecture_name);
+			lecture.PDFURLs = pdf_urls;
+			lecture.ocwDomain = domain;
+			lectureQueue.add(lecture);
 			try{
 				Thread.sleep(100);
 			}catch(Exception e){ }
 		}
 	}
 	
-	void retrievePDF(String str){
+	ArrayList<String> retrievePDF(String str){
 		Pattern pattern = Pattern.compile("<a .*?href *?= *?\"(.+?\\.pdf)\".*?>");
 		Matcher matcher = pattern.matcher(str);
+		ArrayList<String> result = new ArrayList<String>();
 		while(matcher.find()){
 			String url_str = matcher.group(1);
 			if(DEBUG) System.out.println("Find URL: " + url_str);
@@ -113,58 +144,17 @@ class KyotoOCW{
 				url_str = "";
 			}
 			
-			if(url_str.length() != 0 && !pdfQueue.contains(url_str))
-				pdfQueue.add(url_str);
+			if(url_str.length() != 0 && !result.contains(url_str))
+				result.add(url_str);
 		}
+		return result;
 	}
 	
 	public void getPDFs(){
-		while(pdfQueue.size() > 0){
-			System.out.println("\nSize of pdfQueue: " + pdfQueue.size());
-			
-			String url_str = pdfQueue.poll();
-			System.out.println(url_str);
-			getBinary(url_str);
-			try{
-				Thread.sleep(100);
-			}catch(Exception e){ }
+		while(lectureQueue.size() > 0){
+			Lecture lecture = lectureQueue.poll();
+			lecture.getPDFs();
 		}
-	}
-	
-	private void getBinary(String url_str){
-		Pattern pattern = Pattern.compile("[^/]+?\\.(pdf|pptx?)");
-		Matcher matcher = pattern.matcher(url_str);
-		if(matcher.find()){
-			getBinary(url_str, matcher.group());
-		}else{
-			lecturenum++;
-			getBinary(url_str, "noname_lecturenote" + lecturenum + ".pdf");
-		}
-	}
-	
-	private void getBinary(String url_str, String name){
-		try {
-			URL url = new URL(url_str);
-			URLConnection url_connection = url.openConnection();
-			InputStream is = url.openStream();
-			
-			FileOutputStream fos = new FileOutputStream(domain + "/" + name);
-			byte b[] = new byte[1024];
-			int blength;
-			while((blength = is.read(b)) != -1){
-				fos.write(b, 0, blength);
-			}
-			fos.flush();
-			fos.close();
-			
-			System.out.println("Save at: " + domain + "/" + name);
-		} catch (IOException e) {
-			System.out.println("DL失敗: " + url_str);
-		}
-	}
-	
-	public void printQueue(){
-		System.out.println("Size of urlQueue: " + urlQueue.size());
 	}
 	
 	private String[] get(String url_str){
