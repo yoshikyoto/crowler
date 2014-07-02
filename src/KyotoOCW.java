@@ -96,7 +96,7 @@ class KyotoOCW{
 			if(http_results == null) continue;
 			
 			// 講義名を取得
-			Pattern pattern = Pattern.compile("<h1.*?>(.+?)</h1>");
+			Pattern pattern = Pattern.compile("<h1[^<>]*?>([^<>]+?)</h1>");
 			Matcher matcher = pattern.matcher(http_results[0]);
 			lecturenum++;
 			String lecture_name = "lecture" + lecturenum;
