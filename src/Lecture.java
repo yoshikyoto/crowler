@@ -13,6 +13,7 @@ class Lecture{
 	public String ocwDomain;
 	public ArrayList<String> PDFURLs;
 	public String html;
+	public final int INTERVAL = 100; // ms
 	
 	Lecture(String n){
 		name = n;
@@ -46,7 +47,7 @@ class Lecture{
 			
 			// スリープ
 			try{
-				Thread.sleep(100);
+				Thread.sleep(INTERVAL);
 			}catch(Exception e){ }
 		}
 	}

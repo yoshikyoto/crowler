@@ -87,4 +87,53 @@ public class OCW {
 			return null;
 		}
 	}
+	
+	public void getCourseList(String courselist_url_str){
+		try{
+			// GET
+			String line = new String();
+			String http_result = get(courselist_url_str)[0];
+			
+			// Retrieve URLs
+			Pattern pattern = Pattern.compile("<a .*?href *?= *?\"(.+?)\".*?>");
+			Matcher matcher = pattern.matcher(http_result);
+			while(matcher.find()){
+				String url_str = matcher.group(1);
+				if(DEBUG) System.out.println("Find URL: " + url_str);
+				
+				// remove after #
+				int sharp_index = url_str.indexOf("#");
+				if(sharp_index >= 0)
+					url_str = url_str.substring(0, sharp_index);
+				
+				if(url_str.length() == 0) continue;
+				
+				// httpから始まる場合
+				if(url_str.indexOf("http://") == 0){
+					// 同じドメインかどうか
+					if(url_str.indexOf("http://" + domain) != 0) continue;
+					// full URL in kyoto-u domain
+					if(DEBUG) System.out.println("Find Full Path URL");
+				// httpから始まらない場合
+				}else if(url_str.charAt(0) == '/'){
+					// 絶対パスの場合
+					url_str = "http://" + domain + url_str;
+				}else{
+					url_str = "";
+				}
+				
+				if(url_str.length() != 0 && !urlQueue.contains(url_str))
+					urlQueue.add(url_str);
+			}
+		}catch(Exception e){
+			System.err.println(e);
+		}
+	}
+	
+	public void getPDFs(){
+		while(lectureQueue.size() > 0){
+			Lecture lecture = lectureQueue.poll();
+			lecture.getPDFs();
+		}
+	}
 }

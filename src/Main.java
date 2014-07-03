@@ -17,10 +17,17 @@ class Main{
 			"ocw.nagoya-u.jp"
 		};
 		
+		/*
 		KyotoOCW k = new KyotoOCW();
 		k.getCourseLists();
 		k.getLectures();
 		k.getPDFs();
+		*/
+		
+		TokyoOCW t = new TokyoOCW();
+		t.getCourseLists();
+		t.getLectures();
+		t.getPDFs();
 		
 		/*
 		for(String domain : domains){
