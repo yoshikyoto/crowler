@@ -12,6 +12,7 @@ class Lecture{
 	public String name;
 	public String ocwDomain;
 	public ArrayList<String> PDFURLs;
+	public String html;
 	
 	Lecture(String n){
 		name = n;

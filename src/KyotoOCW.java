@@ -1,9 +1,13 @@
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLConnection;
@@ -89,14 +93,14 @@ class KyotoOCW extends OCW{
 			if(http_results == null) continue;
 			
 			// 講義名を取得
-			Pattern pattern = Pattern.compile("<h1[^<>]*?>([^<>]+?)</h1>");
-			Matcher matcher = pattern.matcher(http_results[0]);
+			Pattern pattern = Pattern.compile("<h1.*?>(.+)</h1>");
+			Matcher matcher = pattern.matcher(http_results[0].replaceAll("\n", ""));
 			lecturenum++;
 			String lecture_name = "lecture" + lecturenum;
-			if(matcher.find())
+			if(matcher.find()){
 				lecture_name = matcher.group(1);
-			
-			System.out.println("講義名: " + lecture_name);
+				lecture_name = lecture_name.replaceAll("[ 　\t]", "");
+			}
 			
 			// 講義のノートのページのURL取得 FIXME: 必ずしもlecturenoteという名前じゃないようだ
 			http_results = get(url_str + "/lecturenote");
