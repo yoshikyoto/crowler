@@ -1,0 +1,222 @@
+<presentation language="ja">
+<slide page="1">
+<body>
+<p>
+前処理Ⅰ
+</p>
+</body>
+</slide>
+<slide page="2">
+<body>
+<p>
+平均値フィルタ
+</p>
+</body>
+</slide>
+<slide page="3">
+<body>
+<p>
+平均値フィルタ
+</p>
+</body>
+</slide>
+<slide page="4">
+<body>
+<p>
+平均値フィルタ
+</p>
+</body>
+</slide>
+<slide page="5">
+<body>
+<p>
+平均値フィルタ
+</p>
+</body>
+</slide>
+<slide page="6">
+<body>
+<p>
+平均値フィルタ
+</p>
+</body>
+</slide>
+<slide page="7">
+<body>
+<p>
+平均による1次元データの平滑化
+</p>
+</body>
+</slide>
+<slide page="8">
+<body>
+<p>
+平均による2次元画像の平滑化
+</p>
+</body>
+</slide>
+<slide page="9">
+<body>
+<p>
+平均による2次元画像の平滑化
+</p>
+</body>
+</slide>
+<slide page="10">
+<body>
+<p>
+平均による2次元画像の平滑化
+</p>
+</body>
+</slide>
+<slide page="11">
+<body>
+<p>
+平均値フィルタ
+</p>
+</body>
+</slide>
+<slide page="12">
+<body>
+<p>
+平均による1次元データの平滑化
+</p>
+</body>
+</slide>
+<slide page="13">
+<body>
+<p>
+移動平均
+</p>
+</body>
+</slide>
+<slide page="14">
+<body>
+<p>
+選択的平均処理による
+1次元データの平均化
+</p>
+</body>
+</slide>
+<slide page="15">
+<body>
+<p>
+選択的平均処理による
+1次元データの平均化
+</p>
+</body>
+</slide>
+<slide page="16">
+<body>
+<p>
+選択的平均処理による
+1次元データの平均化
+</p>
+</body>
+</slide>
+<slide page="17">
+<body>
+<p>
+選択的平均処理による画像の平滑化
+</p>
+</body>
+</slide>
+<slide page="18">
+<body>
+<p>
+選択的平均処理による画像の平滑化
+</p>
+</body>
+</slide>
+<slide page="19">
+<body>
+<p>
+選択的平均処理による画像の平滑化
+</p>
+</body>
+</slide>
+<slide page="20">
+<body>
+<p>
+エッジ保存平滑化の近傍
+</p>
+</body>
+</slide>
+<slide page="21">
+<body>
+<p>
+エッジ保存平滑化
+</p>
+</body>
+</slide>
+<slide page="22">
+<body>
+<p>
+エッジ保存平滑化
+</p>
+</body>
+</slide>
+<slide page="23">
+<body>
+<p>
+尖鋭化
+</p>
+</body>
+</slide>
+<slide page="24">
+<body>
+<p>
+メジアンフィルタによる平滑化
+</p>
+</body>
+</slide>
+<slide page="25">
+<body>
+<p>
+メジアンフィルタによる平滑化
+</p>
+</body>
+</slide>
+<slide page="26">
+<body>
+<p>
+メジアンによる画像の平滑化
+</p>
+</body>
+</slide>
+<slide page="27">
+<body>
+<p>
+メジアンによる画像の平滑化
+</p>
+</body>
+</slide>
+<slide page="28">
+<body>
+<p>
+尖鋭化
+</p>
+</body>
+</slide>
+<slide page="29">
+<body>
+<p>
+ラプラシアンによる1次元での尖鋭化
+</p>
+</body>
+</slide>
+<slide page="30">
+<body>
+<p>
+画像の先鋭化
+</p>
+</body>
+</slide>
+<slide page="31">
+<body>
+<p>
+画像の先鋭化
+</p>
+</body>
+</slide>
+</presentation>

@@ -25,42 +25,46 @@ class Slide extends SlidePrintArr{
 	int page = 0;
 	String language;
 
-	Word[][] word_array;
-	Word[][] wordArrayWithoutDupulication;
+	Word[][] wordMatrix;
+	Word[][] wordMatrixWithoutDupulication;
 
-	String[] title_array;
-	String[] body_array;
+	String[] titles;
+	String[] bodys;
 
-	String ppt_file_title;	//pptファイルの名前(.pptxは含まない)
-	String ppt_unzip_path;	//解凍したディレクトリのパス
-	File ppt_file;
-	File xml_file;
+	String presentationFileTitle;	//pptファイルの名前(.pptxは含まない)
+	String unzipPath;	//解凍したディレクトリのパス
+	String fileType;
+	File presentationFile;
+	
+	File xmlFile;
+	
+	public static final boolean DEBUG = true;
 
 	//単語配列を出力するメソッド
-	public void printArr(){
+	public void printWords(){
 		int i, j, n;
 		for(i = 0; i < page; i++){
-			n = word_array[i].length;
+			n = wordMatrix[i].length;
 			System.out.print("Slide" + (i+1) + ":\t");
 			for(j = 0; j < n; j++){
-				System.out.print(word_array[i][j].word + "(" + word_array[i][j].lvl + ")\t");
+				System.out.print(wordMatrix[i][j].word + "(" + wordMatrix[i][j].lvl + ")\t");
 			}
 			System.out.print("\n");
 		}
 	}
 
-	public void outputWordToTxt(){
+	public void printWordToTxt(){
 		try{
-			File file = new File(ppt_unzip_path + "/word.txt");
+			File file = new File(unzipPath + "/word.txt");
 			FileWriter fw = new FileWriter(file);
 			BufferedWriter bw = new BufferedWriter(fw);
 			PrintWriter pw = new PrintWriter(bw);
 
 			for(int i = 0; i < page; i++){
-				int n = word_array[i].length;
+				int n = wordMatrix[i].length;
 				for(int j = 0; j < n; j++){
-					pw.print(word_array[i][j].word + "(" + word_array[i][j].lvl + ", "
-							+ word_array[i][j].tf_idf + ")\t");
+					pw.print(wordMatrix[i][j].word + "(" + wordMatrix[i][j].lvl + ", "
+							+ wordMatrix[i][j].tf_idf + ")\t");
 				}
 				pw.print("\n");
 			}
@@ -75,23 +79,37 @@ class Slide extends SlidePrintArr{
 	 *******************************************************************************/
 
 	Slide(String input_path){
-		System.out.println("SlideEn: " + input_path + " が入力されました．");
+		System.out.println("Slide-Path: " + input_path);
 
 		// 各種変数の初期化
 		initFiles(input_path);
-
-		try{
-			decompXls();
-		}catch(Exception e){
-			System.err.println("pptx展開時のエラー: " + e);
+		
+		// pptx か pdf かで場合分け
+		if(fileType.equals("pptx")){
+			try{
+				decompXls();
+			}catch(Exception e){
+				System.err.println("pptx展開時のエラー");
+				e.printStackTrace();
+			}
+			try{
+				outputSlideXML();
+			}catch(Exception e){
+				System.err.println("slide.xml出力時のエラー");
+				e.printStackTrace();
+			}
+		}else if(fileType.equals("pdf")){
+			// ディレクトリ作ってそこにXML出力
+			File path = new File(unzipPath);
+			path.mkdir();
+			SlidePDF sp = new SlidePDF(presentationFile.toString(), xmlFile.toString());
+			sp.parse();
+			page = sp.page;
+			language = "ja";
+		}else{
+			System.out.println("入力ファイルが pptx/pdf 以外です");
 		}
 
-		//続いてSlide Open XMLの解析をして，slide.xml の出力
-		try{
-			outputSlideXML();
-		}catch(Exception e){
-			System.err.println("slide.xml出力時のエラー: " + e);
-		}
 
 		// 単語の配列を生成
 		makeArr();
@@ -100,40 +118,42 @@ class Slide extends SlidePrintArr{
 		calculateTfIdf();
 
 		// word.txt を出力
-		outputWordToTxt();
+		printWordToTxt();
 	}
 
 	private void initFiles(String input_path){
 		//ppt_file_path = input_path;
-		ppt_file = new File(input_path);
+		presentationFile = new File(input_path);
 
-		System.out.println("pptx Path: " + ppt_file.getAbsolutePath());
-		System.out.println("pptx FileName: " + ppt_file.getName());
+		System.out.println("Presentation-Path:\t" + presentationFile.getAbsolutePath());
+		System.out.println("Presentation-FileName:\t" + presentationFile.getName());
 
-		// .pptxを除いたファイルタイトルを取得
-		Pattern regex_pattern = Pattern.compile("(.*)(\\.pptx)");
-		Matcher regex_matcher = regex_pattern.matcher(ppt_file.getName());
+		// 拡張子を除いたファイルタイトルを取得
+		Pattern regex_pattern = Pattern.compile("(.*)\\.(.*?)\\Z");
+		Matcher regex_matcher = regex_pattern.matcher(presentationFile.getName());
 		regex_matcher.find();
-		ppt_file_title = regex_matcher.group(1);
-		System.out.println("pptx Title: " + ppt_file_title);
+		presentationFileTitle = regex_matcher.group(1);
+		fileType = regex_matcher.group(2).toLowerCase();
+		System.out.println("Presentaiton-Title:\t" + presentationFileTitle);
+		System.out.println("File-Type:\t" + fileType);
 
-		System.out.println("Parent Path: " + ppt_file.getParent());
+		if(DEBUG) System.out.println("Parent Path:\t" + presentationFile.getParent());
 
 		// zip解凍先
-		ppt_unzip_path = ppt_file.getParent() + "/" + ppt_file_title;
-		System.out.println("zip解凍先ディレクトリ: " + ppt_unzip_path);
+		unzipPath = presentationFile.getParent() + "/" + presentationFileTitle;
+		System.out.println("Unzip Path:\t" + unzipPath);
 
-		xml_file = new File(ppt_unzip_path + "/slide.xml");
-		System.out.println("XML File Path: " + xml_file);
+		xmlFile = new File(unzipPath + "/slide.xml");
+		System.out.println("XML File Path: " + xmlFile);
 	}
 
 
 	//zip解凍処理
 	private int decompXls() throws Exception{
 
-		File zip_file = new File(ppt_file.getParent() + "/" + ppt_file_title + ".zip");
+		File zip_file = new File(presentationFile.getParent() + "/" + presentationFileTitle + ".zip");
 		System.out.println("pptxファイルをrenameしました:" + zip_file.getAbsolutePath());
-		ppt_file.renameTo(zip_file);
+		presentationFile.renameTo(zip_file);
 
 		ZipInputStream in;
 		BufferedOutputStream out;
@@ -147,7 +167,7 @@ class Slide extends SlidePrintArr{
 		//ZIPの終端に達するまでループ
 		while((zip_entry = in.getNextEntry()) != null){
 			//ディレクトリを作成
-			String decPath = ppt_file.getParent() + "/" + ppt_file_title + "/" + zip_entry.getName();
+			String decPath = presentationFile.getParent() + "/" + presentationFileTitle + "/" + zip_entry.getName();
 			new File(decPath).getParentFile().mkdirs();
 
 			out = new BufferedOutputStream(new FileOutputStream(decPath));
@@ -165,19 +185,19 @@ class Slide extends SlidePrintArr{
 		in.close();
 
 		//pptxにrename
-		zip_file.renameTo(ppt_file);
+		zip_file.renameTo(presentationFile);
 		return 0;
 	}
 
 
 	public void outputSlideXML() throws Exception{
 		//xml_file にテキストを書き込む
-		FileWriter fw = new FileWriter(xml_file);
+		FileWriter fw = new FileWriter(xmlFile);
 		BufferedWriter bw = new BufferedWriter(fw);
 		PrintWriter pw = new PrintWriter(bw);
 
 		// 言語判定 slide2.xml の，コンテンツプレースホルダーを見る
-		FileReader fr = new FileReader(ppt_unzip_path + "/ppt/slides/slide2.xml");
+		FileReader fr = new FileReader(unzipPath + "/ppt/slides/slide2.xml");
 		BufferedReader br = new BufferedReader(fr);
 
 		String slide2_xml_str = new String();
@@ -201,7 +221,7 @@ class Slide extends SlidePrintArr{
 		}
 
 		//ここでページが初期化される．
-		System.out.println(ppt_file_title + "\tスライド枚数: " + (i - 1) + "枚");
+		System.out.println(presentationFileTitle + "\tスライド枚数: " + (i - 1) + "枚");
 		page = i - 1;
 
 		pw.println("</presentation>");
@@ -212,7 +232,7 @@ class Slide extends SlidePrintArr{
 	private boolean outputSlidePage(int pagenum, PrintWriter pw){
 		try{
 			//xmlを読む
-			FileReader fr = new FileReader(ppt_unzip_path + "/ppt/slides/slide" + pagenum + ".xml");
+			FileReader fr = new FileReader(unzipPath + "/ppt/slides/slide" + pagenum + ".xml");
 			BufferedReader br = new BufferedReader(fr);
 
 
@@ -376,26 +396,26 @@ class Slide extends SlidePrintArr{
 	private void makeArr(){
 
 		//スライドの単語配列を初期化
-		title_array = new String[page];
-		word_array = new Word[page][];
-		wordArrayWithoutDupulication = new Word[page][];
+		titles = new String[page];
+		wordMatrix = new Word[page][];
+		wordMatrixWithoutDupulication = new Word[page][];
 		//lvl_array = new int[page][];
 		//lvl_string_arr = new String[page][];
 
 		try{
-			FileReader fr = new FileReader(xml_file);
+			FileReader fr = new FileReader(xmlFile);
 			BufferedReader br = new BufferedReader(fr);
 
-			File file = new File(ppt_unzip_path + "/keitaiso.txt");
+			File file = new File(unzipPath + "/keitaiso.txt");
 			FileWriter fw = new FileWriter(file);
 			BufferedWriter bw = new BufferedWriter(fw);
 			PrintWriter pw = new PrintWriter(bw);
 
 
 			String str = new String();
-			String tmp = new String();
-			while((tmp = br.readLine()) != null){
-				str += tmp;
+			String line = new String();
+			while((line = br.readLine()) != null){
+				str += line;
 			}
 			System.out.println(str);
 			System.out.println(page);
@@ -429,7 +449,8 @@ class Slide extends SlidePrintArr{
 
 			//結果をresult.txtに出力
 		}catch(Exception e){
-			System.out.println("in makeWordArr " + e);
+			System.out.println("in makeWordArr ");
+			e.printStackTrace();
 		}
 	}
 
@@ -444,14 +465,14 @@ class Slide extends SlidePrintArr{
 		Matcher regex_matcher = regex_pattern.matcher(str);
 		if(regex_matcher.find()){
 			String title_text = regex_matcher.group(1);
-			title_array[targetpage-1] = title_text;
+			titles[targetpage-1] = title_text;
 			if(language.equals("en")){
 				word_array_list.addAll(enTextToWordArrayList(title_text, -1));
 			}else if(language.equals("ja")){
 				word_array_list.addAll(jaTextToWordArrayList(title_text, -1));
 			}
 		}else{
-			title_array[targetpage-1] = "";
+			titles[targetpage-1] = "";
 		}
 
 		regex_pattern = Pattern.compile("<body>(.*?)</body>");
@@ -495,7 +516,7 @@ class Slide extends SlidePrintArr{
 		}
 
 		//arrayListを変数に代入
-		word_array[targetpage-1] = (Word[])word_array_list.toArray(new Word[0]);
+		wordMatrix[targetpage-1] = (Word[])word_array_list.toArray(new Word[0]);
 	}
 
 	//文を渡すと、ステミングとストップワード処理をしてArrayListを返す。
@@ -660,24 +681,24 @@ class Slide extends SlidePrintArr{
 	 *************************************************************************/
 	private void calculateTfIdf(){
 		// TF の計算
-		for(int slide_num = 0; slide_num < word_array.length; slide_num++){
-			for(int self_word_num = 0; self_word_num < word_array[slide_num].length; self_word_num++){
-				for(int target_word_num = 0; target_word_num < word_array[slide_num].length; target_word_num++){
-					if(word_array[slide_num][self_word_num].word.equals(word_array[slide_num][target_word_num].word)){
-						word_array[slide_num][self_word_num].tf++;
+		for(int slide_num = 0; slide_num < wordMatrix.length; slide_num++){
+			for(int self_word_num = 0; self_word_num < wordMatrix[slide_num].length; self_word_num++){
+				for(int target_word_num = 0; target_word_num < wordMatrix[slide_num].length; target_word_num++){
+					if(wordMatrix[slide_num][self_word_num].word.equals(wordMatrix[slide_num][target_word_num].word)){
+						wordMatrix[slide_num][self_word_num].tf++;
 					}
 				}
 			}
 		}
 
 		// IDF の計算
-		for(int self_slide_num = 0; self_slide_num < word_array.length; self_slide_num++){
-			for(int self_word_num = 0; self_word_num < word_array[self_slide_num].length; self_word_num++){
-				for(int target_slide_num = 0; target_slide_num < word_array.length; target_slide_num++){
+		for(int self_slide_num = 0; self_slide_num < wordMatrix.length; self_slide_num++){
+			for(int self_word_num = 0; self_word_num < wordMatrix[self_slide_num].length; self_word_num++){
+				for(int target_slide_num = 0; target_slide_num < wordMatrix.length; target_slide_num++){
 					if(self_slide_num == target_slide_num) continue;
-					for(int target_word_num = 0; target_word_num < word_array[target_slide_num].length; target_word_num++){
-						if(word_array[self_slide_num][self_word_num].word.equals(word_array[target_slide_num][target_word_num].word)){
-							word_array[self_slide_num][self_word_num].idf++;
+					for(int target_word_num = 0; target_word_num < wordMatrix[target_slide_num].length; target_word_num++){
+						if(wordMatrix[self_slide_num][self_word_num].word.equals(wordMatrix[target_slide_num][target_word_num].word)){
+							wordMatrix[self_slide_num][self_word_num].idf++;
 						}
 					}
 				}
@@ -685,20 +706,20 @@ class Slide extends SlidePrintArr{
 		}
 
 		// TF/IDF の計算
-		for(int slide_num = 0; slide_num < word_array.length; slide_num++){
-			for(int word_num = 0; word_num < word_array[slide_num].length; word_num++){
-				word_array[slide_num][word_num].calculateTfIdf();
+		for(int slide_num = 0; slide_num < wordMatrix.length; slide_num++){
+			for(int word_num = 0; word_num < wordMatrix[slide_num].length; word_num++){
+				wordMatrix[slide_num][word_num].calculateTfIdf();
 			}
 		}
 		
 		// 重複を除去
-		for(int page = 0; page < word_array.length; page++){
+		for(int page = 0; page < wordMatrix.length; page++){
 			ArrayList<Word> word_array_list = new ArrayList<Word>();
-			for(int wordnum = 0; wordnum < word_array[page].length; wordnum++){
-				if(isNotContain(word_array[page][wordnum], word_array_list))
-					word_array_list.add(word_array[page][wordnum]);
+			for(int wordnum = 0; wordnum < wordMatrix[page].length; wordnum++){
+				if(isNotContain(wordMatrix[page][wordnum], word_array_list))
+					word_array_list.add(wordMatrix[page][wordnum]);
 			}
-			wordArrayWithoutDupulication[page] = (Word[])word_array_list.toArray(new Word[0]);
+			wordMatrixWithoutDupulication[page] = (Word[])word_array_list.toArray(new Word[0]);
 		}
 	}
 	// Array にすでに Word が入っているかどうかを確認するメソッド

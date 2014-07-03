@@ -1,0 +1,223 @@
+<presentation language="ja">
+<slide page="1">
+<body>
+<p>
+イントロダクション
+</p>
+</body>
+</slide>
+<slide page="2">
+<body>
+<p>
+画像処理
+• 人間はどのようにして外界の情報を処理しているか
+– 精神物理学
+– 心理学
+– 認知科学的
+• 目からはいってくる情報は全体の80％と言われてい
+る
+– 外界の光の濃淡パターンを網膜で受光
+– カメラで撮影される情報（写真）も空間の光の濃淡パターン
+• 空間的な光の濃淡パターンを画像と呼ぶ
+– コンピュータによる画像処理（ディジタル画像処理）の原理
+を考える
+</p>
+</body>
+</slide>
+<slide page="3">
+<body>
+<p>
+画像の処理手法
+• 様々な画像処理例
+–写真術的処理
+• 現像液を変えることにより画像の色を変える
+–光学処理
+• 光学レンズによるフーリエ変換
+• モアレ法による3次元距離測量
+–計算機処理
+• コンピュータによるデジタル画像処理
+</p>
+</body>
+</slide>
+<slide page="4">
+<body>
+<p>
+画像処理の目的
+• 画像の見やすさを向上：
+–画像のシャープニング(image sharpening)
+–画像復元(image restoration) 
+• 画像中に存在する物体を計測
+–パターン計測(pattern measurement) 
+• 画像中に存在する物体を識別・認識
+–画像認識(image recognition) 
+• 欲しい画像を検索:
+–画像検索(image retrieval) 
+</p>
+</body>
+</slide>
+<slide page="5">
+<body>
+<p>
+画像とは何か？
+• アナログ画像の表現
+画像(image)とは平面座標系で定義される2変数関数
+– （x,y） は平面上の位置座標
+– z は（x,y）における何らかの信号（光）の強さ
+– x,y,zは連続値
+• デジタル画像の表現
+– （Xi,Yi）は平面上の格子点
+– Zは格子点Xi,Yjにおける何らかの信号（光）の強さ
+– Xi,Yi,Zは整数Zの要素で離散値
+– 1つの格子点をピクセル(pixel)と呼ぶ
+Rzyx
+yxfz
+∈
+=
+,,
+),(
+ZZYX
+YXFZ
+ji
+ji
+∈
+=
+,,
+),(
+</p>
+</body>
+</slide>
+<slide page="6">
+<body>
+<p>
+解像度と量子化
+• デジタル画像には二つの重要な概念
+–解像度(resolution)：（ｘ,ｙ）のディジタル化
+–量子化(quantization)：ｚのディジタル化
+</p>
+</body>
+</slide>
+<slide page="7">
+<body>
+<p>
+画像の種類
+• 同じ画像集合についても様々に分類可能
+–ピクセルの値
+–ピクセルの数
+–画像の内容
+–画像生成に用いたセンサーの種類
+–画像の枚数
+</p>
+</body>
+</slide>
+<slide page="8">
+<body>
+<p>
+ピクセルの値による画像の分類
+• 二値画像(binary image)
+• 濃淡画像(gray image)
+• カラー画像(color image)
+</p>
+</body>
+</slide>
+<slide page="9">
+<body>
+<p>
+ピクセル数による画像の分類
+• 実画像にどれだけのピクセル数が存在するかによって画像を分類
+</p>
+</body>
+</slide>
+<slide page="10">
+<body>
+<p>
+画像の内容による分類
+• 画像は大きく分けて二種類の方法で獲得
+–スキャナなどでスキャンニング
+• ドキュメント画像(document image) 
+• グラフィック画像(graphic image) 
+–カメラなどにより撮影
+• 風景画像(scene image)
+</p>
+</body>
+</slide>
+<slide page="11">
+<body>
+<p>
+センサーの種類による分類
+• センサによって分類
+– サーマルセンサ
+• サーマル画像(thermal image)
+– X線センサ
+• X線画像(X-ray image)
+– カメラ位置から画像中の各オブジェクトへの距離を割り当てた
+画像
+• 距離画像(depth image)
+</p>
+</body>
+</slide>
+<slide page="12">
+<body>
+<p>
+画像の枚数による分類
+• 毎秒30枚の画像を連続的に表示することにより
+動き表現
+–画像の順序集合を連続画像(image Sequence)
+– １枚１枚の画像をフレーム(frame)
+連続画像
+動画
+</p>
+</body>
+</slide>
+<slide page="13">
+<body>
+<p>
+画像処理の概念と基本用語
+• シーン(scene)
+– 3次元空間を意味
+• 画像(image)
+– ２次元の(デジタルな)世界を意味
+</p>
+</body>
+</slide>
+<slide page="14">
+<body>
+<p>
+画像処理の概念と基本用語
+• パターンデータ(pattern data)
+–ある規則を持ったピクセルの集合
+• ラベル(label)
+–風景画像から家を見つけようとする場合
+• 屋根や壁などに対応する領域をパターンとして抽出
+• 抽出されたパターンにラベル(label)を割り当て
+• 意味(semantics)
+– ラベルと概念集合との写像を意味(semantics)
+– この写像を見つけるのがパターン認識
+</p>
+</body>
+</slide>
+<slide page="15">
+<body>
+<p>
+意味(semantics)
+• 規則性のあるパターンに与えられたラベルが、
+概念（シンボル(symbol)）に対応したとき（写像
+が存在した時）意味を持つ
+</p>
+</body>
+</slide>
+<slide page="16">
+<body>
+<p>
+関連分野
+• 関連分野の一部
+– 画像処理(image processing) 
+– 画像認識(image recognition) 
+– 文字認識(character recognition) 
+– 画像理解(image understanding) 
+– コンピュータビジョン(computer vision) 
+– コンピュータグラフィックス(computer graphics) 
+– 3次元モデリング(3D modeling) 
+</p>
+</body>
+</slide>
+</presentation>

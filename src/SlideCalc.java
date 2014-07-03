@@ -19,8 +19,6 @@ public class SlideCalc{
 	double allavg, detailavg, titleavg, horizontalavg, bodyavg, totitleavg;
 	double[] allavga, detailavga, titleavga, horizontalavga, bodyavga, totitleavga;
 	int[] segment;
-	//int page;
-	//String filepath; //xmlがあるディレクトリのパス
 	int[][] edge;
 	int[] outlines;
 	ArrayList<SlideGroup> groups;
@@ -41,7 +39,7 @@ public class SlideCalc{
 	 ****************************************************************************/
 	private void calMatrix(){
 		try{
-			File file = new File(slide.ppt_unzip_path + "\\matrix.txt");
+			File file = new File(slide.unzipPath + "/matrix.txt");
 			FileWriter fw = new FileWriter(file);
 			BufferedWriter bw = new BufferedWriter(fw);
 			PrintWriter pw = new PrintWriter(bw);
@@ -91,17 +89,17 @@ public class SlideCalc{
 		System.out.println("クラスタリング開始");
 
 		try{
-			File file1 = new File(slide.ppt_unzip_path + "\\clustresult.txt");
+			File file1 = new File(slide.unzipPath + "/clustresult.txt");
 			FileWriter fw1 = new FileWriter(file1);
 			BufferedWriter bw1 = new BufferedWriter(fw1);
 			PrintWriter result_pw = new PrintWriter(bw1);
 
-			File file2 = new File(slide.ppt_unzip_path + "\\clustdetail.txt");
+			File file2 = new File(slide.unzipPath + "/clustdetail.txt");
 			FileWriter fw2 = new FileWriter(file2);
 			BufferedWriter bw2 = new BufferedWriter(fw2);
 			PrintWriter detail_pw = new PrintWriter(bw2);
 
-			File cfile = new File(slide.ppt_unzip_path + "\\clustering.txt");
+			File cfile = new File(slide.unzipPath + "/clustering.txt");
 			FileWriter cfw = new FileWriter(cfile);
 			BufferedWriter cbw = new BufferedWriter(cfw);
 			clusteringPW = new PrintWriter(cbw);
@@ -212,7 +210,7 @@ public class SlideCalc{
 		clustering(equByNum(body), 1, page-1, resultpw, detailpw);
 		*/
 
-		System.out.print(slide.ppt_file_title + ":\t");
+		System.out.print(slide.presentationFileTitle + ":\t");
 		//printSegment();
 		/*
 		int c = 0;
@@ -396,9 +394,9 @@ public class SlideCalc{
 		all = new double[slide.page][slide.page];
 		for(int self = 0; self < slide.page; self++){
 			for(int target = 0; target < slide.page; target++){
-				for(int self_word = 0; self_word < slide.word_array[self].length; self_word++){
-					for(int target_word = 0; target_word < slide.word_array[target].length; target_word++){
-						if(slide.word_array[self][self_word].word.equals(slide.word_array[target][target_word].word)){
+				for(int self_word = 0; self_word < slide.wordMatrix[self].length; self_word++){
+					for(int target_word = 0; target_word < slide.wordMatrix[target].length; target_word++){
+						if(slide.wordMatrix[self][self_word].word.equals(slide.wordMatrix[target][target_word].word)){
 							all[self][target] += 1;
 						}
 					}
@@ -413,11 +411,11 @@ public class SlideCalc{
 		detail = new double[slide.page][slide.page];
 		for(int self = 0; self < slide.page; self++){
 			for(int target = 0; target < slide.page; target++){
-				for(int self_word = 0; self_word < slide.word_array[self].length; self_word++){
-					for(int target_word = 0; target_word < slide.word_array[target].length; target_word++){
-						if((slide.word_array[self][self_word].word.equals(slide.word_array[target][target_word].word))
-							&&(slide.word_array[self][self_word].lvl != -1)&&(slide.word_array[target][target_word].lvl != -1) //末節の部分を除く
-							&&(slide.word_array[self][self_word].lvl > slide.word_array[target][target_word].lvl)){
+				for(int self_word = 0; self_word < slide.wordMatrix[self].length; self_word++){
+					for(int target_word = 0; target_word < slide.wordMatrix[target].length; target_word++){
+						if((slide.wordMatrix[self][self_word].word.equals(slide.wordMatrix[target][target_word].word))
+							&&(slide.wordMatrix[self][self_word].lvl != -1)&&(slide.wordMatrix[target][target_word].lvl != -1) //末節の部分を除く
+							&&(slide.wordMatrix[self][self_word].lvl > slide.wordMatrix[target][target_word].lvl)){
 								detail[self][target] += 1;
 								break;
 						}
@@ -433,11 +431,11 @@ public class SlideCalc{
 		title = new double[slide.page][slide.page];
 		for(int self = 0; self < slide.page; self++){
 			for(int target = 0; target < slide.page; target++){
-				for(int self_word = 0; self_word < slide.word_array[self].length; self_word++){
-					for(int target_word = 0; target_word < slide.word_array[target].length; target_word++){
-						if(		(slide.word_array[self][self_word].lvl == -1)
-								&&(slide.word_array[target][target_word].lvl == -1)
-								&&(slide.word_array[self][self_word].word.equals(slide.word_array[target][target_word].word))){
+				for(int self_word = 0; self_word < slide.wordMatrix[self].length; self_word++){
+					for(int target_word = 0; target_word < slide.wordMatrix[target].length; target_word++){
+						if(		(slide.wordMatrix[self][self_word].lvl == -1)
+								&&(slide.wordMatrix[target][target_word].lvl == -1)
+								&&(slide.wordMatrix[self][self_word].word.equals(slide.wordMatrix[target][target_word].word))){
 							title[self][target] += 1;
 						}
 					}
@@ -452,12 +450,12 @@ public class SlideCalc{
 		body = new double[slide.page][slide.page];
 		for(int self = 0; self < slide.page; self++){
 			for(int target = 0; target < slide.page; target++){
-				for(int self_word = 0; self_word < slide.word_array[self].length; self_word++){
-					for(int target_word = 0; target_word < slide.word_array[target].length; target_word++){
+				for(int self_word = 0; self_word < slide.wordMatrix[self].length; self_word++){
+					for(int target_word = 0; target_word < slide.wordMatrix[target].length; target_word++){
 						// タイトルだったら break;
-						if(slide.word_array[self][self_word].lvl == -1) continue;
-						if(slide.word_array[target][target_word].lvl == -1) continue;
-						if(slide.word_array[self][self_word].word.equals(slide.word_array[target][target_word].word)) body[self][target] += 1;
+						if(slide.wordMatrix[self][self_word].lvl == -1) continue;
+						if(slide.wordMatrix[target][target_word].lvl == -1) continue;
+						if(slide.wordMatrix[self][self_word].word.equals(slide.wordMatrix[target][target_word].word)) body[self][target] += 1;
 					}
 				}
 			}
@@ -471,10 +469,10 @@ public class SlideCalc{
 		for(int self = 0; self < slide.page; self++){
 			for(int target = 0; target < slide.page; target++){
 				if(self != target){
-					for(int self_word = 0; self_word < slide.word_array[self].length; self_word++){
-						for(int target_word = 0; target_word < slide.word_array[target].length; target_word++){
-							if((slide.word_array[self][self_word].lvl == slide.word_array[target][target_word].lvl)
-									&&(slide.word_array[self][self_word].word.equals(slide.word_array[target][target_word].word))){
+					for(int self_word = 0; self_word < slide.wordMatrix[self].length; self_word++){
+						for(int target_word = 0; target_word < slide.wordMatrix[target].length; target_word++){
+							if((slide.wordMatrix[self][self_word].lvl == slide.wordMatrix[target][target_word].lvl)
+									&&(slide.wordMatrix[self][self_word].word.equals(slide.wordMatrix[target][target_word].word))){
 								horizontal[self][target] += 1;
 							}
 						}
@@ -490,10 +488,10 @@ public class SlideCalc{
 		totitle = new double[slide.page][slide.page];
 		for(int i = 0; i < slide.page; i++){
 			for(int j = 0; j < slide.page; j++){
-				for(int k = 0; k < slide.word_array[i].length; k++){
-					for(int l = 0; l < slide.word_array[j].length; l++){
-						if((slide.word_array[i][k].lvl != -1)&&(slide.word_array[j][l].lvl == -1)
-								&&(slide.word_array[i][k].word.equals(slide.word_array[j][l].word))){
+				for(int k = 0; k < slide.wordMatrix[i].length; k++){
+					for(int l = 0; l < slide.wordMatrix[j].length; l++){
+						if((slide.wordMatrix[i][k].lvl != -1)&&(slide.wordMatrix[j][l].lvl == -1)
+								&&(slide.wordMatrix[i][k].word.equals(slide.wordMatrix[j][l].word))){
 							totitle[i][j] += 1;
 							break;
 						}
@@ -531,7 +529,7 @@ public class SlideCalc{
 		double[][] result = new double[m][m];
 		double n;
 		for(int i = 0; i < m; i++){
-			n = (double)slide.word_array[i].length;
+			n = (double)slide.wordMatrix[i].length;
 			for(int j = 0; j < m; j++){
 				if((i != j)&&(n != 0)){
 					result[i][j] = array[i][j] / n;
@@ -551,12 +549,12 @@ public class SlideCalc{
 		int result = 0;
 		outlines = new int[slide.page];
 		for(int i = 0; i < slide.page; i++){
-			if(slide.title_array[i].equalsIgnoreCase("outline")){
+			if(slide.titles[i].equalsIgnoreCase("outline")){
 				result++;
 				rpw.print(i + " ");
 				outlines[i] = 1;
-			}else if(slide.title_array[i].equalsIgnoreCase("conclusion")
-					||slide.title_array[i].equalsIgnoreCase("conclusions"))
+			}else if(slide.titles[i].equalsIgnoreCase("conclusion")
+					||slide.titles[i].equalsIgnoreCase("conclusions"))
 				outlines[i] = 2;
 		}
 		//ここで、detailとか使ってoutline見つけることになるのかも
@@ -581,13 +579,14 @@ public class SlideCalc{
 	private void clusteringByTitle(){
 		//System.out.println("clusteringByTitle -------------------------------------------------------");
 		for(int i = 1; i < (slide.page - 1); i++){
-			if(slide.title_array[i].equals(slide.title_array[i+1])){
+			if(slide.titles[i].length() < 2) continue; 
+			if(slide.titles[i].equals(slide.titles[i+1])){
 				//タイトルが一致していたらクラスタリング
 				segment[i] = 2;
 			}else if(title[i][i+1] >= 2){
 				//2語以上一致していたらクラスタリング
 				segment[i] = 1;
-			}else if((i < (slide.page - 2))&&(slide.title_array[i].equals(slide.title_array[i+2]))){
+			}else if((i < (slide.page - 2))&&(slide.titles[i].equals(slide.titles[i+2]))){
 				//2つ先のスライドとタイトルが一致していた場合
 				segment[i] = 1;
 				segment[i+1] = 1;
@@ -875,7 +874,7 @@ public class SlideCalc{
 
 	private void detailAvg(){
 		try{
-			File file = new File(slide.ppt_unzip_path + "\\detailScore.txt");
+			File file = new File(slide.unzipPath + "/detailScore.txt");
 			FileWriter fw = new FileWriter(file);
 			BufferedWriter bw = new BufferedWriter(fw);
 			PrintWriter pw = new PrintWriter(bw);
@@ -1046,7 +1045,7 @@ public class SlideCalc{
 		//System.out.println(segment.length);
 		for(int i = 0; i < segment.length; i++){
 			//System.out.println(slide.title_array[i]);
-			if(segment[i] == 2) System.out.println(slide.title_array[i]);
+			if(segment[i] == 2) System.out.println(slide.titles[i]);
 		}
 
 		System.out.println("タイトル語のtf-idfによるスコア");

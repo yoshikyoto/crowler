@@ -1,5 +1,6 @@
 
-
+import java.util.HashMap;
+import java.util.Map;
 import java.util.ArrayList;
 
 class SlideGroup{
@@ -9,6 +10,7 @@ class SlideGroup{
 	int startSlide;	// 0がタイトルスライド
 	int slidePage;	// 1以上
 	String label;
+	Map<String, Double> wordMap;
 
 	SlideGroup(Slide s, int start, int page){
 		slide = s;
@@ -20,7 +22,7 @@ class SlideGroup{
 
 		for(int i = 0; i < page; i++){
 			int target_page = start + i;
-			Word[] target_words = slide.word_array[target_page];
+			Word[] target_words = slide.wordMatrix[target_page];
 			for(int j = 0; j < target_words.length; j++){
 				Word target_word = target_words[j];
 				// words の方はとにかく追加
@@ -45,7 +47,7 @@ class SlideGroup{
 
 		for(int i = 0; i < page; i++){
 			int target_page = startSlide + i;
-			Word[] target_words = slide.word_array[target_page];
+			Word[] target_words = slide.wordMatrix[target_page];
 			for(int j = 0; j < target_words.length; j++){
 				Word target_word = target_words[j];
 				// words の方はとにかく追加
@@ -198,7 +200,7 @@ class SlideGroup{
 			if(target_word.lvl != -1) continue;
 
 			for(int s = 0; s < startSlide; s++){
-				Word other_words[] = slide.word_array[s];
+				Word other_words[] = slide.wordMatrix[s];
 
 				for(int w = 0; w < other_words.length; w++){
 					Word other_word = other_words[w];
@@ -211,8 +213,8 @@ class SlideGroup{
 				}
 			}
 
-			for(int s = startSlide + slidePage; s < slide.word_array.length; s++){
-				Word other_words[] = slide.word_array[s];
+			for(int s = startSlide + slidePage; s < slide.wordMatrix.length; s++){
+				Word other_words[] = slide.wordMatrix[s];
 
 				for(int w = 0; w < other_words.length; w++){
 					Word other_word = other_words[w];
@@ -242,5 +244,12 @@ class SlideGroup{
 			System.out.print(target_word.word + "(" + target_word.score + ")");
 		}
 		System.out.println();
+	}
+	
+	public void makeWordMap(){
+		wordMap = new HashMap<String, Double>();
+		for(Word w : wordset){
+			wordMap.put(w.word, w.tf_idf);
+		}
 	}
 }

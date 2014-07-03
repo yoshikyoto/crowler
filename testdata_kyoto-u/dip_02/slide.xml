@@ -1,0 +1,104 @@
+<presentation language="ja">
+<slide page="1">
+<body>
+<p>
+画像処理の概要
+</p>
+</body>
+</slide>
+<slide page="2">
+<body>
+<p>
+画像処理のフレームワーク
+</p>
+</body>
+</slide>
+<slide page="3">
+<body>
+<p>
+画像の入力処理
+• 2次元データの入力
+– サンプリング
+– 量子化
+• 3次元世界からの画像入力
+– 投影モデル
+– 反射モデル
+• 3次元世界の距離情報の獲得
+– 視点を動かす（ステレオ）
+– 物体を動かす（動きからの形の獲得）
+– 光源を動かす（照度差ステレオ）
+</p>
+</body>
+</slide>
+<slide page="4">
+<body>
+<p>
+画像の出力処理
+• 擬似濃淡表示法(digital halftoning，pseudo 
+continuous tone) 
+• 色変換(color transformation 
+• ステレオスコープ(stereo scope) 
+– 左右の目に互いに視点が少しだけ違う画像を表示させる技術
+</p>
+</body>
+</slide>
+<slide page="5">
+<body>
+<p>
+画像処理の一般的な流れ
+</p>
+</body>
+</slide>
+<slide page="6">
+<body>
+<p>
+画像復元
+• 画像復元
+– 入力デバイスに起因する歪み
+– デバイスの不具合や調整不備により生じたひずみ
+• 画像復元手法
+– 周波数帯域における処理
+– 幾何変換と濃淡値補間
+</p>
+</body>
+</slide>
+<slide page="7">
+<body>
+<p>
+前処理
+• 不必要であるような情報を取り除く処理
+</p>
+</body>
+</slide>
+<slide page="8">
+<body>
+<p>
+セグメンテーション
+• トークン(token)を抽出する処理
+– 規則性を持ったパターンとして定義
+– 代表例：線分と領域
+• セグメンテーションの主な手法
+– 線分抽出
+– 領域抽出
+</p>
+</body>
+</slide>
+<slide page="9">
+<body>
+<p>
+特徴抽出
+• トークンの特徴を計測する処理
+–大きく分けて線分特徴と領域特徴
+</p>
+</body>
+</slide>
+<slide page="10">
+<body>
+<p>
+パターン認識処理
+• 抽出されたパターンを予め定義されているオ
+ブジェクトに対応付け
+</p>
+</body>
+</slide>
+</presentation>
