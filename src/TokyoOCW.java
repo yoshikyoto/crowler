@@ -82,17 +82,18 @@ public class TokyoOCW extends OCW {
 		lectureQueue = new ArrayDeque<Lecture>();
 		while(urlQueue.size() > 0){
 			System.out.println("\nSize of urlQueue: " + urlQueue.size());
-			System.out.println("Size of pdfQueue: " + pdfQueue.size());
 			
 			// まずは講義ページのhtmlを取得
 			String url_str = urlQueue.poll();
 			System.out.println(url_str);
 			String http_results[] = get(url_str);
 			if(http_results == null) continue;
+			http_results[0] = http_results[0].replaceAll("\n", "");
+			http_results[0] = http_results[0].replaceAll("\t", "");
 			
 			// 講義名を取得
 			Pattern pattern = Pattern.compile("<h2.*?>(.+)</h2>");
-			Matcher matcher = pattern.matcher(http_results[0].replaceAll("\n", ""));
+			Matcher matcher = pattern.matcher(http_results[0]);
 			lecturenum++;
 			String lecture_name = "lecture" + lecturenum;
 			if(matcher.find()){

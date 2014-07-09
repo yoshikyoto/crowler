@@ -18,7 +18,7 @@ public class OCW {
 	private static final boolean DEBUG = false;
 	
 	public ArrayList<String> retrievePDF(String str){
-		Pattern pattern = Pattern.compile("<a .*?href *?= *?\"(.+?\\.pdf)\".*?>");
+		Pattern pattern = Pattern.compile("<a .*?href *?= *?\"([^\"]+?\\.pdf)\".*?>");
 		Matcher matcher = pattern.matcher(str);
 		ArrayList<String> result = new ArrayList<String>();
 		while(matcher.find()){
@@ -43,7 +43,7 @@ public class OCW {
 				// 絶対パスの場合
 				url_str = "http://" + domain + url_str;
 			}else{
-				url_str = "";
+				url_str = "http://" + domain + "/" + url_str;
 			}
 			
 			if(url_str.length() != 0 && !result.contains(url_str))
@@ -95,7 +95,7 @@ public class OCW {
 			String http_result = get(courselist_url_str)[0];
 			
 			// Retrieve URLs
-			Pattern pattern = Pattern.compile("<a .*?href *?= *?\"(.+?)\".*?>");
+			Pattern pattern = Pattern.compile("<a .*?href *?= *?\"([^\"]+?)\".*?>");
 			Matcher matcher = pattern.matcher(http_result);
 			while(matcher.find()){
 				String url_str = matcher.group(1);

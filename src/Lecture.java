@@ -54,6 +54,8 @@ class Lecture{
 	
 	private void getBinary(String url_str, String name, String dir){
 		try {
+			// ユーザーエージェントの偽装
+			System.setProperty("http.agent", "Mozilla/5.0 (Macintosh; U; Intel Mac OS X; ja-JP-mac; rv:1.8.1.6) Gecko/20070725 Firefox/2.0.0.6");
 			URL url = new URL(url_str);
 			URLConnection url_connection = url.openConnection();
 			InputStream is = url.openStream();
