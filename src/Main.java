@@ -1,3 +1,4 @@
+import java.io.File;
 import java.util.ArrayDeque;
 import java.util.HashSet;
 import java.util.Queue;
@@ -16,6 +17,10 @@ class Main{
 			"ocw.u-tokyo.ac.jp",
 			"ocw.nagoya-u.jp"
 		};
+		
+
+		File data_dir = new File("data");
+		data_dir.mkdir();
 		
 		/*
 		KyotoOCW k = new KyotoOCW();

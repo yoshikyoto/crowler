@@ -14,7 +14,7 @@ class KyotoOCW extends OCW{
 	
 	public void getCourseLists(){
 		// ディレクトリを作成して
-		File domaindir = new File(domain);
+		File domaindir = new File("data/" + domain);
 		domaindir.mkdir();
 		// キューを初期化して
 		urlQueue = new ArrayDeque<String>();

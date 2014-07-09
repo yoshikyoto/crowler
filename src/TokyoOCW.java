@@ -17,8 +17,8 @@ public class TokyoOCW extends OCW {
 	
 	public void getCourseLists(){
 		// ディレクトリを作成して
-		File domaindir = new File(domain);
-		domaindir.mkdir();
+		File domain_dir = new File("data/" + domain);
+		domain_dir.mkdir();
 		// キューを初期化して
 		urlQueue = new ArrayDeque<String>();
 		for(int p = 1; p <= 13; p++)
