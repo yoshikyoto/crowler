@@ -33,7 +33,7 @@ class Lecture{
 			String url_str = PDFURLs.get(i);
 			
 			// PDFの名前を取得して
-			Pattern pattern = Pattern.compile("[^/]+?\\.(pdf|pptx?)");
+			Pattern pattern = Pattern.compile("[^/&]+?\\.(pdf|pptx?)");
 			Matcher matcher = pattern.matcher(url_str);
 			String pdf_name = "";
 			if(matcher.find()){

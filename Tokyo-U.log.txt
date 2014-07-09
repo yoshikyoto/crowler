@@ -1,0 +1,721 @@
+GET http://ocw.u-tokyo.ac.jp/result?page=1
+Content-Type: text/html; charset=UTF-8
+Find Path contain 'lecture':	lecture?id=11364&amp;r=216958205
+Find Path contain 'lecture':	lecture?id=11362&amp;r=216958205
+Find Path contain 'lecture':	lecture?id=11361&amp;r=216958205
+Find Path contain 'lecture':	lecture?id=11360&amp;r=216958205
+Find Path contain 'lecture':	lecture?id=11359&amp;r=216958205
+Find Path contain 'lecture':	lecture?id=11358&amp;r=216958205
+Find Path contain 'lecture':	lecture?id=11357&amp;r=216958205
+Find Path contain 'lecture':	lecture?id=11353&amp;r=216958205
+GET http://ocw.u-tokyo.ac.jp/result?page=2
+Content-Type: text/html; charset=UTF-8
+Find Path contain 'lecture':	lecture?id=11352&amp;r=669960943
+Find Path contain 'lecture':	lecture?id=11351&amp;r=669960943
+Find Path contain 'lecture':	lecture?id=11350&amp;r=669960943
+Find Path contain 'lecture':	lecture?id=11348&amp;r=669960943
+Find Path contain 'lecture':	lecture?id=11347&amp;r=669960943
+Find Path contain 'lecture':	lecture?id=11346&amp;r=669960943
+Find Path contain 'lecture':	lecture?id=11345&amp;r=669960943
+GET http://ocw.u-tokyo.ac.jp/result?page=3
+Content-Type: text/html; charset=UTF-8
+Find Path contain 'lecture':	lecture?id=11344&amp;r=2120453634
+Find Path contain 'lecture':	lecture?id=11343&amp;r=2120453634
+Find Path contain 'lecture':	lecture?id=11342&amp;r=2120453634
+Find Path contain 'lecture':	lecture?id=11341&amp;r=2120453634
+Find Path contain 'lecture':	lecture?id=11340&amp;r=2120453634
+Find Path contain 'lecture':	lecture?id=11339&amp;r=2120453634
+Find Path contain 'lecture':	lecture?id=11338&amp;r=2120453634
+Find Path contain 'lecture':	lecture?id=11337&amp;r=2120453634
+Find Path contain 'lecture':	lecture?id=11336&amp;r=2120453634
+GET http://ocw.u-tokyo.ac.jp/result?page=4
+Content-Type: text/html; charset=UTF-8
+Find Path contain 'lecture':	lecture?id=11335&amp;r=2118776122
+Find Path contain 'lecture':	lecture?id=11334&amp;r=2118776122
+Find Path contain 'lecture':	lecture?id=11333&amp;r=2118776122
+Find Path contain 'lecture':	lecture?id=11332&amp;r=2118776122
+Find Path contain 'lecture':	lecture?id=11331&amp;r=2118776122
+Find Path contain 'lecture':	lecture?id=11330&amp;r=2118776122
+Find Path contain 'lecture':	lecture?id=11329&amp;r=2118776122
+Find Path contain 'lecture':	lecture?id=11328&amp;r=2118776122
+Find Path contain 'lecture':	lecture?id=11327&amp;r=2118776122
+GET http://ocw.u-tokyo.ac.jp/result?page=5
+Content-Type: text/html; charset=UTF-8
+Find Path contain 'lecture':	lecture?id=11326&amp;r=995737538
+Find Path contain 'lecture':	lecture?id=11325&amp;r=995737538
+Find Path contain 'lecture':	lecture?id=11324&amp;r=995737538
+Find Path contain 'lecture':	lecture?id=11323&amp;r=995737538
+Find Path contain 'lecture':	lecture?id=11322&amp;r=995737538
+Find Path contain 'lecture':	lecture?id=11321&amp;r=995737538
+Find Path contain 'lecture':	lecture?id=11320&amp;r=995737538
+Find Path contain 'lecture':	lecture?id=11319&amp;r=995737538
+GET http://ocw.u-tokyo.ac.jp/result?page=6
+Content-Type: text/html; charset=UTF-8
+Find Path contain 'lecture':	lecture?id=11318&amp;r=1422634253
+Find Path contain 'lecture':	lecture?id=11317&amp;r=1422634253
+Find Path contain 'lecture':	lecture?id=11316&amp;r=1422634253
+Find Path contain 'lecture':	lecture?id=11315&amp;r=1422634253
+Find Path contain 'lecture':	lecture?id=11314&amp;r=1422634253
+Find Path contain 'lecture':	lecture?id=11313&amp;r=1422634253
+Find Path contain 'lecture':	lecture?id=11312&amp;r=1422634253
+Find Path contain 'lecture':	lecture?id=11311&amp;r=1422634253
+Find Path contain 'lecture':	lecture?id=11310&amp;r=1422634253
+Find Path contain 'lecture':	lecture?id=11309&amp;r=1422634253
+GET http://ocw.u-tokyo.ac.jp/result?page=7
+Content-Type: text/html; charset=UTF-8
+Find Path contain 'lecture':	lecture?id=11308&amp;r=299560707
+Find Path contain 'lecture':	lecture?id=11307&amp;r=299560707
+Find Path contain 'lecture':	lecture?id=11306&amp;r=299560707
+Find Path contain 'lecture':	lecture?id=11305&amp;r=299560707
+Find Path contain 'lecture':	lecture?id=11304&amp;r=299560707
+Find Path contain 'lecture':	lecture?id=11303&amp;r=299560707
+Find Path contain 'lecture':	lecture?id=11302&amp;r=299560707
+Find Path contain 'lecture':	lecture?id=11301&amp;r=299560707
+Find Path contain 'lecture':	lecture?id=11300&amp;r=299560707
+GET http://ocw.u-tokyo.ac.jp/result?page=8
+Content-Type: text/html; charset=UTF-8
+Find Path contain 'lecture':	lecture?id=11299&amp;r=1564797827
+Find Path contain 'lecture':	lecture?id=11298&amp;r=1564797827
+Find Path contain 'lecture':	lecture?id=11297&amp;r=1564797827
+Find Path contain 'lecture':	lecture?id=11296&amp;r=1564797827
+Find Path contain 'lecture':	lecture?id=11295&amp;r=1564797827
+Find Path contain 'lecture':	lecture?id=11294&amp;r=1564797827
+Find Path contain 'lecture':	lecture?id=11293&amp;r=1564797827
+Find Path contain 'lecture':	lecture?id=11292&amp;r=1564797827
+Find Path contain 'lecture':	lecture?id=11291&amp;r=1564797827
+Find Path contain 'lecture':	lecture?id=11290&amp;r=1564797827
+GET http://ocw.u-tokyo.ac.jp/result?page=9
+Content-Type: text/html; charset=UTF-8
+Find Path contain 'lecture':	lecture?id=11289&amp;r=133489245
+Find Path contain 'lecture':	lecture?id=11288&amp;r=133489245
+Find Path contain 'lecture':	lecture?id=11287&amp;r=133489245
+Find Path contain 'lecture':	lecture?id=11286&amp;r=133489245
+Find Path contain 'lecture':	lecture?id=11285&amp;r=133489245
+Find Path contain 'lecture':	lecture?id=11284&amp;r=133489245
+Find Path contain 'lecture':	lecture?id=11283&amp;r=133489245
+Find Path contain 'lecture':	lecture?id=11282&amp;r=133489245
+Find Path contain 'lecture':	lecture?id=11281&amp;r=133489245
+Find Path contain 'lecture':	lecture?id=11280&amp;r=133489245
+GET http://ocw.u-tokyo.ac.jp/result?page=10
+Content-Type: text/html; charset=UTF-8
+Find Path contain 'lecture':	lecture?id=11279&amp;r=171784369
+Find Path contain 'lecture':	lecture?id=11278&amp;r=171784369
+Find Path contain 'lecture':	lecture?id=11277&amp;r=171784369
+Find Path contain 'lecture':	lecture?id=11276&amp;r=171784369
+Find Path contain 'lecture':	lecture?id=11275&amp;r=171784369
+Find Path contain 'lecture':	lecture?id=11274&amp;r=171784369
+Find Path contain 'lecture':	lecture?id=11273&amp;r=171784369
+Find Path contain 'lecture':	lecture?id=11272&amp;r=171784369
+Find Path contain 'lecture':	lecture?id=11271&amp;r=171784369
+Find Path contain 'lecture':	lecture?id=11270&amp;r=171784369
+GET http://ocw.u-tokyo.ac.jp/result?page=11
+Content-Type: text/html; charset=UTF-8
+Find Path contain 'lecture':	lecture?id=11269&amp;r=401774592
+Find Path contain 'lecture':	lecture?id=11268&amp;r=401774592
+Find Path contain 'lecture':	lecture?id=11267&amp;r=401774592
+Find Path contain 'lecture':	lecture?id=11266&amp;r=401774592
+Find Path contain 'lecture':	lecture?id=11265&amp;r=401774592
+Find Path contain 'lecture':	lecture?id=11264&amp;r=401774592
+Find Path contain 'lecture':	lecture?id=11263&amp;r=401774592
+Find Path contain 'lecture':	lecture?id=11262&amp;r=401774592
+Find Path contain 'lecture':	lecture?id=11261&amp;r=401774592
+Find Path contain 'lecture':	lecture?id=11260&amp;r=401774592
+GET http://ocw.u-tokyo.ac.jp/result?page=12
+Content-Type: text/html; charset=UTF-8
+Find Path contain 'lecture':	lecture?id=11259&amp;r=273518323
+Find Path contain 'lecture':	lecture?id=11258&amp;r=273518323
+Find Path contain 'lecture':	lecture?id=11257&amp;r=273518323
+Find Path contain 'lecture':	lecture?id=11256&amp;r=273518323
+Find Path contain 'lecture':	lecture?id=11255&amp;r=273518323
+Find Path contain 'lecture':	lecture?id=11254&amp;r=273518323
+Find Path contain 'lecture':	lecture?id=11253&amp;r=273518323
+Find Path contain 'lecture':	lecture?id=11252&amp;r=273518323
+GET http://ocw.u-tokyo.ac.jp/result?page=13
+Content-Type: text/html; charset=UTF-8
+Find Path contain 'lecture':	lecture?id=11251&amp;r=297105548
+
+Size of urlQueue: 109
+http://ocw.u-tokyo.ac.jp/lecture?id=11364&amp;r=216958205
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11364&amp;r=216958205
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 108
+http://ocw.u-tokyo.ac.jp/lecture?id=11362&amp;r=216958205
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11362&amp;r=216958205
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 107
+http://ocw.u-tokyo.ac.jp/lecture?id=11361&amp;r=216958205
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11361&amp;r=216958205
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 106
+http://ocw.u-tokyo.ac.jp/lecture?id=11360&amp;r=216958205
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11360&amp;r=216958205
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 105
+http://ocw.u-tokyo.ac.jp/lecture?id=11359&amp;r=216958205
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11359&amp;r=216958205
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 104
+http://ocw.u-tokyo.ac.jp/lecture?id=11358&amp;r=216958205
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11358&amp;r=216958205
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 103
+http://ocw.u-tokyo.ac.jp/lecture?id=11357&amp;r=216958205
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11357&amp;r=216958205
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 102
+http://ocw.u-tokyo.ac.jp/lecture?id=11353&amp;r=216958205
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11353&amp;r=216958205
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 101
+http://ocw.u-tokyo.ac.jp/lecture?id=11352&amp;r=669960943
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11352&amp;r=669960943
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 100
+http://ocw.u-tokyo.ac.jp/lecture?id=11351&amp;r=669960943
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11351&amp;r=669960943
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 99
+http://ocw.u-tokyo.ac.jp/lecture?id=11350&amp;r=669960943
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11350&amp;r=669960943
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 98
+http://ocw.u-tokyo.ac.jp/lecture?id=11348&amp;r=669960943
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11348&amp;r=669960943
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 97
+http://ocw.u-tokyo.ac.jp/lecture?id=11347&amp;r=669960943
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11347&amp;r=669960943
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 96
+http://ocw.u-tokyo.ac.jp/lecture?id=11346&amp;r=669960943
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11346&amp;r=669960943
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 95
+http://ocw.u-tokyo.ac.jp/lecture?id=11345&amp;r=669960943
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11345&amp;r=669960943
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 94
+http://ocw.u-tokyo.ac.jp/lecture?id=11344&amp;r=2120453634
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11344&amp;r=2120453634
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 93
+http://ocw.u-tokyo.ac.jp/lecture?id=11343&amp;r=2120453634
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11343&amp;r=2120453634
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 92
+http://ocw.u-tokyo.ac.jp/lecture?id=11342&amp;r=2120453634
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11342&amp;r=2120453634
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 91
+http://ocw.u-tokyo.ac.jp/lecture?id=11341&amp;r=2120453634
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11341&amp;r=2120453634
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 90
+http://ocw.u-tokyo.ac.jp/lecture?id=11340&amp;r=2120453634
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11340&amp;r=2120453634
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 89
+http://ocw.u-tokyo.ac.jp/lecture?id=11339&amp;r=2120453634
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11339&amp;r=2120453634
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 88
+http://ocw.u-tokyo.ac.jp/lecture?id=11338&amp;r=2120453634
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11338&amp;r=2120453634
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 87
+http://ocw.u-tokyo.ac.jp/lecture?id=11337&amp;r=2120453634
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11337&amp;r=2120453634
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 86
+http://ocw.u-tokyo.ac.jp/lecture?id=11336&amp;r=2120453634
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11336&amp;r=2120453634
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 85
+http://ocw.u-tokyo.ac.jp/lecture?id=11335&amp;r=2118776122
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11335&amp;r=2118776122
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 84
+http://ocw.u-tokyo.ac.jp/lecture?id=11334&amp;r=2118776122
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11334&amp;r=2118776122
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 83
+http://ocw.u-tokyo.ac.jp/lecture?id=11333&amp;r=2118776122
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11333&amp;r=2118776122
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 82
+http://ocw.u-tokyo.ac.jp/lecture?id=11332&amp;r=2118776122
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11332&amp;r=2118776122
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 81
+http://ocw.u-tokyo.ac.jp/lecture?id=11331&amp;r=2118776122
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11331&amp;r=2118776122
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 80
+http://ocw.u-tokyo.ac.jp/lecture?id=11330&amp;r=2118776122
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11330&amp;r=2118776122
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 79
+http://ocw.u-tokyo.ac.jp/lecture?id=11329&amp;r=2118776122
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11329&amp;r=2118776122
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 78
+http://ocw.u-tokyo.ac.jp/lecture?id=11328&amp;r=2118776122
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11328&amp;r=2118776122
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 77
+http://ocw.u-tokyo.ac.jp/lecture?id=11327&amp;r=2118776122
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11327&amp;r=2118776122
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 76
+http://ocw.u-tokyo.ac.jp/lecture?id=11326&amp;r=995737538
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11326&amp;r=995737538
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 75
+http://ocw.u-tokyo.ac.jp/lecture?id=11325&amp;r=995737538
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11325&amp;r=995737538
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 74
+http://ocw.u-tokyo.ac.jp/lecture?id=11324&amp;r=995737538
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11324&amp;r=995737538
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 73
+http://ocw.u-tokyo.ac.jp/lecture?id=11323&amp;r=995737538
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11323&amp;r=995737538
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 72
+http://ocw.u-tokyo.ac.jp/lecture?id=11322&amp;r=995737538
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11322&amp;r=995737538
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 71
+http://ocw.u-tokyo.ac.jp/lecture?id=11321&amp;r=995737538
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11321&amp;r=995737538
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 70
+http://ocw.u-tokyo.ac.jp/lecture?id=11320&amp;r=995737538
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11320&amp;r=995737538
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 69
+http://ocw.u-tokyo.ac.jp/lecture?id=11319&amp;r=995737538
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11319&amp;r=995737538
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 68
+http://ocw.u-tokyo.ac.jp/lecture?id=11318&amp;r=1422634253
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11318&amp;r=1422634253
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 67
+http://ocw.u-tokyo.ac.jp/lecture?id=11317&amp;r=1422634253
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11317&amp;r=1422634253
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 66
+http://ocw.u-tokyo.ac.jp/lecture?id=11316&amp;r=1422634253
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11316&amp;r=1422634253
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 65
+http://ocw.u-tokyo.ac.jp/lecture?id=11315&amp;r=1422634253
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11315&amp;r=1422634253
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 64
+http://ocw.u-tokyo.ac.jp/lecture?id=11314&amp;r=1422634253
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11314&amp;r=1422634253
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 63
+http://ocw.u-tokyo.ac.jp/lecture?id=11313&amp;r=1422634253
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11313&amp;r=1422634253
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 62
+http://ocw.u-tokyo.ac.jp/lecture?id=11312&amp;r=1422634253
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11312&amp;r=1422634253
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 61
+http://ocw.u-tokyo.ac.jp/lecture?id=11311&amp;r=1422634253
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11311&amp;r=1422634253
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 60
+http://ocw.u-tokyo.ac.jp/lecture?id=11310&amp;r=1422634253
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11310&amp;r=1422634253
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 59
+http://ocw.u-tokyo.ac.jp/lecture?id=11309&amp;r=1422634253
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11309&amp;r=1422634253
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 58
+http://ocw.u-tokyo.ac.jp/lecture?id=11308&amp;r=299560707
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11308&amp;r=299560707
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 57
+http://ocw.u-tokyo.ac.jp/lecture?id=11307&amp;r=299560707
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11307&amp;r=299560707
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 56
+http://ocw.u-tokyo.ac.jp/lecture?id=11306&amp;r=299560707
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11306&amp;r=299560707
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 55
+http://ocw.u-tokyo.ac.jp/lecture?id=11305&amp;r=299560707
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11305&amp;r=299560707
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 54
+http://ocw.u-tokyo.ac.jp/lecture?id=11304&amp;r=299560707
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11304&amp;r=299560707
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 53
+http://ocw.u-tokyo.ac.jp/lecture?id=11303&amp;r=299560707
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11303&amp;r=299560707
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 52
+http://ocw.u-tokyo.ac.jp/lecture?id=11302&amp;r=299560707
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11302&amp;r=299560707
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 51
+http://ocw.u-tokyo.ac.jp/lecture?id=11301&amp;r=299560707
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11301&amp;r=299560707
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 50
+http://ocw.u-tokyo.ac.jp/lecture?id=11300&amp;r=299560707
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11300&amp;r=299560707
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 49
+http://ocw.u-tokyo.ac.jp/lecture?id=11299&amp;r=1564797827
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11299&amp;r=1564797827
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 48
+http://ocw.u-tokyo.ac.jp/lecture?id=11298&amp;r=1564797827
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11298&amp;r=1564797827
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 47
+http://ocw.u-tokyo.ac.jp/lecture?id=11297&amp;r=1564797827
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11297&amp;r=1564797827
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 46
+http://ocw.u-tokyo.ac.jp/lecture?id=11296&amp;r=1564797827
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11296&amp;r=1564797827
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 45
+http://ocw.u-tokyo.ac.jp/lecture?id=11295&amp;r=1564797827
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11295&amp;r=1564797827
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 44
+http://ocw.u-tokyo.ac.jp/lecture?id=11294&amp;r=1564797827
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11294&amp;r=1564797827
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 43
+http://ocw.u-tokyo.ac.jp/lecture?id=11293&amp;r=1564797827
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11293&amp;r=1564797827
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 42
+http://ocw.u-tokyo.ac.jp/lecture?id=11292&amp;r=1564797827
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11292&amp;r=1564797827
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 41
+http://ocw.u-tokyo.ac.jp/lecture?id=11291&amp;r=1564797827
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11291&amp;r=1564797827
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 40
+http://ocw.u-tokyo.ac.jp/lecture?id=11290&amp;r=1564797827
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11290&amp;r=1564797827
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 39
+http://ocw.u-tokyo.ac.jp/lecture?id=11289&amp;r=133489245
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11289&amp;r=133489245
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 38
+http://ocw.u-tokyo.ac.jp/lecture?id=11288&amp;r=133489245
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11288&amp;r=133489245
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 37
+http://ocw.u-tokyo.ac.jp/lecture?id=11287&amp;r=133489245
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11287&amp;r=133489245
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 36
+http://ocw.u-tokyo.ac.jp/lecture?id=11286&amp;r=133489245
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11286&amp;r=133489245
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 35
+http://ocw.u-tokyo.ac.jp/lecture?id=11285&amp;r=133489245
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11285&amp;r=133489245
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 34
+http://ocw.u-tokyo.ac.jp/lecture?id=11284&amp;r=133489245
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11284&amp;r=133489245
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 33
+http://ocw.u-tokyo.ac.jp/lecture?id=11283&amp;r=133489245
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11283&amp;r=133489245
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 32
+http://ocw.u-tokyo.ac.jp/lecture?id=11282&amp;r=133489245
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11282&amp;r=133489245
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 31
+http://ocw.u-tokyo.ac.jp/lecture?id=11281&amp;r=133489245
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11281&amp;r=133489245
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 30
+http://ocw.u-tokyo.ac.jp/lecture?id=11280&amp;r=133489245
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11280&amp;r=133489245
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 29
+http://ocw.u-tokyo.ac.jp/lecture?id=11279&amp;r=171784369
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11279&amp;r=171784369
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 28
+http://ocw.u-tokyo.ac.jp/lecture?id=11278&amp;r=171784369
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11278&amp;r=171784369
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 27
+http://ocw.u-tokyo.ac.jp/lecture?id=11277&amp;r=171784369
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11277&amp;r=171784369
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 26
+http://ocw.u-tokyo.ac.jp/lecture?id=11276&amp;r=171784369
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11276&amp;r=171784369
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 25
+http://ocw.u-tokyo.ac.jp/lecture?id=11275&amp;r=171784369
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11275&amp;r=171784369
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 24
+http://ocw.u-tokyo.ac.jp/lecture?id=11274&amp;r=171784369
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11274&amp;r=171784369
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 23
+http://ocw.u-tokyo.ac.jp/lecture?id=11273&amp;r=171784369
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11273&amp;r=171784369
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 22
+http://ocw.u-tokyo.ac.jp/lecture?id=11272&amp;r=171784369
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11272&amp;r=171784369
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 21
+http://ocw.u-tokyo.ac.jp/lecture?id=11271&amp;r=171784369
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11271&amp;r=171784369
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 20
+http://ocw.u-tokyo.ac.jp/lecture?id=11270&amp;r=171784369
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11270&amp;r=171784369
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 19
+http://ocw.u-tokyo.ac.jp/lecture?id=11269&amp;r=401774592
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11269&amp;r=401774592
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 18
+http://ocw.u-tokyo.ac.jp/lecture?id=11268&amp;r=401774592
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11268&amp;r=401774592
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 17
+http://ocw.u-tokyo.ac.jp/lecture?id=11267&amp;r=401774592
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11267&amp;r=401774592
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 16
+http://ocw.u-tokyo.ac.jp/lecture?id=11266&amp;r=401774592
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11266&amp;r=401774592
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 15
+http://ocw.u-tokyo.ac.jp/lecture?id=11265&amp;r=401774592
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11265&amp;r=401774592
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 14
+http://ocw.u-tokyo.ac.jp/lecture?id=11264&amp;r=401774592
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11264&amp;r=401774592
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 13
+http://ocw.u-tokyo.ac.jp/lecture?id=11263&amp;r=401774592
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11263&amp;r=401774592
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 12
+http://ocw.u-tokyo.ac.jp/lecture?id=11262&amp;r=401774592
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11262&amp;r=401774592
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 11
+http://ocw.u-tokyo.ac.jp/lecture?id=11261&amp;r=401774592
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11261&amp;r=401774592
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 10
+http://ocw.u-tokyo.ac.jp/lecture?id=11260&amp;r=401774592
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11260&amp;r=401774592
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 9
+http://ocw.u-tokyo.ac.jp/lecture?id=11259&amp;r=273518323
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11259&amp;r=273518323
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 8
+http://ocw.u-tokyo.ac.jp/lecture?id=11258&amp;r=273518323
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11258&amp;r=273518323
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 7
+http://ocw.u-tokyo.ac.jp/lecture?id=11257&amp;r=273518323
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11257&amp;r=273518323
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 6
+http://ocw.u-tokyo.ac.jp/lecture?id=11256&amp;r=273518323
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11256&amp;r=273518323
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 5
+http://ocw.u-tokyo.ac.jp/lecture?id=11255&amp;r=273518323
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11255&amp;r=273518323
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 4
+http://ocw.u-tokyo.ac.jp/lecture?id=11254&amp;r=273518323
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11254&amp;r=273518323
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 3
+http://ocw.u-tokyo.ac.jp/lecture?id=11253&amp;r=273518323
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11253&amp;r=273518323
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 2
+http://ocw.u-tokyo.ac.jp/lecture?id=11252&amp;r=273518323
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11252&amp;r=273518323
+Content-Type: text/html; charset=UTF-8
+
+Size of urlQueue: 1
+http://ocw.u-tokyo.ac.jp/lecture?id=11251&amp;r=297105548
+GET http://ocw.u-tokyo.ac.jp/lecture?id=11251&amp;r=297105548
+Content-Type: text/html; charset=UTF-8
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11364/1/notes/ja/01okamoto20140410final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11364/4/notes/ja/04okamoto20140508final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11364/2/notes/ja/02ishii20140417final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11364/3/notes/ja/03ishii20140424final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11364/5/notes/ja/05kusuoka20140515final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11364/6/notes/ja/06kusuoka20140522final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11364/7/notes/ja/07takemura20140529final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11364/8/notes/ja/08takemura20140605final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11364/9/notes/ja/09giga20140612final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11364/10/notes/ja/10giga20140619final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11364/11/notes/ja/11giga20140626final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11362/1/notes/ja/01yoshimi20140409final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11362/3/notes/ja/03fujimori20140423final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11361/2/notes/ja/02numano20131021final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11361/3/notes/ja/03shimizu20131028final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11361/4/notes/ja/04_2fushimi20131111_kouginote_final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11361/4_1/notes/ja/04_3akagawa20131111final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11361/5/notes/ja/05chen20131118final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11361/7/notes/ja/07kojima20131202final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11361/9/notes/ja/09suwa20131216_kouginote_final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11360/2/notes/ja/02yashiro20130516final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11360/3/notes/ja/03goto20130418final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11360/6/notes/ja/06nakamura20130529final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11360/7/notes/ja/07yonemoto20130523final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11360/8/notes/ja/08kokado20130606final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11360/9/notes/ja/09hirao20130619final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11360/10/notes/ja/10sekimura20130613final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11360/11/notes/ja/11nakao20130905final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11359/1/notes/ja/01hasebe20131010final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11359/12/notes/ja/12hasebe20140116final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11359/13/notes/ja/13hasebe20140123final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11359/2/notes/ja/02kasai20131017final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11359/3/notes/ja/03karube20131024final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11359/4/notes/ja/04karube20131031final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11359/5/notes/ja/05saeki20131107final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11359/6/notes/ja/06saeki20131114final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11359/7/notes/ja/07kato20131128final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11359/11/notes/ja/11kato20140109final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11359/9/notes/ja/08yoshimi20131205final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11359/8/notes/ja/09yoshimi20131212final.pdf
+DL失敗: http://ocw.u-tokyo.ac.jp/lecture_files/11359/10/notes/ja/10shishido20131219final.pdf
