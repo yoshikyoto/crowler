@@ -18,6 +18,7 @@ public class OCW {
 	private static final boolean DEBUG = false;
 	
 	public ArrayList<String> retrievePDF(String str){
+		System.out.println("Retrieving PDF URLs");
 		Pattern pattern = Pattern.compile("<a .*?href *?= *?\"([^\"]+?\\.pdf)\".*?>");
 		Matcher matcher = pattern.matcher(str);
 		ArrayList<String> result = new ArrayList<String>();
