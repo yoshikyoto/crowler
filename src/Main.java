@@ -29,17 +29,17 @@ class Main{
 		k.getPDFs();
 		*/
 		
-		/*
 		TokyoOCW t = new TokyoOCW();
 		t.getCourseLists();
 		t.getLectures();
 		t.getPDFs();
-		*/
 		
+		/*
 		TokyoTechOCW tt = new TokyoTechOCW();
 		tt.getCourseLists();
 		tt.getLectures();
 		tt.getPDFs();
+		*/
 		
 		/*
 		for(String domain : domains){
