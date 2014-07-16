@@ -18,9 +18,10 @@ class Main{
 			"ocw.nagoya-u.jp"
 		};
 		
+		SlideData data = new SlideData("/Users/admin/ocwslidedata");
 
-		File data_dir = new File("data");
-		data_dir.mkdir();
+		// File data_dir = new File("data");
+		// data_dir.mkdir();
 		
 		/*
 		KyotoOCW k = new KyotoOCW();
@@ -29,10 +30,12 @@ class Main{
 		k.getPDFs();
 		*/
 		
+		/*
 		TokyoOCW t = new TokyoOCW();
 		t.getCourseLists();
 		t.getLectures();
 		t.getPDFs();
+		*/
 		
 		/*
 		TokyoTechOCW tt = new TokyoTechOCW();

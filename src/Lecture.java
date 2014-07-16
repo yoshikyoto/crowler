@@ -14,6 +14,13 @@ class Lecture{
 	public ArrayList<String> PDFURLs;
 	public String html;
 	public final int INTERVAL = 100; // ms
+	File dir;
+	
+	// TODO: ここでスライドを取得
+	Lecture(String n, String d){
+		name = n;
+		dir = new File(d);
+	}
 	
 	Lecture(String n){
 		name = n;
