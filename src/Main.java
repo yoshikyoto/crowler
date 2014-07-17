@@ -23,6 +23,9 @@ class Main{
 			"ocw.nagoya-u.jp"
 		};
 		
+		SlideData d = new SlideData("/Users/admin/ocwslidedata");
+		
+		/*
 		PPTFiles pf1 = new PPTFiles("/Users/admin/eclipse_workspace/Slide/testdata_kyoto-u");
 		String presentation_files1[] = pf1.getPresentaitonPathArray();
 		
@@ -115,6 +118,8 @@ class Main{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		*/
+		
 		/*
 		KyotoOCW k = new KyotoOCW();
 		k.getCourseLists();

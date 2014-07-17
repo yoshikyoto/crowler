@@ -11,6 +11,7 @@ import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -27,6 +28,8 @@ class Slide extends SlidePrintArr{
 
 	Word[][] wordMatrix;
 	Word[][] wordMatrixWithoutDupulication;
+	public HashMap<String, Integer> dfMap;
+	public HashMap<String, Integer> tfMap;
 
 	String[] titles;
 	String[] bodys;
@@ -115,7 +118,12 @@ class Slide extends SlidePrintArr{
 		makeArr();
 
 		// TF/IDFスコアの計算
-		calculateTfIdf();
+		try{
+			calculateTfIdf();
+		}catch(Exception e){
+			// TODO: たまにここで落ちる。多分文字コードの問題で正しくtf-idfが計算できないため
+			e.printStackTrace();
+		}
 
 		// word.txt を出力
 		printWordToTxt();
@@ -720,6 +728,22 @@ class Slide extends SlidePrintArr{
 					word_array_list.add(wordMatrix[page][wordnum]);
 			}
 			wordMatrixWithoutDupulication[page] = (Word[])word_array_list.toArray(new Word[0]);
+		}
+		
+		tfMap = new HashMap<String, Integer>();
+		dfMap = new HashMap<String, Integer>();
+		for(int i = 0; i < wordMatrixWithoutDupulication.length; i++){
+			for(int j = 0; j < wordMatrixWithoutDupulication[i].length; j++){
+				Word w = wordMatrixWithoutDupulication[i][j];
+				
+				int tf_tmp = w.tf;
+				if(tfMap.containsKey(w.word)) tf_tmp += tfMap.get(w.word);
+				tfMap.put(w.word, tf_tmp);
+				
+				int df_tmp = 1;
+				if(dfMap.containsKey(w.word)) df_tmp += dfMap.get(w.word);
+				dfMap.put(w.word, df_tmp);
+			}
 		}
 	}
 	// Array にすでに Word が入っているかどうかを確認するメソッド

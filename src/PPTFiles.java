@@ -37,6 +37,7 @@ class PPTFiles{
 			// .pptxでない場合は，ディレクトリであると判断
 			files = file.listFiles();
 			// ファイルを一つ一つ見て，pptxならリストに追加
+			if(files.length == 0) return;
 			for(File file : files){
 				String filename = file.getName();
 				pptx_pattern = Pattern.compile("\\A[A-Za-z0-9_\\-].+\\.pptx\\Z");

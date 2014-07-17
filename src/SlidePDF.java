@@ -46,39 +46,37 @@ class SlidePDF{
 			
 			page = document.getNumberOfPages();
 			
-
-			try{
-				FileWriter fw = new FileWriter(xmlFilePath);
-				BufferedWriter bw = new BufferedWriter(fw);
-				PrintWriter pw = new PrintWriter(bw);
 			
-				pw.println("<presentation language=\"ja\">");
-				for(int i = 1; i <= page; i++){
-					pw.println("<slide page=\"" + i + "\">");
-					pw.println("<body>");
-					pw.println("<p>");
-					
-					PDPage pdpage = (PDPage) document.getDocumentCatalog().getAllPages().get(i-1);
+			FileWriter fw = new FileWriter(xmlFilePath);
+			BufferedWriter bw = new BufferedWriter(fw);
+			PrintWriter pw = new PrintWriter(bw);
+		
+			pw.println("<presentation language=\"ja\">");
+			for(int i = 1; i <= page; i++){
+				pw.println("<slide page=\"" + i + "\">");
+				pw.println("<body>");
+				pw.println("<p>");
 				
-					pdf_text_stripper.setStartPage(i);
-					pdf_text_stripper.setEndPage(i);
-					String str = pdf_text_stripper.getText(document);
-					
-					pw.print(str);
-					
-					pw.println("</p>");
-					pw.println("</body>");
-					pw.println("</slide>");
-				}
-				pw.println("</presentation>");
+				PDPage pdpage = (PDPage) document.getDocumentCatalog().getAllPages().get(i-1);
+			
+				pdf_text_stripper.setStartPage(i);
+				pdf_text_stripper.setEndPage(i);
+				String str = pdf_text_stripper.getText(document);
 				
-				pw.close();
-			}catch(Exception e){
-				e.printStackTrace();
+				pw.print(str);
+				
+				pw.println("</p>");
+				pw.println("</body>");
+				pw.println("</slide>");
 			}
-				
+			pw.println("</presentation>");
+			
+			pw.close();
+			document.close();
+			
 		}catch(Exception e){
-			e.printStackTrace();
+			// e.printStackTrace();
+			System.out.println(e);
 		}
 	}
 }
