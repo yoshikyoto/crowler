@@ -47,7 +47,7 @@ class Lecture{
 				sc.clustering();
 				sc.labeling();
 			}catch(Exception e){
-				// TODO: Lecture<init> SlideCalc 計算中のエラー 多分文字コードのせい
+				// TODO: Lecture<init> SlideCalc 計算中のエラー 多分文字コードのせい？
 				System.err.println("Lecture<init> SlideCalc 計算中のエラー 多分文字コードのせい");
 				e.printStackTrace();
 			}
