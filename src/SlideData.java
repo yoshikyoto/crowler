@@ -6,6 +6,7 @@ public class SlideData {
 	File dir;
 	ArrayList<OCWData> ocwDataList;
 	
+	// initialize
 	SlideData(String data_path_string){
 		System.out.println("Initializing SlideData: " + data_path_string);
 		dir = new File(data_path_string);

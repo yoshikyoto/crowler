@@ -24,7 +24,7 @@ class Main{
 		};
 		
 		SlideData d = new SlideData("/Users/admin/ocwslidedata");
-		
+
 		/*
 		PPTFiles pf1 = new PPTFiles("/Users/admin/eclipse_workspace/Slide/testdata_kyoto-u");
 		String presentation_files1[] = pf1.getPresentaitonPathArray();
