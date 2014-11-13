@@ -8,5 +8,6 @@
 	<classpathentry kind="lib" path="lib/commons-logging-api-1.1.3.jar"/>
 	<classpathentry kind="lib" path="lib/pdfbox-app-1.8.5.jar"/>
 	<classpathentry kind="lib" path="lib/kuromoji-0.7.7.jar"/>
+	<classpathentry kind="lib" path="/lib/MyLib.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
