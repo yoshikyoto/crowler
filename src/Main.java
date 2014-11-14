@@ -3,6 +3,7 @@ import java.util.*;
 
 import jp.dip.utakatanet.*;
 import slide.XMLConverter.*;
+import slide.analyzer.*;
 
 class Main extends Base{
 	
@@ -28,9 +29,9 @@ class Main extends Base{
 			break;
 		case 1: // slide/pdf to XML
 			slideToXML();
-			
 			break;
 		case 2: // slide/pdf to Image
+			slideAnalyze();
 			break;
 		}
 		
@@ -53,6 +54,38 @@ class Main extends Base{
 					Logger.sPrintln("Slide: " + sfile.getName());
 					
 					SlideXMLConverter.convert(sfile.getAbsolutePath());
+				}
+			}
+		}
+		Logger.sClose();
+	}
+	
+	public static void slideAnalyze(){
+		Logger.setLogName("ConvertXML");
+		
+		for(File ocwfile : listDirs(root)){
+			// 各 OCW のディレクトリについて
+			Logger.sPrintln("OCW: " + ocwfile.getName());
+			
+			for(File lecfile : listDirs(ocwfile.getAbsolutePath())){
+				// 各講義のディレクトリについて
+				Logger.sPrintln("Lecture: " + lecfile.getName());
+				
+				for(File sfile : listDirs(lecfile.getAbsolutePath())){
+					// 各スライドのファイルに対して
+					Logger.sPrintln("Slide: " + sfile.getName());
+					// xmlのパスを取得
+					String xml_path = sfile.getAbsolutePath() + "/slide.xml";
+					System.out.println(xml_path);
+					
+					// ファイルが存在しているか確認してAnalyze
+					File xml_file = new File(xml_path);
+					if(xml_file.exists()){
+						SlideAnalyzer.analyze(sfile.getAbsolutePath());
+					}else{
+						Logger.sErrorln("ファイルが見つかりませんでした: " + xml_path);
+					}
+					System.gc();
 				}
 			}
 		}

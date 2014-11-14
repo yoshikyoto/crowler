@@ -40,7 +40,7 @@ public class Logger{
 	
 	
 	// Instance Method
-	Logger(String filename){
+	public Logger(String filename){
 		File dir = new File("log");
 		dir.mkdir();
 

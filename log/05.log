@@ -1,0 +1,207 @@
+filename: 05
+xmlFile: /Users/admin/ocwslidedata/ocw.kyoto-u.ac.jp/002-004-(〜2010年)哲学講義/05/slide.xml
+dir: /Users/admin/ocwslidedata/ocw.kyoto-u.ac.jp/002-004-(〜2010年)哲学講義/05
+XML:
+<presentation language="ja"><slide page="1"><body><p>ཿ඼䛱ᑊ䛟䜑ឺᗐ䠌Learn to CriticizeAmicus Socrates(Plato), sed magisamica veritas;Phaedon, 91C出所 : http://ja.wikipedia.org/wiki/ ラファエロ・サンティ</p></body></slide><slide page="2"><body><p>䚸ᮇ㈻(essence)䚹䛮䚸ᐁᏋ(existence)䚹䇮䜹䝯䝌䝯 vs 䜦䜳䜧䝎䜽出所 : http://www.fcps.edu/westspringfieldhs/academic/english/1project/99exist/sartre.htm出所 : http://www.thomasinstituut.org/thomasinstituut/scripts/works.php</p></body></slide><slide page="3"><body><p>䚸ᐁᏋ䚹䛴㄄⏍</p></body></slide><slide page="4"><body><p>䜦䝮䜽䝌䝊䝰䜽䛴♼</p></body></slide><slide page="5"><body><p>䚸๭㏸䚹䛮䛊䛌୘ᛦ㆗</p></body></slide><slide page="6"><body><p>䚸๭㏸䚹䛴ᵋ㏸䠌๭㏸๑</p></body></slide><slide page="7"><body><p>䚸๭㏸䚹䛴ᵋ㏸䠌๭㏸ᚃ</p></body></slide><slide page="8"><body><p>䚸๭㏸䚹䛴ᵋ㏸䠌๭㏸䛮䛵䠑</p></body></slide><slide page="9"><body><p>䚸๭㏸䚹䛴ᵋ㏸䠌ᮇ㈻䛮ᐁᅹ</p></body></slide><slide page="10"><body><p>䝌䝢䜽䛴๭㏸ふ䇮㼈sse/existentia䛴༇ื䛮䚮๭㏸๑䝿ᚃ䛴᩷⤾ᛮ䛮㏻⤾ᛮ</p></body></slide><slide page="11"><body><p>♼䛮⚶䛴䜦䝷䝗䝔䝰䝷䝌䛰㛭౿</p></body></slide><slide page="12"><body><p>▩ᛮ䛴ᑊ㇗䛮䛝䛬䛴䚸ᮇ㈻䚹</p></body></slide><slide page="13"><body><p>ᨾῥ⿞⨠䛴୯䛴䚸ᮇ㈻䚹</p></body></slide><slide page="14"><body><p>䚸ᮇ㈻䚹䛴ྊㅰᛮ</p></body></slide><slide page="15"><body><p>䚸㝀⏲ᴣᛍ䚹䛮䛝䛬䛴ᮇ㈻</p></body></slide><slide page="16"><body><p>䚸ᐁᏋ䚹䛴⣌ㆍ䠘䡄䠻䠷䠶䠾䠻䠵䠺 Wilhelm Joseph Schelling1775-1854Søren Aabye Kierkegaard1813-1855Jean Paul Sartre1905-1980出所 : http://www.fcps.edu/westspringfieldhs/academic/english/1project/99exist/sartre.htm出所 : http://www.philosophypages.com/ph/kier.htm出所 : http://www.class.uidaho.edu/mickelsen/Schelling.htm</p></body></slide></presentation>
+ページ: 1 -----
+<slide page="1"><body><p>ཿ඼䛱ᑊ䛟䜑ឺᗐ䠌Learn to CriticizeAmicus Socrates(Plato), sed magisamica veritas;Phaedon, 91C出所 : http://ja.wikipedia.org/wiki/ ラファエロ・サンティ</p></body></slide>
+in Sheet Class, page: 1
+title = ""
+body = "<p>ཿ඼䛱ᑊ䛟䜑ឺᗐ䠌Learn to CriticizeAmicus Socrates(Plato), sed magisamica veritas;Phaedon, 91C出所 : http://ja.wikipedia.org/wiki/ ラファエロ・サンティ</p>"
+makeWordArrayJp
+paragraph: ཿ඼䛱ᑊ䛟䜑ឺᗐ䠌Learn to CriticizeAmicus Socrates(Plato), sed magisamica veritas;Phaedon, 91C出所 : http://ja.wikipedia.org/wiki/ ラファエロ・サンティ
+Learn :	名詞,一般,*,*,*,*,*	false	1
+to :	名詞,固有名詞,組織,*,*,*,*	false	1
+CriticizeAmicus :	名詞,固有名詞,組織,*,*,*,*	false	1
+Socrates :	名詞,固有名詞,組織,*,*,*,*	false	1
+Plato :	名詞,一般,*,*,*,*,*	false	1
+), :	名詞,サ変接続,*,*,*,*,*	false	1
+sed :	名詞,固有名詞,組織,*,*,*,*	false	1
+magisamica :	名詞,固有名詞,組織,*,*,*,*	false	1
+veritas :	名詞,固有名詞,組織,*,*,*,*	false	1
+Phaedon :	名詞,一般,*,*,*,*,*	false	1
+出所 :	名詞,サ変接続,*,*,*,*,出所,シュッショ,シュッショ	true	1
+http :	名詞,固有名詞,組織,*,*,*,*	false	1
+:// :	名詞,サ変接続,*,*,*,*,*	false	1
+ja :	名詞,一般,*,*,*,*,*	false	1
+wikipedia :	名詞,一般,*,*,*,*,*	false	1
+org :	名詞,一般,*,*,*,*,*	false	1
+wiki :	名詞,一般,*,*,*,*,*	false	1
+ラファエロ :	名詞,一般,*,*,*,*,*	false	1
+サンティ :	名詞,固有名詞,組織,*,*,*,*	false	1
+ページ: 2 -----
+<slide page="2"><body><p>䚸ᮇ㈻(essence)䚹䛮䚸ᐁᏋ(existence)䚹䇮䜹䝯䝌䝯 vs 䜦䜳䜧䝎䜽出所 : http://www.fcps.edu/westspringfieldhs/academic/english/1project/99exist/sartre.htm出所 : http://www.thomasinstituut.org/thomasinstituut/scripts/works.php</p></body></slide>
+in Sheet Class, page: 2
+title = ""
+body = "<p>䚸ᮇ㈻(essence)䚹䛮䚸ᐁᏋ(existence)䚹䇮䜹䝯䝌䝯 vs 䜦䜳䜧䝎䜽出所 : http://www.fcps.edu/westspringfieldhs/academic/english/1project/99exist/sartre.htm出所 : http://www.thomasinstituut.org/thomasinstituut/scripts/works.php</p>"
+makeWordArrayJp
+paragraph: 䚸ᮇ㈻(essence)䚹䛮䚸ᐁᏋ(existence)䚹䇮䜹䝯䝌䝯 vs 䜦䜳䜧䝎䜽出所 : http://www.fcps.edu/westspringfieldhs/academic/english/1project/99exist/sartre.htm出所 : http://www.thomasinstituut.org/thomasinstituut/scripts/works.php
+㈻( :	名詞,サ変接続,*,*,*,*,*	false	1
+essence :	名詞,一般,*,*,*,*,*	false	1
+existence :	名詞,一般,*,*,*,*,*	false	1
+vs :	名詞,固有名詞,組織,*,*,*,*	false	1
+出所 :	名詞,サ変接続,*,*,*,*,出所,シュッショ,シュッショ	true	1
+http :	名詞,固有名詞,組織,*,*,*,*	false	1
+:// :	名詞,サ変接続,*,*,*,*,*	false	1
+www :	名詞,一般,*,*,*,*,*	false	1
+fcps :	名詞,一般,*,*,*,*,*	false	1
+edu :	名詞,一般,*,*,*,*,*	false	1
+westspringfieldhs :	名詞,一般,*,*,*,*,*	false	1
+academic :	名詞,一般,*,*,*,*,*	false	1
+english :	名詞,一般,*,*,*,*,*	false	1
+project :	名詞,一般,*,*,*,*,*	false	1
+exist :	名詞,一般,*,*,*,*,*	false	1
+sartre :	名詞,一般,*,*,*,*,*	false	1
+htm :	名詞,一般,*,*,*,*,*	false	1
+出所 :	名詞,サ変接続,*,*,*,*,出所,シュッショ,シュッショ	true	2
+http :	名詞,固有名詞,組織,*,*,*,*	false	2
+:// :	名詞,サ変接続,*,*,*,*,*	false	2
+www :	名詞,一般,*,*,*,*,*	false	2
+thomasinstituut :	名詞,一般,*,*,*,*,*	false	1
+org :	名詞,一般,*,*,*,*,*	false	1
+thomasinstituut :	名詞,一般,*,*,*,*,*	false	2
+scripts :	名詞,一般,*,*,*,*,*	false	1
+works :	名詞,一般,*,*,*,*,*	false	1
+php :	名詞,固有名詞,組織,*,*,*,*	false	1
+ページ: 3 -----
+<slide page="3"><body><p>䚸ᐁᏋ䚹䛴㄄⏍</p></body></slide>
+in Sheet Class, page: 3
+title = ""
+body = "<p>䚸ᐁᏋ䚹䛴㄄⏍</p>"
+makeWordArrayJp
+paragraph: 䚸ᐁᏋ䚹䛴㄄⏍
+ページ: 4 -----
+<slide page="4"><body><p>䜦䝮䜽䝌䝊䝰䜽䛴♼</p></body></slide>
+in Sheet Class, page: 4
+title = ""
+body = "<p>䜦䝮䜽䝌䝊䝰䜽䛴♼</p>"
+makeWordArrayJp
+paragraph: 䜦䝮䜽䝌䝊䝰䜽䛴♼
+ページ: 5 -----
+<slide page="5"><body><p>䚸๭㏸䚹䛮䛊䛌୘ᛦ㆗</p></body></slide>
+in Sheet Class, page: 5
+title = ""
+body = "<p>䚸๭㏸䚹䛮䛊䛌୘ᛦ㆗</p>"
+makeWordArrayJp
+paragraph: 䚸๭㏸䚹䛮䛊䛌୘ᛦ㆗
+ページ: 6 -----
+<slide page="6"><body><p>䚸๭㏸䚹䛴ᵋ㏸䠌๭㏸๑</p></body></slide>
+in Sheet Class, page: 6
+title = ""
+body = "<p>䚸๭㏸䚹䛴ᵋ㏸䠌๭㏸๑</p>"
+makeWordArrayJp
+paragraph: 䚸๭㏸䚹䛴ᵋ㏸䠌๭㏸๑
+ページ: 7 -----
+<slide page="7"><body><p>䚸๭㏸䚹䛴ᵋ㏸䠌๭㏸ᚃ</p></body></slide>
+in Sheet Class, page: 7
+title = ""
+body = "<p>䚸๭㏸䚹䛴ᵋ㏸䠌๭㏸ᚃ</p>"
+makeWordArrayJp
+paragraph: 䚸๭㏸䚹䛴ᵋ㏸䠌๭㏸ᚃ
+ページ: 8 -----
+<slide page="8"><body><p>䚸๭㏸䚹䛴ᵋ㏸䠌๭㏸䛮䛵䠑</p></body></slide>
+in Sheet Class, page: 8
+title = ""
+body = "<p>䚸๭㏸䚹䛴ᵋ㏸䠌๭㏸䛮䛵䠑</p>"
+makeWordArrayJp
+paragraph: 䚸๭㏸䚹䛴ᵋ㏸䠌๭㏸䛮䛵䠑
+ページ: 9 -----
+<slide page="9"><body><p>䚸๭㏸䚹䛴ᵋ㏸䠌ᮇ㈻䛮ᐁᅹ</p></body></slide>
+in Sheet Class, page: 9
+title = ""
+body = "<p>䚸๭㏸䚹䛴ᵋ㏸䠌ᮇ㈻䛮ᐁᅹ</p>"
+makeWordArrayJp
+paragraph: 䚸๭㏸䚹䛴ᵋ㏸䠌ᮇ㈻䛮ᐁᅹ
+ページ: 10 -----
+<slide page="10"><body><p>䝌䝢䜽䛴๭㏸ふ䇮㼈sse/existentia䛴༇ื䛮䚮๭㏸๑䝿ᚃ䛴᩷⤾ᛮ䛮㏻⤾ᛮ</p></body></slide>
+in Sheet Class, page: 10
+title = ""
+body = "<p>䝌䝢䜽䛴๭㏸ふ䇮㼈sse/existentia䛴༇ื䛮䚮๭㏸๑䝿ᚃ䛴᩷⤾ᛮ䛮㏻⤾ᛮ</p>"
+makeWordArrayJp
+paragraph: 䝌䝢䜽䛴๭㏸ふ䇮㼈sse/existentia䛴༇ื䛮䚮๭㏸๑䝿ᚃ䛴᩷⤾ᛮ䛮㏻⤾ᛮ
+sse :	名詞,一般,*,*,*,*,*	false	1
+existentia :	名詞,一般,*,*,*,*,*	false	1
+㏻⤾ :	名詞,サ変接続,*,*,*,*,*	false	1
+ページ: 11 -----
+<slide page="11"><body><p>♼䛮⚶䛴䜦䝷䝗䝔䝰䝷䝌䛰㛭౿</p></body></slide>
+in Sheet Class, page: 11
+title = ""
+body = "<p>♼䛮⚶䛴䜦䝷䝗䝔䝰䝷䝌䛰㛭౿</p>"
+makeWordArrayJp
+paragraph: ♼䛮⚶䛴䜦䝷䝗䝔䝰䝷䝌䛰㛭౿
+ページ: 12 -----
+<slide page="12"><body><p>▩ᛮ䛴ᑊ㇗䛮䛝䛬䛴䚸ᮇ㈻䚹</p></body></slide>
+in Sheet Class, page: 12
+title = ""
+body = "<p>▩ᛮ䛴ᑊ㇗䛮䛝䛬䛴䚸ᮇ㈻䚹</p>"
+makeWordArrayJp
+paragraph: ▩ᛮ䛴ᑊ㇗䛮䛝䛬䛴䚸ᮇ㈻䚹
+ページ: 13 -----
+<slide page="13"><body><p>ᨾῥ⿞⨠䛴୯䛴䚸ᮇ㈻䚹</p></body></slide>
+in Sheet Class, page: 13
+title = ""
+body = "<p>ᨾῥ⿞⨠䛴୯䛴䚸ᮇ㈻䚹</p>"
+makeWordArrayJp
+paragraph: ᨾῥ⿞⨠䛴୯䛴䚸ᮇ㈻䚹
+ページ: 14 -----
+<slide page="14"><body><p>䚸ᮇ㈻䚹䛴ྊㅰᛮ</p></body></slide>
+in Sheet Class, page: 14
+title = ""
+body = "<p>䚸ᮇ㈻䚹䛴ྊㅰᛮ</p>"
+makeWordArrayJp
+paragraph: 䚸ᮇ㈻䚹䛴ྊㅰᛮ
+ページ: 15 -----
+<slide page="15"><body><p>䚸㝀⏲ᴣᛍ䚹䛮䛝䛬䛴ᮇ㈻</p></body></slide>
+in Sheet Class, page: 15
+title = ""
+body = "<p>䚸㝀⏲ᴣᛍ䚹䛮䛝䛬䛴ᮇ㈻</p>"
+makeWordArrayJp
+paragraph: 䚸㝀⏲ᴣᛍ䚹䛮䛝䛬䛴ᮇ㈻
+ページ: 16 -----
+<slide page="16"><body><p>䚸ᐁᏋ䚹䛴⣌ㆍ䠘䡄䠻䠷䠶䠾䠻䠵䠺 Wilhelm Joseph Schelling1775-1854Søren Aabye Kierkegaard1813-1855Jean Paul Sartre1905-1980出所 : http://www.fcps.edu/westspringfieldhs/academic/english/1project/99exist/sartre.htm出所 : http://www.philosophypages.com/ph/kier.htm出所 : http://www.class.uidaho.edu/mickelsen/Schelling.htm</p></body></slide>
+in Sheet Class, page: 16
+title = ""
+body = "<p>䚸ᐁᏋ䚹䛴⣌ㆍ䠘䡄䠻䠷䠶䠾䠻䠵䠺 Wilhelm Joseph Schelling1775-1854Søren Aabye Kierkegaard1813-1855Jean Paul Sartre1905-1980出所 : http://www.fcps.edu/westspringfieldhs/academic/english/1project/99exist/sartre.htm出所 : http://www.philosophypages.com/ph/kier.htm出所 : http://www.class.uidaho.edu/mickelsen/Schelling.htm</p>"
+makeWordArrayJp
+paragraph: 䚸ᐁᏋ䚹䛴⣌ㆍ䠘䡄䠻䠷䠶䠾䠻䠵䠺 Wilhelm Joseph Schelling1775-1854Søren Aabye Kierkegaard1813-1855Jean Paul Sartre1905-1980出所 : http://www.fcps.edu/westspringfieldhs/academic/english/1project/99exist/sartre.htm出所 : http://www.philosophypages.com/ph/kier.htm出所 : http://www.class.uidaho.edu/mickelsen/Schelling.htm
+Wilhelm :	名詞,固有名詞,組織,*,*,*,*	false	1
+Joseph :	名詞,固有名詞,組織,*,*,*,*	false	1
+Schelling :	名詞,一般,*,*,*,*,*	false	1
+Søren :	名詞,固有名詞,組織,*,*,*,*	false	1
+Aabye :	名詞,固有名詞,組織,*,*,*,*	false	1
+Kierkegaard :	名詞,一般,*,*,*,*,*	false	1
+Jean :	名詞,固有名詞,組織,*,*,*,*	false	1
+Paul :	名詞,固有名詞,組織,*,*,*,*	false	1
+Sartre :	名詞,一般,*,*,*,*,*	false	1
+出所 :	名詞,サ変接続,*,*,*,*,出所,シュッショ,シュッショ	true	1
+http :	名詞,固有名詞,組織,*,*,*,*	false	1
+:// :	名詞,サ変接続,*,*,*,*,*	false	1
+www :	名詞,一般,*,*,*,*,*	false	1
+fcps :	名詞,一般,*,*,*,*,*	false	1
+edu :	名詞,一般,*,*,*,*,*	false	1
+westspringfieldhs :	名詞,一般,*,*,*,*,*	false	1
+academic :	名詞,一般,*,*,*,*,*	false	1
+english :	名詞,一般,*,*,*,*,*	false	1
+project :	名詞,一般,*,*,*,*,*	false	1
+exist :	名詞,一般,*,*,*,*,*	false	1
+sartre :	名詞,一般,*,*,*,*,*	false	1
+htm :	名詞,一般,*,*,*,*,*	false	1
+出所 :	名詞,サ変接続,*,*,*,*,出所,シュッショ,シュッショ	true	2
+http :	名詞,固有名詞,組織,*,*,*,*	false	2
+:// :	名詞,サ変接続,*,*,*,*,*	false	2
+www :	名詞,一般,*,*,*,*,*	false	2
+philosophypages :	名詞,一般,*,*,*,*,*	false	1
+com :	名詞,一般,*,*,*,*,*	false	1
+ph :	名詞,一般,*,*,*,*,*	false	1
+kier :	名詞,一般,*,*,*,*,*	false	1
+htm :	名詞,一般,*,*,*,*,*	false	2
+出所 :	名詞,サ変接続,*,*,*,*,出所,シュッショ,シュッショ	true	3
+http :	名詞,固有名詞,組織,*,*,*,*	false	3
+:// :	名詞,サ変接続,*,*,*,*,*	false	3
+www :	名詞,一般,*,*,*,*,*	false	3
+class :	名詞,一般,*,*,*,*,*	false	1
+uidaho :	名詞,一般,*,*,*,*,*	false	1
+edu :	名詞,一般,*,*,*,*,*	false	2
+mickelsen :	名詞,一般,*,*,*,*,*	false	1
+Schelling :	名詞,一般,*,*,*,*,*	false	2
+htm :	名詞,固有名詞,組織,*,*,*,*	false	3

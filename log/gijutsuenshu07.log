@@ -1,0 +1,1178 @@
+filename: gijutsuenshu07
+xmlFile: /Users/admin/ocwslidedata/ocw.kyoto-u.ac.jp/002-002-(〜2010年)情報技術演習（2006年度）/gijutsuenshu07/slide.xml
+dir: /Users/admin/ocwslidedata/ocw.kyoto-u.ac.jp/002-002-(〜2010年)情報技術演習（2006年度）/gijutsuenshu07
+XML:
+<presentation language="ja"><slide page="1"><body><p>		2006/11/14	kubota@ii.ist.i.kyoto-u.ac.jphttp://www.ii.ist.i.kyoto-u.ac.jp/~kubota/</p></body></slide><slide page="2"><body><p>	%• –"$&#• HTML'XML'SemanticWeb•  – Wiki, (Wikipedia)– Lightweight markup language– Microformat• – PositLog!</p></body></slide><slide page="3"><body><p>L*IXZ\L\`a]W^bY_a[L0c• K87G-%KRT V=TEOKMdVJ.HAT:6T– HTML, XML, SemanticWeb,:>UE4KPdBL*IXZ\L\`a]W^K8=T>:dCUDULK87G$1>UG;E• \`a]W^– *• -%)L!>• #L?QA>– XZ\• :+K2ATEOL	• I<K5LdV&ATNHK99T"3• HTMLdXMLdSemanticWebdRS/Q9JP('K@G*>UFF6T</p></body></slide><slide page="4"><body><p>_b` Not HTML• HTMLDF(2– DFW[^]SLPT>+2• Wiki - WYRTVK^X?>6=2a0<4:CZQ^P3#)1_Bo Leuf and Ward Cunningham, “Wiki Way” DF`• Web:*A4;J;6=2>#– Q^PN^U@? -=<– &'=• Web#?:CaHTML3/;IHG>#– J;7GOPSXa%?• $WikiM\^]aBlogOPSXaOPSX:#– ,#.>"!?a&'	5H83BEH92G</p></body></slide><slide page="5"><body><p>Wiki• WikiWikiWeb (Ward Cunningham, 1994)– 2>7I0HBK#:4IhF	(@Pc`McXeV]eU3• ,"A+@h.)9J<NO\2^eT3B1&>hK':h;I<EBZM[eacQSUW_• ?:=NO\\`NRdQ`MLcYK48?>h^eT6-A>FA*1+?@IXeV]eUfh”Wiki Way” GHg–!DJ<C5HBWebK?:=h2/$@*13B A%–BWikiQbec</p></body></slide><slide page="6"><body><p>,Wiki! • FreeStyleWiki– Wiki"(*)– http://fswiki.poi.jp/wiki.cgi• '*#– http://cresta.kuis.kyoto-u.ac.jp/cgi-bin/fswiki/wiki.cgi– %&$"+'*#!– 	URL• http://cresta.kuis.kyoto-u.ac.jp/positlog/positlog.cgi?load=061010ld</p></body></slide><slide page="7"><body><p>Wikipedia-Q6#";72…R• Wikipedia– MediaWiki (http://www.mediawiki.org/wiki/MediaWiki) D08 MNJGHL• (?!5C8*@B+%>– $' http://en.wikipedia.org/• @Q1,416,258S2006/10/1R• @&'A100– ,>B@OOOfolksonomy EMNPKS	Qkizasi.jp>=R– @.3CA740/<1*IFL?90:S)2A:>;• http://q.hatena.ne.jp/1162890934</p></body></slide><slide page="8"><body><p>Wikipedia (2)• *#)$+– Internet encyclopaedias go head to head• immy Wales' Wikipedia comes close to Britannica in terms of theaccuracy of its science entries, a Nature investigation finds.• .0/-0Nature*12005/12/152– http://www.nature.com/nature/journal/v438/n7070/full/438900a.html• Britannica *– http://corporate.britannica.com/britannica_nature_response.pdf• Nature *– http://www.nature.com/nature/britannica/eb_advert_response_final.pdf• #1accuracy2'	1reliability2*– SemanticWeb)!+	• (%,"' &+"' 1Web*2</p></body></slide><slide page="9"><body><p>(PQIHMO"#Lightweight markup language• HTMLBXMLCDAR*:846+.0F3PQIHMO"#– 	71B2.R&G293G5/8-+• reStructuredText– http://docutils.sourceforge.net/rst.html– <PythonLQKJQN:'G%2E3@:)• what-you-see-is-what-you-get• It is useful for in-line program documentation• Web7;!G819+:'G.RHTML7+61>,8:846$?:.+– A• HTML=16!2E/8A </p></body></slide><slide page="10"><body><p>%"• HTML!!– http://www.hosting4u.cz/jbar/rest/rest.html–  !• http://docutils.sourceforge.net/docs/user/rst/quickref.html					Chapter 1 TitleSection 1.1 TitleSubsection 1.1.1 TitleSection 1.2 TitleChapter 2 Title#http://docutils.sourceforge.net/docs/user/rst/quickstart.html	$</p></body></slide><slide page="11"><body><p> • !	$#– Wiki&-/.#–+-'()*, • !– http://hatenadiary.g.hatena.ne.jp/keyword/%E3%81%AF%E3%81%A6%E3%81%AA%E8%A8%98%E6%B3%95%E4%B8%80%E8%A6%A7• hnf (Hyper NIKKI System " )– http://www.h14m.org/docs/hnf-j.html•  0blosxom, Nucleus, tDiary$$ %</p></body></slide><slide page="12"><body><p>(2) Not XML• 7@4?5:C7>A'$#(FXML./,%,1""0– 7@4?5:C7>ABBB<C;3-' +')	0$– %<C;'FXML3#7@4?590$(&2%• <C;• 68=• &$!#'*-• JSONDJavaScript Object NotationE– http://www.json.org/• YAML DYAML Ain Markup LanguageE– http://www.yaml.org/</p></body></slide><slide page="13"><body><p>YAML• YAML http://www.yaml.org/– YAML documents are veryreadable by humans.– YAML is easy to implement.• 	(http://www.yaml.org/start.html)</p></body></slide><slide page="14"><body><p>(3) Not Semantic Web• Microformats   http://microformats.org/– Humans first and machines second– Semantic Web	conventions– http://microformats.org/wiki/Main_Page#Definition simple conventionsfor embedding semantic markupfor a specific problem domainin human-readable (X)HTML/XML documents, Atom/RSS feeds, and"plain" XMLthat normalize existing content usage patternsusing brief, descriptive class namesoften based on existing interoperable standardsto enable decentralized developmentof resources, tools, and services</p></body></slide><slide page="15"><body><p>Microformats• "C43;ABFJ• C$QPUTC– (X)HTML+CclassDX+CL,G8B'>H7B/<K@6J:A96 V -)3	!W– H?@XclassLSPA=@(%B$>J• RDFL$6JHIDJ8B/9<li class='sprite'><div class='spritecontents'>&#5. -</div><div class='spriteinfo'><span class='spriteauthor'>admin</span><span class='spritetime'>2006/10/10 04:11:26</span><span class='spritepositlink'><ahref='./positlog.cgi?load=061010iQ&id=sprite_20061010041126_294'>link</a></span></div></li> -RUMVhttp://cresta.kuis.kyoto-u.ac.jp/positlog/itp.htmlWCOUNHIX201CE*</p></body></slide><slide page="16"><body><p>Microformats! • XFN (XHTML Friends Network)– http://gmpg.org/xfn/– – <a href="http://www.ii.ist.i.kyoto-u.ac.jp/~xxx/"rel="friend met colleague">...– FOAF6	 </p></body></slide><slide page="17"><body><p>Microformats!?B@• hReview  http://microformats.org/wiki/hreview–A+=2-A2,1-A(4;/!:28=&?(X)HTML, RSS @"$#$!	<div class="hreview"><p><div class="blogimg"><a class="item url" href="http://www.eigaseikatu.com/title/3310/"><imgsrc="http://www.eigaseikatu.com/title/blogimg.php?no=3310" style="border: none;" alt="0(/6'=<23)'<*9-5-" class="photo" /></a></div></p><p><a class="item url" href="http://www.eigaseikatu.com/title/3310/"><span class="fn">0(/6'=<23)'<*9-5-</span></a></p><p>[<abbr class="rating" title=“9">90</abbr>](<abbr class="worst"title="0">0</abbr>-<abbr class="best" title="10">100</abbr>)</p><p class=“description”>,7.*%></p><p><span class="reviewer vcard">Posted by <a class="url fn" href="http://cresta.kuis.kyoto-u.ac.jp/positlog/itp.html"></a> on <abbr class="dtreviewed" title="2006-11-14T07:12:15+09:00">2006/11/14</abbr></span> with <span class="eigaseikatu-powered"><aclass="url" href="http://www.eigaseikatu.com/"></a></span></p></div>+(/hReview	!:28=http://www.eigaseikatu.com/title/hreview.html</p></body></slide><slide page="18"><body><p>3.5E 72• WikiD?C;:=>DMicroformats 0/–  1.,-46)#D$6)#– 6"!	17,+0• 1(->B<A@9'D(X)HTMLDXMLDRDF2%0.&*8</p></body></slide><slide page="19"><body><p>	%• –"$&#• HTML'XML'SemanticWeb•  – Wiki, (Wikipedia)– Lightweight markup language– Microformat• – PositLog!</p></body></slide><slide page="20"><body><p>	$!• $%=>@? 	,*=.95-9 ")'&• %'#=+& $74:3, &• $'$2:6!=PositLog;418/<,&– 0-3;http://cresta.kuis.kyoto-u.ac.jp/positlog/itp.html<$#(</p></body></slide><slide page="21"><body><p>PositLog• HTML:B3#/A6A5F=41?.499@47<B>– http://www.ii.ist.i.kyoto-u.ac.jp/~kubota/positlog.html– HTML#,(E;B2#&#"– =41?.49• #WebAPIC4	D,&+G#HJI0B83,*!• PositLog $JavaScript,'HTML)• IE6 #$(%-</p></body></slide><slide page="22"><body><p>PositLog	HTML</p></body></slide><slide page="23"><body><p>PositLog142• +0$1.#"/2– http://cresta.kuis.kyoto-u.ac.jp/positlog/061114qo.html?mode=EditMode– %*,"'3• http://storybook.jp/060729jD.html– ) "-!&*.0(• http://storybook.jp/060921dZ.html• +0$%*,"'3+0$3	</p></body></slide><slide page="24"><body><p>;<,*• PositLog0(:!/.),	0#( '"• 47385216)%9– http://cresta.kuis.kyoto-u.ac.jp/positlog/positlog.cgi?load=061114Qp&mode=ViewMode– 473+!/.),	0&( '"– 473-+$(#( '"• http://storybook.jp/positlog.cgi?load=060729Ja&id=sprite_20060729213743_717• – 11208917<00</p></body></slide><slide page="25"><body><p>#$• PositLog!!	kubota@ii.ist.i.kyoto-u.ac.jp "</p></body></slide><slide page="26"><body><p>• Bo Leuf, Ward Cunningham, “Wiki Way+'.0*/ 0-Wiki”, %!#/$&,/12002• Tim Berners-Lee1“243 World Wide Web	”1()"0*/12001</p></body></slide></presentation>
+ページ: 1 -----
+<slide page="1"><body><p>		2006/11/14	kubota@ii.ist.i.kyoto-u.ac.jphttp://www.ii.ist.i.kyoto-u.ac.jp/~kubota/</p></body></slide>
+in Sheet Class, page: 1
+title = ""
+body = "<p>		2006/11/14	kubota@ii.ist.i.kyoto-u.ac.jphttp://www.ii.ist.i.kyoto-u.ac.jp/~kubota/</p>"
+makeWordArrayJp
+paragraph: 		2006/11/14	kubota@ii.ist.i.kyoto-u.ac.jphttp://www.ii.ist.i.kyoto-u.ac.jp/~kubota/
+kubota :	名詞,固有名詞,組織,*,*,*,*	false	1
+ii :	名詞,一般,*,*,*,*,*	false	1
+ist :	名詞,一般,*,*,*,*,*	false	1
+kyoto :	名詞,一般,*,*,*,*,*	false	1
+ac :	名詞,一般,*,*,*,*,*	false	1
+jphttp :	名詞,一般,*,*,*,*,*	false	1
+:// :	名詞,サ変接続,*,*,*,*,*	false	1
+www :	名詞,一般,*,*,*,*,*	false	1
+ii :	名詞,一般,*,*,*,*,*	false	2
+ist :	名詞,一般,*,*,*,*,*	false	2
+kyoto :	名詞,一般,*,*,*,*,*	false	2
+ac :	名詞,一般,*,*,*,*,*	false	2
+jp :	名詞,一般,*,*,*,*,*	false	1
+/~ :	名詞,サ変接続,*,*,*,*,*	false	1
+kubota :	名詞,一般,*,*,*,*,*	false	2
+ページ: 2 -----
+<slide page="2"><body><p>	%• –"$&#• HTML'XML'SemanticWeb•  – Wiki, (Wikipedia)– Lightweight markup language– Microformat• – PositLog!</p></body></slide>
+in Sheet Class, page: 2
+title = ""
+body = "<p>	%• –"$&#• HTML'XML'SemanticWeb•  – Wiki, (Wikipedia)– Lightweight markup language– Microformat• – PositLog!</p>"
+makeWordArrayJp
+paragraph: 	%• –"$&#• HTML'XML'SemanticWeb•  – Wiki, (Wikipedia)– Lightweight markup language– Microformat• – PositLog!
+"$&# :	名詞,サ変接続,*,*,*,*,*	false	1
+HTML :	名詞,固有名詞,組織,*,*,*,*	false	1
+XML :	名詞,一般,*,*,*,*,*	false	1
+SemanticWeb :	名詞,一般,*,*,*,*,*	false	1
+Wiki :	名詞,固有名詞,組織,*,*,*,*	false	1
+Wikipedia :	名詞,一般,*,*,*,*,*	false	1
+)– :	名詞,サ変接続,*,*,*,*,*	false	1
+Lightweight :	名詞,固有名詞,組織,*,*,*,*	false	1
+markup :	名詞,固有名詞,組織,*,*,*,*	false	1
+language :	名詞,固有名詞,組織,*,*,*,*	false	1
+Microformat :	名詞,固有名詞,組織,*,*,*,*	false	1
+PositLog :	名詞,固有名詞,組織,*,*,*,*	false	1
+ページ: 3 -----
+<slide page="3"><body><p>L*IXZ\L\`a]W^bY_a[L0c• K87G-%KRT V=TEOKMdVJ.HAT:6T– HTML, XML, SemanticWeb,:>UE4KPdBL*IXZ\L\`a]W^K8=T>:dCUDULK87G$1>UG;E• \`a]W^– *• -%)L!>• #L?QA>– XZ\• :+K2ATEOL	• I<K5LdV&ATNHK99T"3• HTMLdXMLdSemanticWebdRS/Q9JP('K@G*>UFF6T</p></body></slide>
+in Sheet Class, page: 3
+title = ""
+body = "<p>L*IXZ\L\`a]W^bY_a[L0c• K87G-%KRT V=TEOKMdVJ.HAT:6T– HTML, XML, SemanticWeb,:>UE4KPdBL*IXZ\L\`a]W^K8=T>:dCUDULK87G$1>UG;E• \`a]W^– *• -%)L!>• #L?QA>– XZ\• :+K2ATEOL	• I<K5LdV&ATNHK99T"3• HTMLdXMLdSemanticWebdRS/Q9JP('K@G*>UFF6T</p>"
+makeWordArrayJp
+paragraph: L*IXZ\L\`a]W^bY_a[L0c• K87G-%KRT V=TEOKMdVJ.HAT:6T– HTML, XML, SemanticWeb,:>UE4KPdBL*IXZ\L\`a]W^K8=T>:dCUDULK87G$1>UG;E• \`a]W^– *• -%)L!>• #L?QA>– XZ\• :+K2ATEOL	• I<K5LdV&ATNHK99T"3• HTMLdXMLdSemanticWebdRS/Q9JP('K@G*>UFF6T
+IXZ :	名詞,一般,*,*,*,*,*	false	1
+\` :	名詞,サ変接続,*,*,*,*,*	false	1
+-% :	名詞,サ変接続,*,*,*,*,*	false	1
+KRT :	名詞,固有名詞,組織,*,*,*,*	false	1
+TEOKMd :	名詞,一般,*,*,*,*,*	false	1
+AT :	名詞,固有名詞,組織,*,*,*,*	false	1
+HTML :	名詞,固有名詞,組織,*,*,*,*	false	1
+XML :	名詞,固有名詞,組織,*,*,*,*	false	1
+SemanticWeb :	名詞,固有名詞,組織,*,*,*,*	false	1
+,: :	名詞,サ変接続,*,*,*,*,*	false	1
+UE :	名詞,一般,*,*,*,*,*	false	1
+KPd :	名詞,一般,*,*,*,*,*	false	1
+IXZ :	名詞,一般,*,*,*,*,*	false	2
+\` :	名詞,サ変接続,*,*,*,*,*	false	2
+>: :	名詞,サ変接続,*,*,*,*,*	false	1
+dCUDUL :	名詞,一般,*,*,*,*,*	false	1
+UG :	名詞,一般,*,*,*,*,*	false	1
+\` :	名詞,サ変接続,*,*,*,*,*	false	3
+^– :	名詞,サ変接続,*,*,*,*,*	false	1
+*• :	名詞,サ変接続,*,*,*,*,*	false	1
+-% :	名詞,サ変接続,*,*,*,*,*	false	2
+!>• :	名詞,サ変接続,*,*,*,*,*	false	1
+QA :	名詞,一般,*,*,*,*,*	false	1
+>– :	名詞,サ変接続,*,*,*,*,*	false	1
+XZ :	名詞,固有名詞,組織,*,*,*,*	false	1
+\• :	名詞,サ変接続,*,*,*,*,*	false	1
+ATEOL :	名詞,固有名詞,組織,*,*,*,*	false	1
+ATNHK :	名詞,固有名詞,組織,*,*,*,*	false	1
+HTMLdXMLdSemanticWebdRS :	名詞,固有名詞,組織,*,*,*,*	false	1
+(' :	名詞,サ変接続,*,*,*,*,*	false	1
+*> :	名詞,サ変接続,*,*,*,*,*	false	1
+UFF :	名詞,一般,*,*,*,*,*	false	1
+ページ: 4 -----
+<slide page="4"><body><p>_b` Not HTML• HTMLDF(2– DFW[^]SLPT>+2• Wiki - WYRTVK^X?>6=2a0<4:CZQ^P3#)1_Bo Leuf and Ward Cunningham, “Wiki Way” DF`• Web:*A4;J;6=2>#– Q^PN^U@? -=<– &'=• Web#?:CaHTML3/;IHG>#– J;7GOPSXa%?• $WikiM\^]aBlogOPSXaOPSX:#– ,#.>"!?a&'	5H83BEH92G</p></body></slide>
+in Sheet Class, page: 4
+title = ""
+body = "<p>_b` Not HTML• HTMLDF(2– DFW[^]SLPT>+2• Wiki - WYRTVK^X?>6=2a0<4:CZQ^P3#)1_Bo Leuf and Ward Cunningham, “Wiki Way” DF`• Web:*A4;J;6=2>#– Q^PN^U@? -=<– &'=• Web#?:CaHTML3/;IHG>#– J;7GOPSXa%?• $WikiM\^]aBlogOPSXaOPSX:#– ,#.>"!?a&'	5H83BEH92G</p>"
+makeWordArrayJp
+paragraph: _b` Not HTML• HTMLDF(2– DFW[^]SLPT>+2• Wiki - WYRTVK^X?>6=2a0<4:CZQ^P3#)1_Bo Leuf and Ward Cunningham, “Wiki Way” DF`• Web:*A4;J;6=2>#– Q^PN^U@? -=<– &'=• Web#?:CaHTML3/;IHG>#– J;7GOPSXa%?• $WikiM\^]aBlogOPSXaOPSX:#– ,#.>"!?a&'	5H83BEH92G
+Not :	名詞,固有名詞,組織,*,*,*,*	false	1
+HTML :	名詞,固有名詞,組織,*,*,*,*	false	1
+HTMLDF :	名詞,固有名詞,組織,*,*,*,*	false	1
+DFW :	名詞,固有名詞,組織,*,*,*,*	false	1
+[^] :	名詞,サ変接続,*,*,*,*,*	false	1
+SLPT :	名詞,一般,*,*,*,*,*	false	1
+>+ :	名詞,サ変接続,*,*,*,*,*	false	1
+Wiki :	名詞,固有名詞,組織,*,*,*,*	false	1
+WYRTVK :	名詞,固有名詞,組織,*,*,*,*	false	1
+CZQ :	名詞,一般,*,*,*,*,*	false	1
+#) :	名詞,サ変接続,*,*,*,*,*	false	1
+Bo :	名詞,固有名詞,組織,*,*,*,*	false	1
+Leuf :	名詞,固有名詞,組織,*,*,*,*	false	1
+and :	名詞,固有名詞,組織,*,*,*,*	false	1
+Ward :	名詞,固有名詞,組織,*,*,*,*	false	1
+Cunningham :	名詞,固有名詞,組織,*,*,*,*	false	1
+Wiki :	名詞,固有名詞,組織,*,*,*,*	false	2
+Way :	名詞,固有名詞,組織,*,*,*,*	false	1
+DF :	名詞,固有名詞,組織,*,*,*,*	false	1
+`• :	名詞,サ変接続,*,*,*,*,*	false	1
+Web :	名詞,固有名詞,組織,*,*,*,*	false	1
+:* :	名詞,サ変接続,*,*,*,*,*	false	1
+#– :	名詞,サ変接続,*,*,*,*,*	false	1
+PN :	名詞,一般,*,*,*,*,*	false	1
+@? :	名詞,サ変接続,*,*,*,*,*	false	1
+-=<– :	名詞,サ変接続,*,*,*,*,*	false	1
+&'= :	名詞,サ変接続,*,*,*,*,*	false	1
+Web :	名詞,固有名詞,組織,*,*,*,*	false	2
+#? :	名詞,サ変接続,*,*,*,*,*	false	1
+CaHTML :	名詞,一般,*,*,*,*,*	false	1
+IHG :	名詞,固有名詞,組織,*,*,*,*	false	1
+#– :	名詞,サ変接続,*,*,*,*,*	false	2
+GOPSXa :	名詞,一般,*,*,*,*,*	false	1
+WikiM :	名詞,一般,*,*,*,*,*	false	1
+\^] :	名詞,サ変接続,*,*,*,*,*	false	1
+aBlogOPSXa :	名詞,一般,*,*,*,*,*	false	1
+OPSX :	名詞,固有名詞,組織,*,*,*,*	false	1
+#– :	名詞,サ変接続,*,*,*,*,*	false	3
+,#.>"!? :	名詞,サ変接続,*,*,*,*,*	false	1
+&' :	名詞,サ変接続,*,*,*,*,*	false	1
+BEH :	名詞,固有名詞,組織,*,*,*,*	false	1
+ページ: 5 -----
+<slide page="5"><body><p>Wiki• WikiWikiWeb (Ward Cunningham, 1994)– 2>7I0HBK#:4IhF	(@Pc`McXeV]eU3• ,"A+@h.)9J<NO\2^eT3B1&>hK':h;I<EBZM[eacQSUW_• ?:=NO\\`NRdQ`MLcYK48?>h^eT6-A>FA*1+?@IXeV]eUfh”Wiki Way” GHg–!DJ<C5HBWebK?:=h2/$@*13B A%–BWikiQbec</p></body></slide>
+in Sheet Class, page: 5
+title = ""
+body = "<p>Wiki• WikiWikiWeb (Ward Cunningham, 1994)– 2>7I0HBK#:4IhF	(@Pc`McXeV]eU3• ,"A+@h.)9J<NO\2^eT3B1&>hK':h;I<EBZM[eacQSUW_• ?:=NO\\`NRdQ`MLcYK48?>h^eT6-A>FA*1+?@IXeV]eUfh”Wiki Way” GHg–!DJ<C5HBWebK?:=h2/$@*13B A%–BWikiQbec</p>"
+makeWordArrayJp
+paragraph: Wiki• WikiWikiWeb (Ward Cunningham, 1994)– 2>7I0HBK#:4IhF	(@Pc`McXeV]eU3• ,"A+@h.)9J<NO\2^eT3B1&>hK':h;I<EBZM[eacQSUW_• ?:=NO\\`NRdQ`MLcYK48?>h^eT6-A>FA*1+?@IXeV]eUfh”Wiki Way” GHg–!DJ<C5HBWebK?:=h2/$@*13B A%–BWikiQbec
+Wiki :	名詞,固有名詞,組織,*,*,*,*	false	1
+WikiWikiWeb :	名詞,固有名詞,組織,*,*,*,*	false	1
+Ward :	名詞,固有名詞,組織,*,*,*,*	false	1
+Cunningham :	名詞,固有名詞,組織,*,*,*,*	false	1
+)– :	名詞,サ変接続,*,*,*,*,*	false	1
+HB :	名詞,一般,*,*,*,*,*	false	1
+Ih :	名詞,一般,*,*,*,*,*	false	1
+(@ :	名詞,サ変接続,*,*,*,*,*	false	1
+Pc :	名詞,一般,*,*,*,*,*	false	1
+McXeV :	名詞,一般,*,*,*,*,*	false	1
+eU :	名詞,一般,*,*,*,*,*	false	1
+," :	名詞,サ変接続,*,*,*,*,*	false	1
++@ :	名詞,サ変接続,*,*,*,*,*	false	1
+.) :	名詞,サ変接続,*,*,*,*,*	false	1
+NO :	名詞,一般,*,*,*,*,*	false	1
+eT :	名詞,一般,*,*,*,*,*	false	1
+&> :	名詞,サ変接続,*,*,*,*,*	false	1
+': :	名詞,サ変接続,*,*,*,*,*	false	1
+EBZM :	名詞,一般,*,*,*,*,*	false	1
+eacQSUW :	名詞,一般,*,*,*,*,*	false	1
+_• :	名詞,サ変接続,*,*,*,*,*	false	1
+?:= :	名詞,サ変接続,*,*,*,*,*	false	1
+NO :	名詞,一般,*,*,*,*,*	false	2
+\\` :	名詞,サ変接続,*,*,*,*,*	false	1
+NRdQ :	名詞,一般,*,*,*,*,*	false	1
+MLcYK :	名詞,一般,*,*,*,*,*	false	1
+?> :	名詞,サ変接続,*,*,*,*,*	false	1
+eT :	名詞,一般,*,*,*,*,*	false	2
++?@ :	名詞,サ変接続,*,*,*,*,*	false	1
+IXeV :	名詞,一般,*,*,*,*,*	false	1
+eUf :	名詞,一般,*,*,*,*,*	false	1
+Wiki :	名詞,固有名詞,組織,*,*,*,*	false	2
+Way :	名詞,固有名詞,組織,*,*,*,*	false	1
+GHg :	名詞,固有名詞,組織,*,*,*,*	false	1
+–! :	名詞,サ変接続,*,*,*,*,*	false	1
+DJ :	名詞,一般,*,*,*,*,*	false	1
+HBWebK :	名詞,一般,*,*,*,*,*	false	1
+?:= :	名詞,サ変接続,*,*,*,*,*	false	2
+$@* :	名詞,サ変接続,*,*,*,*,*	false	1
+BWikiQbec :	名詞,固有名詞,組織,*,*,*,*	false	1
+ページ: 6 -----
+<slide page="6"><body><p>,Wiki! • FreeStyleWiki– Wiki"(*)– http://fswiki.poi.jp/wiki.cgi• '*#– http://cresta.kuis.kyoto-u.ac.jp/cgi-bin/fswiki/wiki.cgi– %&$"+'*#!– 	URL• http://cresta.kuis.kyoto-u.ac.jp/positlog/positlog.cgi?load=061010ld</p></body></slide>
+in Sheet Class, page: 6
+title = ""
+body = "<p>,Wiki! • FreeStyleWiki– Wiki"(*)– http://fswiki.poi.jp/wiki.cgi• '*#– http://cresta.kuis.kyoto-u.ac.jp/cgi-bin/fswiki/wiki.cgi– %&$"+'*#!– 	URL• http://cresta.kuis.kyoto-u.ac.jp/positlog/positlog.cgi?load=061010ld</p>"
+makeWordArrayJp
+paragraph: ,Wiki! • FreeStyleWiki– Wiki"(*)– http://fswiki.poi.jp/wiki.cgi• '*#– http://cresta.kuis.kyoto-u.ac.jp/cgi-bin/fswiki/wiki.cgi– %&$"+'*#!– 	URL• http://cresta.kuis.kyoto-u.ac.jp/positlog/positlog.cgi?load=061010ld
+Wiki :	名詞,一般,*,*,*,*,*	false	1
+FreeStyleWiki :	名詞,固有名詞,組織,*,*,*,*	false	1
+Wiki :	名詞,固有名詞,組織,*,*,*,*	false	2
+"(*) :	名詞,サ変接続,*,*,*,*,*	false	1
+http :	名詞,固有名詞,組織,*,*,*,*	false	1
+:// :	名詞,サ変接続,*,*,*,*,*	false	1
+fswiki :	名詞,一般,*,*,*,*,*	false	1
+poi :	名詞,一般,*,*,*,*,*	false	1
+jp :	名詞,一般,*,*,*,*,*	false	1
+wiki :	名詞,一般,*,*,*,*,*	false	1
+cgi :	名詞,一般,*,*,*,*,*	false	1
+'*#– :	名詞,サ変接続,*,*,*,*,*	false	1
+http :	名詞,固有名詞,組織,*,*,*,*	false	2
+:// :	名詞,サ変接続,*,*,*,*,*	false	2
+cresta :	名詞,一般,*,*,*,*,*	false	1
+kuis :	名詞,一般,*,*,*,*,*	false	1
+kyoto :	名詞,一般,*,*,*,*,*	false	1
+ac :	名詞,一般,*,*,*,*,*	false	1
+jp :	名詞,一般,*,*,*,*,*	false	2
+cgi :	名詞,一般,*,*,*,*,*	false	2
+bin :	名詞,一般,*,*,*,*,*	false	1
+fswiki :	名詞,一般,*,*,*,*,*	false	2
+wiki :	名詞,一般,*,*,*,*,*	false	2
+cgi :	名詞,一般,*,*,*,*,*	false	3
+%&$" :	名詞,サ変接続,*,*,*,*,*	false	1
++'*#! :	名詞,サ変接続,*,*,*,*,*	false	1
+URL :	名詞,固有名詞,組織,*,*,*,*	false	1
+http :	名詞,固有名詞,組織,*,*,*,*	false	3
+:// :	名詞,サ変接続,*,*,*,*,*	false	3
+cresta :	名詞,一般,*,*,*,*,*	false	2
+kuis :	名詞,一般,*,*,*,*,*	false	2
+kyoto :	名詞,一般,*,*,*,*,*	false	2
+ac :	名詞,一般,*,*,*,*,*	false	2
+jp :	名詞,一般,*,*,*,*,*	false	3
+positlog :	名詞,一般,*,*,*,*,*	false	1
+positlog :	名詞,一般,*,*,*,*,*	false	2
+cgi :	名詞,一般,*,*,*,*,*	false	4
+load :	名詞,一般,*,*,*,*,*	false	1
+ld :	名詞,固有名詞,組織,*,*,*,*	false	1
+ページ: 7 -----
+<slide page="7"><body><p>Wikipedia-Q6#";72…R• Wikipedia– MediaWiki (http://www.mediawiki.org/wiki/MediaWiki) D08 MNJGHL• (?!5C8*@B+%>– $' http://en.wikipedia.org/• @Q1,416,258S2006/10/1R• @&'A100– ,>B@OOOfolksonomy EMNPKS	Qkizasi.jp>=R– @.3CA740/<1*IFL?90:S)2A:>;• http://q.hatena.ne.jp/1162890934</p></body></slide>
+in Sheet Class, page: 7
+title = ""
+body = "<p>Wikipedia-Q6#";72…R• Wikipedia– MediaWiki (http://www.mediawiki.org/wiki/MediaWiki) D08 MNJGHL• (?!5C8*@B+%>– $' http://en.wikipedia.org/• @Q1,416,258S2006/10/1R• @&'A100– ,>B@OOOfolksonomy EMNPKS	Qkizasi.jp>=R– @.3CA740/<1*IFL?90:S)2A:>;• http://q.hatena.ne.jp/1162890934</p>"
+makeWordArrayJp
+paragraph: Wikipedia-Q6#";72…R• Wikipedia– MediaWiki (http://www.mediawiki.org/wiki/MediaWiki) D08 MNJGHL• (?!5C8*@B+%>– $' http://en.wikipedia.org/• @Q1,416,258S2006/10/1R• @&'A100– ,>B@OOOfolksonomy EMNPKS	Qkizasi.jp>=R– @.3CA740/<1*IFL?90:S)2A:>;• http://q.hatena.ne.jp/1162890934
+Wikipedia :	名詞,固有名詞,組織,*,*,*,*	false	1
+#"; :	名詞,サ変接続,*,*,*,*,*	false	1
+Wikipedia :	名詞,固有名詞,組織,*,*,*,*	false	2
+MediaWiki :	名詞,固有名詞,組織,*,*,*,*	false	1
+http :	名詞,一般,*,*,*,*,*	false	1
+:// :	名詞,サ変接続,*,*,*,*,*	false	1
+www :	名詞,一般,*,*,*,*,*	false	1
+mediawiki :	名詞,一般,*,*,*,*,*	false	1
+org :	名詞,一般,*,*,*,*,*	false	1
+wiki :	名詞,一般,*,*,*,*,*	false	1
+MediaWiki :	名詞,一般,*,*,*,*,*	false	2
+MNJGHL :	名詞,固有名詞,組織,*,*,*,*	false	1
++%> :	名詞,サ変接続,*,*,*,*,*	false	1
+$' :	名詞,サ変接続,*,*,*,*,*	false	1
+http :	名詞,固有名詞,組織,*,*,*,*	false	2
+:// :	名詞,サ変接続,*,*,*,*,*	false	2
+en :	名詞,一般,*,*,*,*,*	false	1
+wikipedia :	名詞,一般,*,*,*,*,*	false	1
+org :	名詞,一般,*,*,*,*,*	false	2
+/• :	名詞,サ変接続,*,*,*,*,*	false	1
+@&' :	名詞,サ変接続,*,*,*,*,*	false	1
+OOOfolksonomy :	名詞,固有名詞,組織,*,*,*,*	false	1
+EMNPKS :	名詞,固有名詞,組織,*,*,*,*	false	1
+Qkizasi :	名詞,固有名詞,組織,*,*,*,*	false	1
+jp :	名詞,一般,*,*,*,*,*	false	1
+>= :	名詞,サ変接続,*,*,*,*,*	false	1
+@. :	名詞,サ変接続,*,*,*,*,*	false	1
+CA :	名詞,一般,*,*,*,*,*	false	1
+/< :	名詞,サ変接続,*,*,*,*,*	false	1
+IFL :	名詞,固有名詞,組織,*,*,*,*	false	1
+:>; :	名詞,サ変接続,*,*,*,*,*	false	1
+http :	名詞,固有名詞,組織,*,*,*,*	false	3
+:// :	名詞,サ変接続,*,*,*,*,*	false	3
+hatena :	名詞,一般,*,*,*,*,*	false	1
+ne :	名詞,一般,*,*,*,*,*	false	1
+jp :	名詞,一般,*,*,*,*,*	false	2
+ページ: 8 -----
+<slide page="8"><body><p>Wikipedia (2)• *#)$+– Internet encyclopaedias go head to head• immy Wales' Wikipedia comes close to Britannica in terms of theaccuracy of its science entries, a Nature investigation finds.• .0/-0Nature*12005/12/152– http://www.nature.com/nature/journal/v438/n7070/full/438900a.html• Britannica *– http://corporate.britannica.com/britannica_nature_response.pdf• Nature *– http://www.nature.com/nature/britannica/eb_advert_response_final.pdf• #1accuracy2'	1reliability2*– SemanticWeb)!+	• (%,"' &+"' 1Web*2</p></body></slide>
+in Sheet Class, page: 8
+title = ""
+body = "<p>Wikipedia (2)• *#)$+– Internet encyclopaedias go head to head• immy Wales' Wikipedia comes close to Britannica in terms of theaccuracy of its science entries, a Nature investigation finds.• .0/-0Nature*12005/12/152– http://www.nature.com/nature/journal/v438/n7070/full/438900a.html• Britannica *– http://corporate.britannica.com/britannica_nature_response.pdf• Nature *– http://www.nature.com/nature/britannica/eb_advert_response_final.pdf• #1accuracy2'	1reliability2*– SemanticWeb)!+	• (%,"' &+"' 1Web*2</p>"
+makeWordArrayJp
+paragraph: Wikipedia (2)• *#)$+– Internet encyclopaedias go head to head• immy Wales' Wikipedia comes close to Britannica in terms of theaccuracy of its science entries, a Nature investigation finds.• .0/-0Nature*12005/12/152– http://www.nature.com/nature/journal/v438/n7070/full/438900a.html• Britannica *– http://corporate.britannica.com/britannica_nature_response.pdf• Nature *– http://www.nature.com/nature/britannica/eb_advert_response_final.pdf• #1accuracy2'	1reliability2*– SemanticWeb)!+	• (%,"' &+"' 1Web*2
+Wikipedia :	名詞,固有名詞,組織,*,*,*,*	false	1
+)• :	名詞,サ変接続,*,*,*,*,*	false	1
+#) :	名詞,サ変接続,*,*,*,*,*	false	1
+$+ :	名詞,サ変接続,*,*,*,*,*	false	1
+Internet :	名詞,固有名詞,組織,*,*,*,*	false	1
+encyclopaedias :	名詞,固有名詞,組織,*,*,*,*	false	1
+go :	名詞,固有名詞,組織,*,*,*,*	false	1
+head :	名詞,固有名詞,組織,*,*,*,*	false	1
+to :	名詞,固有名詞,組織,*,*,*,*	false	1
+head :	名詞,固有名詞,組織,*,*,*,*	false	2
+immy :	名詞,固有名詞,組織,*,*,*,*	false	1
+Wales :	名詞,固有名詞,組織,*,*,*,*	false	1
+Wikipedia :	名詞,固有名詞,組織,*,*,*,*	false	2
+comes :	名詞,固有名詞,組織,*,*,*,*	false	1
+close :	名詞,固有名詞,組織,*,*,*,*	false	1
+to :	名詞,固有名詞,組織,*,*,*,*	false	2
+Britannica :	名詞,固有名詞,組織,*,*,*,*	false	1
+in :	名詞,固有名詞,組織,*,*,*,*	false	1
+terms :	名詞,固有名詞,組織,*,*,*,*	false	1
+of :	名詞,固有名詞,組織,*,*,*,*	false	1
+theaccuracy :	名詞,固有名詞,組織,*,*,*,*	false	1
+of :	名詞,固有名詞,組織,*,*,*,*	false	2
+its :	名詞,固有名詞,組織,*,*,*,*	false	1
+science :	名詞,固有名詞,組織,*,*,*,*	false	1
+entries :	名詞,固有名詞,組織,*,*,*,*	false	1
+Nature :	名詞,固有名詞,組織,*,*,*,*	false	1
+investigation :	名詞,固有名詞,組織,*,*,*,*	false	1
+finds :	名詞,固有名詞,組織,*,*,*,*	false	1
+/- :	名詞,サ変接続,*,*,*,*,*	false	1
+Nature :	名詞,固有名詞,組織,*,*,*,*	false	2
+http :	名詞,固有名詞,組織,*,*,*,*	false	1
+:// :	名詞,サ変接続,*,*,*,*,*	false	1
+www :	名詞,一般,*,*,*,*,*	false	1
+nature :	名詞,一般,*,*,*,*,*	false	1
+com :	名詞,一般,*,*,*,*,*	false	1
+nature :	名詞,一般,*,*,*,*,*	false	2
+journal :	名詞,一般,*,*,*,*,*	false	1
+full :	名詞,一般,*,*,*,*,*	false	1
+html :	名詞,一般,*,*,*,*,*	false	1
+Britannica :	名詞,固有名詞,組織,*,*,*,*	false	2
+http :	名詞,固有名詞,組織,*,*,*,*	false	2
+:// :	名詞,サ変接続,*,*,*,*,*	false	2
+corporate :	名詞,一般,*,*,*,*,*	false	1
+britannica :	名詞,一般,*,*,*,*,*	false	1
+com :	名詞,一般,*,*,*,*,*	false	2
+britannica :	名詞,一般,*,*,*,*,*	false	2
+nature :	名詞,一般,*,*,*,*,*	false	3
+response :	名詞,一般,*,*,*,*,*	false	1
+pdf :	名詞,一般,*,*,*,*,*	false	1
+Nature :	名詞,固有名詞,組織,*,*,*,*	false	3
+http :	名詞,固有名詞,組織,*,*,*,*	false	3
+:// :	名詞,サ変接続,*,*,*,*,*	false	3
+www :	名詞,一般,*,*,*,*,*	false	2
+nature :	名詞,一般,*,*,*,*,*	false	4
+com :	名詞,一般,*,*,*,*,*	false	3
+nature :	名詞,一般,*,*,*,*,*	false	5
+britannica :	名詞,一般,*,*,*,*,*	false	3
+eb :	名詞,一般,*,*,*,*,*	false	1
+advert :	名詞,一般,*,*,*,*,*	false	1
+response :	名詞,一般,*,*,*,*,*	false	2
+final :	名詞,一般,*,*,*,*,*	false	1
+pdf :	名詞,一般,*,*,*,*,*	false	2
+accuracy :	名詞,一般,*,*,*,*,*	false	1
+reliability :	名詞,一般,*,*,*,*,*	false	1
+SemanticWeb :	名詞,固有名詞,組織,*,*,*,*	false	1
+!+ :	名詞,サ変接続,*,*,*,*,*	false	1
+(% :	名詞,サ変接続,*,*,*,*,*	false	1
+"' :	名詞,サ変接続,*,*,*,*,*	false	1
++"' :	名詞,サ変接続,*,*,*,*,*	false	1
+Web :	名詞,固有名詞,組織,*,*,*,*	false	1
+ページ: 9 -----
+<slide page="9"><body><p>(PQIHMO"#Lightweight markup language• HTMLBXMLCDAR*:846+.0F3PQIHMO"#– 	71B2.R&G293G5/8-+• reStructuredText– http://docutils.sourceforge.net/rst.html– <PythonLQKJQN:'G%2E3@:)• what-you-see-is-what-you-get• It is useful for in-line program documentation• Web7;!G819+:'G.RHTML7+61>,8:846$?:.+– A• HTML=16!2E/8A </p></body></slide>
+in Sheet Class, page: 9
+title = ""
+body = "<p>(PQIHMO"#Lightweight markup language• HTMLBXMLCDAR*:846+.0F3PQIHMO"#– 	71B2.R&G293G5/8-+• reStructuredText– http://docutils.sourceforge.net/rst.html– <PythonLQKJQN:'G%2E3@:)• what-you-see-is-what-you-get• It is useful for in-line program documentation• Web7;!G819+:'G.RHTML7+61>,8:846$?:.+– A• HTML=16!2E/8A </p>"
+makeWordArrayJp
+paragraph: (PQIHMO"#Lightweight markup language• HTMLBXMLCDAR*:846+.0F3PQIHMO"#– 	71B2.R&G293G5/8-+• reStructuredText– http://docutils.sourceforge.net/rst.html– <PythonLQKJQN:'G%2E3@:)• what-you-see-is-what-you-get• It is useful for in-line program documentation• Web7;!G819+:'G.RHTML7+61>,8:846$?:.+– A• HTML=16!2E/8A 
+PQIHMO :	名詞,一般,*,*,*,*,*	false	1
+"# :	名詞,サ変接続,*,*,*,*,*	false	1
+Lightweight :	名詞,固有名詞,組織,*,*,*,*	false	1
+markup :	名詞,固有名詞,組織,*,*,*,*	false	1
+language :	名詞,固有名詞,組織,*,*,*,*	false	1
+HTMLBXMLCDAR :	名詞,固有名詞,組織,*,*,*,*	false	1
+*: :	名詞,サ変接続,*,*,*,*,*	false	1
+PQIHMO :	名詞,一般,*,*,*,*,*	false	2
+"#– :	名詞,サ変接続,*,*,*,*,*	false	1
++• :	名詞,サ変接続,*,*,*,*,*	false	1
+reStructuredText :	名詞,固有名詞,組織,*,*,*,*	false	1
+http :	名詞,固有名詞,組織,*,*,*,*	false	1
+:// :	名詞,サ変接続,*,*,*,*,*	false	1
+docutils :	名詞,一般,*,*,*,*,*	false	1
+sourceforge :	名詞,一般,*,*,*,*,*	false	1
+net :	名詞,一般,*,*,*,*,*	false	1
+rst :	名詞,一般,*,*,*,*,*	false	1
+html :	名詞,一般,*,*,*,*,*	false	1
+PythonLQKJQN :	名詞,一般,*,*,*,*,*	false	1
+@:) :	名詞,サ変接続,*,*,*,*,*	false	1
+what :	名詞,固有名詞,組織,*,*,*,*	false	1
+you :	名詞,一般,*,*,*,*,*	false	1
+see :	名詞,一般,*,*,*,*,*	false	1
+is :	名詞,一般,*,*,*,*,*	false	1
+what :	名詞,一般,*,*,*,*,*	false	2
+you :	名詞,一般,*,*,*,*,*	false	2
+get :	名詞,一般,*,*,*,*,*	false	1
+It :	名詞,固有名詞,組織,*,*,*,*	false	1
+is :	名詞,固有名詞,組織,*,*,*,*	false	2
+useful :	名詞,固有名詞,組織,*,*,*,*	false	1
+for :	名詞,固有名詞,組織,*,*,*,*	false	1
+in :	名詞,固有名詞,組織,*,*,*,*	false	1
+line :	名詞,固有名詞,組織,*,*,*,*	false	1
+program :	名詞,固有名詞,組織,*,*,*,*	false	1
+documentation :	名詞,固有名詞,組織,*,*,*,*	false	1
+Web :	名詞,一般,*,*,*,*,*	false	1
+;! :	名詞,サ変接続,*,*,*,*,*	false	1
+RHTML :	名詞,一般,*,*,*,*,*	false	1
+>, :	名詞,サ変接続,*,*,*,*,*	false	1
+$?:.+– :	名詞,サ変接続,*,*,*,*,*	false	1
+HTML :	名詞,固有名詞,組織,*,*,*,*	false	1
+ページ: 10 -----
+<slide page="10"><body><p>%"• HTML!!– http://www.hosting4u.cz/jbar/rest/rest.html–  !• http://docutils.sourceforge.net/docs/user/rst/quickref.html					Chapter 1 TitleSection 1.1 TitleSubsection 1.1.1 TitleSection 1.2 TitleChapter 2 Title#http://docutils.sourceforge.net/docs/user/rst/quickstart.html	$</p></body></slide>
+in Sheet Class, page: 10
+title = ""
+body = "<p>%"• HTML!!– http://www.hosting4u.cz/jbar/rest/rest.html–  !• http://docutils.sourceforge.net/docs/user/rst/quickref.html					Chapter 1 TitleSection 1.1 TitleSubsection 1.1.1 TitleSection 1.2 TitleChapter 2 Title#http://docutils.sourceforge.net/docs/user/rst/quickstart.html	$</p>"
+makeWordArrayJp
+paragraph: %"• HTML!!– http://www.hosting4u.cz/jbar/rest/rest.html–  !• http://docutils.sourceforge.net/docs/user/rst/quickref.html					Chapter 1 TitleSection 1.1 TitleSubsection 1.1.1 TitleSection 1.2 TitleChapter 2 Title#http://docutils.sourceforge.net/docs/user/rst/quickstart.html	$
+HTML :	名詞,固有名詞,組織,*,*,*,*	false	1
+http :	名詞,固有名詞,組織,*,*,*,*	false	1
+:// :	名詞,サ変接続,*,*,*,*,*	false	1
+www :	名詞,一般,*,*,*,*,*	false	1
+hosting :	名詞,一般,*,*,*,*,*	false	1
+cz :	名詞,一般,*,*,*,*,*	false	1
+jbar :	名詞,一般,*,*,*,*,*	false	1
+rest :	名詞,一般,*,*,*,*,*	false	1
+rest :	名詞,一般,*,*,*,*,*	false	2
+html :	名詞,一般,*,*,*,*,*	false	1
+http :	名詞,固有名詞,組織,*,*,*,*	false	2
+:// :	名詞,サ変接続,*,*,*,*,*	false	2
+docutils :	名詞,一般,*,*,*,*,*	false	1
+sourceforge :	名詞,一般,*,*,*,*,*	false	1
+net :	名詞,一般,*,*,*,*,*	false	1
+docs :	名詞,一般,*,*,*,*,*	false	1
+user :	名詞,一般,*,*,*,*,*	false	1
+rst :	名詞,一般,*,*,*,*,*	false	1
+quickref :	名詞,一般,*,*,*,*,*	false	1
+html :	名詞,一般,*,*,*,*,*	false	2
+Chapter :	名詞,固有名詞,組織,*,*,*,*	false	1
+TitleSection :	名詞,固有名詞,組織,*,*,*,*	false	1
+TitleSubsection :	名詞,固有名詞,組織,*,*,*,*	false	1
+TitleSection :	名詞,固有名詞,組織,*,*,*,*	false	2
+TitleChapter :	名詞,固有名詞,組織,*,*,*,*	false	1
+Title :	名詞,固有名詞,組織,*,*,*,*	false	1
+http :	名詞,一般,*,*,*,*,*	false	3
+:// :	名詞,サ変接続,*,*,*,*,*	false	3
+docutils :	名詞,一般,*,*,*,*,*	false	2
+sourceforge :	名詞,一般,*,*,*,*,*	false	2
+net :	名詞,一般,*,*,*,*,*	false	2
+docs :	名詞,一般,*,*,*,*,*	false	2
+user :	名詞,一般,*,*,*,*,*	false	2
+rst :	名詞,一般,*,*,*,*,*	false	2
+quickstart :	名詞,一般,*,*,*,*,*	false	1
+html :	名詞,固有名詞,組織,*,*,*,*	false	3
+ページ: 11 -----
+<slide page="11"><body><p> • !	$#– Wiki&-/.#–+-'()*, • !– http://hatenadiary.g.hatena.ne.jp/keyword/%E3%81%AF%E3%81%A6%E3%81%AA%E8%A8%98%E6%B3%95%E4%B8%80%E8%A6%A7• hnf (Hyper NIKKI System " )– http://www.h14m.org/docs/hnf-j.html•  0blosxom, Nucleus, tDiary$$ %</p></body></slide>
+in Sheet Class, page: 11
+title = ""
+body = "<p> • !	$#– Wiki&-/.#–+-'()*, • !– http://hatenadiary.g.hatena.ne.jp/keyword/%E3%81%AF%E3%81%A6%E3%81%AA%E8%A8%98%E6%B3%95%E4%B8%80%E8%A6%A7• hnf (Hyper NIKKI System " )– http://www.h14m.org/docs/hnf-j.html•  0blosxom, Nucleus, tDiary$$ %</p>"
+makeWordArrayJp
+paragraph:  • !	$#– Wiki&-/.#–+-'()*, • !– http://hatenadiary.g.hatena.ne.jp/keyword/%E3%81%AF%E3%81%A6%E3%81%AA%E8%A8%98%E6%B3%95%E4%B8%80%E8%A6%A7• hnf (Hyper NIKKI System " )– http://www.h14m.org/docs/hnf-j.html•  0blosxom, Nucleus, tDiary$$ %
+#– :	名詞,サ変接続,*,*,*,*,*	false	1
+Wiki :	名詞,固有名詞,組織,*,*,*,*	false	1
+&-/. :	名詞,サ変接続,*,*,*,*,*	false	1
+#– :	名詞,サ変接続,*,*,*,*,*	false	2
++-'()*, :	名詞,サ変接続,*,*,*,*,*	false	1
+http :	名詞,固有名詞,組織,*,*,*,*	false	1
+:// :	名詞,サ変接続,*,*,*,*,*	false	1
+hatenadiary :	名詞,一般,*,*,*,*,*	false	1
+hatena :	名詞,一般,*,*,*,*,*	false	1
+ne :	名詞,一般,*,*,*,*,*	false	1
+jp :	名詞,一般,*,*,*,*,*	false	1
+keyword :	名詞,一般,*,*,*,*,*	false	1
+/% :	名詞,サ変接続,*,*,*,*,*	false	1
+AF :	名詞,一般,*,*,*,*,*	false	1
+AA :	名詞,一般,*,*,*,*,*	false	1
+hnf :	名詞,固有名詞,組織,*,*,*,*	false	1
+Hyper :	名詞,固有名詞,組織,*,*,*,*	false	1
+NIKKI :	名詞,固有名詞,組織,*,*,*,*	false	1
+System :	名詞,固有名詞,組織,*,*,*,*	false	1
+)– :	名詞,サ変接続,*,*,*,*,*	false	1
+http :	名詞,固有名詞,組織,*,*,*,*	false	2
+:// :	名詞,サ変接続,*,*,*,*,*	false	2
+www :	名詞,一般,*,*,*,*,*	false	1
+org :	名詞,一般,*,*,*,*,*	false	1
+docs :	名詞,一般,*,*,*,*,*	false	1
+hnf :	名詞,一般,*,*,*,*,*	false	2
+html :	名詞,一般,*,*,*,*,*	false	1
+blosxom :	名詞,一般,*,*,*,*,*	false	1
+Nucleus :	名詞,固有名詞,組織,*,*,*,*	false	1
+tDiary :	名詞,固有名詞,組織,*,*,*,*	false	1
+ページ: 12 -----
+<slide page="12"><body><p>(2) Not XML• 7@4?5:C7>A'$#(FXML./,%,1""0– 7@4?5:C7>ABBB<C;3-' +')	0$– %<C;'FXML3#7@4?590$(&2%• <C;• 68=• &$!#'*-• JSONDJavaScript Object NotationE– http://www.json.org/• YAML DYAML Ain Markup LanguageE– http://www.yaml.org/</p></body></slide>
+in Sheet Class, page: 12
+title = ""
+body = "<p>(2) Not XML• 7@4?5:C7>A'$#(FXML./,%,1""0– 7@4?5:C7>ABBB<C;3-' +')	0$– %<C;'FXML3#7@4?590$(&2%• <C;• 68=• &$!#'*-• JSONDJavaScript Object NotationE– http://www.json.org/• YAML DYAML Ain Markup LanguageE– http://www.yaml.org/</p>"
+makeWordArrayJp
+paragraph: (2) Not XML• 7@4?5:C7>A'$#(FXML./,%,1""0– 7@4?5:C7>ABBB<C;3-' +')	0$– %<C;'FXML3#7@4?590$(&2%• <C;• 68=• &$!#'*-• JSONDJavaScript Object NotationE– http://www.json.org/• YAML DYAML Ain Markup LanguageE– http://www.yaml.org/
+Not :	名詞,固有名詞,組織,*,*,*,*	false	1
+XML :	名詞,固有名詞,組織,*,*,*,*	false	1
+#( :	名詞,サ変接続,*,*,*,*,*	false	1
+FXML :	名詞,一般,*,*,*,*,*	false	1
+./, :	名詞,サ変接続,*,*,*,*,*	false	1
+"" :	名詞,サ変接続,*,*,*,*,*	false	1
+ABBB :	名詞,一般,*,*,*,*,*	false	1
++' :	名詞,サ変接続,*,*,*,*,*	false	1
+$– :	名詞,サ変接続,*,*,*,*,*	false	1
+%< :	名詞,サ変接続,*,*,*,*,*	false	1
+FXML :	名詞,固有名詞,組織,*,*,*,*	false	2
+$( :	名詞,サ変接続,*,*,*,*,*	false	1
+=• :	名詞,サ変接続,*,*,*,*,*	false	1
+&$!#' :	名詞,サ変接続,*,*,*,*,*	false	1
+*- :	名詞,サ変接続,*,*,*,*,*	false	1
+JSONDJavaScript :	名詞,固有名詞,組織,*,*,*,*	false	1
+Object :	名詞,固有名詞,組織,*,*,*,*	false	1
+NotationE :	名詞,固有名詞,組織,*,*,*,*	false	1
+http :	名詞,固有名詞,組織,*,*,*,*	false	1
+:// :	名詞,サ変接続,*,*,*,*,*	false	1
+www :	名詞,一般,*,*,*,*,*	false	1
+json :	名詞,一般,*,*,*,*,*	false	1
+org :	名詞,一般,*,*,*,*,*	false	1
+/• :	名詞,サ変接続,*,*,*,*,*	false	1
+YAML :	名詞,固有名詞,組織,*,*,*,*	false	1
+DYAML :	名詞,固有名詞,組織,*,*,*,*	false	1
+Ain :	名詞,固有名詞,組織,*,*,*,*	false	1
+Markup :	名詞,固有名詞,組織,*,*,*,*	false	1
+LanguageE :	名詞,固有名詞,組織,*,*,*,*	false	1
+http :	名詞,固有名詞,組織,*,*,*,*	false	2
+:// :	名詞,サ変接続,*,*,*,*,*	false	2
+www :	名詞,一般,*,*,*,*,*	false	2
+yaml :	名詞,一般,*,*,*,*,*	false	1
+org :	名詞,一般,*,*,*,*,*	false	2
+ページ: 13 -----
+<slide page="13"><body><p>YAML• YAML http://www.yaml.org/– YAML documents are veryreadable by humans.– YAML is easy to implement.• 	(http://www.yaml.org/start.html)</p></body></slide>
+in Sheet Class, page: 13
+title = ""
+body = "<p>YAML• YAML http://www.yaml.org/– YAML documents are veryreadable by humans.– YAML is easy to implement.• 	(http://www.yaml.org/start.html)</p>"
+makeWordArrayJp
+paragraph: YAML• YAML http://www.yaml.org/– YAML documents are veryreadable by humans.– YAML is easy to implement.• 	(http://www.yaml.org/start.html)
+YAML :	名詞,固有名詞,組織,*,*,*,*	false	1
+YAML :	名詞,固有名詞,組織,*,*,*,*	false	2
+http :	名詞,固有名詞,組織,*,*,*,*	false	1
+:// :	名詞,サ変接続,*,*,*,*,*	false	1
+www :	名詞,一般,*,*,*,*,*	false	1
+yaml :	名詞,一般,*,*,*,*,*	false	1
+org :	名詞,一般,*,*,*,*,*	false	1
+/– :	名詞,サ変接続,*,*,*,*,*	false	1
+YAML :	名詞,固有名詞,組織,*,*,*,*	false	3
+documents :	名詞,固有名詞,組織,*,*,*,*	false	1
+are :	名詞,固有名詞,組織,*,*,*,*	false	1
+veryreadable :	名詞,固有名詞,組織,*,*,*,*	false	1
+by :	名詞,固有名詞,組織,*,*,*,*	false	1
+humans :	名詞,固有名詞,組織,*,*,*,*	false	1
+.– :	名詞,サ変接続,*,*,*,*,*	false	1
+YAML :	名詞,固有名詞,組織,*,*,*,*	false	4
+is :	名詞,固有名詞,組織,*,*,*,*	false	1
+easy :	名詞,固有名詞,組織,*,*,*,*	false	1
+to :	名詞,固有名詞,組織,*,*,*,*	false	1
+implement :	名詞,固有名詞,組織,*,*,*,*	false	1
+.• :	名詞,サ変接続,*,*,*,*,*	false	1
+http :	名詞,一般,*,*,*,*,*	false	2
+:// :	名詞,サ変接続,*,*,*,*,*	false	2
+www :	名詞,一般,*,*,*,*,*	false	2
+yaml :	名詞,一般,*,*,*,*,*	false	2
+org :	名詞,一般,*,*,*,*,*	false	2
+start :	名詞,一般,*,*,*,*,*	false	1
+html :	名詞,一般,*,*,*,*,*	false	1
+ページ: 14 -----
+<slide page="14"><body><p>(3) Not Semantic Web• Microformats   http://microformats.org/– Humans first and machines second– Semantic Web	conventions– http://microformats.org/wiki/Main_Page#Definition simple conventionsfor embedding semantic markupfor a specific problem domainin human-readable (X)HTML/XML documents, Atom/RSS feeds, and"plain" XMLthat normalize existing content usage patternsusing brief, descriptive class namesoften based on existing interoperable standardsto enable decentralized developmentof resources, tools, and services</p></body></slide>
+in Sheet Class, page: 14
+title = ""
+body = "<p>(3) Not Semantic Web• Microformats   http://microformats.org/– Humans first and machines second– Semantic Web	conventions– http://microformats.org/wiki/Main_Page#Definition simple conventionsfor embedding semantic markupfor a specific problem domainin human-readable (X)HTML/XML documents, Atom/RSS feeds, and"plain" XMLthat normalize existing content usage patternsusing brief, descriptive class namesoften based on existing interoperable standardsto enable decentralized developmentof resources, tools, and services</p>"
+makeWordArrayJp
+paragraph: (3) Not Semantic Web• Microformats   http://microformats.org/– Humans first and machines second– Semantic Web	conventions– http://microformats.org/wiki/Main_Page#Definition simple conventionsfor embedding semantic markupfor a specific problem domainin human-readable (X)HTML/XML documents, Atom/RSS feeds, and"plain" XMLthat normalize existing content usage patternsusing brief, descriptive class namesoften based on existing interoperable standardsto enable decentralized developmentof resources, tools, and services
+Not :	名詞,固有名詞,組織,*,*,*,*	false	1
+Semantic :	名詞,固有名詞,組織,*,*,*,*	false	1
+Web :	名詞,固有名詞,組織,*,*,*,*	false	1
+Microformats :	名詞,固有名詞,組織,*,*,*,*	false	1
+http :	名詞,固有名詞,組織,*,*,*,*	false	1
+:// :	名詞,サ変接続,*,*,*,*,*	false	1
+microformats :	名詞,一般,*,*,*,*,*	false	1
+org :	名詞,一般,*,*,*,*,*	false	1
+/– :	名詞,サ変接続,*,*,*,*,*	false	1
+Humans :	名詞,固有名詞,組織,*,*,*,*	false	1
+first :	名詞,固有名詞,組織,*,*,*,*	false	1
+and :	名詞,固有名詞,組織,*,*,*,*	false	1
+machines :	名詞,固有名詞,組織,*,*,*,*	false	1
+second :	名詞,固有名詞,組織,*,*,*,*	false	1
+Semantic :	名詞,固有名詞,組織,*,*,*,*	false	2
+Web :	名詞,固有名詞,組織,*,*,*,*	false	2
+conventions :	名詞,固有名詞,組織,*,*,*,*	false	1
+http :	名詞,固有名詞,組織,*,*,*,*	false	2
+:// :	名詞,サ変接続,*,*,*,*,*	false	2
+microformats :	名詞,一般,*,*,*,*,*	false	2
+org :	名詞,一般,*,*,*,*,*	false	2
+wiki :	名詞,一般,*,*,*,*,*	false	1
+Main :	名詞,一般,*,*,*,*,*	false	1
+Page :	名詞,一般,*,*,*,*,*	false	1
+Definition :	名詞,一般,*,*,*,*,*	false	1
+simple :	名詞,固有名詞,組織,*,*,*,*	false	1
+conventionsfor :	名詞,固有名詞,組織,*,*,*,*	false	1
+embedding :	名詞,固有名詞,組織,*,*,*,*	false	1
+semantic :	名詞,固有名詞,組織,*,*,*,*	false	1
+markupfor :	名詞,固有名詞,組織,*,*,*,*	false	1
+specific :	名詞,固有名詞,組織,*,*,*,*	false	1
+problem :	名詞,固有名詞,組織,*,*,*,*	false	1
+domainin :	名詞,固有名詞,組織,*,*,*,*	false	1
+human :	名詞,固有名詞,組織,*,*,*,*	false	1
+readable :	名詞,固有名詞,組織,*,*,*,*	false	1
+HTML :	名詞,一般,*,*,*,*,*	false	1
+XML :	名詞,固有名詞,組織,*,*,*,*	false	1
+documents :	名詞,固有名詞,組織,*,*,*,*	false	1
+Atom :	名詞,固有名詞,組織,*,*,*,*	false	1
+RSS :	名詞,固有名詞,組織,*,*,*,*	false	1
+feeds :	名詞,固有名詞,組織,*,*,*,*	false	1
+and :	名詞,固有名詞,組織,*,*,*,*	false	2
+plain :	名詞,一般,*,*,*,*,*	false	1
+XMLthat :	名詞,固有名詞,組織,*,*,*,*	false	1
+normalize :	名詞,固有名詞,組織,*,*,*,*	false	1
+existing :	名詞,固有名詞,組織,*,*,*,*	false	1
+content :	名詞,固有名詞,組織,*,*,*,*	false	1
+usage :	名詞,固有名詞,組織,*,*,*,*	false	1
+patternsusing :	名詞,固有名詞,組織,*,*,*,*	false	1
+brief :	名詞,固有名詞,組織,*,*,*,*	false	1
+descriptive :	名詞,固有名詞,組織,*,*,*,*	false	1
+class :	名詞,固有名詞,組織,*,*,*,*	false	1
+namesoften :	名詞,固有名詞,組織,*,*,*,*	false	1
+based :	名詞,固有名詞,組織,*,*,*,*	false	1
+on :	名詞,固有名詞,組織,*,*,*,*	false	1
+existing :	名詞,固有名詞,組織,*,*,*,*	false	2
+interoperable :	名詞,固有名詞,組織,*,*,*,*	false	1
+standardsto :	名詞,固有名詞,組織,*,*,*,*	false	1
+enable :	名詞,固有名詞,組織,*,*,*,*	false	1
+decentralized :	名詞,固有名詞,組織,*,*,*,*	false	1
+developmentof :	名詞,固有名詞,組織,*,*,*,*	false	1
+resources :	名詞,固有名詞,組織,*,*,*,*	false	1
+tools :	名詞,固有名詞,組織,*,*,*,*	false	1
+and :	名詞,固有名詞,組織,*,*,*,*	false	3
+services :	名詞,固有名詞,組織,*,*,*,*	false	1
+ページ: 15 -----
+<slide page="15"><body><p>Microformats• "C43;ABFJ• C$QPUTC– (X)HTML+CclassDX+CL,G8B'>H7B/<K@6J:A96 V -)3	!W– H?@XclassLSPA=@(%B$>J• RDFL$6JHIDJ8B/9<li class='sprite'><div class='spritecontents'>&#5. -</div><div class='spriteinfo'><span class='spriteauthor'>admin</span><span class='spritetime'>2006/10/10 04:11:26</span><span class='spritepositlink'><ahref='./positlog.cgi?load=061010iQ&id=sprite_20061010041126_294'>link</a></span></div></li> -RUMVhttp://cresta.kuis.kyoto-u.ac.jp/positlog/itp.htmlWCOUNHIX201CE*</p></body></slide>
+in Sheet Class, page: 15
+title = ""
+body = "<p>Microformats• "C43;ABFJ• C$QPUTC– (X)HTML+CclassDX+CL,G8B'>H7B/<K@6J:A96 V -)3	!W– H?@XclassLSPA=@(%B$>J• RDFL$6JHIDJ8B/9<li class='sprite'><div class='spritecontents'>&#5. -</div><div class='spriteinfo'><span class='spriteauthor'>admin</span><span class='spritetime'>2006/10/10 04:11:26</span><span class='spritepositlink'><ahref='./positlog.cgi?load=061010iQ&id=sprite_20061010041126_294'>link</a></span></div></li> -RUMVhttp://cresta.kuis.kyoto-u.ac.jp/positlog/itp.htmlWCOUNHIX201CE*</p>"
+makeWordArrayJp
+paragraph: Microformats• "C43;ABFJ• C$QPUTC– (X)HTML+CclassDX+CL,G8B'>H7B/<K@6J:A96 V -)3	!W– H?@XclassLSPA=@(%B$>J• RDFL$6JHIDJ8B/9<li class='sprite'><div class='spritecontents'>&#5. -</div><div class='spriteinfo'><span class='spriteauthor'>admin</span><span class='spritetime'>2006/10/10 04:11:26</span><span class='spritepositlink'><ahref='./positlog.cgi?load=061010iQ&id=sprite_20061010041126_294'>link</a></span></div></li> -RUMVhttp://cresta.kuis.kyoto-u.ac.jp/positlog/itp.htmlWCOUNHIX201CE*
+Microformats :	名詞,固有名詞,組織,*,*,*,*	false	1
+AB :	名詞,一般,*,*,*,*,*	false	1
+FJ :	名詞,固有名詞,組織,*,*,*,*	false	1
+QPUTC :	名詞,一般,*,*,*,*,*	false	1
+HTML :	名詞,一般,*,*,*,*,*	false	1
+Cclass :	名詞,固有名詞,組織,*,*,*,*	false	1
+DX :	名詞,固有名詞,組織,*,*,*,*	false	1
+'> :	名詞,サ変接続,*,*,*,*,*	false	1
+/< :	名詞,サ変接続,*,*,*,*,*	false	1
+-) :	名詞,サ変接続,*,*,*,*,*	false	1
+?@ :	名詞,サ変接続,*,*,*,*,*	false	1
+XclassLSP :	名詞,一般,*,*,*,*,*	false	1
+=@( :	名詞,サ変接続,*,*,*,*,*	false	1
+$> :	名詞,サ変接続,*,*,*,*,*	false	1
+RDFL :	名詞,固有名詞,組織,*,*,*,*	false	1
+JHIDJ :	名詞,一般,*,*,*,*,*	false	1
+li :	名詞,固有名詞,組織,*,*,*,*	false	1
+class :	名詞,固有名詞,組織,*,*,*,*	false	1
+=' :	名詞,サ変接続,*,*,*,*,*	false	1
+sprite :	名詞,一般,*,*,*,*,*	false	1
+'>< :	名詞,サ変接続,*,*,*,*,*	false	1
+div :	名詞,固有名詞,組織,*,*,*,*	false	1
+class :	名詞,固有名詞,組織,*,*,*,*	false	2
+=' :	名詞,サ変接続,*,*,*,*,*	false	2
+spritecontents :	名詞,一般,*,*,*,*,*	false	1
+'> :	名詞,サ変接続,*,*,*,*,*	false	2
+&# :	名詞,サ変接続,*,*,*,*,*	false	1
+-</ :	名詞,サ変接続,*,*,*,*,*	false	1
+div :	名詞,一般,*,*,*,*,*	false	2
+>< :	名詞,サ変接続,*,*,*,*,*	false	1
+div :	名詞,固有名詞,組織,*,*,*,*	false	3
+class :	名詞,固有名詞,組織,*,*,*,*	false	3
+=' :	名詞,サ変接続,*,*,*,*,*	false	3
+spriteinfo :	名詞,一般,*,*,*,*,*	false	1
+'>< :	名詞,サ変接続,*,*,*,*,*	false	2
+span :	名詞,固有名詞,組織,*,*,*,*	false	1
+class :	名詞,固有名詞,組織,*,*,*,*	false	4
+=' :	名詞,サ変接続,*,*,*,*,*	false	4
+spriteauthor :	名詞,一般,*,*,*,*,*	false	1
+'> :	名詞,サ変接続,*,*,*,*,*	false	3
+admin :	名詞,一般,*,*,*,*,*	false	1
+</ :	名詞,サ変接続,*,*,*,*,*	false	1
+span :	名詞,一般,*,*,*,*,*	false	2
+>< :	名詞,サ変接続,*,*,*,*,*	false	2
+span :	名詞,固有名詞,組織,*,*,*,*	false	3
+class :	名詞,固有名詞,組織,*,*,*,*	false	5
+=' :	名詞,サ変接続,*,*,*,*,*	false	5
+spritetime :	名詞,一般,*,*,*,*,*	false	1
+'> :	名詞,サ変接続,*,*,*,*,*	false	4
+</ :	名詞,サ変接続,*,*,*,*,*	false	2
+span :	名詞,一般,*,*,*,*,*	false	4
+>< :	名詞,サ変接続,*,*,*,*,*	false	3
+span :	名詞,固有名詞,組織,*,*,*,*	false	5
+class :	名詞,固有名詞,組織,*,*,*,*	false	6
+=' :	名詞,サ変接続,*,*,*,*,*	false	6
+spritepositlink :	名詞,一般,*,*,*,*,*	false	1
+'>< :	名詞,サ変接続,*,*,*,*,*	false	3
+ahref :	名詞,一般,*,*,*,*,*	false	1
+='./ :	名詞,サ変接続,*,*,*,*,*	false	1
+positlog :	名詞,一般,*,*,*,*,*	false	1
+cgi :	名詞,一般,*,*,*,*,*	false	1
+load :	名詞,一般,*,*,*,*,*	false	1
+iQ :	名詞,一般,*,*,*,*,*	false	1
+id :	名詞,一般,*,*,*,*,*	false	1
+sprite :	名詞,一般,*,*,*,*,*	false	2
+'> :	名詞,サ変接続,*,*,*,*,*	false	5
+link :	名詞,一般,*,*,*,*,*	false	1
+</ :	名詞,サ変接続,*,*,*,*,*	false	3
+></ :	名詞,サ変接続,*,*,*,*,*	false	1
+span :	名詞,一般,*,*,*,*,*	false	6
+></ :	名詞,サ変接続,*,*,*,*,*	false	2
+div :	名詞,一般,*,*,*,*,*	false	4
+></ :	名詞,サ変接続,*,*,*,*,*	false	3
+li :	名詞,一般,*,*,*,*,*	false	2
+RUMVhttp :	名詞,一般,*,*,*,*,*	false	1
+:// :	名詞,サ変接続,*,*,*,*,*	false	1
+cresta :	名詞,一般,*,*,*,*,*	false	1
+kuis :	名詞,一般,*,*,*,*,*	false	1
+kyoto :	名詞,一般,*,*,*,*,*	false	1
+ac :	名詞,一般,*,*,*,*,*	false	1
+jp :	名詞,一般,*,*,*,*,*	false	1
+positlog :	名詞,一般,*,*,*,*,*	false	2
+itp :	名詞,一般,*,*,*,*,*	false	1
+htmlWCOUNHIX :	名詞,一般,*,*,*,*,*	false	1
+CE :	名詞,固有名詞,組織,*,*,*,*	false	1
+ページ: 16 -----
+<slide page="16"><body><p>Microformats! • XFN (XHTML Friends Network)– http://gmpg.org/xfn/– – <a href="http://www.ii.ist.i.kyoto-u.ac.jp/~xxx/"rel="friend met colleague">...– FOAF6	 </p></body></slide>
+in Sheet Class, page: 16
+title = ""
+body = "<p>Microformats! • XFN (XHTML Friends Network)– http://gmpg.org/xfn/– – <a href="http://www.ii.ist.i.kyoto-u.ac.jp/~xxx/"rel="friend met colleague">...– FOAF6	 </p>"
+makeWordArrayJp
+paragraph: Microformats! • XFN (XHTML Friends Network)– http://gmpg.org/xfn/– – <a href="http://www.ii.ist.i.kyoto-u.ac.jp/~xxx/"rel="friend met colleague">...– FOAF6	 
+Microformats :	名詞,固有名詞,組織,*,*,*,*	false	1
+XFN :	名詞,固有名詞,組織,*,*,*,*	false	1
+XHTML :	名詞,固有名詞,組織,*,*,*,*	false	1
+Friends :	名詞,固有名詞,組織,*,*,*,*	false	1
+Network :	名詞,固有名詞,組織,*,*,*,*	false	1
+)– :	名詞,サ変接続,*,*,*,*,*	false	1
+http :	名詞,固有名詞,組織,*,*,*,*	false	1
+:// :	名詞,サ変接続,*,*,*,*,*	false	1
+gmpg :	名詞,一般,*,*,*,*,*	false	1
+org :	名詞,一般,*,*,*,*,*	false	1
+xfn :	名詞,一般,*,*,*,*,*	false	1
+/– :	名詞,サ変接続,*,*,*,*,*	false	1
+href :	名詞,固有名詞,組織,*,*,*,*	false	1
+=" :	名詞,サ変接続,*,*,*,*,*	false	1
+http :	名詞,一般,*,*,*,*,*	false	2
+:// :	名詞,サ変接続,*,*,*,*,*	false	2
+www :	名詞,一般,*,*,*,*,*	false	1
+ii :	名詞,一般,*,*,*,*,*	false	1
+ist :	名詞,一般,*,*,*,*,*	false	1
+kyoto :	名詞,一般,*,*,*,*,*	false	1
+ac :	名詞,一般,*,*,*,*,*	false	1
+jp :	名詞,一般,*,*,*,*,*	false	1
+/~ :	名詞,サ変接続,*,*,*,*,*	false	1
+xxx :	名詞,一般,*,*,*,*,*	false	1
+/" :	名詞,サ変接続,*,*,*,*,*	false	1
+rel :	名詞,一般,*,*,*,*,*	false	1
+=" :	名詞,サ変接続,*,*,*,*,*	false	2
+friend :	名詞,固有名詞,組織,*,*,*,*	false	1
+met :	名詞,固有名詞,組織,*,*,*,*	false	1
+colleague :	名詞,固有名詞,組織,*,*,*,*	false	1
+">...– :	名詞,サ変接続,*,*,*,*,*	false	1
+FOAF :	名詞,固有名詞,組織,*,*,*,*	false	1
+ページ: 17 -----
+<slide page="17"><body><p>Microformats!?B@• hReview  http://microformats.org/wiki/hreview–A+=2-A2,1-A(4;/!:28=&?(X)HTML, RSS @"$#$!	<div class="hreview"><p><div class="blogimg"><a class="item url" href="http://www.eigaseikatu.com/title/3310/"><imgsrc="http://www.eigaseikatu.com/title/blogimg.php?no=3310" style="border: none;" alt="0(/6'=<23)'<*9-5-" class="photo" /></a></div></p><p><a class="item url" href="http://www.eigaseikatu.com/title/3310/"><span class="fn">0(/6'=<23)'<*9-5-</span></a></p><p>[<abbr class="rating" title=“9">90</abbr>](<abbr class="worst"title="0">0</abbr>-<abbr class="best" title="10">100</abbr>)</p><p class=“description”>,7.*%></p><p><span class="reviewer vcard">Posted by <a class="url fn" href="http://cresta.kuis.kyoto-u.ac.jp/positlog/itp.html"></a> on <abbr class="dtreviewed" title="2006-11-14T07:12:15+09:00">2006/11/14</abbr></span> with <span class="eigaseikatu-powered"><aclass="url" href="http://www.eigaseikatu.com/"></a></span></p></div>+(/hReview	!:28=http://www.eigaseikatu.com/title/hreview.html</p></body></slide>
+in Sheet Class, page: 17
+title = ""
+body = "<p>Microformats!?B@• hReview  http://microformats.org/wiki/hreview–A+=2-A2,1-A(4;/!:28=&?(X)HTML, RSS @"$#$!	<div class="hreview"><p><div class="blogimg"><a class="item url" href="http://www.eigaseikatu.com/title/3310/"><imgsrc="http://www.eigaseikatu.com/title/blogimg.php?no=3310" style="border: none;" alt="0(/6'=<23)'<*9-5-" class="photo" /></a></div></p><p><a class="item url" href="http://www.eigaseikatu.com/title/3310/"><span class="fn">0(/6'=<23)'<*9-5-</span></a></p><p>[<abbr class="rating" title=“9">90</abbr>](<abbr class="worst"title="0">0</abbr>-<abbr class="best" title="10">100</abbr>)</p><p class=“description”>,7.*%></p><p><span class="reviewer vcard">Posted by <a class="url fn" href="http://cresta.kuis.kyoto-u.ac.jp/positlog/itp.html"></a> on <abbr class="dtreviewed" title="2006-11-14T07:12:15+09:00">2006/11/14</abbr></span> with <span class="eigaseikatu-powered"><aclass="url" href="http://www.eigaseikatu.com/"></a></span></p></div>+(/hReview	!:28=http://www.eigaseikatu.com/title/hreview.html</p>"
+makeWordArrayJp
+paragraph: Microformats!?B@• hReview  http://microformats.org/wiki/hreview–A+=2-A2,1-A(4;/!:28=&?(X)HTML, RSS @"$#$!	<div class="hreview"><p><div class="blogimg"><a class="item url" href="http://www.eigaseikatu.com/title/3310/"><imgsrc="http://www.eigaseikatu.com/title/blogimg.php?no=3310" style="border: none;" alt="0(/6'=<23)'<*9-5-" class="photo" /></a></div>
+Microformats :	名詞,固有名詞,組織,*,*,*,*	false	1
+@• :	名詞,サ変接続,*,*,*,*,*	false	1
+hReview :	名詞,固有名詞,組織,*,*,*,*	false	1
+http :	名詞,固有名詞,組織,*,*,*,*	false	1
+:// :	名詞,サ変接続,*,*,*,*,*	false	1
+microformats :	名詞,一般,*,*,*,*,*	false	1
+org :	名詞,一般,*,*,*,*,*	false	1
+wiki :	名詞,一般,*,*,*,*,*	false	1
+hreview :	名詞,一般,*,*,*,*,*	false	1
++= :	名詞,サ変接続,*,*,*,*,*	false	1
+;/!: :	名詞,サ変接続,*,*,*,*,*	false	1
+=& :	名詞,サ変接続,*,*,*,*,*	false	1
+?( :	名詞,サ変接続,*,*,*,*,*	false	1
+HTML :	名詞,一般,*,*,*,*,*	false	1
+RSS :	名詞,固有名詞,組織,*,*,*,*	false	1
+@" :	名詞,サ変接続,*,*,*,*,*	false	1
+$! :	名詞,サ変接続,*,*,*,*,*	false	1
+div :	名詞,固有名詞,組織,*,*,*,*	false	1
+class :	名詞,固有名詞,組織,*,*,*,*	false	1
+=" :	名詞,サ変接続,*,*,*,*,*	false	1
+hreview :	名詞,一般,*,*,*,*,*	false	2
+">< :	名詞,サ変接続,*,*,*,*,*	false	1
+>< :	名詞,サ変接続,*,*,*,*,*	false	1
+div :	名詞,固有名詞,組織,*,*,*,*	false	2
+class :	名詞,固有名詞,組織,*,*,*,*	false	2
+=" :	名詞,サ変接続,*,*,*,*,*	false	2
+blogimg :	名詞,一般,*,*,*,*,*	false	1
+">< :	名詞,サ変接続,*,*,*,*,*	false	2
+class :	名詞,固有名詞,組織,*,*,*,*	false	3
+=" :	名詞,サ変接続,*,*,*,*,*	false	3
+item :	名詞,固有名詞,組織,*,*,*,*	false	1
+url :	名詞,固有名詞,組織,*,*,*,*	false	1
+href :	名詞,固有名詞,組織,*,*,*,*	false	1
+=" :	名詞,サ変接続,*,*,*,*,*	false	4
+http :	名詞,一般,*,*,*,*,*	false	2
+:// :	名詞,サ変接続,*,*,*,*,*	false	2
+www :	名詞,一般,*,*,*,*,*	false	1
+eigaseikatu :	名詞,一般,*,*,*,*,*	false	1
+com :	名詞,一般,*,*,*,*,*	false	1
+title :	名詞,一般,*,*,*,*,*	false	1
+/">< :	名詞,サ変接続,*,*,*,*,*	false	1
+imgsrc :	名詞,一般,*,*,*,*,*	false	1
+=" :	名詞,サ変接続,*,*,*,*,*	false	5
+http :	名詞,一般,*,*,*,*,*	false	3
+:// :	名詞,サ変接続,*,*,*,*,*	false	3
+www :	名詞,一般,*,*,*,*,*	false	2
+eigaseikatu :	名詞,一般,*,*,*,*,*	false	2
+com :	名詞,一般,*,*,*,*,*	false	2
+title :	名詞,一般,*,*,*,*,*	false	2
+blogimg :	名詞,一般,*,*,*,*,*	false	2
+php :	名詞,一般,*,*,*,*,*	false	1
+no :	名詞,一般,*,*,*,*,*	false	1
+style :	名詞,固有名詞,組織,*,*,*,*	false	1
+=" :	名詞,サ変接続,*,*,*,*,*	false	6
+border :	名詞,一般,*,*,*,*,*	false	1
+none :	名詞,固有名詞,組織,*,*,*,*	false	1
+;" :	名詞,サ変接続,*,*,*,*,*	false	1
+alt :	名詞,固有名詞,組織,*,*,*,*	false	1
+=" :	名詞,サ変接続,*,*,*,*,*	false	7
+(/ :	名詞,サ変接続,*,*,*,*,*	false	1
+'=< :	名詞,サ変接続,*,*,*,*,*	false	1
+)'<* :	名詞,サ変接続,*,*,*,*,*	false	1
+-" :	名詞,サ変接続,*,*,*,*,*	false	1
+class :	名詞,固有名詞,組織,*,*,*,*	false	4
+=" :	名詞,サ変接続,*,*,*,*,*	false	8
+photo :	名詞,一般,*,*,*,*,*	false	1
+/></ :	名詞,サ変接続,*,*,*,*,*	false	1
+></ :	名詞,サ変接続,*,*,*,*,*	false	1
+div :	名詞,一般,*,*,*,*,*	false	3
+paragraph: <a class="item url" href="http://www.eigaseikatu.com/title/3310/"><span class="fn">0(/6'=<23)'<*9-5-</span></a>
+class :	名詞,固有名詞,組織,*,*,*,*	false	5
+=" :	名詞,サ変接続,*,*,*,*,*	false	9
+item :	名詞,固有名詞,組織,*,*,*,*	false	2
+url :	名詞,固有名詞,組織,*,*,*,*	false	2
+href :	名詞,固有名詞,組織,*,*,*,*	false	2
+=" :	名詞,サ変接続,*,*,*,*,*	false	10
+http :	名詞,一般,*,*,*,*,*	false	4
+:// :	名詞,サ変接続,*,*,*,*,*	false	4
+www :	名詞,一般,*,*,*,*,*	false	3
+eigaseikatu :	名詞,一般,*,*,*,*,*	false	3
+com :	名詞,一般,*,*,*,*,*	false	3
+title :	名詞,一般,*,*,*,*,*	false	3
+/">< :	名詞,サ変接続,*,*,*,*,*	false	2
+span :	名詞,固有名詞,組織,*,*,*,*	false	1
+class :	名詞,固有名詞,組織,*,*,*,*	false	6
+=" :	名詞,サ変接続,*,*,*,*,*	false	11
+fn :	名詞,一般,*,*,*,*,*	false	1
+"> :	名詞,サ変接続,*,*,*,*,*	false	1
+(/ :	名詞,サ変接続,*,*,*,*,*	false	2
+'=< :	名詞,サ変接続,*,*,*,*,*	false	2
+)'<* :	名詞,サ変接続,*,*,*,*,*	false	2
+-</ :	名詞,サ変接続,*,*,*,*,*	false	1
+span :	名詞,一般,*,*,*,*,*	false	2
+></ :	名詞,サ変接続,*,*,*,*,*	false	2
+paragraph: [<abbr class="rating" title=“9">90</abbr>](<abbr class="worst"title="0">0</abbr>-<abbr class="best" title="10">100</abbr>)
+[< :	名詞,サ変接続,*,*,*,*,*	false	1
+abbr :	名詞,固有名詞,組織,*,*,*,*	false	1
+class :	名詞,固有名詞,組織,*,*,*,*	false	7
+=" :	名詞,サ変接続,*,*,*,*,*	false	12
+rating :	名詞,一般,*,*,*,*,*	false	1
+title :	名詞,固有名詞,組織,*,*,*,*	false	4
+=“ :	名詞,サ変接続,*,*,*,*,*	false	1
+"> :	名詞,サ変接続,*,*,*,*,*	false	2
+</ :	名詞,サ変接続,*,*,*,*,*	false	1
+abbr :	名詞,一般,*,*,*,*,*	false	2
+>](< :	名詞,サ変接続,*,*,*,*,*	false	1
+abbr :	名詞,固有名詞,組織,*,*,*,*	false	3
+class :	名詞,固有名詞,組織,*,*,*,*	false	8
+=" :	名詞,サ変接続,*,*,*,*,*	false	13
+worst :	名詞,一般,*,*,*,*,*	false	1
+title :	名詞,一般,*,*,*,*,*	false	5
+=" :	名詞,サ変接続,*,*,*,*,*	false	14
+"> :	名詞,サ変接続,*,*,*,*,*	false	3
+</ :	名詞,サ変接続,*,*,*,*,*	false	2
+abbr :	名詞,一般,*,*,*,*,*	false	4
+>-< :	名詞,サ変接続,*,*,*,*,*	false	1
+abbr :	名詞,固有名詞,組織,*,*,*,*	false	5
+class :	名詞,固有名詞,組織,*,*,*,*	false	9
+=" :	名詞,サ変接続,*,*,*,*,*	false	15
+best :	名詞,一般,*,*,*,*,*	false	1
+title :	名詞,固有名詞,組織,*,*,*,*	false	6
+=" :	名詞,サ変接続,*,*,*,*,*	false	16
+"> :	名詞,サ変接続,*,*,*,*,*	false	4
+</ :	名詞,サ変接続,*,*,*,*,*	false	3
+abbr :	名詞,一般,*,*,*,*,*	false	6
+>) :	名詞,サ変接続,*,*,*,*,*	false	1
+paragraph: ,7.*%>
+.* :	名詞,サ変接続,*,*,*,*,*	false	1
+paragraph: <span class="reviewer vcard">Posted by <a class="url fn" href="http://cresta.kuis.kyoto-u.ac.jp/positlog/itp.html"></a> on <abbr class="dtreviewed" title="2006-11-14T07:12:15+09:00">2006/11/14</abbr></span> with <span class="eigaseikatu-powered"><aclass="url" href="http://www.eigaseikatu.com/"></a></span>
+span :	名詞,固有名詞,組織,*,*,*,*	false	3
+class :	名詞,固有名詞,組織,*,*,*,*	false	10
+=" :	名詞,サ変接続,*,*,*,*,*	false	17
+reviewer :	名詞,固有名詞,組織,*,*,*,*	false	1
+vcard :	名詞,固有名詞,組織,*,*,*,*	false	1
+"> :	名詞,サ変接続,*,*,*,*,*	false	5
+Posted :	名詞,固有名詞,組織,*,*,*,*	false	1
+by :	名詞,固有名詞,組織,*,*,*,*	false	1
+class :	名詞,固有名詞,組織,*,*,*,*	false	11
+=" :	名詞,サ変接続,*,*,*,*,*	false	18
+url :	名詞,固有名詞,組織,*,*,*,*	false	3
+fn :	名詞,固有名詞,組織,*,*,*,*	false	2
+href :	名詞,固有名詞,組織,*,*,*,*	false	3
+=" :	名詞,サ変接続,*,*,*,*,*	false	19
+http :	名詞,一般,*,*,*,*,*	false	5
+:// :	名詞,サ変接続,*,*,*,*,*	false	5
+cresta :	名詞,一般,*,*,*,*,*	false	1
+kuis :	名詞,一般,*,*,*,*,*	false	1
+kyoto :	名詞,一般,*,*,*,*,*	false	1
+ac :	名詞,一般,*,*,*,*,*	false	1
+jp :	名詞,一般,*,*,*,*,*	false	1
+positlog :	名詞,一般,*,*,*,*,*	false	1
+itp :	名詞,一般,*,*,*,*,*	false	1
+html :	名詞,一般,*,*,*,*,*	false	1
+"> :	名詞,サ変接続,*,*,*,*,*	false	6
+</ :	名詞,サ変接続,*,*,*,*,*	false	4
+on :	名詞,固有名詞,組織,*,*,*,*	false	1
+abbr :	名詞,固有名詞,組織,*,*,*,*	false	7
+class :	名詞,固有名詞,組織,*,*,*,*	false	12
+=" :	名詞,サ変接続,*,*,*,*,*	false	20
+dtreviewed :	名詞,一般,*,*,*,*,*	false	1
+title :	名詞,固有名詞,組織,*,*,*,*	false	7
+=" :	名詞,サ変接続,*,*,*,*,*	false	21
+"> :	名詞,サ変接続,*,*,*,*,*	false	7
+</ :	名詞,サ変接続,*,*,*,*,*	false	5
+abbr :	名詞,一般,*,*,*,*,*	false	8
+></ :	名詞,サ変接続,*,*,*,*,*	false	3
+span :	名詞,一般,*,*,*,*,*	false	4
+with :	名詞,固有名詞,組織,*,*,*,*	false	1
+span :	名詞,固有名詞,組織,*,*,*,*	false	5
+class :	名詞,固有名詞,組織,*,*,*,*	false	13
+=" :	名詞,サ変接続,*,*,*,*,*	false	22
+eigaseikatu :	名詞,一般,*,*,*,*,*	false	4
+powered :	名詞,一般,*,*,*,*,*	false	1
+">< :	名詞,サ変接続,*,*,*,*,*	false	3
+aclass :	名詞,一般,*,*,*,*,*	false	1
+=" :	名詞,サ変接続,*,*,*,*,*	false	23
+url :	名詞,一般,*,*,*,*,*	false	4
+href :	名詞,固有名詞,組織,*,*,*,*	false	4
+=" :	名詞,サ変接続,*,*,*,*,*	false	24
+http :	名詞,一般,*,*,*,*,*	false	6
+:// :	名詞,サ変接続,*,*,*,*,*	false	6
+www :	名詞,一般,*,*,*,*,*	false	4
+eigaseikatu :	名詞,一般,*,*,*,*,*	false	5
+com :	名詞,一般,*,*,*,*,*	false	4
+/"> :	名詞,サ変接続,*,*,*,*,*	false	1
+</ :	名詞,サ変接続,*,*,*,*,*	false	6
+></ :	名詞,サ変接続,*,*,*,*,*	false	4
+span :	名詞,一般,*,*,*,*,*	false	6
+ページ: 18 -----
+<slide page="18"><body><p>3.5E 72• WikiD?C;:=>DMicroformats 0/–  1.,-46)#D$6)#– 6"!	17,+0• 1(->B<A@9'D(X)HTMLDXMLDRDF2%0.&*8</p></body></slide>
+in Sheet Class, page: 18
+title = ""
+body = "<p>3.5E 72• WikiD?C;:=>DMicroformats 0/–  1.,-46)#D$6)#– 6"!	17,+0• 1(->B<A@9'D(X)HTMLDXMLDRDF2%0.&*8</p>"
+makeWordArrayJp
+paragraph: 3.5E 72• WikiD?C;:=>DMicroformats 0/–  1.,-46)#D$6)#– 6"!	17,+0• 1(->B<A@9'D(X)HTMLDXMLDRDF2%0.&*8
+Wiki :	名詞,固有名詞,組織,*,*,*,*	false	1
+;:=> :	名詞,サ変接続,*,*,*,*,*	false	1
+DMicroformats :	名詞,固有名詞,組織,*,*,*,*	false	1
+/– :	名詞,サ変接続,*,*,*,*,*	false	1
+.,- :	名詞,サ変接続,*,*,*,*,*	false	1
+)# :	名詞,サ変接続,*,*,*,*,*	false	1
+)#– :	名詞,サ変接続,*,*,*,*,*	false	1
+"! :	名詞,サ変接続,*,*,*,*,*	false	1
+,+ :	名詞,サ変接続,*,*,*,*,*	false	1
+(- :	名詞,サ変接続,*,*,*,*,*	false	1
+HTMLDXMLDRDF :	名詞,一般,*,*,*,*,*	false	1
+&* :	名詞,サ変接続,*,*,*,*,*	false	1
+ページ: 19 -----
+<slide page="19"><body><p>	%• –"$&#• HTML'XML'SemanticWeb•  – Wiki, (Wikipedia)– Lightweight markup language– Microformat• – PositLog!</p></body></slide>
+in Sheet Class, page: 19
+title = ""
+body = "<p>	%• –"$&#• HTML'XML'SemanticWeb•  – Wiki, (Wikipedia)– Lightweight markup language– Microformat• – PositLog!</p>"
+makeWordArrayJp
+paragraph: 	%• –"$&#• HTML'XML'SemanticWeb•  – Wiki, (Wikipedia)– Lightweight markup language– Microformat• – PositLog!
+"$&# :	名詞,サ変接続,*,*,*,*,*	false	1
+HTML :	名詞,固有名詞,組織,*,*,*,*	false	1
+XML :	名詞,一般,*,*,*,*,*	false	1
+SemanticWeb :	名詞,一般,*,*,*,*,*	false	1
+Wiki :	名詞,固有名詞,組織,*,*,*,*	false	1
+Wikipedia :	名詞,一般,*,*,*,*,*	false	1
+)– :	名詞,サ変接続,*,*,*,*,*	false	1
+Lightweight :	名詞,固有名詞,組織,*,*,*,*	false	1
+markup :	名詞,固有名詞,組織,*,*,*,*	false	1
+language :	名詞,固有名詞,組織,*,*,*,*	false	1
+Microformat :	名詞,固有名詞,組織,*,*,*,*	false	1
+PositLog :	名詞,固有名詞,組織,*,*,*,*	false	1
+ページ: 20 -----
+<slide page="20"><body><p>	$!• $%=>@? 	,*=.95-9 ")'&• %'#=+& $74:3, &• $'$2:6!=PositLog;418/<,&– 0-3;http://cresta.kuis.kyoto-u.ac.jp/positlog/itp.html<$#(</p></body></slide>
+in Sheet Class, page: 20
+title = ""
+body = "<p>	$!• $%=>@? 	,*=.95-9 ")'&• %'#=+& $74:3, &• $'$2:6!=PositLog;418/<,&– 0-3;http://cresta.kuis.kyoto-u.ac.jp/positlog/itp.html<$#(</p>"
+makeWordArrayJp
+paragraph: 	$!• $%=>@? 	,*=.95-9 ")'&• %'#=+& $74:3, &• $'$2:6!=PositLog;418/<,&– 0-3;http://cresta.kuis.kyoto-u.ac.jp/positlog/itp.html<$#(
+%=>@? :	名詞,サ変接続,*,*,*,*,*	false	1
+*=. :	名詞,サ変接続,*,*,*,*,*	false	1
+'& :	名詞,サ変接続,*,*,*,*,*	false	1
+'#= :	名詞,サ変接続,*,*,*,*,*	false	1
++& :	名詞,サ変接続,*,*,*,*,*	false	1
+'$ :	名詞,サ変接続,*,*,*,*,*	false	1
+PositLog :	名詞,一般,*,*,*,*,*	false	1
+/<, :	名詞,サ変接続,*,*,*,*,*	false	1
+http :	名詞,一般,*,*,*,*,*	false	1
+:// :	名詞,サ変接続,*,*,*,*,*	false	1
+cresta :	名詞,一般,*,*,*,*,*	false	1
+kuis :	名詞,一般,*,*,*,*,*	false	1
+kyoto :	名詞,一般,*,*,*,*,*	false	1
+ac :	名詞,一般,*,*,*,*,*	false	1
+jp :	名詞,一般,*,*,*,*,*	false	1
+positlog :	名詞,一般,*,*,*,*,*	false	1
+itp :	名詞,一般,*,*,*,*,*	false	1
+html :	名詞,一般,*,*,*,*,*	false	1
+<$ :	名詞,サ変接続,*,*,*,*,*	false	1
+#( :	名詞,サ変接続,*,*,*,*,*	false	1
+ページ: 21 -----
+<slide page="21"><body><p>PositLog• HTML:B3#/A6A5F=41?.499@47<B>– http://www.ii.ist.i.kyoto-u.ac.jp/~kubota/positlog.html– HTML#,(E;B2#&#"– =41?.49• #WebAPIC4	D,&+G#HJI0B83,*!• PositLog $JavaScript,'HTML)• IE6 #$(%-</p></body></slide>
+in Sheet Class, page: 21
+title = ""
+body = "<p>PositLog• HTML:B3#/A6A5F=41?.499@47<B>– http://www.ii.ist.i.kyoto-u.ac.jp/~kubota/positlog.html– HTML#,(E;B2#&#"– =41?.49• #WebAPIC4	D,&+G#HJI0B83,*!• PositLog $JavaScript,'HTML)• IE6 #$(%-</p>"
+makeWordArrayJp
+paragraph: PositLog• HTML:B3#/A6A5F=41?.499@47<B>– http://www.ii.ist.i.kyoto-u.ac.jp/~kubota/positlog.html– HTML#,(E;B2#&#"– =41?.49• #WebAPIC4	D,&+G#HJI0B83,*!• PositLog $JavaScript,'HTML)• IE6 #$(%-
+PositLog :	名詞,固有名詞,組織,*,*,*,*	false	1
+HTML :	名詞,固有名詞,組織,*,*,*,*	false	1
+#/ :	名詞,サ変接続,*,*,*,*,*	false	1
+?. :	名詞,サ変接続,*,*,*,*,*	false	1
+>– :	名詞,サ変接続,*,*,*,*,*	false	1
+http :	名詞,固有名詞,組織,*,*,*,*	false	1
+:// :	名詞,サ変接続,*,*,*,*,*	false	1
+www :	名詞,一般,*,*,*,*,*	false	1
+ii :	名詞,一般,*,*,*,*,*	false	1
+ist :	名詞,一般,*,*,*,*,*	false	1
+kyoto :	名詞,一般,*,*,*,*,*	false	1
+ac :	名詞,一般,*,*,*,*,*	false	1
+jp :	名詞,一般,*,*,*,*,*	false	1
+/~ :	名詞,サ変接続,*,*,*,*,*	false	1
+kubota :	名詞,一般,*,*,*,*,*	false	1
+positlog :	名詞,一般,*,*,*,*,*	false	1
+html :	名詞,一般,*,*,*,*,*	false	1
+HTML :	名詞,固有名詞,組織,*,*,*,*	false	2
+#&# :	名詞,サ変接続,*,*,*,*,*	false	1
+?. :	名詞,サ変接続,*,*,*,*,*	false	2
+WebAPIC :	名詞,一般,*,*,*,*,*	false	1
+HJI :	名詞,一般,*,*,*,*,*	false	1
+!• :	名詞,サ変接続,*,*,*,*,*	false	1
+PositLog :	名詞,固有名詞,組織,*,*,*,*	false	2
+JavaScript :	名詞,一般,*,*,*,*,*	false	1
+HTML :	名詞,一般,*,*,*,*,*	false	3
+IE :	名詞,一般,*,*,*,*,*	false	1
+ページ: 22 -----
+<slide page="22"><body><p>PositLog	HTML</p></body></slide>
+in Sheet Class, page: 22
+title = ""
+body = "<p>PositLog	HTML</p>"
+makeWordArrayJp
+paragraph: PositLog	HTML
+PositLog :	名詞,固有名詞,組織,*,*,*,*	false	1
+HTML :	名詞,固有名詞,組織,*,*,*,*	false	1
+ページ: 23 -----
+<slide page="23"><body><p>PositLog142• +0$1.#"/2– http://cresta.kuis.kyoto-u.ac.jp/positlog/061114qo.html?mode=EditMode– %*,"'3• http://storybook.jp/060729jD.html– ) "-!&*.0(• http://storybook.jp/060921dZ.html• +0$%*,"'3+0$3	</p></body></slide>
+in Sheet Class, page: 23
+title = ""
+body = "<p>PositLog142• +0$1.#"/2– http://cresta.kuis.kyoto-u.ac.jp/positlog/061114qo.html?mode=EditMode– %*,"'3• http://storybook.jp/060729jD.html– ) "-!&*.0(• http://storybook.jp/060921dZ.html• +0$%*,"'3+0$3	</p>"
+makeWordArrayJp
+paragraph: PositLog142• +0$1.#"/2– http://cresta.kuis.kyoto-u.ac.jp/positlog/061114qo.html?mode=EditMode– %*,"'3• http://storybook.jp/060729jD.html– ) "-!&*.0(• http://storybook.jp/060921dZ.html• +0$%*,"'3+0$3	
+PositLog :	名詞,一般,*,*,*,*,*	false	1
+.#"/ :	名詞,サ変接続,*,*,*,*,*	false	1
+http :	名詞,固有名詞,組織,*,*,*,*	false	1
+:// :	名詞,サ変接続,*,*,*,*,*	false	1
+cresta :	名詞,一般,*,*,*,*,*	false	1
+kuis :	名詞,一般,*,*,*,*,*	false	1
+kyoto :	名詞,一般,*,*,*,*,*	false	1
+ac :	名詞,一般,*,*,*,*,*	false	1
+jp :	名詞,一般,*,*,*,*,*	false	1
+positlog :	名詞,一般,*,*,*,*,*	false	1
+qo :	名詞,一般,*,*,*,*,*	false	1
+html :	名詞,一般,*,*,*,*,*	false	1
+mode :	名詞,一般,*,*,*,*,*	false	1
+EditMode :	名詞,一般,*,*,*,*,*	false	1
+%*,"' :	名詞,サ変接続,*,*,*,*,*	false	1
+http :	名詞,固有名詞,組織,*,*,*,*	false	2
+:// :	名詞,サ変接続,*,*,*,*,*	false	2
+storybook :	名詞,一般,*,*,*,*,*	false	1
+jp :	名詞,一般,*,*,*,*,*	false	2
+jD :	名詞,一般,*,*,*,*,*	false	1
+html :	名詞,一般,*,*,*,*,*	false	2
+"- :	名詞,サ変接続,*,*,*,*,*	false	1
+!&*. :	名詞,サ変接続,*,*,*,*,*	false	1
+(• :	名詞,サ変接続,*,*,*,*,*	false	1
+http :	名詞,固有名詞,組織,*,*,*,*	false	3
+:// :	名詞,サ変接続,*,*,*,*,*	false	3
+storybook :	名詞,一般,*,*,*,*,*	false	2
+jp :	名詞,一般,*,*,*,*,*	false	3
+dZ :	名詞,一般,*,*,*,*,*	false	1
+html :	名詞,一般,*,*,*,*,*	false	3
+%*,"' :	名詞,サ変接続,*,*,*,*,*	false	2
+ページ: 24 -----
+<slide page="24"><body><p>;<,*• PositLog0(:!/.),	0#( '"• 47385216)%9– http://cresta.kuis.kyoto-u.ac.jp/positlog/positlog.cgi?load=061114Qp&mode=ViewMode– 473+!/.),	0&( '"– 473-+$(#( '"• http://storybook.jp/positlog.cgi?load=060729Ja&id=sprite_20060729213743_717• – 11208917<00</p></body></slide>
+in Sheet Class, page: 24
+title = ""
+body = "<p>;<,*• PositLog0(:!/.),	0#( '"• 47385216)%9– http://cresta.kuis.kyoto-u.ac.jp/positlog/positlog.cgi?load=061114Qp&mode=ViewMode– 473+!/.),	0&( '"– 473-+$(#( '"• http://storybook.jp/positlog.cgi?load=060729Ja&id=sprite_20060729213743_717• – 11208917<00</p>"
+makeWordArrayJp
+paragraph: ;<,*• PositLog0(:!/.),	0#( '"• 47385216)%9– http://cresta.kuis.kyoto-u.ac.jp/positlog/positlog.cgi?load=061114Qp&mode=ViewMode– 473+!/.),	0&( '"– 473-+$(#( '"• http://storybook.jp/positlog.cgi?load=060729Ja&id=sprite_20060729213743_717• – 11208917<00
+;< :	名詞,サ変接続,*,*,*,*,*	false	1
+PositLog :	名詞,一般,*,*,*,*,*	false	1
+(:!/.), :	名詞,サ変接続,*,*,*,*,*	false	1
+#( :	名詞,サ変接続,*,*,*,*,*	false	1
+'" :	名詞,サ変接続,*,*,*,*,*	false	1
+)% :	名詞,サ変接続,*,*,*,*,*	false	1
+http :	名詞,固有名詞,組織,*,*,*,*	false	1
+:// :	名詞,サ変接続,*,*,*,*,*	false	1
+cresta :	名詞,一般,*,*,*,*,*	false	1
+kuis :	名詞,一般,*,*,*,*,*	false	1
+kyoto :	名詞,一般,*,*,*,*,*	false	1
+ac :	名詞,一般,*,*,*,*,*	false	1
+jp :	名詞,一般,*,*,*,*,*	false	1
+positlog :	名詞,一般,*,*,*,*,*	false	1
+positlog :	名詞,一般,*,*,*,*,*	false	2
+cgi :	名詞,一般,*,*,*,*,*	false	1
+load :	名詞,一般,*,*,*,*,*	false	1
+Qp :	名詞,一般,*,*,*,*,*	false	1
+mode :	名詞,一般,*,*,*,*,*	false	1
+ViewMode :	名詞,一般,*,*,*,*,*	false	1
++!/.), :	名詞,サ変接続,*,*,*,*,*	false	1
+&( :	名詞,サ変接続,*,*,*,*,*	false	1
+'" :	名詞,サ変接続,*,*,*,*,*	false	2
+$( :	名詞,サ変接続,*,*,*,*,*	false	1
+#( :	名詞,サ変接続,*,*,*,*,*	false	2
+'" :	名詞,サ変接続,*,*,*,*,*	false	3
+http :	名詞,固有名詞,組織,*,*,*,*	false	2
+:// :	名詞,サ変接続,*,*,*,*,*	false	2
+storybook :	名詞,一般,*,*,*,*,*	false	1
+jp :	名詞,一般,*,*,*,*,*	false	2
+positlog :	名詞,一般,*,*,*,*,*	false	3
+cgi :	名詞,一般,*,*,*,*,*	false	2
+load :	名詞,一般,*,*,*,*,*	false	2
+Ja :	名詞,一般,*,*,*,*,*	false	1
+id :	名詞,一般,*,*,*,*,*	false	1
+sprite :	名詞,一般,*,*,*,*,*	false	1
+ページ: 25 -----
+<slide page="25"><body><p>#$• PositLog!!	kubota@ii.ist.i.kyoto-u.ac.jp "</p></body></slide>
+in Sheet Class, page: 25
+title = ""
+body = "<p>#$• PositLog!!	kubota@ii.ist.i.kyoto-u.ac.jp "</p>"
+makeWordArrayJp
+paragraph: #$• PositLog!!	kubota@ii.ist.i.kyoto-u.ac.jp "
+#$ :	名詞,サ変接続,*,*,*,*,*	false	1
+PositLog :	名詞,固有名詞,組織,*,*,*,*	false	1
+kubota :	名詞,固有名詞,組織,*,*,*,*	false	1
+ii :	名詞,一般,*,*,*,*,*	false	1
+ist :	名詞,一般,*,*,*,*,*	false	1
+kyoto :	名詞,一般,*,*,*,*,*	false	1
+ac :	名詞,一般,*,*,*,*,*	false	1
+jp :	名詞,固有名詞,組織,*,*,*,*	false	1
+ページ: 26 -----
+<slide page="26"><body><p>• Bo Leuf, Ward Cunningham, “Wiki Way+'.0*/ 0-Wiki”, %!#/$&,/12002• Tim Berners-Lee1“243 World Wide Web	”1()"0*/12001</p></body></slide>
+in Sheet Class, page: 26
+title = ""
+body = "<p>• Bo Leuf, Ward Cunningham, “Wiki Way+'.0*/ 0-Wiki”, %!#/$&,/12002• Tim Berners-Lee1“243 World Wide Web	”1()"0*/12001</p>"
+makeWordArrayJp
+paragraph: • Bo Leuf, Ward Cunningham, “Wiki Way+'.0*/ 0-Wiki”, %!#/$&,/12002• Tim Berners-Lee1“243 World Wide Web	”1()"0*/12001
+Bo :	名詞,固有名詞,組織,*,*,*,*	false	1
+Leuf :	名詞,固有名詞,組織,*,*,*,*	false	1
+Ward :	名詞,固有名詞,組織,*,*,*,*	false	1
+Cunningham :	名詞,固有名詞,組織,*,*,*,*	false	1
+Wiki :	名詞,固有名詞,組織,*,*,*,*	false	1
+Way :	名詞,固有名詞,組織,*,*,*,*	false	1
++'. :	名詞,サ変接続,*,*,*,*,*	false	1
+*/ :	名詞,サ変接続,*,*,*,*,*	false	1
+Wiki :	名詞,固有名詞,組織,*,*,*,*	false	2
+%!#/ :	名詞,サ変接続,*,*,*,*,*	false	1
+$&, :	名詞,サ変接続,*,*,*,*,*	false	1
+Tim :	名詞,固有名詞,組織,*,*,*,*	false	1
+Berners :	名詞,固有名詞,組織,*,*,*,*	false	1
+Lee :	名詞,一般,*,*,*,*,*	false	1
+World :	名詞,固有名詞,組織,*,*,*,*	false	1
+Wide :	名詞,固有名詞,組織,*,*,*,*	false	1
+Web :	名詞,固有名詞,組織,*,*,*,*	false	1
+()" :	名詞,サ変接続,*,*,*,*,*	false	1
+*/ :	名詞,サ変接続,*,*,*,*,*	false	2

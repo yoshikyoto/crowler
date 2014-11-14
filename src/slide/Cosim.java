@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-class Cosim{
+public class Cosim{
 	public static final boolean DEBUG = true;
 	
 	public static double calc(Map<String, Double> ma, Map<String, Double> mb){
