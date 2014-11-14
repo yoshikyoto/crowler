@@ -1,3 +1,5 @@
+package slide;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -42,5 +44,29 @@ class Cosim{
 		}
 		result_size = Math.sqrt(result_size);
 		return result_size;
+	}
+	
+	public static HashMap<String, Double> calcTfidf(HashMap<String, Integer> tfMap, HashMap<String, Integer> dfMap){
+		HashMap<String, Double> tfidfMap = new HashMap<String, Double>();
+		for(String word : tfMap.keySet()){
+			int tf = tfMap.get(word);
+			int df = dfMap.get(word);
+			double tfidf = (double)tf / (double)df;
+			tfidfMap.put(word, tfidf);
+		}
+		return tfidfMap;
+	}
+	
+	public static HashMap<String, Integer> mergeMap(HashMap<String, Integer> a, HashMap<String, Integer> b){
+		for(String word : b.keySet()){
+			if(a.containsKey(word)){
+				int tf = a.get(word);
+				tf += b.get(word);
+				a.put(word, tf);
+			}else{
+				a.put(word, b.get(word));
+			}
+		}
+		return a;
 	}
 }
