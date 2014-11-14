@@ -2,8 +2,10 @@ import java.io.*;
 import java.util.*;
 
 import jp.dip.utakatanet.*;
+import slide.*;
 import slide.XMLConverter.*;
 import slide.analyzer.*;
+import slide.lectureSim.*;
 
 class Main extends Base{
 	
@@ -32,6 +34,9 @@ class Main extends Base{
 			break;
 		case 2: // slide/pdf to Image
 			slideAnalyze();
+			break;
+		case 3: // calc Lecture Similarity
+			LectureSim.calc();
 			break;
 		}
 		
