@@ -5,7 +5,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-class Logger{
+public class Logger{
 	public static PrintWriter p, ep;
 	public PrintWriter pw, epw;
 
