@@ -7,13 +7,22 @@ import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.util.HashMap;
 import jp.dip.utakatanet.*;
-import slide.*;
 
-public class Lecture{
+/**
+ * 
+ * @author yoshiki_utakata
+ * @param dir 講義のディレクトリ
+ * @param name 講義名
+ * @param simPoint Segment Mapping の時に利用する。講義の類似度。
+ */
+public class Lecture extends Base{
 	public HashMap<String, Integer> tfMap, dfMap;
-	File dir;
-	String name;
+	public File dir;
+	public String name;
+	public double simPoint; 
 	boolean wordMapExist = false;
+	
+	public Lecture(){}
 	
 	Lecture(String dir_str){
 		dir = new File(dir_str);
@@ -21,6 +30,7 @@ public class Lecture{
 		tfMap = new HashMap<String, Integer>();
 		dfMap = new HashMap<String, Integer>();
 		
+		// FIXME: Baseライブラリを使ったリファクタリング
 		// 講義資料一覧取得
 		for(File slide_dir : dir.listFiles()){
 			if(dir.getName().indexOf(".") == 0) continue; // 隠しファイルの場合
@@ -61,6 +71,7 @@ public class Lecture{
 							dfMap.put(word, 1);
 						}
 					}
+					br.close();
 				}catch(Exception e){
 					Logger.sErrorln("" + e);
 				}

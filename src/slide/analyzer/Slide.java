@@ -22,7 +22,7 @@ public class Slide{
 	ArrayList<Segment> segments;
 	HashMap<String, Integer> tfMap, dfMap;
 	
-	Slide(String slide_dir_str){
+	public Slide(String slide_dir_str){
 		// スライドファイルの名前を取得してログを吐くように
 		Pattern p = Pattern.compile("([^/]+?)$");
 		Matcher m = p.matcher(slide_dir_str);

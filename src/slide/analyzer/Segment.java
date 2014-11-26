@@ -46,4 +46,8 @@ class Segment{
 		}
 		return str;
 	}
+	
+	/*
+	 * for segmentSim
+	 */
 }

@@ -1,14 +1,18 @@
 package slide.lectureSim;
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
+
 import jp.dip.utakatanet.*;
 import slide.*;
 
-public class LectureSim{
+public class LectureSim extends Base{
 	public static String datapath = "/Users/admin/ocwslidedata";
 	public static HashMap<String, Integer> dfMap;
 	public static ArrayList<Lecture> lectures;
@@ -85,4 +89,47 @@ public class LectureSim{
 		return false;
 	}
 
+	/**
+	 * 類似講義を取ってくる。類似講義が足りない場合は閾値を下げる。最低5つ
+	 * @param dir 講義のディレクトリ
+	 * @return 類似講義の Lecture ArrayList 
+	 * @throws IOException 
+	 */
+	public static ArrayList<Lecture> getSimilarLectures(String dir) throws IOException{
+		double border = 0.1;
+		ArrayList<Lecture> all = getAllSimLectures(dir + "/cosim.txt");
+		ArrayList<Lecture> arr = new ArrayList<Lecture>();
+		while(arr.size() < 3 && border > 0.01){
+			p("border " + border);
+			for(Lecture lec : all){
+				// arrayに追加されてなくて類似度が高い場合は追加
+				if(!arr.contains(lec) && lec.simPoint >= border){
+					arr.add(lec);
+				}
+			}
+			border = border * 0.5;
+		}
+		return arr;
+	}
+	
+	/**
+	 * 
+	 * @param dir cosim.txtのディレクトリ名(String, 絶対パス)
+	 * @return
+	 * @throws IOException ファイルが見つからなかった時など
+	 */
+	public static ArrayList<Lecture> getAllSimLectures(String dir) throws IOException{
+		BufferedReader br = getFileBr(dir);
+		ArrayList<Lecture> arr = new ArrayList<Lecture>();
+		String line;
+		while((line = br.readLine()) != null){
+			String s[] = line.split("\t");
+			Lecture lec = new Lecture();
+			lec.simPoint = Double.parseDouble(s[0]);
+			lec.name = s[1];
+			lec.dir = new File(s[2]);
+			arr.add(lec);
+		}
+		return arr;
+	}
 }
