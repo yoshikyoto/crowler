@@ -1,0 +1,192 @@
+AT(4)
+acro(1)
+┷⌦(1)
+or(3)
+Ⓩ⌦(1)
+↓Ⓩ(1)
+Ⓩ▩(1)
+as(3)
+Zahab(2)
+meaning(3)
+properties(3)
+⮤↓(1)
+Macro(2)
+of(3)
+fixer(3)
+decider(3)
+∸⌦(1)
+Ⓩ⥑⨮(1)
+{ 1 } { 2 } { 3 } { 4 } { 5 } { 6 } { 7 } { 8 } { 9 } { 10 } { 11 } { 12 } { 13 } { 14 } { 15 } { 16 } { 17 } { 18 } 
+Segment{ 2 }, Segment{ 3 }
+コサイン類似度: NaN
+Segment{ 3 }, Segment{ 4 }
+コサイン類似度: 0.14907119849998599
+Segment{ 4 }, Segment{ 5 }
+コサイン類似度: NaN
+Segment{ 5 }, Segment{ 6 }
+コサイン類似度: NaN
+Segment{ 6 }, Segment{ 7 }
+コサイン類似度: 0.976673378848031
+Segment{ 7 }, Segment{ 8 }
+コサイン類似度: 0.6385007006487975
+Segment{ 8 }, Segment{ 9 }
+コサイン類似度: NaN
+Segment{ 9 }, Segment{ 10 }
+コサイン類似度: NaN
+Segment{ 10 }, Segment{ 11 }
+コサイン類似度: NaN
+Segment{ 11 }, Segment{ 12 }
+コサイン類似度: NaN
+Segment{ 12 }, Segment{ 13 }
+コサイン類似度: 0.0
+Segment{ 13 }, Segment{ 14 }
+コサイン類似度: 0.0
+Segment{ 14 }, Segment{ 15 }
+コサイン類似度: NaN
+Segment{ 15 }, Segment{ 16 }
+コサイン類似度: NaN
+Segment{ 16 }, Segment{ 17 }
+コサイン類似度: NaN
+Segment{ 17 }, Segment{ 18 }
+コサイン類似度: NaN
+AT(3)
+acro(1)
+┷⌦(1)
+or(2)
+Ⓩ⌦(1)
+↓Ⓩ(1)
+Ⓩ▩(1)
+as(2)
+Zahab(2)
+meaning(2)
+properties(2)
+⮤↓(1)
+Macro(1)
+of(2)
+fixer(2)
+decider(2)
+∸⌦(1)
+Ⓩ⥑⨮(1)
+{ 1 } { 2 } { 3 } { 4 } { 5 } { 6 7 } { 8 } { 9 } { 10 } { 11 } { 12 } { 13 } { 14 } { 15 } { 16 } { 17 } { 18 } 
+Segment{ 2 }, Segment{ 3 }
+コサイン類似度: NaN
+Segment{ 3 }, Segment{ 4 }
+コサイン類似度: 0.14907119849998599
+Segment{ 4 }, Segment{ 5 }
+コサイン類似度: NaN
+Segment{ 5 }, Segment{ 6 7 }
+コサイン類似度: NaN
+Segment{ 6 7 }, Segment{ 8 }
+コサイン類似度: 0.6729773775727068
+Segment{ 8 }, Segment{ 9 }
+コサイン類似度: NaN
+Segment{ 9 }, Segment{ 10 }
+コサイン類似度: NaN
+Segment{ 10 }, Segment{ 11 }
+コサイン類似度: NaN
+Segment{ 11 }, Segment{ 12 }
+コサイン類似度: NaN
+Segment{ 12 }, Segment{ 13 }
+コサイン類似度: 0.0
+Segment{ 13 }, Segment{ 14 }
+コサイン類似度: 0.0
+Segment{ 14 }, Segment{ 15 }
+コサイン類似度: NaN
+Segment{ 15 }, Segment{ 16 }
+コサイン類似度: NaN
+Segment{ 16 }, Segment{ 17 }
+コサイン類似度: NaN
+Segment{ 17 }, Segment{ 18 }
+コサイン類似度: NaN
+AT(2)
+acro(1)
+┷⌦(1)
+or(1)
+Ⓩ⌦(1)
+↓Ⓩ(1)
+Ⓩ▩(1)
+as(1)
+Zahab(2)
+meaning(1)
+properties(1)
+⮤↓(1)
+Macro(1)
+of(1)
+fixer(1)
+decider(1)
+∸⌦(1)
+Ⓩ⥑⨮(1)
+{ 1 } { 2 } { 3 } { 4 } { 5 } { 6 7 8 } { 9 } { 10 } { 11 } { 12 } { 13 } { 14 } { 15 } { 16 } { 17 } { 18 } 
+Segment{ 2 }, Segment{ 3 }
+コサイン類似度: NaN
+Segment{ 3 }, Segment{ 4 }
+コサイン類似度: 0.14907119849998599
+Segment{ 4 }, Segment{ 5 }
+コサイン類似度: NaN
+Segment{ 5 }, Segment{ 6 7 8 }
+コサイン類似度: NaN
+Segment{ 6 7 8 }, Segment{ 9 }
+コサイン類似度: NaN
+Segment{ 9 }, Segment{ 10 }
+コサイン類似度: NaN
+Segment{ 10 }, Segment{ 11 }
+コサイン類似度: NaN
+Segment{ 11 }, Segment{ 12 }
+コサイン類似度: NaN
+Segment{ 12 }, Segment{ 13 }
+コサイン類似度: 0.0
+Segment{ 13 }, Segment{ 14 }
+コサイン類似度: 0.0
+Segment{ 14 }, Segment{ 15 }
+コサイン類似度: NaN
+Segment{ 15 }, Segment{ 16 }
+コサイン類似度: NaN
+Segment{ 16 }, Segment{ 17 }
+コサイン類似度: NaN
+Segment{ 17 }, Segment{ 18 }
+コサイン類似度: NaN
+AT(2)
+acro(1)
+┷⌦(1)
+or(1)
+Ⓩ⌦(1)
+Ⓩ▩(1)
+↓Ⓩ(1)
+as(1)
+Zahab(1)
+meaning(1)
+properties(1)
+⮤↓(1)
+Macro(1)
+of(1)
+fixer(1)
+decider(1)
+∸⌦(1)
+Ⓩ⥑⨮(1)
+{ 1 } { 2 } { 3 4 } { 5 } { 6 7 8 } { 9 } { 10 } { 11 } { 12 } { 13 } { 14 } { 15 } { 16 } { 17 } { 18 } 
+Segment{ 2 }, Segment{ 3 4 }
+コサイン類似度: NaN
+Segment{ 3 4 }, Segment{ 5 }
+コサイン類似度: NaN
+Segment{ 5 }, Segment{ 6 7 8 }
+コサイン類似度: NaN
+Segment{ 6 7 8 }, Segment{ 9 }
+コサイン類似度: NaN
+Segment{ 9 }, Segment{ 10 }
+コサイン類似度: NaN
+Segment{ 10 }, Segment{ 11 }
+コサイン類似度: NaN
+Segment{ 11 }, Segment{ 12 }
+コサイン類似度: NaN
+Segment{ 12 }, Segment{ 13 }
+コサイン類似度: 0.0
+Segment{ 13 }, Segment{ 14 }
+コサイン類似度: 0.0
+Segment{ 14 }, Segment{ 15 }
+コサイン類似度: NaN
+Segment{ 15 }, Segment{ 16 }
+コサイン類似度: NaN
+Segment{ 16 }, Segment{ 17 }
+コサイン類似度: NaN
+Segment{ 17 }, Segment{ 18 }
+コサイン類似度: NaN

@@ -1,0 +1,1199 @@
+<presentation language="ja">
+<slide page="1">
+<body>
+<p>
+知的画像処理（１２） 1
+MAP-MRFに基づく最適化(I)
+</p>
+</body>
+</slide>
+<slide page="2">
+<body>
+<p>
+知的画像処理（１２） 2
+解 f が探索空間内で制約
+を受けるか否か
+１．問題の表現
+２．目的関数
+３．最適化アルゴリズム
+ラベル集合Lの連続性
+質ビジョン問題：その性
+⎩⎨
+⎧
+制約つき問題
+制約なし問題
+⎩⎨
+⎧
+組合せ問題
+連続（離散）問題
+局所的探索か、それとも
+大局的探索か ⎩
+⎨⎧ Method Global
+Method Local
+</p>
+</body>
+</slide>
+<slide page="3">
+<body>
+<p>
+知的画像処理（１２） 3
+•尤度最大化 EM法
+法　各種の
+未定乗数法　勾配法や変分法，
+MRF-MAP
+Lagrange
+.nPropagatio BeliefFieldMean 
+sampling Gibbs and sampling Metropolis
+Mode(ICM) lConditiona Iterated
+Labeling Relaxation
+法　など法，
+法
+法
+法
+•
+•
+•
+•
+ビジョン問題に対する最適化手法
+•事後確率最大化（MAP:エネルギー最小化）
+</p>
+</body>
+</slide>
+<slide page="4">
+<body>
+<p>
+知的画像処理（１２） 4
+最大尤度推定による画像分割
+原画像
+初期分割画像
+（K-mean法；４クラスタ）
+EM法による最尤推定結果
+（４混合分布によるモデル化）
+〔資料９参照〕
+</p>
+</body>
+</slide>
+<slide page="5">
+<body>
+<p>
+知的画像処理（１２） 5
+は局所的最小解．
+とすると，を与えるラベルを
+．となる点まで繰り返すを
+から始め、勾配法．初期値
+法はを求める最も単純な方解
+*
+*)(
+)(
+)0(
+*
+)(
+)(
+)(minargMAP
+f
+E
+E
+E
+t
+t
+f
+f0f
+0f
+f
+ff
+=∇
+=∇
+=
+はステップ刻み）（μ
+μ ),( )()()1( ttt E fff ∇−←+
+勾配法と最小化問題
+勾配法の概要（エネルギー最小化）
+</p>
+</body>
+</slide>
+<slide page="6">
+<body>
+<p>
+知的画像処理（１２） 6
+とすると，
+の近傍集合サイト：近傍系
+，サイト集合：
+は，の事後エネルギー
+の連続復元問題におけるラベル連続ラベル集合
+),(
+},1|),{(
+)(
+),( yxN
+nyxyxS
+E
+L
+yx
+≤≤=
+∈
+f
+Ff
+連続ラベルのエネルギー関数最小化
+はペナルティ関数)(
+)()(
+)()()(
+,
+, ),(
+,
+2
+,
+,
+,
+),(
+⋅
+−+−=
++=
+∑ ∑∑
+∈
+g
+ffgdf
+UUE
+lk
+yx Nlk
+yxyx
+yx
+yx
+yx
+λ
+ff|df
+</p>
+</body>
+</slide>
+<slide page="7">
+<body>
+<p>
+知的画像処理（１２） 7
+を各サイト毎に実行．ために，以下の反復式
+を得るを満たす条件勾配法の局所的最小解 ** 0)( ff =∇E
+する定数は，ステップ幅を決定μ
+)()(2)(2
+)(
+),()(2)('
+,,,
+),(
+,,,
+, ),(
+,
+lkyxlk
+Nlk
+yxyxyx
+yx
+f
+ffhffdf
+f
+E
+fE
+yxhg
+yx
+yx
+−−+−=∂
+∂
+∇
+=
+∑
+∈
+λ
+ηηη
+は，勾配
+におけるラベルと仮定すると，サイト
+)}()(
+){(2
+)(
+,
+)(
+,
+)(
+,
+),(
+)(
+,
+,
+)(
+,
+)(
+,
+)1(
+,
+),(
+t
+lk
+t
+yx
+t
+lk
+Nlk
+t
+yx
+yx
+t
+yx
+t
+yx
+t
+yx
+ffhff
+dfff
+yx
+−−
++−−←
+∑
+∈
++
+λ
+μ
+</p>
+</body>
+</slide>
+<slide page="8">
+<body>
+<p>
+知的画像処理（１２） 8
+オプティカルフロー：
+観察者の移動とシーン中の物体の移動によっ
+て生じる画像面内のベクトル場
+領域と境界の分割、形状復元などの重要
+な情報を含む．
+フロー計算の２つのパラダイム
+⎩⎨
+⎧
+画像全体のベクトル場濃度勾配に基づく方法
+局所的なベクトル場特徴に基づく方法
+L
+L
+オプティカルフロー問題
+</p>
+</body>
+</slide>
+<slide page="9">
+<body>
+<p>
+知的画像処理（１２） 9
+の拘束条件を仮定：このとき，明るさ不変
+とする．をにおける画像の明るさ，時刻点 ),,(),( tyxItyx
+かれる．より，以下の関係が導，と拘束
+展開における１次のの
+0
+Tayler),,(),,(
+→
++++
+tA
+tyxttyyxxI
+δ
+δδδ
+0=∂
+∂+∂
+∂+∂
+∂
+t
+I
+dt
+dy
+y
+I
+dt
+dx
+x
+I
+),,(),,(
+A)
+ttyyxxItyxI
+ttt
+δδδ
+δ
++++=
++ の間で不変．と，時刻移動する点の明るさは
+（拘束
+</p>
+</body>
+</slide>
+<slide page="10">
+<body>
+<p>
+知的画像処理（１２）10
+の基本式はルフローとおくと，オプティカ v
+v ⎟⎟⎠
+⎞
+⎜⎜⎝
+⎛=⎟⎟⎠
+⎞
+⎜⎜⎝
+⎛=∂
+∂=⎟⎟⎠
+⎞
+⎜⎜⎝
+⎛
+∂∂
+∂∂=⎟⎟⎠
+⎞
+⎜⎜⎝
+⎛=∇
+dtdy
+dtdx
+yxv
+yxv
+t
+II
+yI
+xI
+I
+I
+I
+y
+x
+t
+y
+x
+/
+/
+),(
+),(
+,,
+/
+/
+事前エネルギー）＋尤度エネルギー
+化問題事後エネルギーの最小
+(
+0=+⋅∇=+⋅+⋅ ttyyxx IIIIvIv v
+の不連続などが存在．オクルージョンや動き
+，差が含まれる．さらに画像観測の関係上，誤
+2)()|( tIIIU +⋅∇= vv
+しさ）エネルギー：尤度（観測データのら
+</p>
+</body>
+</slide>
+<slide page="11">
+<body>
+<p>
+知的画像処理（１２）11
+2222
+22 ||||||||)(
+⎟⎟⎠
+⎞
+⎜⎜⎝
+⎛
+∂
+∂+⎟⎟⎠
+⎞
+⎜⎜⎝
+⎛
+∂
+∂+⎟⎟⎠
+⎞
+⎜⎜⎝
+⎛
+∂
+∂+⎟⎠
+⎞⎜⎝
+⎛
+∂
+∂=
+∇+∇=
+y
+v
+x
+v
+y
+v
+x
+v
+vvU
+yyxx
+yxv
+ーの滑らかさ事前エネルギー：フロ
+はー従って，事後エネルギ )|()( IUE vv =
+}||||||{||)(
+)()|()|()(
+222
+yxt vvII
+UIUIUE
+∇+∇++⋅∇=
++==
+λ
+λ
+v
+vvvv は重み係数　λ
+乗で拘束を表現フロー勾配の大きさの2
+の計算．を最小化する事後エネルギー *)( vvE
+(Horn-Schunck’s method)
+</p>
+</body>
+</slide>
+<slide page="12">
+<body>
+<p>
+知的画像処理（１２）12
+]))1,(),(()),()1,((
+)),(),1(()),1(),((
+))1,(),(()),()1,((
+)),(),1(()),1(),([(),(
+),(),(
+22
+22
+22
+22
+4
+1
+−−+−++
+−++−−+
+−−+−++
+−++−−=
+jivjivjivjiv
+jivjivjivjiv
+jivjivjivjiv
+jivjivjivjivjis
+jisji
+yyyy
+yyyy
+xxxx
+xxxx
+は，での事前エネルギーサイト
+[ ]2),(),(),(),(),(),(
+),(),(
+jiIjivjiIjivjiIjic
+jicji
+tyyxx ++=
+ー：における尤度エネルギサイト
+∑∑ +=
+i j
+jisjic )],(),([minarg*
+*
+λ
+v
+v
+v は，定従って，最適フロー推
+フロー計算デジタル画像における
+</p>
+</body>
+</slide>
+<slide page="13">
+<body>
+<p>
+知的画像処理（１２）13
+　の必要条件より，
+最適フロー，
+0
+),(
+,0
+),(
+),(
+),(
+,,
+)2,1(
+)2,1(
+,
+)1,1(
+)1,1(
+*
+*
+*
+*
+*
+*
+*
+=∂
+∂=∂
+∂
+⎪⎭
+⎪⎬
+⎫
+⎪⎩
+⎪⎨
+⎧
+⎟⎟⎠
+⎞
+⎜⎜⎝
+⎛
+⎟⎟⎠
+⎞
+⎜⎜⎝
+⎛
+⎟⎟⎠
+⎞
+⎜⎜⎝
+⎛=
+jiv
+E
+jiv
+E
+nnv
+nnv
+v
+v
+v
+v
+yx
+y
+x
+y
+x
+y
+x Lv
+{ }{ })1,()1,(),1(),1(41),( )1,()1,(),1(),1(41),(
+,,
+++−+++−=
+++−+++−=
+jivjivjivjivjiv
+jivjivjivjivjiv
+vvvv
+yyyyy
+xxxxx
+yxyx ，の局所的平均値を表しはここで，
+( )[ ] txxyyxxx IIvvIIvI −=++ λλ 2
+( )[ ] tyyyyxyx IIvvIvII −=++ λλ 2
+( )( ) 0)),(),((2),(),(2 0)),(),((2),(),(2 =−+++ =−+++ jivjivIIIjivIjiv jivjivIIIjivIjiv yyytyyxx xxxtyyxx λ
+λ
+整理すると，
+</p>
+</body>
+</slide>
+<slide page="14">
+<body>
+<p>
+知的画像処理（１２）14
+( ) ( )
+( ) ( )
+( ) ( )
+( ) ( ) yyx
+t
+k
+yy
+k
+xxk
+y
+k
+y
+x
+yx
+t
+k
+yy
+k
+xxk
+x
+k
+x
+I
+II
+IvIvI
+vv
+I
+II
+IvIvI
+vv
+⎥⎥⎦
+⎤
+⎢⎢⎣
+⎡
+++
+++−←
+⎥⎥⎦
+⎤
+⎢⎢⎣
+⎡
+++
+++−←
++
++
+22
+1
+22
+1
+λ
+λ
+反復解として基づいた連立方程式の
+法に解は、オプティカルフローの Seidel-Gauss
+で更新を繰り返す．値の変化がなくなるま
+と与えられる．
+</p>
+</body>
+</slide>
+<slide page="15">
+<body>
+<p>
+知的画像処理（１２）15
+離散ラベルのエネルギー関数最小化
+は組合せ問題となる．
+の最小化場合，事後エネルギーラベル集合が離散的な
+は困難である．
+と合確率を最大化するこにおける各ラベルの結MRF
+法）：な戦略（局所的最適化　 ICMgreedy⇒
+る．適化問題として表現すである場合，逐次的最
+題は関係しない最適化問すべての変数が同時に
+法が有効．　 DP⇒
+</p>
+</body>
+</slide>
+<slide page="16">
+<body>
+<p>
+知的画像処理（１２）16
+Iterative Conditional Modes法
+（ICM法）
+.
+)|()|(),|(
+)|()|(
+を仮定
+密度関数：
+⎪⎭
+⎪⎬
+⎫
+∝
+=∏
+ii NiiiNii
+i
+i
+i
+ffPfdpfdfP
+fdpp fd
+の最小化
+条件付エネルギー
+の最大化
+),|(
+),|(
+i
+i
+Nii
+Nii
+fdfV
+fdfP
+⇒
+)|()|(),|( )()( kj
+Nj
+iii
+k
+Nii ffVfdVfdfV
+i
+i ∑∈+=
+ただし，
+[Besag, J(1986)]
+)|()|(
+)(
+)|()|(
+)()(
+)()|(),|(
+)()(
+),,(
+),|(
+i
+i
+i
+iii
+i
+i
+i
+Niii
+i
+Niii
+Ni
+NNiNii
+Ni
+Nii
+Nii
+ffPfdp
+dP
+ffPfdp
+fPdP
+fPffPffdp
+fPdP
+fdfP
+fdfP
+∝
+=
+=
+=
+</p>
+</body>
+</slide>
+<slide page="17">
+<body>
+<p>
+知的画像処理（１２）17
+)](1[
+)(
+),|( 202
+2
+j
+Nj
+i
+ii
+Nii ffv
+dffdfV
+i
+i
+−−+−= ∑
+∈
+δσ
+は，面の復元問題に対して例えば，区分的一定な
+を利用．反復式　 ),|(minarg )()1( kNiif
+k
+i i
+i
+fdfVf ←+
+用いることが多い．
+（観測値）をとしては，通常初期値 dff =)0()0(
+サイクルを繰り返す．収束するまで
+イトが式を適用．すべてのサ各サイトに対して反復
+ICM
+</p>
+</body>
+</slide>
+<slide page="18">
+<body>
+<p>
+知的画像処理（１２）18
+Dynamic Programming法
+定．のように表されると仮
+ーが，ポテンシャルエネルギ
+),(),(),(
+),,,(
+11322211
+21
+mmm
+m
+ffEffEffE
+fffE
+−−+++= L
+L
+とすると，)],()([min)(
+)],()([min)(
+),(min)(
+11121
+3222132
+21121
+1
+2
+1
+mmmmmfmm
+f
+f
+ffEfDfD
+ffEfDfD
+ffEfD
+m
+−−−−− +=
++=
+=
+−
+M
+)(min),,,(min
+)(min
+121,1
+mmfmff
+fDfffE
+E
+mm
+−=LL
+れる．は，以下のように表さ最小解 f
+f
+</p>
+</body>
+</slide>
+<slide page="19">
+<body>
+<p>
+知的画像処理（１２）19
+による最小化DP⇒
+．法領域分割を行う方法
+モデルで表し，画像の域をガウス性雑音を含む領
+)Elliot-Derin(
+MLL
+を表す．
+行のラベルを表し，はと分解．ただし，
+事後エネルギーを
+として，，
+}1,|),{(
+1,,
+})(1)({),(
+)(1)()|()(
+},,{},1|),{(
+,
+1
+2
+,2
+1
+1
+1
+1
+1
+2
+,
+),(
+2
+21
+1,
+)(
+mjlfjkS
+kkff
+ldfVffE
+ldfVdfUfE
+lllLmjijiS
+Ijk
+k
+I
+kk
+Iji
+LI S
+m
+k Cc
+c
+m
+k
+kkk
+Iji
+LI SjiCc
+c
+M
+k
+I
+kk
+I
+≤≤==
++
+−+==
+−+==
+=≤≤=
++
+∈
+−
+= ∈
+−
+=
++
+∈ ∈∈
+∑∑∑ ∑∑
+∑ ∑∑
++ σ
+σ
+L
+領域分割問題（例１）
+</p>
+</body>
+</slide>
+<slide page="20">
+<body>
+<p>
+知的画像処理（１２）20
+輪郭線抽出問題（SNAKES)(例２）
+),,,( 21 nvvv L=v
+：サイト（制御点）集合
+動的輪郭モデル
+物体領域
+1v
+2v
+3v
+nv
+L
+ラメータ表現．　ために，輪郭線をパ
+化を行う数）の導入とその最小　エネルギー（評価関
+動的輪郭モデル Model)Contour  Active( [Kass et.al.]
+不規則サイト集合
+</p>
+</body>
+</slide>
+<slide page="21">
+<body>
+<p>
+知的画像処理（１２）21
+)|()(
+)|()()(
+11
+int
+int
+∑∑
+==
++=
++=
+n
+i
+iext
+n
+i
+i
+extsnakes
+vEvE
+EEE
+I
+vIvv
+snakesEエネルギー関数：
+定式化可能．事後エネルギーとして⇒
+画像）エネルギー尤度
+に対するの配置：観測画像
+(
+)|( vIvIextE
+ギーの事前（内部）エネル配置： vv)(intE
+</p>
+</body>
+</slide>
+<slide page="22">
+<body>
+<p>
+知的画像処理（１２）22
+||||)(int iii vvvE &&& βα += |),(|)|( yxIvE iviext ∇⋅−= γI
+,1−−= iii vvv& iii vvv &&&& −= +1
+制御点
+iv
+1−iv
+1+iv
+の濃度勾配画像
+の位置でのサイト
+I
+v
+yxI
+i
+vi
+:),(∇
+の利用．と表現可能． DP
+),,(),,(),,(
+),,()(
+2143223211
+21
+⇒
++++=
+=
+vvvEvvvEvvvE
+vvvEE
+nn
+nsnakes
+L
+Lv
+</p>
+</body>
+</slide>
+<slide page="23">
+<body>
+<p>
+知的画像処理（１２）23
+動的輪郭線処理の例
+積み木画像 初期制御点配置
+(手動による指定）
+収束後制御点配置
+</p>
+</body>
+</slide>
+<slide page="24">
+<body>
+<p>
+知的画像処理（１２）24
+エッジの強さと方向に基づく確率的反復法
+エッジ(サイト）集合
+エッジラベル集合
+{ }nS ,....,2,1=
+{ }mλλλ ,...,, 21=Λ
+)( uiu Pi λλ を持つ確率がラベルサイト
+uui
+ui
+iP
+SiP
+u
+λλ
+λ
+λ
+,,0)(
+,1)(
+∀≥
+∈=∑
+弛緩法（エッジ強調問題の例）
+弛緩法(Relaxation Labeling)
+</p>
+</body>
+</slide>
+<slide page="25">
+<body>
+<p>
+知的画像処理（１２）25
+),(),(
+)()(
+22
+11
+vuvuij
+uui
+VCr
+VCr
+λλλλ
+λλ
+−=
+−=
+２項適合関数
+単項適合関数
+),(
+)(
+2
+1
+vu
+u
+V
+V
+λλ
+λ 単一サイトクリークポテンシャル
+ペアサイトクリークポテンシャル
+))((:)( 0 fECfGf −=のゲインラベル配置
+)()(),(
+)()()(
+,
+v
+Si ijSj
+juivuij
+uiu
+Si
+i
+u v
+u
+PPr
+PrfG
+λλλλ
+λλ
+Λλ Λλ
+Λλ
+∑∑ ∑ ∑
+∑∑
+∈ ∈ ≠∈ ∈
+∈ ∈
++=
+の最大化 　の最小化事後エネルギー )()( fGfE ⇒
+適合関数(compatibility function)
+</p>
+</body>
+</slide>
+<slide page="26">
+<body>
+<p>
+知的画像処理（１２）26
+の最大化)( fG
+を利用．　勾配 },|)({)( ΛSq ∈∈=−∇= uui iqfE λλ
+)(),(2)(
+)(
+)(
+)(
+vjv
+Sj
+uijui
+ui
+ui
+ui
+Prr
+P
+Gq
+q
+v
+λλλλλλ
+λ
+Λλ
+∑∑
+∈ ∈
++=∂
+∂=
+は、　各
+を持つ確率とする．ラベル
+でが時刻とし、サイトここで、
+u
+uiu
+t
+i tiPP
+λ
+λλ )()()( =
+),( )()()1(
+)()()(
+ttt
+ttt
+qPP
+qPP
+Φ←+
+に基づいて更新．とを、
+Φは、更新操作を表し、個々のアルゴリズム毎に定義さ
+れる。(多数のアルゴリズムの存在）
+</p>
+</body>
+</slide>
+<slide page="27">
+<body>
+<p>
+知的画像処理（１２）27
+{ }
+)](),([
+]1)[(
+]1)[(
+)(
+)()(
+)()(
+)()(
+)1(
+v
+k
+jvuij
+j
+ij
+k
+i
+k
+iu
+k
+i
+k
+iu
+k
+i
+u
+k
+i
+Prdq
+qP
+qP
+P
+v
+u
+λλλ
+λ
+λλ
+λ
+λ
+∑∑
+∑
+=
++
++=+
+•確率の更新例（Rosenfeld et. al.,1976）
+ラベル間の適合度(compatibility)係数の例
+1.0 0.5 0.05 ‐0.15 ‐0.25),( vuijr λλ
+vλ
+uλ
+</p>
+</body>
+</slide>
+<slide page="28">
+<body>
+<p>
+知的画像処理（１２）28
+繰返し：1回、閾値：0.7
+繰返し：４回、閾値：0.7
+原画像 微分画像
+繰返し：２回、閾値：0.7 繰返し：３回、閾値：0.7
+繰返し：５回、閾値：0.7 繰返し：８回、閾値：0.7
+弛緩法によるエッジ強調例
+</p>
+</body>
+</slide>
+<slide page="29">
+<body>
+<p>
+知的画像処理（１２）29
+A. Rosenfeld, R.A. Hummel and S.W. Zucker, Scene Labelling by Relaxation 
+Operations, IEEE Trans. on SMC, 6, pp.420--433, (1976)
+主な参考文献
+上田修功,  ベイズ学習[I] －統計的学習の基礎－, 電子情報通信学会誌, vol.85,
+No.4,  pp.265-271, (2002)   
+S.Z.Li, Markov Random Field Modeling in Computer Vision, Springer-Verlag,   
+(1995)
+M. Kass, A. Witkin, and D. Terzopoulos; “Snakes: Active contour models”
+In Proc. 1st Int. Conf. on Computer Vision, pp. 259--268, (1987).
+Horn, B.K.P and Schunck, B.G., "Determining Optical Flow," Artificial 
+Intelligence, vol.17, nos.1--3, pp.185-- 203, (1981). 
+Besag, J. ; “On the statistical analysis of dirty pictures”, Journal of 
+the Royal Statistical Society, Series B, 48, pp.259—302 (1986). 
+</p>
+</body>
+</slide>
+</presentation>

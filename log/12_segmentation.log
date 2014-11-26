@@ -1,0 +1,154 @@
+㏻⤾(1)
+of(6)
+┷⌦(1)
+theory(6)
+reference(6)
+{ 1 } { 2 } { 3 } { 4 } { 5 } { 6 } { 7 } { 8 } { 9 } { 10 } { 11 } { 12 } { 13 } { 14 } { 15 } { 16 } { 17 } { 18 } { 19 } { 20 } 
+Segment{ 2 }, Segment{ 3 }
+コサイン類似度: 1.0
+Segment{ 3 }, Segment{ 4 }
+コサイン類似度: 1.0
+Segment{ 4 }, Segment{ 5 }
+コサイン類似度: 1.0
+Segment{ 5 }, Segment{ 6 }
+コサイン類似度: 1.0
+Segment{ 6 }, Segment{ 7 }
+コサイン類似度: NaN
+Segment{ 7 }, Segment{ 8 }
+コサイン類似度: NaN
+Segment{ 8 }, Segment{ 9 }
+コサイン類似度: NaN
+Segment{ 9 }, Segment{ 10 }
+コサイン類似度: NaN
+Segment{ 10 }, Segment{ 11 }
+コサイン類似度: NaN
+Segment{ 11 }, Segment{ 12 }
+コサイン類似度: NaN
+Segment{ 12 }, Segment{ 13 }
+コサイン類似度: NaN
+Segment{ 13 }, Segment{ 14 }
+コサイン類似度: NaN
+Segment{ 14 }, Segment{ 15 }
+コサイン類似度: NaN
+Segment{ 15 }, Segment{ 16 }
+コサイン類似度: NaN
+Segment{ 16 }, Segment{ 17 }
+コサイン類似度: NaN
+Segment{ 17 }, Segment{ 18 }
+コサイン類似度: NaN
+Segment{ 18 }, Segment{ 19 }
+コサイン類似度: NaN
+Segment{ 19 }, Segment{ 20 }
+コサイン類似度: NaN
+㏻⤾(1)
+of(5)
+┷⌦(1)
+theory(5)
+reference(5)
+{ 1 } { 2 3 } { 4 } { 5 } { 6 } { 7 } { 8 } { 9 } { 10 } { 11 } { 12 } { 13 } { 14 } { 15 } { 16 } { 17 } { 18 } { 19 } { 20 } 
+Segment{ 2 3 }, Segment{ 4 }
+コサイン類似度: 0.9999999999999999
+Segment{ 4 }, Segment{ 5 }
+コサイン類似度: 0.9999999999999999
+Segment{ 5 }, Segment{ 6 }
+コサイン類似度: 0.9999999999999999
+Segment{ 6 }, Segment{ 7 }
+コサイン類似度: NaN
+Segment{ 7 }, Segment{ 8 }
+コサイン類似度: NaN
+Segment{ 8 }, Segment{ 9 }
+コサイン類似度: NaN
+Segment{ 9 }, Segment{ 10 }
+コサイン類似度: NaN
+Segment{ 10 }, Segment{ 11 }
+コサイン類似度: NaN
+Segment{ 11 }, Segment{ 12 }
+コサイン類似度: NaN
+Segment{ 12 }, Segment{ 13 }
+コサイン類似度: NaN
+Segment{ 13 }, Segment{ 14 }
+コサイン類似度: NaN
+Segment{ 14 }, Segment{ 15 }
+コサイン類似度: NaN
+Segment{ 15 }, Segment{ 16 }
+コサイン類似度: NaN
+Segment{ 16 }, Segment{ 17 }
+コサイン類似度: NaN
+Segment{ 17 }, Segment{ 18 }
+コサイン類似度: NaN
+Segment{ 18 }, Segment{ 19 }
+コサイン類似度: NaN
+Segment{ 19 }, Segment{ 20 }
+コサイン類似度: NaN
+㏻⤾(1)
+of(4)
+┷⌦(1)
+theory(4)
+reference(4)
+{ 1 } { 2 3 4 } { 5 } { 6 } { 7 } { 8 } { 9 } { 10 } { 11 } { 12 } { 13 } { 14 } { 15 } { 16 } { 17 } { 18 } { 19 } { 20 } 
+Segment{ 2 3 4 }, Segment{ 5 }
+コサイン類似度: 1.0
+Segment{ 5 }, Segment{ 6 }
+コサイン類似度: 1.0000000000000002
+Segment{ 6 }, Segment{ 7 }
+コサイン類似度: NaN
+Segment{ 7 }, Segment{ 8 }
+コサイン類似度: NaN
+Segment{ 8 }, Segment{ 9 }
+コサイン類似度: NaN
+Segment{ 9 }, Segment{ 10 }
+コサイン類似度: NaN
+Segment{ 10 }, Segment{ 11 }
+コサイン類似度: NaN
+Segment{ 11 }, Segment{ 12 }
+コサイン類似度: NaN
+Segment{ 12 }, Segment{ 13 }
+コサイン類似度: NaN
+Segment{ 13 }, Segment{ 14 }
+コサイン類似度: NaN
+Segment{ 14 }, Segment{ 15 }
+コサイン類似度: NaN
+Segment{ 15 }, Segment{ 16 }
+コサイン類似度: NaN
+Segment{ 16 }, Segment{ 17 }
+コサイン類似度: NaN
+Segment{ 17 }, Segment{ 18 }
+コサイン類似度: NaN
+Segment{ 18 }, Segment{ 19 }
+コサイン類似度: NaN
+Segment{ 19 }, Segment{ 20 }
+コサイン類似度: NaN
+㏻⤾(1)
+of(3)
+┷⌦(1)
+theory(3)
+reference(3)
+{ 1 } { 2 3 4 } { 5 6 } { 7 } { 8 } { 9 } { 10 } { 11 } { 12 } { 13 } { 14 } { 15 } { 16 } { 17 } { 18 } { 19 } { 20 } 
+Segment{ 5 6 }, Segment{ 7 }
+コサイン類似度: NaN
+Segment{ 7 }, Segment{ 8 }
+コサイン類似度: NaN
+Segment{ 8 }, Segment{ 9 }
+コサイン類似度: NaN
+Segment{ 9 }, Segment{ 10 }
+コサイン類似度: NaN
+Segment{ 10 }, Segment{ 11 }
+コサイン類似度: NaN
+Segment{ 11 }, Segment{ 12 }
+コサイン類似度: NaN
+Segment{ 12 }, Segment{ 13 }
+コサイン類似度: NaN
+Segment{ 13 }, Segment{ 14 }
+コサイン類似度: NaN
+Segment{ 14 }, Segment{ 15 }
+コサイン類似度: NaN
+Segment{ 15 }, Segment{ 16 }
+コサイン類似度: NaN
+Segment{ 16 }, Segment{ 17 }
+コサイン類似度: NaN
+Segment{ 17 }, Segment{ 18 }
+コサイン類似度: NaN
+Segment{ 18 }, Segment{ 19 }
+コサイン類似度: NaN
+Segment{ 19 }, Segment{ 20 }
+コサイン類似度: NaN

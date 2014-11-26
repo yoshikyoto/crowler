@@ -1,0 +1,109 @@
+filename: 2006EAEH12
+xmlFile: /Users/admin/ocwslidedata/ocw.kyoto-u.ac.jp/005-004-（〜2010年）欧米経済史/2006EAEH12/slide.xml
+dir: /Users/admin/ocwslidedata/ocw.kyoto-u.ac.jp/005-004-（〜2010年）欧米経済史/2006EAEH12
+XML:
+<presentation language="ja"><slide page="1"><body><p>冷戦後の世界秩序ー二つの主要な議論「アメリカ的価値」民主主義・人権・市場原理文明の衝突/Huntington歴史の終焉/Fukuyamaイスラム世界との衝突 異文明の包摂国際協調主義単独行動主義</p></body></slide><slide page="2"><body><p>欧州＝金星？　挑戦者？『大欧州の時代—ブリュッセルからの報告』 （ 岩波新書 新赤版 ）脇阪 紀行 (著)</p></body></slide><slide page="3"><body><p>欧州統合とアジア統合モデル１:仏独モデル　　　モデル２:英ー大陸６カ国モデルパリ・ボン枢軸 : 「欧州統合のエンジン」A. 独ー日 B. 仏ー中第二次大戦時: A→侵略→ B.「歴史認識」  独   :　日地域統合への対応</p></body></slide><slide page="4"><body><p>European Integration / Asian IntegrationUKGermanyFranceEasternEuropeUSChina S. KoreaASEANJapanUSWith or Without UK?With orWithout Japan?</p></body></slide></presentation>
+ページ: 1 -----
+<slide page="1"><body><p>冷戦後の世界秩序ー二つの主要な議論「アメリカ的価値」民主主義・人権・市場原理文明の衝突/Huntington歴史の終焉/Fukuyamaイスラム世界との衝突 異文明の包摂国際協調主義単独行動主義</p></body></slide>
+in Sheet Class, page: 1
+title = ""
+body = "<p>冷戦後の世界秩序ー二つの主要な議論「アメリカ的価値」民主主義・人権・市場原理文明の衝突/Huntington歴史の終焉/Fukuyamaイスラム世界との衝突 異文明の包摂国際協調主義単独行動主義</p>"
+makeWordArrayJp
+paragraph: 冷戦後の世界秩序ー二つの主要な議論「アメリカ的価値」民主主義・人権・市場原理文明の衝突/Huntington歴史の終焉/Fukuyamaイスラム世界との衝突 異文明の包摂国際協調主義単独行動主義
+冷戦 :	名詞,一般,*,*,*,*,冷戦,レイセン,レイセン	true	1
+世界 :	名詞,一般,*,*,*,*,世界,セカイ,セカイ	true	1
+秩序 :	名詞,一般,*,*,*,*,秩序,チツジョ,チツジョ	true	1
+二つ :	名詞,一般,*,*,*,*,二つ,フタツ,フタツ	true	1
+主要 :	名詞,形容動詞語幹,*,*,*,*,主要,シュヨウ,シュヨー	true	1
+議論 :	名詞,サ変接続,*,*,*,*,議論,ギロン,ギロン	true	1
+アメリカ :	名詞,固有名詞,地域,国,*,*,アメリカ,アメリカ,アメリカ	true	1
+価値 :	名詞,一般,*,*,*,*,価値,カチ,カチ	true	1
+民主 :	名詞,一般,*,*,*,*,民主,ミンシュ,ミンシュ	true	1
+主義 :	名詞,一般,*,*,*,*,主義,シュギ,シュギ	true	1
+人権 :	名詞,一般,*,*,*,*,人権,ジンケン,ジンケン	true	1
+市場 :	名詞,一般,*,*,*,*,市場,シジョウ,シジョー	true	1
+原理 :	名詞,一般,*,*,*,*,原理,ゲンリ,ゲンリ	true	1
+文明 :	名詞,一般,*,*,*,*,文明,ブンメイ,ブンメイ	true	1
+衝突 :	名詞,サ変接続,*,*,*,*,衝突,ショウトツ,ショートツ	true	1
+Huntington :	名詞,一般,*,*,*,*,*	false	1
+歴史 :	名詞,一般,*,*,*,*,歴史,レキシ,レキシ	true	1
+終焉 :	名詞,一般,*,*,*,*,終焉,シュウエン,シューエン	true	1
+Fukuyama :	名詞,固有名詞,組織,*,*,*,*	false	1
+イスラム :	名詞,固有名詞,一般,*,*,*,イスラム,イスラム,イスラム	true	1
+世界 :	名詞,一般,*,*,*,*,世界,セカイ,セカイ	true	2
+衝突 :	名詞,サ変接続,*,*,*,*,衝突,ショウトツ,ショートツ	true	2
+文明 :	名詞,一般,*,*,*,*,文明,ブンメイ,ブンメイ	true	2
+包摂 :	名詞,サ変接続,*,*,*,*,包摂,ホウセツ,ホーセツ	true	1
+国際 :	名詞,一般,*,*,*,*,国際,コクサイ,コクサイ	true	1
+協調 :	名詞,サ変接続,*,*,*,*,協調,キョウチョウ,キョーチョー	true	1
+主義 :	名詞,一般,*,*,*,*,主義,シュギ,シュギ	true	2
+単独 :	名詞,一般,*,*,*,*,単独,タンドク,タンドク	true	1
+行動 :	名詞,サ変接続,*,*,*,*,行動,コウドウ,コードー	true	1
+主義 :	名詞,一般,*,*,*,*,主義,シュギ,シュギ	true	3
+ページ: 2 -----
+<slide page="2"><body><p>欧州＝金星？　挑戦者？『大欧州の時代—ブリュッセルからの報告』 （ 岩波新書 新赤版 ）脇阪 紀行 (著)</p></body></slide>
+in Sheet Class, page: 2
+title = ""
+body = "<p>欧州＝金星？　挑戦者？『大欧州の時代—ブリュッセルからの報告』 （ 岩波新書 新赤版 ）脇阪 紀行 (著)</p>"
+makeWordArrayJp
+paragraph: 欧州＝金星？　挑戦者？『大欧州の時代—ブリュッセルからの報告』 （ 岩波新書 新赤版 ）脇阪 紀行 (著)
+欧州 :	名詞,固有名詞,地域,一般,*,*,欧州,オウシュウ,オーシュー	true	1
+金星 :	名詞,固有名詞,人名,姓,*,*,金星,カナボシ,カナボシ	true	1
+挑戦 :	名詞,サ変接続,*,*,*,*,挑戦,チョウセン,チョーセン	true	1
+欧州 :	名詞,固有名詞,地域,一般,*,*,欧州,オウシュウ,オーシュー	true	2
+時代 :	名詞,一般,*,*,*,*,時代,ジダイ,ジダイ	true	1
+ブリュッセル :	名詞,固有名詞,地域,一般,*,*,ブリュッセル,ブリュッセル,ブリュッセル	true	1
+報告 :	名詞,サ変接続,*,*,*,*,報告,ホウコク,ホーコク	true	1
+岩波 :	名詞,固有名詞,組織,*,*,*,岩波,イワナミ,イワナミ	true	1
+新書 :	名詞,一般,*,*,*,*,新書,シンショ,シンショ	true	1
+紀行 :	名詞,一般,*,*,*,*,紀行,キコウ,キコー	true	1
+ページ: 3 -----
+<slide page="3"><body><p>欧州統合とアジア統合モデル１:仏独モデル　　　モデル２:英ー大陸６カ国モデルパリ・ボン枢軸 : 「欧州統合のエンジン」A. 独ー日 B. 仏ー中第二次大戦時: A→侵略→ B.「歴史認識」  独   :　日地域統合への対応</p></body></slide>
+in Sheet Class, page: 3
+title = ""
+body = "<p>欧州統合とアジア統合モデル１:仏独モデル　　　モデル２:英ー大陸６カ国モデルパリ・ボン枢軸 : 「欧州統合のエンジン」A. 独ー日 B. 仏ー中第二次大戦時: A→侵略→ B.「歴史認識」  独   :　日地域統合への対応</p>"
+makeWordArrayJp
+paragraph: 欧州統合とアジア統合モデル１:仏独モデル　　　モデル２:英ー大陸６カ国モデルパリ・ボン枢軸 : 「欧州統合のエンジン」A. 独ー日 B. 仏ー中第二次大戦時: A→侵略→ B.「歴史認識」  独   :　日地域統合への対応
+欧州 :	名詞,固有名詞,地域,一般,*,*,欧州,オウシュウ,オーシュー	true	1
+統合 :	名詞,サ変接続,*,*,*,*,統合,トウゴウ,トーゴー	true	1
+アジア :	名詞,固有名詞,地域,一般,*,*,アジア,アジア,アジア	true	1
+統合 :	名詞,サ変接続,*,*,*,*,統合,トウゴウ,トーゴー	true	2
+モデル :	名詞,一般,*,*,*,*,モデル,モデル,モデル	true	1
+モデル :	名詞,一般,*,*,*,*,モデル,モデル,モデル	true	2
+モデル :	名詞,一般,*,*,*,*,モデル,モデル,モデル	true	3
+大陸 :	名詞,一般,*,*,*,*,大陸,タイリク,タイリク	true	1
+カ国 :	名詞,接尾,助数詞,*,*,*,カ国,カコク,カコク	true	1
+モデル :	名詞,一般,*,*,*,*,モデル,モデル,モデル	true	4
+パリ :	名詞,固有名詞,地域,一般,*,*,パリ,パリ,パリ	true	1
+ボン :	名詞,固有名詞,地域,一般,*,*,ボン,ボン,ボン	true	1
+枢軸 :	名詞,一般,*,*,*,*,枢軸,スウジク,スージク	true	1
+欧州 :	名詞,固有名詞,地域,一般,*,*,欧州,オウシュウ,オーシュー	true	2
+統合 :	名詞,サ変接続,*,*,*,*,統合,トウゴウ,トーゴー	true	3
+エンジン :	名詞,一般,*,*,*,*,エンジン,エンジン,エンジン	true	1
+大戦 :	名詞,一般,*,*,*,*,大戦,タイセン,タイセン	true	1
+侵略 :	名詞,サ変接続,*,*,*,*,侵略,シンリャク,シンリャク	true	1
+.「 :	名詞,サ変接続,*,*,*,*,*	false	1
+歴史 :	名詞,一般,*,*,*,*,歴史,レキシ,レキシ	true	1
+認識 :	名詞,サ変接続,*,*,*,*,認識,ニンシキ,ニンシキ	true	1
+:　 :	名詞,サ変接続,*,*,*,*,*	false	1
+地域 :	名詞,一般,*,*,*,*,地域,チイキ,チイキ	true	1
+統合 :	名詞,サ変接続,*,*,*,*,統合,トウゴウ,トーゴー	true	4
+対応 :	名詞,サ変接続,*,*,*,*,対応,タイオウ,タイオー	true	1
+ページ: 4 -----
+<slide page="4"><body><p>European Integration / Asian IntegrationUKGermanyFranceEasternEuropeUSChina S. KoreaASEANJapanUSWith or Without UK?With orWithout Japan?</p></body></slide>
+in Sheet Class, page: 4
+title = ""
+body = "<p>European Integration / Asian IntegrationUKGermanyFranceEasternEuropeUSChina S. KoreaASEANJapanUSWith or Without UK?With orWithout Japan?</p>"
+makeWordArrayJp
+paragraph: European Integration / Asian IntegrationUKGermanyFranceEasternEuropeUSChina S. KoreaASEANJapanUSWith or Without UK?With orWithout Japan?
+European :	名詞,固有名詞,組織,*,*,*,*	false	1
+Integration :	名詞,固有名詞,組織,*,*,*,*	false	1
+Asian :	名詞,固有名詞,組織,*,*,*,*	false	1
+IntegrationUKGermanyFranceEasternEuropeUSChina :	名詞,固有名詞,組織,*,*,*,*	false	1
+KoreaASEANJapanUSWith :	名詞,固有名詞,組織,*,*,*,*	false	1
+or :	名詞,固有名詞,組織,*,*,*,*	false	1
+Without :	名詞,固有名詞,組織,*,*,*,*	false	1
+UK :	名詞,固有名詞,組織,*,*,*,*	false	1
+With :	名詞,固有名詞,組織,*,*,*,*	false	1
+orWithout :	名詞,固有名詞,組織,*,*,*,*	false	1
+Japan :	名詞,固有名詞,組織,*,*,*,*	false	1

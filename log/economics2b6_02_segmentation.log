@@ -1,0 +1,23 @@
+{ 1 } { 2 } { 3 } { 4 } { 5 } { 6 } { 7 } { 8 } { 9 } { 10 } { 11 } { 12 } { 13 } 
+Segment{ 2 }, Segment{ 3 }
+コサイン類似度: NaN
+Segment{ 3 }, Segment{ 4 }
+コサイン類似度: NaN
+Segment{ 4 }, Segment{ 5 }
+コサイン類似度: NaN
+Segment{ 5 }, Segment{ 6 }
+コサイン類似度: NaN
+Segment{ 6 }, Segment{ 7 }
+コサイン類似度: NaN
+Segment{ 7 }, Segment{ 8 }
+コサイン類似度: NaN
+Segment{ 8 }, Segment{ 9 }
+コサイン類似度: NaN
+Segment{ 9 }, Segment{ 10 }
+コサイン類似度: NaN
+Segment{ 10 }, Segment{ 11 }
+コサイン類似度: NaN
+Segment{ 11 }, Segment{ 12 }
+コサイン類似度: NaN
+Segment{ 12 }, Segment{ 13 }
+コサイン類似度: NaN

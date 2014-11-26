@@ -1,0 +1,657 @@
+filename: gijutsuenshu03_public
+xmlFile: /Users/admin/ocwslidedata/ocw.kyoto-u.ac.jp/002-002-(〜2010年)情報技術演習（2006年度）/gijutsuenshu03_public/slide.xml
+dir: /Users/admin/ocwslidedata/ocw.kyoto-u.ac.jp/002-002-(〜2010年)情報技術演習（2006年度）/gijutsuenshu03_public
+XML:
+<presentation language="ja"><slide page="1"><body><p>	!2006/10/17 kubota@ii.ist.i.kyoto-u.ac.jphttp://www.ii.ist.i.kyoto-u.ac.jp/~kubota/</p></body></slide><slide page="2"><body><p>,9• ";11/=<-&)• ,!*;<–'.(63:1/#+• 2705480,	– *% – HTML+CSS+JavaScript/$(</p></body></slide><slide page="3"><body><p>'V11/7W• !;&%*:6+7;2D>66X3;%*D&1B.9;)/DFOUR07-4/+Y– !;@09;(CA–  V#XX	 etc…W• $<PowerPointD+7"+=1Y+<5V10/31W8PHSU0=1Y– ;MURD07?+=2E• 5'<158X,510D$X5DNGKILJQT;'90=1Y</p></body></slide><slide page="4"><body><p>98;61	$/(*• >:1#'!&" – +"0%98;6-.• HTML*+blockquote ),0/1 /)-.– <=http://www.w3.org/TR/html401/struct/text.html#h-9.2.2– <=http://cresta.kuis.kyoto-u.ac.jp/positlog/061016SN.html:347526*[KM 2006]:*[YH 2006]</p></body></slide><slide page="5"><body><p>(/10/0• '*,-*$#')2• CSS()+• http://www.w3.org/TR/html401/present/styles.html– Inline style information– Header style information• %&	-– External style sheets•  %.<h2 style="color: yellow">!</h2><head>"/0 <style type="text/css"><!–h1 {font-size: 40px; border-style:dashed}--></style></head><head>"/0"<link href="sample.css" rel="stylesheet" type="text/css" /> </head> </p></body></slide><slide page="6"><body><p>	7ILJIJ• >57;'69<4)M– – class >&0%K"– 01.Kred class 4.3-=07colorBC@F>blue84(0&4+K5=1,7!:*/<)M• 06blue class>233+(<HHH• red class 7colorBC@F6blue>/<HHHp.red{color:crimson;font-size:100%;line-height:100%} <p class=“red”> $ …</p><p class=“red”>	# …</p>…<p class=“green”>	D?FCEGA …</p></p></body></slide><slide page="7"><body><p>,9• "-&)• ,!*;<–'.(63:1/#+• 2705480,	– *% – HTML+CSS+JavaScript/$(</p></body></slide><slide page="8"><body><p>iobmjqbT(• iobmjqbrrr'50#TD[–  -F&'5_9J]HP• Y\DLSMBNT'5w/wHHOUPGS*_$BN@_?ZGGLWT w• LPCVviodaclqt,uT>w–=&R@_GLWSU1&'5X$• SMBNT'5wHHOUPGS%SA]"PK^[T;T<_Iv3RSILXTw– +7t!.uvgefpsat)9SResourceDescription FrameworkT	uvhnskvrrr• 8OU	:tHTML, XML RQu_1&R'5PIN$J] SMBNT64E`– Semantic Webt)9!.O2u</p></body></slide><slide page="9"><body><p>1403250)67• %*8(#$	 67/-	&#$8'14032506Lisp, Prolog7+,!".-9</p></body></slide><slide page="10"><body><p>)+ 3-19&MGVSD• HTMLM&?Gb0#$1cMSCVd^aX`_b(@#$1cICHAe– &bbody, h1, p KJc• 2<T=NOC=T,=V/ DT• 4[Xb<&>cI'[Xb</&>cLQFHOUTVGe[XN"?BUT	P<Te– bclass, id, style KJc• &L53DT– 0#$1MICHNdIEMbattribute,propertycdMI=>Z\]?QA!=RUTe• c:7;M:%;N:6.;d:W`Y;M:*-;N:8=;</p></body></slide><slide page="11"><body><p> 3-1(	)• JavaScript–  &#!'– HTML*$ ( &#")+' %3-1http://cresta.kuis.kyoto-u.ac.jp/positlog/pages/061016SN/files/sample31.html</p></body></slide><slide page="12"><body><p> 3-1+,• 	$ – +/,• ('* click #"!-showStyle() "!!.<button onclick="showStyle()">&'%)$</button></p></body></slide><slide page="13"><body><p> 3-1/0• '/20– showStyle() %)-,(1' %.	*,• '1example2 % id .$'1style'1border&",.+"• ( mystyle %)-,/variable0&",• mystyle &!-#.",function showStyle(){  var mystyle = document.getElementById("example2").style.border;  alert(mystyle);}</p></body></slide><slide page="14"><body><p> 3-1*+• 	%$$ !– #id%#• document.getElementById("20061017.style.color;– #'(&)• document.getElementById("example2.style.padding;• document.getElementById("example2.style.backgroundColor;– ….style.background-color – "• document.getElementById("example2").tagName;– "• document.getElementById("example2").innerHTML;</p></body></slide><slide page="15"><body><p> 3-2if-else0	#/• .!'"#– ,,mystyle ( lack ' &-* $%/– ,&* $).+ 1%/function showStyle(){  var mystyle =     document.getElementById("example2"). style.color;  if(mystyle == "black")  {    alert("$");  }  else  {    alert("$).+ 1");  }}25343-2http://cresta.kuis.kyoto-u.ac.jp/positlog/pages/061016SN/files/sample32.html</p></body></slide><slide page="16"><body><p> 3-2"#• var mystyle = document.getElementById(xample2.style.color;!$                          	 %</p></body></slide><slide page="17"><body><p>%3.3e#0M"• [XY]c–(M/.3^\_ZLF5Ga&'3-1ILstyleW*$H:US6:7DRM•  `&'IAHstyleWTBNaInline style information I@G1BU=I• [XY]d–(M/.3^\_ZLF5Ga&'3-2ILif-thenW"5DW<7DRM–CV9JMS6KW)6RMKM8a,LSU-W@G;E>5–+94VOa!(LJavaScriptW'@a>P?PKW2@GQG;E>5bCMR,LSU	M-W@G;E>5b</p></body></slide><slide page="18"><body><p>&U-V• $=1021UV17:00• 	– MGIR=lzh/zip/tgz<)3D+<9HTJIN1W%QTR;18	–SPTLEWebOTK:181WURLE%QTR9!2C9A)?4F–(8='kubota@ii.ist.i.kyoto-u.ac.jp• <&9=(B?4F,W 5<A<;7)8A#>/8"@8*)8.60)X</p></body></slide><slide page="19"><body><p>• –	 • HTML– HTML 4.01 Specificationhttp://www.w3.org/TR/html4/</p></body></slide></presentation>
+ページ: 1 -----
+<slide page="1"><body><p>	!2006/10/17 kubota@ii.ist.i.kyoto-u.ac.jphttp://www.ii.ist.i.kyoto-u.ac.jp/~kubota/</p></body></slide>
+in Sheet Class, page: 1
+title = ""
+body = "<p>	!2006/10/17 kubota@ii.ist.i.kyoto-u.ac.jphttp://www.ii.ist.i.kyoto-u.ac.jp/~kubota/</p>"
+makeWordArrayJp
+paragraph: 	!2006/10/17 kubota@ii.ist.i.kyoto-u.ac.jphttp://www.ii.ist.i.kyoto-u.ac.jp/~kubota/
+kubota :	名詞,固有名詞,組織,*,*,*,*	false	1
+ii :	名詞,一般,*,*,*,*,*	false	1
+ist :	名詞,一般,*,*,*,*,*	false	1
+kyoto :	名詞,一般,*,*,*,*,*	false	1
+ac :	名詞,一般,*,*,*,*,*	false	1
+jphttp :	名詞,一般,*,*,*,*,*	false	1
+:// :	名詞,サ変接続,*,*,*,*,*	false	1
+www :	名詞,一般,*,*,*,*,*	false	1
+ii :	名詞,一般,*,*,*,*,*	false	2
+ist :	名詞,一般,*,*,*,*,*	false	2
+kyoto :	名詞,一般,*,*,*,*,*	false	2
+ac :	名詞,一般,*,*,*,*,*	false	2
+jp :	名詞,一般,*,*,*,*,*	false	1
+/~ :	名詞,サ変接続,*,*,*,*,*	false	1
+kubota :	名詞,一般,*,*,*,*,*	false	2
+ページ: 2 -----
+<slide page="2"><body><p>,9• ";11/=<-&)• ,!*;<–'.(63:1/#+• 2705480,	– *% – HTML+CSS+JavaScript/$(</p></body></slide>
+in Sheet Class, page: 2
+title = ""
+body = "<p>,9• ";11/=<-&)• ,!*;<–'.(63:1/#+• 2705480,	– *% – HTML+CSS+JavaScript/$(</p>"
+makeWordArrayJp
+paragraph: ,9• ";11/=<-&)• ,!*;<–'.(63:1/#+• 2705480,	– *% – HTML+CSS+JavaScript/$(
+/=<- :	名詞,サ変接続,*,*,*,*,*	false	1
+&)• :	名詞,サ変接続,*,*,*,*,*	false	1
+<– :	名詞,サ変接続,*,*,*,*,*	false	1
+'.( :	名詞,サ変接続,*,*,*,*,*	false	1
+/# :	名詞,サ変接続,*,*,*,*,*	false	1
++• :	名詞,サ変接続,*,*,*,*,*	false	1
+HTML :	名詞,固有名詞,組織,*,*,*,*	false	1
+CSS :	名詞,一般,*,*,*,*,*	false	1
+JavaScript :	名詞,一般,*,*,*,*,*	false	1
+$( :	名詞,サ変接続,*,*,*,*,*	false	1
+ページ: 3 -----
+<slide page="3"><body><p>'V11/7W• !;&%*:6+7;2D>66X3;%*D&1B.9;)/DFOUR07-4/+Y– !;@09;(CA–  V#XX	 etc…W• $<PowerPointD+7"+=1Y+<5V10/31W8PHSU0=1Y– ;MURD07?+=2E• 5'<158X,510D$X5DNGKILJQT;'90=1Y</p></body></slide>
+in Sheet Class, page: 3
+title = ""
+body = "<p>'V11/7W• !;&%*:6+7;2D>66X3;%*D&1B.9;)/DFOUR07-4/+Y– !;@09;(CA–  V#XX	 etc…W• $<PowerPointD+7"+=1Y+<5V10/31W8PHSU0=1Y– ;MURD07?+=2E• 5'<158X,510D$X5DNGKILJQT;'90=1Y</p>"
+makeWordArrayJp
+paragraph: 'V11/7W• !;&%*:6+7;2D>66X3;%*D&1B.9;)/DFOUR07-4/+Y– !;@09;(CA–  V#XX	 etc…W• $<PowerPointD+7"+=1Y+<5V10/31W8PHSU0=1Y– ;MURD07?+=2E• 5'<158X,510D$X5DNGKILJQT;'90=1Y
+!;& :	名詞,サ変接続,*,*,*,*,*	false	1
+%*: :	名詞,サ変接続,*,*,*,*,*	false	1
+;%* :	名詞,サ変接続,*,*,*,*,*	false	1
+;) :	名詞,サ変接続,*,*,*,*,*	false	1
+DFOUR :	名詞,一般,*,*,*,*,*	false	1
+/+ :	名詞,サ変接続,*,*,*,*,*	false	1
+;( :	名詞,サ変接続,*,*,*,*,*	false	1
+CA :	名詞,一般,*,*,*,*,*	false	1
+etc :	名詞,固有名詞,組織,*,*,*,*	false	1
+$< :	名詞,サ変接続,*,*,*,*,*	false	1
+PowerPointD :	名詞,一般,*,*,*,*,*	false	1
+"+= :	名詞,サ変接続,*,*,*,*,*	false	1
+PHSU :	名詞,一般,*,*,*,*,*	false	1
+MURD :	名詞,一般,*,*,*,*,*	false	1
++= :	名詞,サ変接続,*,*,*,*,*	false	1
+'< :	名詞,サ変接続,*,*,*,*,*	false	1
+DNGKILJQT :	名詞,固有名詞,組織,*,*,*,*	false	1
+ページ: 4 -----
+<slide page="4"><body><p>98;61	$/(*• >:1#'!&" – +"0%98;6-.• HTML*+blockquote ),0/1 /)-.– <=http://www.w3.org/TR/html401/struct/text.html#h-9.2.2– <=http://cresta.kuis.kyoto-u.ac.jp/positlog/061016SN.html:347526*[KM 2006]:*[YH 2006]</p></body></slide>
+in Sheet Class, page: 4
+title = ""
+body = "<p>98;61	$/(*• >:1#'!&" – +"0%98;6-.• HTML*+blockquote ),0/1 /)-.– <=http://www.w3.org/TR/html401/struct/text.html#h-9.2.2– <=http://cresta.kuis.kyoto-u.ac.jp/positlog/061016SN.html:347526*[KM 2006]:*[YH 2006]</p>"
+makeWordArrayJp
+paragraph: 98;61	$/(*• >:1#'!&" – +"0%98;6-.• HTML*+blockquote ),0/1 /)-.– <=http://www.w3.org/TR/html401/struct/text.html#h-9.2.2– <=http://cresta.kuis.kyoto-u.ac.jp/positlog/061016SN.html:347526*[KM 2006]:*[YH 2006]
+$/ :	名詞,サ変接続,*,*,*,*,*	false	1
+(* :	名詞,サ変接続,*,*,*,*,*	false	1
+#'!&" :	名詞,サ変接続,*,*,*,*,*	false	1
+-.• :	名詞,サ変接続,*,*,*,*,*	false	1
+HTML :	名詞,固有名詞,組織,*,*,*,*	false	1
+blockquote :	名詞,固有名詞,組織,*,*,*,*	false	1
+/)-. :	名詞,サ変接続,*,*,*,*,*	false	1
+http :	名詞,一般,*,*,*,*,*	false	1
+:// :	名詞,サ変接続,*,*,*,*,*	false	1
+www :	名詞,一般,*,*,*,*,*	false	1
+org :	名詞,一般,*,*,*,*,*	false	1
+TR :	名詞,一般,*,*,*,*,*	false	1
+html :	名詞,一般,*,*,*,*,*	false	1
+struct :	名詞,一般,*,*,*,*,*	false	1
+text :	名詞,一般,*,*,*,*,*	false	1
+html :	名詞,一般,*,*,*,*,*	false	2
+http :	名詞,一般,*,*,*,*,*	false	2
+:// :	名詞,サ変接続,*,*,*,*,*	false	2
+cresta :	名詞,一般,*,*,*,*,*	false	1
+kuis :	名詞,一般,*,*,*,*,*	false	1
+kyoto :	名詞,一般,*,*,*,*,*	false	1
+ac :	名詞,一般,*,*,*,*,*	false	1
+jp :	名詞,一般,*,*,*,*,*	false	1
+positlog :	名詞,一般,*,*,*,*,*	false	1
+SN :	名詞,一般,*,*,*,*,*	false	1
+html :	名詞,一般,*,*,*,*,*	false	3
+KM :	名詞,固有名詞,組織,*,*,*,*	false	1
+YH :	名詞,固有名詞,組織,*,*,*,*	false	1
+ページ: 5 -----
+<slide page="5"><body><p>(/10/0• '*,-*$#')2• CSS()+• http://www.w3.org/TR/html401/present/styles.html– Inline style information– Header style information• %&	-– External style sheets•  %.<h2 style="color: yellow">!</h2><head>"/0 <style type="text/css"><!–h1 {font-size: 40px; border-style:dashed}--></style></head><head>"/0"<link href="sample.css" rel="stylesheet" type="text/css" /> </head> </p></body></slide>
+in Sheet Class, page: 5
+title = ""
+body = "<p>(/10/0• '*,-*$#')2• CSS()+• http://www.w3.org/TR/html401/present/styles.html– Inline style information– Header style information• %&	-– External style sheets•  %.<h2 style="color: yellow">!</h2><head>"/0 <style type="text/css"><!–h1 {font-size: 40px; border-style:dashed}--></style></head><head>"/0"<link href="sample.css" rel="stylesheet" type="text/css" /> </head> </p>"
+makeWordArrayJp
+paragraph: (/10/0• '*,-*$#')2• CSS()+• http://www.w3.org/TR/html401/present/styles.html– Inline style information– Header style information• %&	-– External style sheets•  %.<h2 style="color: yellow">!</h2><head>"/0 <style type="text/css"><!–h1 {font-size: 40px; border-style:dashed}--></style></head><head>"/0"<link href="sample.css" rel="stylesheet" type="text/css" /> </head> 
+'*, :	名詞,サ変接続,*,*,*,*,*	false	1
+*$ :	名詞,サ変接続,*,*,*,*,*	false	1
+#') :	名詞,サ変接続,*,*,*,*,*	false	1
+CSS :	名詞,固有名詞,組織,*,*,*,*	false	1
++• :	名詞,サ変接続,*,*,*,*,*	false	1
+http :	名詞,固有名詞,組織,*,*,*,*	false	1
+:// :	名詞,サ変接続,*,*,*,*,*	false	1
+www :	名詞,一般,*,*,*,*,*	false	1
+org :	名詞,一般,*,*,*,*,*	false	1
+TR :	名詞,一般,*,*,*,*,*	false	1
+html :	名詞,一般,*,*,*,*,*	false	1
+present :	名詞,一般,*,*,*,*,*	false	1
+styles :	名詞,一般,*,*,*,*,*	false	1
+html :	名詞,一般,*,*,*,*,*	false	2
+Inline :	名詞,固有名詞,組織,*,*,*,*	false	1
+style :	名詞,固有名詞,組織,*,*,*,*	false	1
+information :	名詞,固有名詞,組織,*,*,*,*	false	1
+Header :	名詞,固有名詞,組織,*,*,*,*	false	1
+style :	名詞,固有名詞,組織,*,*,*,*	false	2
+information :	名詞,固有名詞,組織,*,*,*,*	false	2
+External :	名詞,固有名詞,組織,*,*,*,*	false	1
+style :	名詞,固有名詞,組織,*,*,*,*	false	3
+sheets :	名詞,固有名詞,組織,*,*,*,*	false	1
+style :	名詞,固有名詞,組織,*,*,*,*	false	4
+=" :	名詞,サ変接続,*,*,*,*,*	false	1
+color :	名詞,一般,*,*,*,*,*	false	1
+yellow :	名詞,固有名詞,組織,*,*,*,*	false	1
+"> :	名詞,サ変接続,*,*,*,*,*	false	1
+!</ :	名詞,サ変接続,*,*,*,*,*	false	1
+>< :	名詞,サ変接続,*,*,*,*,*	false	1
+head :	名詞,一般,*,*,*,*,*	false	1
+>"/ :	名詞,サ変接続,*,*,*,*,*	false	1
+style :	名詞,固有名詞,組織,*,*,*,*	false	5
+type :	名詞,固有名詞,組織,*,*,*,*	false	1
+=" :	名詞,サ変接続,*,*,*,*,*	false	2
+text :	名詞,一般,*,*,*,*,*	false	1
+css :	名詞,一般,*,*,*,*,*	false	1
+"><!– :	名詞,サ変接続,*,*,*,*,*	false	1
+font :	名詞,一般,*,*,*,*,*	false	1
+size :	名詞,一般,*,*,*,*,*	false	1
+px :	名詞,一般,*,*,*,*,*	false	1
+border :	名詞,固有名詞,組織,*,*,*,*	false	1
+style :	名詞,一般,*,*,*,*,*	false	6
+dashed :	名詞,一般,*,*,*,*,*	false	1
+}--></ :	名詞,サ変接続,*,*,*,*,*	false	1
+style :	名詞,一般,*,*,*,*,*	false	7
+></ :	名詞,サ変接続,*,*,*,*,*	false	1
+head :	名詞,一般,*,*,*,*,*	false	2
+>< :	名詞,サ変接続,*,*,*,*,*	false	2
+head :	名詞,一般,*,*,*,*,*	false	3
+>"/ :	名詞,サ変接続,*,*,*,*,*	false	2
+"< :	名詞,サ変接続,*,*,*,*,*	false	1
+link :	名詞,固有名詞,組織,*,*,*,*	false	1
+href :	名詞,固有名詞,組織,*,*,*,*	false	1
+=" :	名詞,サ変接続,*,*,*,*,*	false	3
+sample :	名詞,一般,*,*,*,*,*	false	1
+css :	名詞,一般,*,*,*,*,*	false	2
+rel :	名詞,固有名詞,組織,*,*,*,*	false	1
+=" :	名詞,サ変接続,*,*,*,*,*	false	4
+stylesheet :	名詞,一般,*,*,*,*,*	false	1
+type :	名詞,固有名詞,組織,*,*,*,*	false	2
+=" :	名詞,サ変接続,*,*,*,*,*	false	5
+text :	名詞,一般,*,*,*,*,*	false	2
+css :	名詞,一般,*,*,*,*,*	false	3
+/> :	名詞,サ変接続,*,*,*,*,*	false	1
+</ :	名詞,サ変接続,*,*,*,*,*	false	1
+head :	名詞,一般,*,*,*,*,*	false	4
+ページ: 6 -----
+<slide page="6"><body><p>	7ILJIJ• >57;'69<4)M– – class >&0%K"– 01.Kred class 4.3-=07colorBC@F>blue84(0&4+K5=1,7!:*/<)M• 06blue class>233+(<HHH• red class 7colorBC@F6blue>/<HHHp.red{color:crimson;font-size:100%;line-height:100%} <p class=“red”> $ …</p><p class=“red”>	# …</p>…<p class=“green”>	D?FCEGA …</p></p></body></slide>
+in Sheet Class, page: 6
+title = ""
+body = "<p>	7ILJIJ• >57;'69<4)M– – class >&0%K"– 01.Kred class 4.3-=07colorBC@F>blue84(0&4+K5=1,7!:*/<)M• 06blue class>233+(<HHH• red class 7colorBC@F6blue>/<HHHp.red{color:crimson;font-size:100%;line-height:100%} <p class=“red”> $ …</p><p class=“red”>	# …</p>…<p class=“green”>	D?FCEGA …</p></p>"
+makeWordArrayJp
+paragraph: 	7ILJIJ• >57;'69<4)M– – class >&0%K"– 01.Kred class 4.3-=07colorBC@F>blue84(0&4+K5=1,7!:*/<)M• 06blue class>233+(<HHH• red class 7colorBC@F6blue>/<HHHp.red{color:crimson;font-size:100%;line-height:100%} <p class=“red”> $ …
+ILJI :	名詞,固有名詞,組織,*,*,*,*	false	1
+;' :	名詞,サ変接続,*,*,*,*,*	false	1
+class :	名詞,固有名詞,組織,*,*,*,*	false	1
+Kred :	名詞,固有名詞,組織,*,*,*,*	false	1
+class :	名詞,固有名詞,組織,*,*,*,*	false	2
+-= :	名詞,サ変接続,*,*,*,*,*	false	1
+colorBC :	名詞,一般,*,*,*,*,*	false	1
+blue :	名詞,一般,*,*,*,*,*	false	1
+!: :	名詞,サ変接続,*,*,*,*,*	false	1
+/<) :	名詞,サ変接続,*,*,*,*,*	false	1
+blue :	名詞,固有名詞,組織,*,*,*,*	false	2
+class :	名詞,固有名詞,組織,*,*,*,*	false	3
+(< :	名詞,サ変接続,*,*,*,*,*	false	1
+HHH :	名詞,一般,*,*,*,*,*	false	1
+red :	名詞,固有名詞,組織,*,*,*,*	false	1
+class :	名詞,固有名詞,組織,*,*,*,*	false	4
+colorBC :	名詞,一般,*,*,*,*,*	false	2
+blue :	名詞,一般,*,*,*,*,*	false	3
+/< :	名詞,サ変接続,*,*,*,*,*	false	1
+HHHp :	名詞,一般,*,*,*,*,*	false	1
+red :	名詞,一般,*,*,*,*,*	false	2
+color :	名詞,一般,*,*,*,*,*	false	1
+crimson :	名詞,一般,*,*,*,*,*	false	1
+font :	名詞,一般,*,*,*,*,*	false	1
+size :	名詞,一般,*,*,*,*,*	false	1
+%; :	名詞,サ変接続,*,*,*,*,*	false	1
+line :	名詞,一般,*,*,*,*,*	false	1
+height :	名詞,一般,*,*,*,*,*	false	1
+%} :	名詞,サ変接続,*,*,*,*,*	false	1
+class :	名詞,固有名詞,組織,*,*,*,*	false	5
+=“ :	名詞,サ変接続,*,*,*,*,*	false	1
+red :	名詞,固有名詞,組織,*,*,*,*	false	3
+paragraph: 	# …
+paragraph: 	D?FCEGA …
+FCEGA :	名詞,固有名詞,組織,*,*,*,*	false	1
+ページ: 7 -----
+<slide page="7"><body><p>,9• "-&)• ,!*;<–'.(63:1/#+• 2705480,	– *% – HTML+CSS+JavaScript/$(</p></body></slide>
+in Sheet Class, page: 7
+title = ""
+body = "<p>,9• "-&)• ,!*;<–'.(63:1/#+• 2705480,	– *% – HTML+CSS+JavaScript/$(</p>"
+makeWordArrayJp
+paragraph: ,9• "-&)• ,!*;<–'.(63:1/#+• 2705480,	– *% – HTML+CSS+JavaScript/$(
+&)• :	名詞,サ変接続,*,*,*,*,*	false	1
+<– :	名詞,サ変接続,*,*,*,*,*	false	1
+'.( :	名詞,サ変接続,*,*,*,*,*	false	1
+/# :	名詞,サ変接続,*,*,*,*,*	false	1
++• :	名詞,サ変接続,*,*,*,*,*	false	1
+HTML :	名詞,固有名詞,組織,*,*,*,*	false	1
+CSS :	名詞,一般,*,*,*,*,*	false	1
+JavaScript :	名詞,一般,*,*,*,*,*	false	1
+$( :	名詞,サ変接続,*,*,*,*,*	false	1
+ページ: 8 -----
+<slide page="8"><body><p>iobmjqbT(• iobmjqbrrr'50#TD[–  -F&'5_9J]HP• Y\DLSMBNT'5w/wHHOUPGS*_$BN@_?ZGGLWT w• LPCVviodaclqt,uT>w–=&R@_GLWSU1&'5X$• SMBNT'5wHHOUPGS%SA]"PK^[T;T<_Iv3RSILXTw– +7t!.uvgefpsat)9SResourceDescription FrameworkT	uvhnskvrrr• 8OU	:tHTML, XML RQu_1&R'5PIN$J] SMBNT64E`– Semantic Webt)9!.O2u</p></body></slide>
+in Sheet Class, page: 8
+title = ""
+body = "<p>iobmjqbT(• iobmjqbrrr'50#TD[–  -F&'5_9J]HP• Y\DLSMBNT'5w/wHHOUPGS*_$BN@_?ZGGLWT w• LPCVviodaclqt,uT>w–=&R@_GLWSU1&'5X$• SMBNT'5wHHOUPGS%SA]"PK^[T;T<_Iv3RSILXTw– +7t!.uvgefpsat)9SResourceDescription FrameworkT	uvhnskvrrr• 8OU	:tHTML, XML RQu_1&R'5PIN$J] SMBNT64E`– Semantic Webt)9!.O2u</p>"
+makeWordArrayJp
+paragraph: iobmjqbT(• iobmjqbrrr'50#TD[–  -F&'5_9J]HP• Y\DLSMBNT'5w/wHHOUPGS*_$BN@_?ZGGLWT w• LPCVviodaclqt,uT>w–=&R@_GLWSU1&'5X$• SMBNT'5wHHOUPGS%SA]"PK^[T;T<_Iv3RSILXTw– +7t!.uvgefpsat)9SResourceDescription FrameworkT	uvhnskvrrr• 8OU	:tHTML, XML RQu_1&R'5PIN$J] SMBNT64E`– Semantic Webt)9!.O2u
+iobmjqbT :	名詞,固有名詞,組織,*,*,*,*	false	1
+(• :	名詞,サ変接続,*,*,*,*,*	false	1
+iobmjqbrrr :	名詞,固有名詞,組織,*,*,*,*	false	1
+[– :	名詞,サ変接続,*,*,*,*,*	false	1
+&' :	名詞,サ変接続,*,*,*,*,*	false	1
+HP :	名詞,一般,*,*,*,*,*	false	1
+DLSMBNT :	名詞,一般,*,*,*,*,*	false	1
+wHHOUPGS :	名詞,一般,*,*,*,*,*	false	1
+_$ :	名詞,サ変接続,*,*,*,*,*	false	1
+BN :	名詞,一般,*,*,*,*,*	false	1
+@_ :	名詞,サ変接続,*,*,*,*,*	false	1
+ZG :	名詞,一般,*,*,*,*,*	false	1
+GLWT :	名詞,固有名詞,組織,*,*,*,*	false	1
+LPCVviodaclq :	名詞,固有名詞,組織,*,*,*,*	false	1
+uT :	名詞,固有名詞,組織,*,*,*,*	false	1
+=& :	名詞,サ変接続,*,*,*,*,*	false	1
+@_ :	名詞,サ変接続,*,*,*,*,*	false	2
+GLWSU :	名詞,固有名詞,組織,*,*,*,*	false	1
+&' :	名詞,サ変接続,*,*,*,*,*	false	2
+$• :	名詞,サ変接続,*,*,*,*,*	false	1
+SMBNT :	名詞,固有名詞,組織,*,*,*,*	false	1
+wHHOUPGS :	名詞,一般,*,*,*,*,*	false	2
+SA :	名詞,一般,*,*,*,*,*	false	1
+PK :	名詞,一般,*,*,*,*,*	false	1
+^[ :	名詞,サ変接続,*,*,*,*,*	false	1
+Iv :	名詞,固有名詞,組織,*,*,*,*	false	1
+SILXTw :	名詞,固有名詞,組織,*,*,*,*	false	1
+!. :	名詞,サ変接続,*,*,*,*,*	false	1
+uv :	名詞,一般,*,*,*,*,*	false	1
+gefpsat :	名詞,固有名詞,組織,*,*,*,*	false	1
+SResourceDescription :	名詞,固有名詞,組織,*,*,*,*	false	1
+FrameworkT :	名詞,固有名詞,組織,*,*,*,*	false	1
+uvhnskvrrr :	名詞,固有名詞,組織,*,*,*,*	false	1
+OU :	名詞,固有名詞,組織,*,*,*,*	false	1
+tHTML :	名詞,固有名詞,組織,*,*,*,*	false	1
+XML :	名詞,固有名詞,組織,*,*,*,*	false	1
+RQu :	名詞,固有名詞,組織,*,*,*,*	false	1
+PIN :	名詞,一般,*,*,*,*,*	false	1
+SMBNT :	名詞,一般,*,*,*,*,*	false	2
+`– :	名詞,サ変接続,*,*,*,*,*	false	1
+Semantic :	名詞,固有名詞,組織,*,*,*,*	false	1
+Webt :	名詞,固有名詞,組織,*,*,*,*	false	1
+!. :	名詞,サ変接続,*,*,*,*,*	false	2
+ページ: 9 -----
+<slide page="9"><body><p>1403250)67• %*8(#$	 67/-	&#$8'14032506Lisp, Prolog7+,!".-9</p></body></slide>
+in Sheet Class, page: 9
+title = ""
+body = "<p>1403250)67• %*8(#$	 67/-	&#$8'14032506Lisp, Prolog7+,!".-9</p>"
+makeWordArrayJp
+paragraph: 1403250)67• %*8(#$	 67/-	&#$8'14032506Lisp, Prolog7+,!".-9
+%* :	名詞,サ変接続,*,*,*,*,*	false	1
+#$ :	名詞,サ変接続,*,*,*,*,*	false	1
+&#$ :	名詞,サ変接続,*,*,*,*,*	false	1
+Lisp :	名詞,一般,*,*,*,*,*	false	1
+Prolog :	名詞,固有名詞,組織,*,*,*,*	false	1
++,! :	名詞,サ変接続,*,*,*,*,*	false	1
+".- :	名詞,サ変接続,*,*,*,*,*	false	1
+ページ: 10 -----
+<slide page="10"><body><p>)+ 3-19&MGVSD• HTMLM&?Gb0#$1cMSCVd^aX`_b(@#$1cICHAe– &bbody, h1, p KJc• 2<T=NOC=T,=V/ DT• 4[Xb<&>cI'[Xb</&>cLQFHOUTVGe[XN"?BUT	P<Te– bclass, id, style KJc• &L53DT– 0#$1MICHNdIEMbattribute,propertycdMI=>Z\]?QA!=RUTe• c:7;M:%;N:6.;d:W`Y;M:*-;N:8=;</p></body></slide>
+in Sheet Class, page: 10
+title = ""
+body = "<p>)+ 3-19&MGVSD• HTMLM&?Gb0#$1cMSCVd^aX`_b(@#$1cICHAe– &bbody, h1, p KJc• 2<T=NOC=T,=V/ DT• 4[Xb<&>cI'[Xb</&>cLQFHOUTVGe[XN"?BUT	P<Te– bclass, id, style KJc• &L53DT– 0#$1MICHNdIEMbattribute,propertycdMI=>Z\]?QA!=RUTe• c:7;M:%;N:6.;d:W`Y;M:*-;N:8=;</p>"
+makeWordArrayJp
+paragraph: )+ 3-19&MGVSD• HTMLM&?Gb0#$1cMSCVd^aX`_b(@#$1cICHAe– &bbody, h1, p KJc• 2<T=NOC=T,=V/ DT• 4[Xb<&>cI'[Xb</&>cLQFHOUTVGe[XN"?BUT	P<Te– bclass, id, style KJc• &L53DT– 0#$1MICHNdIEMbattribute,propertycdMI=>Z\]?QA!=RUTe• c:7;M:%;N:6.;d:W`Y;M:*-;N:8=;
+)+ :	名詞,サ変接続,*,*,*,*,*	false	1
+HTML :	名詞,固有名詞,組織,*,*,*,*	false	1
+&? :	名詞,サ変接続,*,*,*,*,*	false	1
+#$ :	名詞,サ変接続,*,*,*,*,*	false	1
+cM :	名詞,一般,*,*,*,*,*	false	1
+Vd :	名詞,固有名詞,組織,*,*,*,*	false	1
+aX :	名詞,一般,*,*,*,*,*	false	1
+`_ :	名詞,サ変接続,*,*,*,*,*	false	1
+(@#$ :	名詞,サ変接続,*,*,*,*,*	false	1
+cICH :	名詞,一般,*,*,*,*,*	false	1
+Ae :	名詞,固有名詞,組織,*,*,*,*	false	1
+bbody :	名詞,一般,*,*,*,*,*	false	1
+KJc :	名詞,固有名詞,組織,*,*,*,*	false	1
+OC :	名詞,固有名詞,組織,*,*,*,*	false	1
+,= :	名詞,サ変接続,*,*,*,*,*	false	1
+DT :	名詞,固有名詞,組織,*,*,*,*	false	1
+Xb :	名詞,一般,*,*,*,*,*	false	1
+&> :	名詞,サ変接続,*,*,*,*,*	false	1
+cI :	名詞,一般,*,*,*,*,*	false	1
+Xb :	名詞,一般,*,*,*,*,*	false	2
+</ :	名詞,サ変接続,*,*,*,*,*	false	1
+&> :	名詞,サ変接続,*,*,*,*,*	false	2
+cLQFH :	名詞,固有名詞,組織,*,*,*,*	false	1
+OUT :	名詞,固有名詞,組織,*,*,*,*	false	1
+Ge :	名詞,固有名詞,組織,*,*,*,*	false	1
+XN :	名詞,一般,*,*,*,*,*	false	1
+"? :	名詞,サ変接続,*,*,*,*,*	false	1
+BUT :	名詞,固有名詞,組織,*,*,*,*	false	1
+Te :	名詞,一般,*,*,*,*,*	false	1
+bclass :	名詞,固有名詞,組織,*,*,*,*	false	1
+id :	名詞,固有名詞,組織,*,*,*,*	false	1
+style :	名詞,固有名詞,組織,*,*,*,*	false	1
+KJc :	名詞,固有名詞,組織,*,*,*,*	false	2
+DT :	名詞,一般,*,*,*,*,*	false	2
+#$ :	名詞,サ変接続,*,*,*,*,*	false	2
+ICHNd :	名詞,固有名詞,組織,*,*,*,*	false	1
+IEM :	名詞,固有名詞,組織,*,*,*,*	false	1
+battribute :	名詞,固有名詞,組織,*,*,*,*	false	1
+propertycd :	名詞,一般,*,*,*,*,*	false	1
+=> :	名詞,サ変接続,*,*,*,*,*	false	1
+\]? :	名詞,サ変接続,*,*,*,*,*	false	1
+QA :	名詞,一般,*,*,*,*,*	false	1
+!= :	名詞,サ変接続,*,*,*,*,*	false	1
+RUTe :	名詞,一般,*,*,*,*,*	false	1
+:% :	名詞,サ変接続,*,*,*,*,*	false	1
+.; :	名詞,サ変接続,*,*,*,*,*	false	1
+:*-; :	名詞,サ変接続,*,*,*,*,*	false	1
+=; :	名詞,サ変接続,*,*,*,*,*	false	1
+ページ: 11 -----
+<slide page="11"><body><p> 3-1(	)• JavaScript–  &#!'– HTML*$ ( &#")+' %3-1http://cresta.kuis.kyoto-u.ac.jp/positlog/pages/061016SN/files/sample31.html</p></body></slide>
+in Sheet Class, page: 11
+title = ""
+body = "<p> 3-1(	)• JavaScript–  &#!'– HTML*$ ( &#")+' %3-1http://cresta.kuis.kyoto-u.ac.jp/positlog/pages/061016SN/files/sample31.html</p>"
+makeWordArrayJp
+paragraph:  3-1(	)• JavaScript–  &#!'– HTML*$ ( &#")+' %3-1http://cresta.kuis.kyoto-u.ac.jp/positlog/pages/061016SN/files/sample31.html
+)• :	名詞,サ変接続,*,*,*,*,*	false	1
+JavaScript :	名詞,固有名詞,組織,*,*,*,*	false	1
+#!' :	名詞,サ変接続,*,*,*,*,*	false	1
+HTML :	名詞,固有名詞,組織,*,*,*,*	false	1
+#") :	名詞,サ変接続,*,*,*,*,*	false	1
+http :	名詞,一般,*,*,*,*,*	false	1
+:// :	名詞,サ変接続,*,*,*,*,*	false	1
+cresta :	名詞,一般,*,*,*,*,*	false	1
+kuis :	名詞,一般,*,*,*,*,*	false	1
+kyoto :	名詞,一般,*,*,*,*,*	false	1
+ac :	名詞,一般,*,*,*,*,*	false	1
+jp :	名詞,一般,*,*,*,*,*	false	1
+positlog :	名詞,一般,*,*,*,*,*	false	1
+pages :	名詞,一般,*,*,*,*,*	false	1
+SN :	名詞,一般,*,*,*,*,*	false	1
+files :	名詞,一般,*,*,*,*,*	false	1
+sample :	名詞,一般,*,*,*,*,*	false	1
+html :	名詞,固有名詞,組織,*,*,*,*	false	1
+ページ: 12 -----
+<slide page="12"><body><p> 3-1+,• 	$ – +/,• ('* click #"!-showStyle() "!!.<button onclick="showStyle()">&'%)$</button></p></body></slide>
+in Sheet Class, page: 12
+title = ""
+body = "<p> 3-1+,• 	$ – +/,• ('* click #"!-showStyle() "!!.<button onclick="showStyle()">&'%)$</button></p>"
+makeWordArrayJp
+paragraph:  3-1+,• 	$ – +/,• ('* click #"!-showStyle() "!!.<button onclick="showStyle()">&'%)$</button>
+,• :	名詞,サ変接続,*,*,*,*,*	false	1
++/,• :	名詞,サ変接続,*,*,*,*,*	false	1
+('* :	名詞,サ変接続,*,*,*,*,*	false	1
+click :	名詞,固有名詞,組織,*,*,*,*	false	1
+#" :	名詞,サ変接続,*,*,*,*,*	false	1
+showStyle :	名詞,一般,*,*,*,*,*	false	1
+() :	名詞,サ変接続,*,*,*,*,*	false	1
+"! :	名詞,サ変接続,*,*,*,*,*	false	1
+!.< :	名詞,サ変接続,*,*,*,*,*	false	1
+button :	名詞,固有名詞,組織,*,*,*,*	false	1
+onclick :	名詞,固有名詞,組織,*,*,*,*	false	1
+=" :	名詞,サ変接続,*,*,*,*,*	false	1
+showStyle :	名詞,一般,*,*,*,*,*	false	2
+()">&'%)$ :	名詞,サ変接続,*,*,*,*,*	false	1
+</ :	名詞,サ変接続,*,*,*,*,*	false	1
+button :	名詞,一般,*,*,*,*,*	false	2
+ページ: 13 -----
+<slide page="13"><body><p> 3-1/0• '/20– showStyle() %)-,(1' %.	*,• '1example2 % id .$'1style'1border&",.+"• ( mystyle %)-,/variable0&",• mystyle &!-#.",function showStyle(){  var mystyle = document.getElementById("example2").style.border;  alert(mystyle);}</p></body></slide>
+in Sheet Class, page: 13
+title = ""
+body = "<p> 3-1/0• '/20– showStyle() %)-,(1' %.	*,• '1example2 % id .$'1style'1border&",.+"• ( mystyle %)-,/variable0&",• mystyle &!-#.",function showStyle(){  var mystyle = document.getElementById("example2").style.border;  alert(mystyle);}</p>"
+makeWordArrayJp
+paragraph:  3-1/0• '/20– showStyle() %)-,(1' %.	*,• '1example2 % id .$'1style'1border&",.+"• ( mystyle %)-,/variable0&",• mystyle &!-#.",function showStyle(){  var mystyle = document.getElementById("example2").style.border;  alert(mystyle);}
+showStyle :	名詞,固有名詞,組織,*,*,*,*	false	1
+() :	名詞,サ変接続,*,*,*,*,*	false	1
+)-, :	名詞,サ変接続,*,*,*,*,*	false	1
+%. :	名詞,サ変接続,*,*,*,*,*	false	1
+*,• :	名詞,サ変接続,*,*,*,*,*	false	1
+example :	名詞,一般,*,*,*,*,*	false	1
+id :	名詞,固有名詞,組織,*,*,*,*	false	1
+.$ :	名詞,サ変接続,*,*,*,*,*	false	1
+style :	名詞,固有名詞,組織,*,*,*,*	false	1
+border :	名詞,一般,*,*,*,*,*	false	1
+", :	名詞,サ変接続,*,*,*,*,*	false	1
+"• :	名詞,サ変接続,*,*,*,*,*	false	1
+mystyle :	名詞,固有名詞,組織,*,*,*,*	false	1
+)-, :	名詞,サ変接続,*,*,*,*,*	false	2
+variable :	名詞,一般,*,*,*,*,*	false	1
+",• :	名詞,サ変接続,*,*,*,*,*	false	1
+mystyle :	名詞,固有名詞,組織,*,*,*,*	false	2
+!-# :	名詞,サ変接続,*,*,*,*,*	false	1
+", :	名詞,サ変接続,*,*,*,*,*	false	2
+function :	名詞,固有名詞,組織,*,*,*,*	false	1
+showStyle :	名詞,固有名詞,組織,*,*,*,*	false	2
+(){ :	名詞,サ変接続,*,*,*,*,*	false	1
+var :	名詞,固有名詞,組織,*,*,*,*	false	1
+mystyle :	名詞,固有名詞,組織,*,*,*,*	false	3
+document :	名詞,固有名詞,組織,*,*,*,*	false	1
+getElementById :	名詞,一般,*,*,*,*,*	false	1
+(" :	名詞,サ変接続,*,*,*,*,*	false	1
+example :	名詞,一般,*,*,*,*,*	false	2
+"). :	名詞,サ変接続,*,*,*,*,*	false	1
+style :	名詞,一般,*,*,*,*,*	false	2
+border :	名詞,一般,*,*,*,*,*	false	2
+alert :	名詞,固有名詞,組織,*,*,*,*	false	1
+mystyle :	名詞,一般,*,*,*,*,*	false	4
+);} :	名詞,サ変接続,*,*,*,*,*	false	1
+ページ: 14 -----
+<slide page="14"><body><p> 3-1*+• 	%$$ !– #id%#• document.getElementById("20061017.style.color;– #'(&)• document.getElementById("example2.style.padding;• document.getElementById("example2.style.backgroundColor;– ….style.background-color – "• document.getElementById("example2").tagName;– "• document.getElementById("example2").innerHTML;</p></body></slide>
+in Sheet Class, page: 14
+title = ""
+body = "<p> 3-1*+• 	%$$ !– #id%#• document.getElementById("20061017.style.color;– #'(&)• document.getElementById("example2.style.padding;• document.getElementById("example2.style.backgroundColor;– ….style.background-color – "• document.getElementById("example2").tagName;– "• document.getElementById("example2").innerHTML;</p>"
+makeWordArrayJp
+paragraph:  3-1*+• 	%$$ !– #id%#• document.getElementById("20061017.style.color;– #'(&)• document.getElementById("example2.style.padding;• document.getElementById("example2.style.backgroundColor;– ….style.background-color – "• document.getElementById("example2").tagName;– "• document.getElementById("example2").innerHTML;
++• :	名詞,サ変接続,*,*,*,*,*	false	1
+id :	名詞,一般,*,*,*,*,*	false	1
+#• :	名詞,サ変接続,*,*,*,*,*	false	1
+document :	名詞,固有名詞,組織,*,*,*,*	false	1
+getElementById :	名詞,一般,*,*,*,*,*	false	1
+(" :	名詞,サ変接続,*,*,*,*,*	false	1
+style :	名詞,一般,*,*,*,*,*	false	1
+color :	名詞,一般,*,*,*,*,*	false	1
+;– :	名詞,サ変接続,*,*,*,*,*	false	1
+#'(&)• :	名詞,サ変接続,*,*,*,*,*	false	1
+document :	名詞,固有名詞,組織,*,*,*,*	false	2
+getElementById :	名詞,一般,*,*,*,*,*	false	2
+(" :	名詞,サ変接続,*,*,*,*,*	false	2
+example :	名詞,一般,*,*,*,*,*	false	1
+style :	名詞,一般,*,*,*,*,*	false	2
+padding :	名詞,一般,*,*,*,*,*	false	1
+;• :	名詞,サ変接続,*,*,*,*,*	false	1
+document :	名詞,固有名詞,組織,*,*,*,*	false	3
+getElementById :	名詞,一般,*,*,*,*,*	false	3
+(" :	名詞,サ変接続,*,*,*,*,*	false	3
+example :	名詞,一般,*,*,*,*,*	false	2
+style :	名詞,一般,*,*,*,*,*	false	3
+backgroundColor :	名詞,一般,*,*,*,*,*	false	1
+;– :	名詞,サ変接続,*,*,*,*,*	false	2
+style :	名詞,一般,*,*,*,*,*	false	4
+background :	名詞,一般,*,*,*,*,*	false	1
+color :	名詞,固有名詞,組織,*,*,*,*	false	2
+document :	名詞,固有名詞,組織,*,*,*,*	false	4
+getElementById :	名詞,一般,*,*,*,*,*	false	4
+(" :	名詞,サ変接続,*,*,*,*,*	false	4
+example :	名詞,一般,*,*,*,*,*	false	3
+"). :	名詞,サ変接続,*,*,*,*,*	false	1
+tagName :	名詞,一般,*,*,*,*,*	false	1
+;– :	名詞,サ変接続,*,*,*,*,*	false	3
+document :	名詞,固有名詞,組織,*,*,*,*	false	5
+getElementById :	名詞,一般,*,*,*,*,*	false	5
+(" :	名詞,サ変接続,*,*,*,*,*	false	5
+example :	名詞,一般,*,*,*,*,*	false	4
+"). :	名詞,サ変接続,*,*,*,*,*	false	2
+innerHTML :	名詞,一般,*,*,*,*,*	false	1
+ページ: 15 -----
+<slide page="15"><body><p> 3-2if-else0	#/• .!'"#– ,,mystyle ( lack ' &-* $%/– ,&* $).+ 1%/function showStyle(){  var mystyle =     document.getElementById("example2"). style.color;  if(mystyle == "black")  {    alert("$");  }  else  {    alert("$).+ 1");  }}25343-2http://cresta.kuis.kyoto-u.ac.jp/positlog/pages/061016SN/files/sample32.html</p></body></slide>
+in Sheet Class, page: 15
+title = ""
+body = "<p> 3-2if-else0	#/• .!'"#– ,,mystyle ( lack ' &-* $%/– ,&* $).+ 1%/function showStyle(){  var mystyle =     document.getElementById("example2"). style.color;  if(mystyle == "black")  {    alert("$");  }  else  {    alert("$).+ 1");  }}25343-2http://cresta.kuis.kyoto-u.ac.jp/positlog/pages/061016SN/files/sample32.html</p>"
+makeWordArrayJp
+paragraph:  3-2if-else0	#/• .!'"#– ,,mystyle ( lack ' &-* $%/– ,&* $).+ 1%/function showStyle(){  var mystyle =     document.getElementById("example2"). style.color;  if(mystyle == "black")  {    alert("$");  }  else  {    alert("$).+ 1");  }}25343-2http://cresta.kuis.kyoto-u.ac.jp/positlog/pages/061016SN/files/sample32.html
+if :	名詞,固有名詞,組織,*,*,*,*	false	1
+else :	名詞,一般,*,*,*,*,*	false	1
+/• :	名詞,サ変接続,*,*,*,*,*	false	1
+mystyle :	名詞,固有名詞,組織,*,*,*,*	false	1
+lack :	名詞,固有名詞,組織,*,*,*,*	false	1
+&-* :	名詞,サ変接続,*,*,*,*,*	false	1
+/– :	名詞,サ変接続,*,*,*,*,*	false	1
+,& :	名詞,サ変接続,*,*,*,*,*	false	1
+$) :	名詞,サ変接続,*,*,*,*,*	false	1
+.+ :	名詞,サ変接続,*,*,*,*,*	false	1
+function :	名詞,固有名詞,組織,*,*,*,*	false	1
+showStyle :	名詞,固有名詞,組織,*,*,*,*	false	1
+(){ :	名詞,サ変接続,*,*,*,*,*	false	1
+var :	名詞,固有名詞,組織,*,*,*,*	false	1
+mystyle :	名詞,固有名詞,組織,*,*,*,*	false	2
+document :	名詞,固有名詞,組織,*,*,*,*	false	1
+getElementById :	名詞,一般,*,*,*,*,*	false	1
+(" :	名詞,サ変接続,*,*,*,*,*	false	1
+example :	名詞,一般,*,*,*,*,*	false	1
+"). :	名詞,サ変接続,*,*,*,*,*	false	1
+style :	名詞,固有名詞,組織,*,*,*,*	false	1
+color :	名詞,一般,*,*,*,*,*	false	1
+if :	名詞,固有名詞,組織,*,*,*,*	false	2
+mystyle :	名詞,固有名詞,組織,*,*,*,*	false	3
+== :	名詞,サ変接続,*,*,*,*,*	false	1
+black :	名詞,一般,*,*,*,*,*	false	1
+") :	名詞,サ変接続,*,*,*,*,*	false	1
+alert :	名詞,固有名詞,組織,*,*,*,*	false	1
+(" :	名詞,サ変接続,*,*,*,*,*	false	2
+"); :	名詞,サ変接続,*,*,*,*,*	false	1
+else :	名詞,固有名詞,組織,*,*,*,*	false	2
+alert :	名詞,固有名詞,組織,*,*,*,*	false	2
+(" :	名詞,サ変接続,*,*,*,*,*	false	3
+$) :	名詞,サ変接続,*,*,*,*,*	false	2
+.+ :	名詞,サ変接続,*,*,*,*,*	false	2
+"); :	名詞,サ変接続,*,*,*,*,*	false	2
+}} :	名詞,サ変接続,*,*,*,*,*	false	1
+http :	名詞,一般,*,*,*,*,*	false	1
+:// :	名詞,サ変接続,*,*,*,*,*	false	1
+cresta :	名詞,一般,*,*,*,*,*	false	1
+kuis :	名詞,一般,*,*,*,*,*	false	1
+kyoto :	名詞,一般,*,*,*,*,*	false	1
+ac :	名詞,一般,*,*,*,*,*	false	1
+jp :	名詞,一般,*,*,*,*,*	false	1
+positlog :	名詞,一般,*,*,*,*,*	false	1
+pages :	名詞,一般,*,*,*,*,*	false	1
+SN :	名詞,一般,*,*,*,*,*	false	1
+files :	名詞,一般,*,*,*,*,*	false	1
+sample :	名詞,一般,*,*,*,*,*	false	1
+html :	名詞,固有名詞,組織,*,*,*,*	false	1
+ページ: 16 -----
+<slide page="16"><body><p> 3-2"#• var mystyle = document.getElementById(xample2.style.color;!$                          	 %</p></body></slide>
+in Sheet Class, page: 16
+title = ""
+body = "<p> 3-2"#• var mystyle = document.getElementById(xample2.style.color;!$                          	 %</p>"
+makeWordArrayJp
+paragraph:  3-2"#• var mystyle = document.getElementById(xample2.style.color;!$                          	 %
+#• :	名詞,サ変接続,*,*,*,*,*	false	1
+var :	名詞,固有名詞,組織,*,*,*,*	false	1
+mystyle :	名詞,固有名詞,組織,*,*,*,*	false	1
+document :	名詞,固有名詞,組織,*,*,*,*	false	1
+getElementById :	名詞,一般,*,*,*,*,*	false	1
+xample :	名詞,固有名詞,組織,*,*,*,*	false	1
+style :	名詞,一般,*,*,*,*,*	false	1
+color :	名詞,一般,*,*,*,*,*	false	1
+;! :	名詞,サ変接続,*,*,*,*,*	false	1
+ページ: 17 -----
+<slide page="17"><body><p>%3.3e#0M"• [XY]c–(M/.3^\_ZLF5Ga&'3-1ILstyleW*$H:US6:7DRM•  `&'IAHstyleWTBNaInline style information I@G1BU=I• [XY]d–(M/.3^\_ZLF5Ga&'3-2ILif-thenW"5DW<7DRM–CV9JMS6KW)6RMKM8a,LSU-W@G;E>5–+94VOa!(LJavaScriptW'@a>P?PKW2@GQG;E>5bCMR,LSU	M-W@G;E>5b</p></body></slide>
+in Sheet Class, page: 17
+title = ""
+body = "<p>%3.3e#0M"• [XY]c–(M/.3^\_ZLF5Ga&'3-1ILstyleW*$H:US6:7DRM•  `&'IAHstyleWTBNaInline style information I@G1BU=I• [XY]d–(M/.3^\_ZLF5Ga&'3-2ILif-thenW"5DW<7DRM–CV9JMS6KW)6RMKM8a,LSU-W@G;E>5–+94VOa!(LJavaScriptW'@a>P?PKW2@GQG;E>5bCMR,LSU	M-W@G;E>5b</p>"
+makeWordArrayJp
+paragraph: %3.3e#0M"• [XY]c–(M/.3^\_ZLF5Ga&'3-1ILstyleW*$H:US6:7DRM•  `&'IAHstyleWTBNaInline style information I@G1BU=I• [XY]d–(M/.3^\_ZLF5Ga&'3-2ILif-thenW"5DW<7DRM–CV9JMS6KW)6RMKM8a,LSU-W@G;E>5–+94VOa!(LJavaScriptW'@a>P?PKW2@GQG;E>5bCMR,LSU	M-W@G;E>5b
+"• :	名詞,サ変接続,*,*,*,*,*	false	1
+XY :	名詞,一般,*,*,*,*,*	false	1
+–( :	名詞,サ変接続,*,*,*,*,*	false	1
+^\_ :	名詞,サ変接続,*,*,*,*,*	false	1
+ZLF :	名詞,一般,*,*,*,*,*	false	1
+Ga :	名詞,一般,*,*,*,*,*	false	1
+&' :	名詞,サ変接続,*,*,*,*,*	false	1
+Lstyle :	名詞,固有名詞,組織,*,*,*,*	false	1
+*$ :	名詞,サ変接続,*,*,*,*,*	false	1
+US :	名詞,一般,*,*,*,*,*	false	1
+DRM :	名詞,一般,*,*,*,*,*	false	1
+`&' :	名詞,サ変接続,*,*,*,*,*	false	1
+Hstyle :	名詞,固有名詞,組織,*,*,*,*	false	1
+WT :	名詞,固有名詞,組織,*,*,*,*	false	1
+NaInline :	名詞,固有名詞,組織,*,*,*,*	false	1
+style :	名詞,固有名詞,組織,*,*,*,*	false	1
+information :	名詞,固有名詞,組織,*,*,*,*	false	1
+BU :	名詞,一般,*,*,*,*,*	false	1
+XY :	名詞,一般,*,*,*,*,*	false	2
+–( :	名詞,サ変接続,*,*,*,*,*	false	2
+^\_ :	名詞,サ変接続,*,*,*,*,*	false	2
+ZLF :	名詞,一般,*,*,*,*,*	false	2
+Ga :	名詞,一般,*,*,*,*,*	false	2
+&' :	名詞,サ変接続,*,*,*,*,*	false	2
+Lif :	名詞,固有名詞,組織,*,*,*,*	false	1
+then :	名詞,一般,*,*,*,*,*	false	1
+DRM :	名詞,一般,*,*,*,*,*	false	2
+CV :	名詞,一般,*,*,*,*,*	false	1
+JMS :	名詞,一般,*,*,*,*,*	false	1
+RMKM :	名詞,一般,*,*,*,*,*	false	1
+LSU :	名詞,一般,*,*,*,*,*	false	1
+VOa :	名詞,一般,*,*,*,*,*	false	1
+!( :	名詞,サ変接続,*,*,*,*,*	false	1
+LJavaScriptW :	名詞,一般,*,*,*,*,*	false	1
+'@ :	名詞,サ変接続,*,*,*,*,*	false	1
+PK :	名詞,一般,*,*,*,*,*	false	1
+GQG :	名詞,一般,*,*,*,*,*	false	1
+bCM :	名詞,一般,*,*,*,*,*	false	1
+LSU :	名詞,固有名詞,組織,*,*,*,*	false	2
+ページ: 18 -----
+<slide page="18"><body><p>&U-V• $=1021UV17:00• 	– MGIR=lzh/zip/tgz<)3D+<9HTJIN1W%QTR;18	–SPTLEWebOTK:181WURLE%QTR9!2C9A)?4F–(8='kubota@ii.ist.i.kyoto-u.ac.jp• <&9=(B?4F,W 5<A<;7)8A#>/8"@8*)8.60)X</p></body></slide>
+in Sheet Class, page: 18
+title = ""
+body = "<p>&U-V• $=1021UV17:00• 	– MGIR=lzh/zip/tgz<)3D+<9HTJIN1W%QTR;18	–SPTLEWebOTK:181WURLE%QTR9!2C9A)?4F–(8='kubota@ii.ist.i.kyoto-u.ac.jp• <&9=(B?4F,W 5<A<;7)8A#>/8"@8*)8.60)X</p>"
+makeWordArrayJp
+paragraph: &U-V• $=1021UV17:00• 	– MGIR=lzh/zip/tgz<)3D+<9HTJIN1W%QTR;18	–SPTLEWebOTK:181WURLE%QTR9!2C9A)?4F–(8='kubota@ii.ist.i.kyoto-u.ac.jp• <&9=(B?4F,W 5<A<;7)8A#>/8"@8*)8.60)X
+$= :	名詞,サ変接続,*,*,*,*,*	false	1
+UV :	名詞,固有名詞,組織,*,*,*,*	false	1
+MGIR :	名詞,固有名詞,組織,*,*,*,*	false	1
+lzh :	名詞,一般,*,*,*,*,*	false	1
+zip :	名詞,一般,*,*,*,*,*	false	1
+tgz :	名詞,一般,*,*,*,*,*	false	1
+<) :	名詞,サ変接続,*,*,*,*,*	false	1
++< :	名詞,サ変接続,*,*,*,*,*	false	1
+HTJIN :	名詞,一般,*,*,*,*,*	false	1
+QTR :	名詞,固有名詞,組織,*,*,*,*	false	1
+SPTLEWebOTK :	名詞,一般,*,*,*,*,*	false	1
+WURLE :	名詞,一般,*,*,*,*,*	false	1
+QTR :	名詞,固有名詞,組織,*,*,*,*	false	2
+)? :	名詞,サ変接続,*,*,*,*,*	false	1
+–( :	名詞,サ変接続,*,*,*,*,*	false	1
+kubota :	名詞,一般,*,*,*,*,*	false	1
+ii :	名詞,一般,*,*,*,*,*	false	1
+ist :	名詞,一般,*,*,*,*,*	false	1
+kyoto :	名詞,一般,*,*,*,*,*	false	1
+ac :	名詞,一般,*,*,*,*,*	false	1
+jp :	名詞,一般,*,*,*,*,*	false	1
+=( :	名詞,サ変接続,*,*,*,*,*	false	1
+<; :	名詞,サ変接続,*,*,*,*,*	false	1
+>/ :	名詞,サ変接続,*,*,*,*,*	false	1
+"@ :	名詞,サ変接続,*,*,*,*,*	false	1
+*) :	名詞,サ変接続,*,*,*,*,*	false	1
+ページ: 19 -----
+<slide page="19"><body><p>• –	 • HTML– HTML 4.01 Specificationhttp://www.w3.org/TR/html4/</p></body></slide>
+in Sheet Class, page: 19
+title = ""
+body = "<p>• –	 • HTML– HTML 4.01 Specificationhttp://www.w3.org/TR/html4/</p>"
+makeWordArrayJp
+paragraph: • –	 • HTML– HTML 4.01 Specificationhttp://www.w3.org/TR/html4/
+HTML :	名詞,固有名詞,組織,*,*,*,*	false	1
+HTML :	名詞,固有名詞,組織,*,*,*,*	false	2
+Specificationhttp :	名詞,固有名詞,組織,*,*,*,*	false	1
+:// :	名詞,サ変接続,*,*,*,*,*	false	1
+www :	名詞,一般,*,*,*,*,*	false	1
+org :	名詞,一般,*,*,*,*,*	false	1
+TR :	名詞,一般,*,*,*,*,*	false	1
+html :	名詞,一般,*,*,*,*,*	false	1

@@ -1,0 +1,766 @@
+<presentation language="ja">
+<slide page="1">
+<body>
+<p>
+知的画像処理（１０）1
+MAP-MRFに基づく画像表現
+</p>
+</body>
+</slide>
+<slide page="2">
+<body>
+<p>
+知的画像処理（１０）2
+ビジュアルラベリング
+れる．
+語も用いらにも，統計的手法の用処理で用いる用語以外
+通常の画像画像処理を行う場合，統計的手法に基づいて
+ラベル(label) --- サイトに起きる事象．
+連続と離散、順序関係の有無などを表現．
+サイト(site)  --- 画素や特徴などの配置情報．
+規則的配置と不規則的配置を含む．
+[Besag, J (1974)]
+</p>
+</body>
+</slide>
+<slide page="3">
+<body>
+<p>
+知的画像処理（１０）3
+クス）集合個のラベル（インデッ　
+離散ラベル集合
+M
+MllL Md :}),,1{}(,,{ 1 LL ==
+サイト集合の例
+，領域などの集合例えば，画素，エッジ
+クス集合個のサイトのインデッ },,1{ mSm L=
+],[:
+:],[
+hl
+hlc
+XX
+RXXL
+　実数線上の区間
+連続ラベル集合 ⊂=
+合個の順序付きラベル集　
+　濃度ラベル集合
+M
+L :}255,0{ L=
+●
+●
+ラベル集合の例
+</p>
+</body>
+</slide>
+<slide page="4">
+<body>
+<p>
+知的画像処理（１０）4
+と．を選び，割り当てるこから１つのラベル
+に，ラベル集合のサイトサイト集合
+i
+i
+fL
+misS ),,1( L=
+{ }mffff L,, 21=
+記述される．ラベリング問題として
+のによるサイト，ラベル多くの画像処理問題が SL
+)(: iffLS i =への写像関数からラベルドメイン
+LSf →:
+mLLLLF =×=⇒ L配置空間　
+，ベル集合をもつならば全てのサイトが同じラ
+ラベリング問題
+</p>
+</body>
+</slide>
+<slide page="5">
+<body>
+<p>
+知的画像処理（１０）5
+けられる．によって互いに関係付（
+テム内の各要素は隣接シスサイト集合
+system)-N
+S
+}|{:system-N SiNN i ∈∀=
+合．ただし，に隣接するサイトの集は，iNi
+ij
+i
+NjNi
+Ni
+∈⇒∈
+∉
+)2
+)1
+近傍システム
+割を果たす．　　　　　　重要な役
+がでも近傍系という概念画像処理と同様に，MRF
+</p>
+</body>
+</slide>
+<slide page="6">
+<body>
+<p>
+知的画像処理（１０）6
+0
+x0
+0
+0
+(a) (b) (c)
+0 0
+0x0
+0
+0 0 0
+5 4 3 4 5
+4 2 1 2 4
+3 1 1 3
+4 2
+x
+21 4
+5 4 3 4 5
+1次隣接系
+（４近傍系）
+２次隣接システム
+（８近傍系）
+１～５次の隣接シス
+テムの最外郭サイト
+システム1NS システム2NS
+(規則的サイト）
+近傍システムの例
+</p>
+</body>
+</slide>
+<slide page="7">
+<body>
+<p>
+知的画像処理（１０）7
+グラフ： :),( NSG ≡
+の部分集合上のクリーク：グラフ SG
+(d) (e) (f)
+(g) (h)
+ークの型システムにおけるクリ2NS
+クリーク（Clique)
+クリークとは
+</p>
+</body>
+</slide>
+<slide page="8">
+<body>
+<p>
+知的画像処理（１０）8
+M
+},,|},,{{
+},|},{{
+}|{
+''''''
+3
+''
+2
+1
+で互いに隣接SiiiiiiC
+SiNiiiC
+SiiC
+i
+∈=
+∈∈=
+∈=
+LU321 CCCC ∪∪=　
+たもの：全てのクリークを集め
+},{},{ '' iiii ≠⇒
+は順序関係がある。クリーク中のサイトに
+クリークの表現
+</p>
+</body>
+</slide>
+<slide page="9">
+<body>
+<p>
+知的画像処理（１０）9
+報は重要．画像理解では、文脈情
+現．によって文脈情報を表
+所的な条件付確率確率の観点からは、局
+ji
+i
+fNjj
+fi
+におけるラベルサイト
+におけるラベルサイト
+)( ∈
+}){|( ji ffP条件付確率　　
+．大局的情報を推論する
+所的情報から直接的に観測可能な局
+文脈情報の表現
+</p>
+</body>
+</slide>
+<slide page="10">
+<body>
+<p>
+知的画像処理（１０）10
+確率論の１つ．関係を解析するための
+的、文脈的な依存物理現象における空間
+)(
+},,,{ 21
+iii
+i
+m
+fFfL
+F
+FFFF
+S
+=
+=
+をとるものとする。内の値
+はラベル集合変数において、各ランダム
+上のランダム変数の族サイト集合
+L
+と簡略化．
+を、結合事象
+},,,{,
+),,,(
+21
+2211
+m
+mm
+fffffF
+fFfFfF
+L
+L
+==
+===
+Markov Random Field (MRF)
+</p>
+</body>
+</slide>
+<slide page="11">
+<body>
+<p>
+知的画像処理（１０）11
+と略記．結合確率：
+と略記．　をとる確率：が値
+)(),,,(
+)(,)(
+11 fPfFfFP
+fPfFPfF
+mm
+iiiii
+==
+=
+L
+)(),(: fFpfFp
+L
+ii ==確率密度関数
+に対しては，連続なラベル集合
+ム場』である．上のマルコフ・ランダ
+に関するは，隣接システム『
+S
+NF
+(Markov Random Field)
+たすとき、が次の２つの条件を満F
+マルコフ性　
+　　　　　正値性
+)|()|()2
+,0)()1
+}{ iiiSi NfPffP
+ffP
+=
+∈∀>
+−
+F
+</p>
+</body>
+</slide>
+<slide page="12">
+<body>
+<p>
+知的画像処理（１０）12
+．ランダム場と呼ばれる上のに関するは
+分布に従うとき、の事象配置がランダム変数
+Gibbs
+Gibbs
+SNF
+F
+；正規化定数
+分布：
+∑
+∈
+−
+−−
+=
+×=
+Ff
+fU
+T
+fU
+T
+eZ
+eZfP
+)(1
+)(11)(Gibbs
+エネルギー関数;)()( fVfU
+Cc
+c∑
+∈
+=
+事前情報）．の生起確率特定の配置パターン (:)( ffP
+ャル上のクリークポテンシ全ての可能なCfVc :)(
+Gibbs Random Field (GRF)
+</p>
+</body>
+</slide>
+<slide page="13">
+<body>
+<p>
+知的画像処理（１０）13
+LL
+LL
+とき，　　　　方向に対して独立な
+しないとき，　相対的な位置に依存
+の上のクリークが、のある CSfVc )(GRF
+L+++=
+=
+∑∑ ∑
+∑
+∈∈ ∈
+∈
+),,(),()(
+)()(
+31 2 },,{
+3
+}{ },{
+21 kji
+Ckji
+j
+Ci Cji
+ii
+Cc
+c
+fffVffVfV
+fVfU
+∑ ∑∑
+∈ ∈ ∈
++=
+Si
+j
+Si Nj
+ii ffVfVfU
+i
+),()()( 21
+でを考慮した場合、ペアサイトクリークま
+．　等方性
+　均一性
+GRF
+GRF
+)( fUエネルギー関数：
+</p>
+</body>
+</slide>
+<slide page="14">
+<body>
+<p>
+知的画像処理（１０）14
+等価けられる大局的な性質で特徴付
+けられる局所的な性質で特徴付
+⎭⎬
+⎫
+GRF
+MRF
+を特定する手段の提供の結合確率 )(MRF fP
+Markov-Gibbs
+Equivalence
+．問題とすることが可能　　エネルギー最適化
+ルの最適化問題をに基づく確率統計モデ同時に，MRF
+</p>
+</body>
+</slide>
+<slide page="15">
+<body>
+<p>
+知的画像処理（１０）15
+広く利用．単純，低コスト　　
+的拘束：２つのラベル間の文脈
+⇒
+•
+ークまでを考慮．通常，ペアサイトクリ•
+∑ ∑∑
+∈ ∈ ∈
++=
+Si
+j
+Si Nj
+ii ffVfVfU
+i
+),()()( 21
+を構成可能．　　　特定の
+を目的毎に選択．
+MRF(GRF)
+, 21 VV•
+画像特徴モデル化のためのMRF
+基本的な概念：
+幾つかの代表的なモデルが存在．
+</p>
+</body>
+</slide>
+<slide page="16">
+<body>
+<p>
+知的画像処理（１０）16
+∑
+∑
+∑ ∑
+∑
+∑∑
+∈
+∈
+∈ ∈
+∈
+∈∈
+−−+
+−−=
+−−
+−−=
++=
+=∈
+i
+i
+i i
+i
+i
+Nj jjii
+Nj jijiii
+f Nj jijiii
+Nj jijiii
+Ni
+ji
+Cji
+jii
+Ci
+i
+i
+f
+fff
+fff
+fff
+ffP
+ffffU
+Lf
+}exp{1
+}exp{
+}exp{
+}exp{
+)|(
+)(
+}1,0{
+,
+,
+}1,0{ ,
+,
+},{
+,
+}{ 21
+βα
+βα
+βα
+βα
+βα
+．確率を次のように仮定ポテンシャル，条件付
+の文脈を考慮．とし，ペアサイトまで
+として良い．分布が均一ならば、 ββαα == jii ,,
+Auto Logistic Model
+</p>
+</body>
+</slide>
+<slide page="17">
+<body>
+<p>
+知的画像処理（１０）17
+を一般化．考慮．
+ークまでをとし，ペアサイトクリ
+ALL
+},,1{ MLfi L=∈
+LiffV iii ∈==
+•
+もし
+単一サイトクリーク：
+,)(1 α
+⎩⎨
+⎧
+−
+∈=
+•
+それ以外
+が同一ラベル
+ペアサイトクリーク：
+,
+},{,),( 22
+C
+C
+ji
+CjiffV β
+β
+ル．ペアサイトポテンシャ
+，に対するポテンシャルラベルここで，
+:)0(
+:
+<C
+i i
+β
+α
+Multi-Level Logistic Model
+</p>
+</body>
+</slide>
+<slide page="18">
+<body>
+<p>
+知的画像処理（１０）18
+4321 βββββ ====C，モデルが等方性の場合
+∑ = ⋅−−
+⋅−−== M
+m im
+im
+Ni
+mn
+mnfmfP
+i
+1
+)}(exp{
+)}(exp{)|(
+MLL
+βα
+βα
+における条件付確率は，モデルが等方性の場合
+のサイト数でラベル付けられた　 ii Nmmn :)(
+α 1β 2β 3β 4β
+クリークポテンシャルの例
+</p>
+</body>
+</slide>
+<slide page="19">
+<body>
+<p>
+知的画像処理（１０）19
+i
+f
+n
+m
+a b
+c
+h
+p
+j
+o
+d
+e
+r
+s
+t
+q
+g
+k
+l
+u
+α
+α
+(不規則サイトの例）
+近傍系の定義
+iN
+jN
+</p>
+</body>
+</slide>
+<slide page="20">
+<body>
+<p>
+知的画像処理（１０）20
+観測値　コスト関数、　 ::),( * dffC
+（期待値計算）dfdfPffCfR
+f
+)|(),()( ** ∫ ∈= F
+　事後確率,
+)(
+)()|()|(
+dp
+fPfdpdfP =
+の尤度関数　ラベリング ffdp :)|(
+て最適値を推定するあるリスクを最小化し
+リスクは，の推定値 Bayes*f
+Bayes推定
+</p>
+</body>
+</slide>
+<slide page="21">
+<body>
+<p>
+知的画像処理（１０）21
+C(f , f )* C(f , f )*
+f-f* f-f*
+( b )( a )
+δ−δ
+それ以外のとき
+のとき
+⎩⎨
+⎧ ≤−=
+,1
+||||,0
+),(
+*
+* δffffC
+２次のコスト関数
+１次のコスト関数
+2** ||||),( ffffC −=
+</p>
+</body>
+</slide>
+<slide page="22">
+<body>
+<p>
+知的画像処理（１０）22
+dfdfPfffR
+f
+)|(||||)( 2** ∫ ∈ −= F
+２次コスト関数によるBayesリスク
+0)( *
+*
+=∂
+∂
+f
+fR
+（ラベリング f の事後確率平均）
+∫ ∈ ⋅= Ff dfdfPff )|(*
+１次コスト関数によるBayesリスク
+dfdfPfR
+fff∫ >−= δ||:||* * )|()(
+dfdfP
+fff∫ ≤−−= δ||:|| * )|(1
+を最小化する **)( ffR 最大化を　∫ ≤− δ||*:|| )|(fff dfdfP
+</p>
+</body>
+</slide>
+<slide page="23">
+<body>
+<p>
+知的画像処理（１０）23
+MAP (maximum a posterior)推定
+)()|(
+)(
+)()|()|( fPfdp
+dp
+fPfdpdfP ∝=
+)}()|({maxargMAP * fPfdpf
+f F∈
+=推定は等価的に：
+とをフラットと仮定するさらに，事前確率 )( fP
+を一定とするとに対する確率観測された )(dd p
+)|(maxarg
+0
+* dff
+f
+P
+F∈
+=
+→
+定は，従って，最小リスク推
+．では一般に１次コストによる推定 δ
+　　；最尤推定)|(maxarg* fdpf
+f F∈
+=
+</p>
+</body>
+</slide>
+<slide page="24">
+<body>
+<p>
+知的画像処理（１０）24
+MRF)|( ⇐の導出dfP
+：事前エネルギー)(,1)( )( fUe
+Z
+fP fU−=
+)()|()|(
+)|(
+)()|(
+)(
+)()|()|(
+)()|()()|(
+fUfdUdfU
+dfU
+fPfdp
+dp
+fPfdpdfP
+fPfdpdpdfP
++∝
+∝=
+=
+に関して事後エネルギー
+より、
+fを最小化する推定：事後エネルギーMAP
+{ })()|(minarg)|(minarg* fUfdUdfUf
+ff
++==
+MAP-MRF Labeling
+</p>
+</body>
+</slide>
+<slide page="25">
+<body>
+<p>
+知的画像処理（１０）25
+1. 与えられた問題を適切なMRFモデルで表現．
+2. MAP解を定義する事後エネルギーを導く．
+3.  MAP解を探す．
+MAP-MRF法の概要
+を得る．事後エネルギー
+を導く．尤度エネルギー
+を定義．
+クポテンシャルを定義する事前クリー
+クリーク集合を定義．
+に対すると，上の近接システムサイト集合
+)|()()|()42
+)|()32
+)(
+)(2)2
+)12
+fdUfUdfU
+fdU
+fV
+fU
+NNS
+C
++⇐−
+−
+−
+−
+</p>
+</body>
+</slide>
+<slide page="26">
+<body>
+<p>
+知的画像処理（１０）26
+えた場合と等価．の事前エネルギーを考
+法において
+2)( ][
+MRF-MAP
+nf
+滑らかさ拘束条件の付加(事前仮説）
+MAP-MRF法と正則化
+ビジョンにおける不良設定問題を良設定化する
+一般的枠組み： 正則化（Regularization)
+</p>
+</body>
+</slide>
+<slide page="27">
+<body>
+<p>
+知的画像処理（１０）27
+主な参考文献
+S. Geman and D. Geman, "Stochastic relaxation, Gibbs distributions, and the 
+Bayesian restoration of images," IEEE Trans. on PAMI, vol. PAMI-6, no. 6, 
+pp. 721--741, (1984).
+Besag, J. ;”Spatial interaction and the statistical analysis of lattice systems'‘,
+Journal of the Royal Statistical Society, Series B, 36, pp192--236 (1974). 
+S.Z.Li, Markov Random Field Modeling in Computer Vision, Springer-Verlag,   
+(1995)
+</p>
+</body>
+</slide>
+</presentation>

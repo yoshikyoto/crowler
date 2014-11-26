@@ -6,6 +6,14 @@
 	<classpathentry kind="lib" path="lib/commons-logging-1.1.3.jar"/>
 	<classpathentry kind="lib" path="lib/commons-logging-adapters-1.1.3.jar"/>
 	<classpathentry kind="lib" path="lib/commons-logging-api-1.1.3.jar"/>
-	<classpathentry kind="lib" path="lib/pdfbox-app-1.8.5.jar"/>
+	<classpathentry kind="lib" path="lib/kuromoji-0.7.7.jar"/>
+	<classpathentry kind="lib" path="/lib/MyLib.jar"/>
+	<classpathentry kind="lib" path="lib/fontbox-1.8.6.jar"/>
+	<classpathentry kind="lib" path="lib/jempbox-1.8.6.jar"/>
+	<classpathentry kind="lib" path="lib/pdfbox-1.8.6.jar"/>
+	<classpathentry kind="lib" path="lib/pdfbox-app-1.8.6.jar"/>
+	<classpathentry kind="lib" path="lib/preflight-1.8.6.jar"/>
+	<classpathentry kind="lib" path="lib/preflight-app-1.8.6.jar"/>
+	<classpathentry kind="lib" path="lib/xmpbox-1.8.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
