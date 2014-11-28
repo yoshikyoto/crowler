@@ -31,17 +31,17 @@ class PdfXMLConverter{
 			Logger.sPrintln("Warning: ディレクトリ作成に失敗しました。書き込み権限がないか、既にディレクトリが存在しています。");
 		}
 		
-		// ファイルサイズ制限
+		// ファイルサイズの制限とか設ける場合
 		File slide_file = new File(slide_path);
 		System.out.println(slide_file.length());
-
+		/*
 		if(slide_file.length() <= 700000) return;
 		if(slide_file.length() > 800000){
 			System.out.println("容量が大きすぎます");
 			// delete(slide_dir);
 			return;
 		}
-		
+		*/
 
 		try{
 			// PDFをparseする

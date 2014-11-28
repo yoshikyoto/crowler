@@ -2,15 +2,16 @@ package slide.Main;
 
 import java.io.*;
 import java.util.*;
-
 import jp.dip.utakatanet.*;
 import slide.*;
+import slide.Crawler.*;
 import slide.XMLConverter.*;
 import slide.analyzer.*;
 import slide.lectureSim.*;
 import slide.mapping.Mapping;
 import slide.SegmentSim.*;
 import slide.html.*;
+import slide.database.*;
 
 public class SlideMain extends Base{
 	/*
@@ -20,7 +21,7 @@ public class SlideMain extends Base{
 	 * ocw.nagoya-u.jp
 	 */
 	
-	public static String root = "/Users/admin/ocwslidedata";
+	public static String root = "/home/sakamoto/OCWData";
 	public static void main(String args[]){
 		String domains[] = {
 			"ocw.kyoto-u.ac.jp",
@@ -28,6 +29,7 @@ public class SlideMain extends Base{
 			"ocw.nagoya-u.jp"
 		};
 		
+		SlideModel sm = new SlideModel();
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -42,6 +44,7 @@ public class SlideMain extends Base{
 		
 		switch(sc.nextInt()){
 		case 0: // Crawling?
+			Crawler.start();
 			break;
 		case 1: // slide/pdf to XML
 			slideToXML();
@@ -62,7 +65,7 @@ public class SlideMain extends Base{
 			SlideHtmlMaker.make();
 			break;
 		}
-		
+		sc.close();
 		// SlideData d = new SlideData("/Users/admin/ocwslidedata");
 	}
 
