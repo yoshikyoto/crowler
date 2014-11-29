@@ -13,5 +13,6 @@
 	<classpathentry kind="lib" path="lib/preflight-1.8.6.jar"/>
 	<classpathentry kind="lib" path="lib/preflight-app-1.8.6.jar"/>
 	<classpathentry kind="lib" path="lib/xmpbox-1.8.6.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.34-bin.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

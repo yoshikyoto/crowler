@@ -31,11 +31,11 @@ public class Logger{
 			e.printStackTrace();
 		}
 	}
-	public static void sPrint(String str){ p.print(str); }
-	public static void sPrintln(String str){ p.println(str); }
-	public static void sClose(){ p.close(); ep.close(); }
-	public static void sError(String str){ ep.print(str); }
-	public static void sErrorln(String str){ ep.println(str); }
+	public static void sPrint(String str){ p.print(str); p.flush(); }
+	public static void sPrintln(String str){ p.println(str); p.flush();}
+	public static void sClose(){ p.close(); ep.close(); ep.flush(); }
+	public static void sError(String str){ ep.print(str); ep.flush(); }
+	public static void sErrorln(String str){ ep.println(str); ep.flush(); }
 	
 	
 	

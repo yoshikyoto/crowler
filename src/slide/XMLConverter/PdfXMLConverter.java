@@ -18,7 +18,7 @@ import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.util.PDFTextStripper;
 
 class PdfXMLConverter{
-	public static void convert(String slide_path){
+	public static boolean convert(String slide_path){
 
 		// データ保存先のディレクトリを作成
 		Pattern p = Pattern.compile("(.*)\\.pdf");
@@ -73,12 +73,13 @@ class PdfXMLConverter{
 				pdf_parser.clearResources();
 				document.close();
 				// 終了
-				return;
+				return false;
 			}
 
 			pdpage.clear();
 			
 			/* 画像にする部分はスキップ */
+			/* 画像を出力する処理は分ける
 			for(int i = 0; i < page; i++){
 				System.gc();
 				// 変換
@@ -90,6 +91,7 @@ class PdfXMLConverter{
 				Boolean result = ImageIO.write(image, "png", image_file);
 				Logger.sPrintln("Page " + i + " 変換結果: " + result);
 			}
+			*/
 
 			PDFTextStripper pdf_text_stripper = new PDFTextStripper();
 			// String text = pdf_text_stripper.getText(document);
@@ -126,10 +128,13 @@ class PdfXMLConverter{
 			document.close();
 			pdf_parser.clearResources(); // TODO: このリソース解放でいい？
 			
+			return true;
+			
 		}catch(Exception e){
 			Logger.sErrorln(slide_path);
 			Logger.sErrorln("Error: " + e);
 			Logger.sClose();
+			return false;
 		}
 	}
 	

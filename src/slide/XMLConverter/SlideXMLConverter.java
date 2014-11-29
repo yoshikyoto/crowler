@@ -6,7 +6,7 @@ import jp.dip.utakatanet.Logger;
 
 public class SlideXMLConverter{
 	public static String slidePath;
-	public static void convert(String slidepath){
+	public static boolean convert(String slidepath){
 		slidePath = slidepath;
 		System.out.println("Convert: " + slidePath);
 		
@@ -21,7 +21,8 @@ public class SlideXMLConverter{
 		Matcher pdfm = pdfp.matcher(slidePath);
 		if(pdfm.find()){
 			Logger.sPrintln("pdfとして処理");
-			PdfXMLConverter.convert(slidePath);
+			return PdfXMLConverter.convert(slidePath);
 		}
+		return false;
 	}
 }
