@@ -32,7 +32,7 @@ public class SlideMain extends Base{
 			"ocw.nagoya-u.jp"
 		};
 		
-		SlideModel sm = new SlideModel();
+		LectureModel sm = new LectureModel();
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -76,11 +76,14 @@ public class SlideMain extends Base{
 		
 		Logger.setLogName("ConvertXML");
 		// データベースモデルの初期化
+		LectureModel lecture_model = new LectureModel();
 		SlideModel slide_model = new SlideModel();
 		
 		for(File ocwfile : listDirs(root)){
 			// CSSとかのアセットファイルは除く
+			// TODO: このへんの例外的ディレクトリはどこかにまとめておく
 			if(ocwfile.getName().equals("assets")) continue;
+			if(ocwfile.getName().equals("bin")) continue;
 			// 各 OCW のディレクトリについて
 			Logger.sPrintln("OCW: " + ocwfile.getName());
 			
@@ -99,26 +102,51 @@ public class SlideMain extends Base{
 					// 各スライドのファイルに対して
 					Logger.sPrintln("Slide: " + sfile.getName());
 					
-					if(SlideXMLConverter.convert(sfile.getAbsolutePath()))
+
+					slide_model.name = sfile.getName();
+					slide_model.lectureName = lecfile.getName();
+					slide_model.ocw = ocwfile.getName();
+					
+					// すでに解析していたファイルの時に解析しなおすかどうか
+					/*
+					if(slide_model.exist()){
+						p("データベースに存在しているファイル");
+						continue;
+					}*/
+					SlideXMLConverter sxc = new SlideXMLConverter();
+					if(sxc.convert(sfile.getAbsolutePath())){
 						slide_count++;
+						slide_model.page = sxc.page;
+						slide_model.byteSize = (int)sxc.byteSize;
+						try {
+							slide_model.update();
+						} catch (SQLException e) {
+							// TODO Auto-generated catch block
+							System.err.println("スライドデータの挿入に失敗: " + slide_model.name);
+							Logger.sErrorln("スライドデータの挿入に失敗: " + slide_model.name);
+							e.printStackTrace();
+						}
+					}
 				}
 				
 				// スライドがない講義もあるので、スライドがある場合のみDBに追加
 				if(slide_count > 0){
-					slide_model.name = lecfile.getName();
-					slide_model.ocw = ocwfile.getName();
-					slide_model.slideCount = slide_count;
+					lecture_model.name = lecfile.getName();
+					lecture_model.ocw = ocwfile.getName();
+					lecture_model.slideCount = slide_count;
 					try {
-						slide_model.insert();
+						lecture_model.update();
 					} catch (SQLException e) {
 						// TODO Auto-generated catch block
-						System.err.println("スライドデータの挿入に失敗: " + slide_model.name);
+						System.err.println("講義データの挿入に失敗: " + lecture_model.name);
+						Logger.sErrorln("講義データの挿入に失敗: " + lecture_model.name);
 						e.printStackTrace();
 					}
 				}
 			}
 		}
 		
+		lecture_model.close();
 		slide_model.close();
 		Logger.sClose();
 	}

@@ -18,7 +18,11 @@ import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.util.PDFTextStripper;
 
 class PdfXMLConverter{
-	public static boolean convert(String slide_path){
+	public int page;
+	public long byteSize;
+	public static long minByteSize = 0;
+	public static long maxByteSize = 1000000;
+	public boolean convert(String slide_path){
 
 		// データ保存先のディレクトリを作成
 		Pattern p = Pattern.compile("(.*)\\.pdf");
@@ -33,15 +37,20 @@ class PdfXMLConverter{
 		
 		// ファイルサイズの制限とか設ける場合
 		File slide_file = new File(slide_path);
-		System.out.println(slide_file.length());
-		/*
-		if(slide_file.length() <= 700000) return;
-		if(slide_file.length() > 800000){
-			System.out.println("容量が大きすぎます");
+		byteSize = slide_file.length();
+		System.out.println(byteSize);
+
+		if(byteSize < minByteSize){
+			System.out.println("指定した容量より小さいためスキップされました");
 			// delete(slide_dir);
-			return;
+			return false;
 		}
-		*/
+		
+		if(byteSize > maxByteSize){
+			Logger.sPrintln("容量が大きいためスキップされました");
+			// delete(slide_dir);
+			return false;
+		}
 
 		try{
 			// PDFをparseする
@@ -51,7 +60,7 @@ class PdfXMLConverter{
 			PDDocument document = pdf_parser.getPDDocument();
 			
 			// ページ数を取得
-			int page = document.getNumberOfPages();
+			page = document.getNumberOfPages();
 			Logger.sPrintln("pdfページ数: " + page);
 			
 			// まずは画像変換しようとする
@@ -67,6 +76,7 @@ class PdfXMLConverter{
 			if(w < h){
 				// 縦の方が長い場合
 				// ディレクトリを削除
+				Logger.sPrintln("縦横比からスライドでないと判断されました");
 				delete(slide_dir);
 				// 閉じる
 				fis.close();
@@ -78,8 +88,7 @@ class PdfXMLConverter{
 
 			pdpage.clear();
 			
-			/* 画像にする部分はスキップ */
-			/* 画像を出力する処理は分ける
+			// 画像にする部分
 			for(int i = 0; i < page; i++){
 				System.gc();
 				// 変換
@@ -91,7 +100,6 @@ class PdfXMLConverter{
 				Boolean result = ImageIO.write(image, "png", image_file);
 				Logger.sPrintln("Page " + i + " 変換結果: " + result);
 			}
-			*/
 
 			PDFTextStripper pdf_text_stripper = new PDFTextStripper();
 			// String text = pdf_text_stripper.getText(document);

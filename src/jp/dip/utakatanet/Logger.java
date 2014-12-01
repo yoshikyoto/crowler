@@ -5,6 +5,11 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+/**
+ * ログを取るためのクラスです。
+ * @author sakamoto
+ *
+ */
 public class Logger{
 	public static PrintWriter p, ep;
 	public PrintWriter pw, epw;
@@ -31,12 +36,29 @@ public class Logger{
 			e.printStackTrace();
 		}
 	}
-	public static void sPrint(String str){ p.print(str); p.flush(); }
-	public static void sPrintln(String str){ p.println(str); p.flush();}
-	public static void sClose(){ p.close(); ep.close(); ep.flush(); }
-	public static void sError(String str){ ep.print(str); ep.flush(); }
-	public static void sErrorln(String str){ ep.println(str); ep.flush(); }
+	public static void sPrint(String str){
+		p.print(str);
+		p.flush();
+	}
 	
+	public static void sPrintln(String str){
+		p.println(str);
+		p.flush();
+	}
+	
+	public static void sError(String str){
+		ep.print(str);
+		ep.flush();
+	}
+	public static void sErrorln(String str){
+		ep.println(str);
+		ep.flush();
+	}
+	
+	public static void sClose(){
+		p.close();
+		ep.close();
+	}
 	
 	
 	// Instance Method
