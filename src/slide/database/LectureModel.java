@@ -19,7 +19,7 @@ public class LectureModel extends Model{
 	
 	public void update() throws SQLException{
 		if(exist()){
-			String sql = "update lecture set slideCount = ? where name = ? and ocw = ?";
+			String sql = "update lecture set slide_count = ? where name = ? and ocw = ?";
 			PreparedStatement pstmt = con.prepareStatement(sql);
 			pstmt.setInt(1, slideCount);
 			pstmt.setString(2, name);
@@ -38,8 +38,9 @@ public class LectureModel extends Model{
 			pstmt.setString(1, name);
 			pstmt.setString(2, ocw);
 			ResultSet rs = pstmt.executeQuery();
+			boolean result = rs.next();
 			pstmt.close();
-			return rs.next();
+			return result;
 		}catch(Exception e){
 			return false;
 		}

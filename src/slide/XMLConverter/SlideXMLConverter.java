@@ -7,7 +7,7 @@ import jp.dip.utakatanet.Logger;
 public class SlideXMLConverter{
 	public static String slidePath;
 	public boolean isSucceeded = false;
-	public int page;
+	public int page, imageCount;
 	public long byteSize;
 	public boolean convert(String slidepath){
 		slidePath = slidepath;
@@ -31,6 +31,7 @@ public class SlideXMLConverter{
 				// pageとか取ってくる処理
 				page = converter.page;
 				byteSize = converter.byteSize;
+				imageCount = converter.imageCount;
 				isSucceeded = true;
 				return true;
 			}

@@ -1,12 +1,16 @@
 package slide.XMLConverter;
 
 import jp.dip.utakatanet.*;
+import slide.database.*;
+
 import java.awt.image.BufferedImage;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.PrintWriter;
+import java.util.List;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -14,12 +18,15 @@ import javax.imageio.ImageIO;
 
 import org.apache.pdfbox.pdfparser.PDFParser;
 import org.apache.pdfbox.pdmodel.PDDocument;
+import org.apache.pdfbox.pdmodel.PDDocumentCatalog;
 import org.apache.pdfbox.pdmodel.PDPage;
+import org.apache.pdfbox.pdmodel.PDResources;
 import org.apache.pdfbox.util.PDFTextStripper;
 
 class PdfXMLConverter{
-	public int page;
+	public int page, imageCount = 0;
 	public long byteSize;
+	public SlideModel slideModel = new SlideModel();
 	public static long minByteSize = 0;
 	public static long maxByteSize = 1000000;
 	public boolean convert(String slide_path){
@@ -109,6 +116,8 @@ class PdfXMLConverter{
 			FileWriter fw = new FileWriter(xml_path);
 			BufferedWriter bw = new BufferedWriter(fw);
 			PrintWriter pw = new PrintWriter(bw);
+			
+			List<PDPage> list = document.getDocumentCatalog().getAllPages();
 		
 			// FIXME: とりあえず何も考えずに ja
 			pw.println("<presentation language=\"ja\">");
@@ -117,15 +126,29 @@ class PdfXMLConverter{
 				pw.println("<body>");
 				pw.println("<p>");
 				
-				// PDPage pdpage = (PDPage) document.getDocumentCatalog().getAllPages().get(i-1);
-			
+
 				pdf_text_stripper.setStartPage(i);
 				pdf_text_stripper.setEndPage(i);
 				String str = pdf_text_stripper.getText(document);
-				
 				pw.print(str);
 				
 				pw.println("</p>");
+				
+				// PDPage page = (PDPage) document.getDocumentCatalog().getAllPages().get(i-1);
+				PDPage page = list.get(i-1);
+				PDResources resources = page.getResources();
+				/*
+				 * getImages() では画像を取ってこれないパターンがあるようで、
+				 * getXObjects() で変えてくる Library から ImageObject 的なものを取ってくるのが確実な模様。
+				 */
+				Map images = resources.getImages();
+				//System.out.println("画像: " + images.size());
+				// そのスライドに画像が含まれているかどうかだけ見ておく
+				if(images.size() > 0){
+					pw.println("<img count=\"" + images.size() + "\" />");
+					imageCount++;
+				}
+				
 				pw.println("</body>");
 				pw.println("</slide>");
 			}

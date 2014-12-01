@@ -39,7 +39,7 @@ public class SlideMain extends Base{
 		p("Input Number");
 		p("0. Crawling (under construction)");
 		p("1. slide/pdf to XML");
-		p("2. slide/pdf to Image (under construction)");
+		p("2. Calc segment");
 		p("3. calc Lecture Similarity");
 		p("4. calc Segment similarity");
 		p("5. Segment Mapping");
@@ -52,7 +52,7 @@ public class SlideMain extends Base{
 		case 1: // slide/pdf to XML
 			slideToXML();
 			break;
-		case 2: // slide/pdf to Image
+		case 2: // Calc segment
 			slideAnalyze();
 			break;
 		case 3: // calc Lecture Similarity
@@ -118,6 +118,7 @@ public class SlideMain extends Base{
 						slide_count++;
 						slide_model.page = sxc.page;
 						slide_model.byteSize = (int)sxc.byteSize;
+						slide_model.imageCount = sxc.imageCount;
 						try {
 							slide_model.update();
 						} catch (SQLException e) {
@@ -172,7 +173,7 @@ public class SlideMain extends Base{
 					// ファイルが存在しているか確認してAnalyze
 					File xml_file = new File(xml_path);
 					if(xml_file.exists()){
-						SlideAnalyzer.analyze(sfile.getAbsolutePath());
+						SlideAnalyzer.analyze(ocwfile.getName(), lecfile.getName(), sfile.getName());
 					}else{
 						Logger.sErrorln("ファイルが見つかりませんでした: " + xml_path);
 					}
