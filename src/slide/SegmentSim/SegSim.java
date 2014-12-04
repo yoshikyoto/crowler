@@ -25,6 +25,7 @@ class SegSim extends Base{
 		tfMap = new HashMap<String, Double>();
 		dfMap = new HashMap<String, Double>();
 		try {
+			// wordMap を読む
 			fr = new FileReader(lecture_dir.getAbsolutePath() + "/wordMap.txt");
 			BufferedReader br = new BufferedReader(fr);
 			

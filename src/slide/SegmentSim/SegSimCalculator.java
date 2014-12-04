@@ -1,23 +1,32 @@
 package slide.SegmentSim;
 
 import jp.dip.utakatanet.*;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.sql.SQLException;
+
+import slide.database.SlideModel;
 
 public class SegSimCalculator extends Base{
 	public static String datapath = "/Users/admin/ocwslidedata";
-	public static void calc(){
+	public static void calc() throws SQLException{
 		
 		Logger.setLogName("SegmentSim");
-		// File file = new File(datapath + "/ocw.kyoto-u.ac.jp/06-コンパイラ");
-		// SegSim s = new SegSim(file);
-		// s.calcSegSim();
-		// Logger.sClose();
+		
+		// 講義一覧を取得
+		SlideModel slide_model = new SlideModel();
+		slide_model.getAll();
+		while(slide_model.next()){
+			SegSim ss = new SegSim(new File(slide_model.getDirName()));
+			ss.calcSegSim();
+		}
 		
 		// ocw一覧取得
+		/*
 		for(File ocwfile : listDirs(datapath)){
 			if(ocwfile.getName().indexOf("kyoto") == -1) continue; // FIXME: 京大のみについて観てみる
 			// 各ocwにいて
@@ -30,6 +39,7 @@ public class SegSimCalculator extends Base{
 				ss.calcSegSim();
 			}
 		}
+		*/
 		Logger.sClose();
 	}
 	

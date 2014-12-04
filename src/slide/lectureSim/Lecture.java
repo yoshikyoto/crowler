@@ -33,7 +33,6 @@ public class Lecture extends Base{
 		tfMap = new HashMap<String, Integer>();
 		dfMap = new HashMap<String, Integer>();
 		
-		// FIXME: Baseライブラリを使ったリファクタリング
 		// 講義資料一覧取得
 		for(File slide_dir : dir.listFiles()){
 			if(dir.getName().indexOf(".") == 0) continue; // 隠しファイルの場合

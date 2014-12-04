@@ -10,7 +10,10 @@ public class SlideModel extends Model{
 	public int page, segmentCount = 0, byteSize, imageCount = 0, allWordCount = 0;
 
 	
-	
+	/**
+	 * カラムが存在している場合はupdate、そうでない場合はinsertを行う。
+	 * @throws SQLException
+	 */
 	public void update() throws SQLException{
 		if(exist()){
 			p("存在していた");
@@ -33,6 +36,10 @@ public class SlideModel extends Model{
 		}
 	}
 	
+	/**
+	 * 単純なinsertを行う。既に存在している場合は SQLException が投げられる。
+	 * @throws SQLException
+	 */
 	public void insert() throws SQLException{
 		String sql = "insert into slide values (?, ?, ?, ?, ?, ?, ?, ?);";
 		PreparedStatement pstmt = con.prepareStatement(sql);
@@ -49,6 +56,10 @@ public class SlideModel extends Model{
 		pstmt.close();
 	}
 	
+	/**
+	 * カラムが1つ以上存在している場合は true を返す。
+	 * @return
+	 */
 	public boolean exist(){
 		try{
 			String sql = "select * from slide where name = ? and lectureName = ? and ocw = ?;";
@@ -66,6 +77,10 @@ public class SlideModel extends Model{
 		}
 	}
 	
+	/**
+	 * name, lectureName, ocw から検索を行う。
+	 * @return
+	 */
 	public boolean query(){
 		try{
 			String sql = "select * from slide where name = ? and lectureName = ? and ocw = ?;";
@@ -90,6 +105,10 @@ public class SlideModel extends Model{
 		}
 	}
 	
+	/**
+	 * すべての講義を取得する。
+	 * next を使って次々に値を取得できる。
+	 */
 	private ResultSet allrs;
 	public void getAll() throws SQLException{
 		String sql = "select * from slide;";
@@ -115,6 +134,10 @@ public class SlideModel extends Model{
 		return result;
 	}
 	
+	/**
+	 * ディレクトリを取得できる。ルートとなるディレクトリは親クラスの Model に記述してあるが、上書きも可能。
+	 * @return
+	 */
 	public String getDirName(){
 		return root + "/" + ocw + "/" + lectureName + "/" + name;
 	}
