@@ -115,7 +115,6 @@ public class SlideModel extends Model{
 		return result;
 	}
 	
-	public static String root = "";
 	public String getDirName(){
 		return root + "/" + ocw + "/" + lectureName + "/" + name;
 	}

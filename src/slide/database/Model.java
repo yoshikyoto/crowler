@@ -6,13 +6,12 @@ import java.sql.*;
 
 public class Model extends SlideMain{
 	public Connection con;
+	public static String root = "/home/sakamoto/OCWData";
 	
 	/**
 	 * Connection の初期化なんかを行う
 	 */
 	Model(){
-		p("init Model (Sper class's initializer)");
-		
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
 			String url = "jdbc:mysql://localhost/Slide";

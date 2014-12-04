@@ -42,6 +42,7 @@ public class Logger{
 	}
 	
 	public static void sPrintln(String str){
+		System.out.println(str);
 		p.println(str);
 		p.flush();
 	}

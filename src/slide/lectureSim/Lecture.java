@@ -6,6 +6,8 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.util.HashMap;
+
+import slide.database.LectureModel;
 import jp.dip.utakatanet.*;
 
 /**
@@ -21,6 +23,7 @@ public class Lecture extends Base{
 	public String name;
 	public double simPoint; 
 	boolean wordMapExist = false;
+	public String ocw;
 	
 	public Lecture(){}
 	

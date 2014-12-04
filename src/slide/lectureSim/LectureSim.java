@@ -6,28 +6,49 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
 import jp.dip.utakatanet.*;
 import slide.*;
-import slide.database.SlideModel;
+import slide.database.LectureModel;
+import slide.database.SimlecModel;
 
 public class LectureSim extends Base{
 	public static String datapath = "/Users/admin/ocwslidedata";
 	public static HashMap<String, Integer> dfMap;
 	public static ArrayList<Lecture> lectures;
 	
-	public static void calc(){
+	public static void calc() throws SQLException{
 		Logger.setLogName("SlideSim");
+		
 		dfMap = new HashMap<String, Integer>();
 		lectures = new ArrayList<Lecture>();
+
+		// 講義一覧を取得
+		LectureModel lecture_model = new LectureModel();
+		lecture_model.getAll();
 		
-		SlideModel slide_model = new SlideModel();
-		slide_moedl.
+		// 各講義について見ていく
+		while(lecture_model.next()){
+			Logger.sPrintln(lecture_model.getDirName());
+			Lecture lecture = new Lecture(lecture_model.getDirName());
+			lecture.ocw = lecture_model.ocw;
+			
+			if(lecture.wordMapExist) lectures.add(lecture);
+			lecture.saveWordMap(); // tf idf をファイルに出力する
+			
+			// lecture の df を全体の方に反映させる
+			for(String word : lecture.tfMap.keySet()){
+				int value = 1;
+				if(dfMap.containsKey(word)) value += dfMap.get(word);
+				dfMap.put(word, value);
+			}
+		}
 		
-		/*
 		// ocw一覧取得
+		/*
 		File data_dir = new File(datapath);
 		for(File ocw_dir : data_dir.listFiles()){
 			if(isNotValid(ocw_dir.getName())) continue;
@@ -59,26 +80,36 @@ public class LectureSim extends Base{
 		*/
 		
 		// 講義の類似度を測っていく
+		SimlecModel simlec_model = new SimlecModel();
 		for(Lecture la : lectures){
+			simlec_model.name1 = la.name;
+			simlec_model.ocw1 = la.ocw;
 			// 類似度の保存先
 			try {
+				/*
 				File file = new File(la.dir.getAbsolutePath() + "/cosim.txt");
 				FileWriter fw = new FileWriter(file);
 				BufferedWriter bw = new BufferedWriter(fw);
 				PrintWriter pw = new PrintWriter(bw);
+				*/
 				
 				// 類似度測っていく
 				for(Lecture lb : lectures){
 					if(la == lb) continue; // 同じ講義は図らなくていい
+					simlec_model.name2 = lb.name;
+					simlec_model.ocw2 = lb.ocw;
+					
 					// tf/idfを計算する
 					HashMap<String, Double> ma = Cosim.calcTfidf(la.tfMap, dfMap);
 					HashMap<String, Double> mb = Cosim.calcTfidf(lb.tfMap, dfMap);
 					double cosim = Cosim.calc(ma, mb);
-					if(cosim < 0.95){ // 類似度が一定以上なら
-						pw.println(cosim + "\t" + lb.name + "\t" + lb.dir.getAbsolutePath());
+					if(0.001 < cosim && cosim < 0.95){
+						// pw.println(cosim + "\t" + lb.name + "\t" + lb.dir.getAbsolutePath());
+						simlec_model.score = cosim;
+						simlec_model.insertUpdate();
 					}
 				}
-				pw.close();
+				//pw.close();
 			}catch(Exception e){
 				e.printStackTrace();
 				Logger.sErrorln("IOError: " + e);

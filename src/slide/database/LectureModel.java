@@ -45,4 +45,28 @@ public class LectureModel extends Model{
 			return false;
 		}
 	}
+	
+	private ResultSet allrs;
+	public void getAll() throws SQLException{
+		String sql = "select * from lecture;";
+		Statement stmt = con.createStatement();
+		allrs = stmt.executeQuery(sql);
+	}
+	
+	public boolean next() throws SQLException{
+		boolean result = allrs.next();
+		if(result){
+			// 結果が見つかった場合
+			name = allrs.getString("name");
+			ocw = allrs.getString("ocw");
+			slideCount = allrs.getInt("slide_count");
+		}else{
+			allrs.close();
+		}
+		return result;
+	}
+	
+	public String getDirName(){
+		return root + "/" + ocw + "/" + name;
+	}
 }
