@@ -11,6 +11,7 @@ import java.util.HashMap;
 
 import jp.dip.utakatanet.*;
 import slide.*;
+import slide.database.SlideModel;
 
 public class LectureSim extends Base{
 	public static String datapath = "/Users/admin/ocwslidedata";
@@ -22,6 +23,10 @@ public class LectureSim extends Base{
 		dfMap = new HashMap<String, Integer>();
 		lectures = new ArrayList<Lecture>();
 		
+		SlideModel slide_model = new SlideModel();
+		slide_moedl.
+		
+		/*
 		// ocw一覧取得
 		File data_dir = new File(datapath);
 		for(File ocw_dir : data_dir.listFiles()){
@@ -51,6 +56,7 @@ public class LectureSim extends Base{
 				}
 			}
 		}
+		*/
 		
 		// 講義の類似度を測っていく
 		for(Lecture la : lectures){

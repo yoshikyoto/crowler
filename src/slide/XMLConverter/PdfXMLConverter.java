@@ -26,16 +26,16 @@ import org.apache.pdfbox.util.PDFTextStripper;
 class PdfXMLConverter{
 	public int page, imageCount = 0;
 	public long byteSize;
-	public SlideModel slideModel = new SlideModel();
-	public static long minByteSize = 0;
-	public static long maxByteSize = 1000000;
+	public File slide_dir;
+	public static long minByteSize = 1000000;
+	public static long maxByteSize = 1500000;
 	public boolean convert(String slide_path){
 
 		// データ保存先のディレクトリを作成
 		Pattern p = Pattern.compile("(.*)\\.pdf");
 		Matcher m = p.matcher(slide_path);
 		m.find();
-		File slide_dir = new File(m.group(1));
+		slide_dir = new File(m.group(1));
 		Logger.sPrintln("ディレクトリを作成: " + slide_dir.getAbsolutePath());
 		if(!slide_dir.mkdir()){
 			// 権限が無かったりでディレクトリが作成出来なかった場合

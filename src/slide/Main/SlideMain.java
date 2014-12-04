@@ -32,8 +32,6 @@ public class SlideMain extends Base{
 			"ocw.nagoya-u.jp"
 		};
 		
-		LectureModel sm = new LectureModel();
-		
 		Scanner sc = new Scanner(System.in);
 		
 		p("Input Number");
@@ -70,6 +68,8 @@ public class SlideMain extends Base{
 		}
 		sc.close();
 		// SlideData d = new SlideData("/Users/admin/ocwslidedata");
+		
+		p("終了: " + getDateString("MM/dd HH:mm:ss"));
 	}
 
 	public static void slideToXML(){
@@ -103,7 +103,8 @@ public class SlideMain extends Base{
 					Logger.sPrintln("Slide: " + sfile.getName());
 					
 
-					slide_model.name = sfile.getName();
+					// TODO: nameWithout Ext のデバッグ
+					// slide_model.name = sfile.getName(); これだと拡張子まで含まれてしまうのでだめ
 					slide_model.lectureName = lecfile.getName();
 					slide_model.ocw = ocwfile.getName();
 					
@@ -119,6 +120,7 @@ public class SlideMain extends Base{
 						slide_model.page = sxc.page;
 						slide_model.byteSize = (int)sxc.byteSize;
 						slide_model.imageCount = sxc.imageCount;
+						slide_model.name = sxc.nameWithoutExt;
 						try {
 							slide_model.update();
 						} catch (SQLException e) {
@@ -152,9 +154,21 @@ public class SlideMain extends Base{
 		Logger.sClose();
 	}
 	
-	public static void slideAnalyze(){
+	public static void slideAnalyze() throws SQLException{
 		Logger.setLogName("ConvertXML");
 		
+		SlideModel.root = root;
+		SlideModel slide_model = new SlideModel();
+		slide_model.getAll();
+		while(slide_model.next()){
+			String xml_path = slide_model.getDirName() + "/slide.xml";
+			File xml_file = new File(xml_path);
+			if(xml_file.exists()){
+				SlideAnalyzer.analyze(slide_model.ocw, slide_model.lectureName, slide_model.name);
+			}
+		}
+		
+		/*
 		for(File ocwfile : listDirs(root)){
 			// 各 OCW のディレクトリについて
 			Logger.sPrintln("OCW: " + ocwfile.getName());
@@ -181,7 +195,7 @@ public class SlideMain extends Base{
 				}
 			}
 		}
+		*/
 		Logger.sClose();
 	}
-
 }

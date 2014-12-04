@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class Cosim{
-	public static final boolean DEBUG = true;
+	public static final boolean DEBUG = false;
 	
 	public static double calc(Map<String, Double> ma, Map<String, Double> mb){
 		if(DEBUG){

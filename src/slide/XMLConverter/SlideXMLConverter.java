@@ -9,6 +9,7 @@ public class SlideXMLConverter{
 	public boolean isSucceeded = false;
 	public int page, imageCount;
 	public long byteSize;
+	public String nameWithoutExt;
 	public boolean convert(String slidepath){
 		slidePath = slidepath;
 		System.out.println("Convert: " + slidePath);
@@ -32,6 +33,7 @@ public class SlideXMLConverter{
 				page = converter.page;
 				byteSize = converter.byteSize;
 				imageCount = converter.imageCount;
+				nameWithoutExt = converter.slide_dir.getName();
 				isSucceeded = true;
 				return true;
 			}
