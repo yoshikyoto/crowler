@@ -3,11 +3,12 @@ package slide.database;
 import java.sql.*;
 
 public class LectureModel extends Model{
+	public static boolean DEBUG = true;
 	public String name, ocw;
 	public int slideCount;
 	public double imageScore, wordScore, imageDegree;
 	/**
-	 * nameとocwから検索を行いslideCountを見つけてくる。
+	 * nameとocwから検索を行う。
 	 * 見つからなかった場合はfalseを返し、slideCountの値は変更されない。
 	 * @return 見つかった場合はtrue、見つからなかった場合は false;
 	 */
@@ -17,6 +18,7 @@ public class LectureModel extends Model{
 			PreparedStatement pstmt = con.prepareStatement(sql);
 			pstmt.setString(1, name);
 			pstmt.setString(2, ocw);
+			if(DEBUG) p(pstmt.toString());
 			ResultSet rs = pstmt.executeQuery();
 			boolean result = rs.next();
 			
@@ -46,6 +48,8 @@ public class LectureModel extends Model{
 		pstmt.setDouble(4, imageDegree);
 		pstmt.setDouble(5, imageScore);
 		pstmt.setDouble(6, wordScore);
+
+		if(DEBUG) p(pstmt.toString());
 		
 		pstmt.executeUpdate();
 		pstmt.close();
@@ -66,6 +70,9 @@ public class LectureModel extends Model{
 			pstmt.setDouble(4, wordScore);
 			pstmt.setString(5, name);
 			pstmt.setString(6, ocw);
+			
+			if(DEBUG) p(pstmt.toString());
+			
 			pstmt.executeUpdate();
 			pstmt.close();
 		}else{
@@ -152,8 +159,8 @@ public class LectureModel extends Model{
 				
 				if(slide_model.page == 0) continue;
 				slide_count++;
-				int avg_image = slide_model.imageCount / slide_model.page;
-				int avg_word = slide_model.allWordCount / slide_model.page;
+				double avg_image = (double)slide_model.imageCount / slide_model.page;
+				double avg_word = (double)slide_model.allWordCount / slide_model.page;
 				image_score += avg_image;
 				word_score += avg_word;
 				

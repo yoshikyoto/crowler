@@ -182,6 +182,16 @@ public class Base{
 	 * @param e Exception
 	 */
 	public static void errorLog(Exception e){errorLog(e.toString());}
+	
+	/**
+	 * スレッドをスリープする
+	 */
+	public static void sleep(int ms){try{Thread.sleep(ms);}catch(Exception e){}}
+	
+	/**
+	 * スレッドをスリープする。引数なしの場合は1秒スリープ
+	 */
+	public static void sleep(){sleep(1000);}
 
 	// Date関係 --------------------------------------------------
 	/**

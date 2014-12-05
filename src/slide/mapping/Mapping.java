@@ -4,16 +4,39 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
 import jp.dip.utakatanet.*;
+import slide.database.LectureModel;
+import slide.database.SlideModel;
 import slide.lectureSim.*;
 
 public class Mapping extends Base{
 
 	public static String root = "/Users/admin/ocwslidedata";
-	public static void calc(){
+	
+	public static void calc() throws SQLException{
+		// すべての講義を取得して順に見ていく
+		LectureModel lecture_model = new LectureModel();
+		// 仮にここではコンパイラにしておく
+		lecture_model.ocw = "ocw.kyoto-u.ac.jp";
+		lecture_model.name  = "06-コンパイラ";
+		lecture_model.query();
+		
+		// lecture_model.getAll();
+		// while(lecture_model.next()){
+			// その中のさらにスライドについて見ていく
+			SlideModel slide_model = new SlideModel();
+			slide_model.getSlides(lecture_model);
+			while(slide_model.next()){
+				
+			}
+		// }
+	}
+	
+	public static void old_calc(){
 		Logger.setLogName("Mapping");
 
 		for(File ocwfile : listDirs(root)){

@@ -101,6 +101,7 @@ public class SlideModel extends Model{
 			pstmt.close();
 			return result;
 		}catch(Exception e){
+			e.printStackTrace();
 			return false;
 		}
 	}
@@ -137,6 +138,7 @@ public class SlideModel extends Model{
 	 * @throws SQLException
 	 */
 	public boolean next() throws SQLException{
+		p("ねくすと");
 		boolean result = allrs.next();
 		if(result){
 			// 結果が見つかった場合
@@ -148,6 +150,7 @@ public class SlideModel extends Model{
 			byteSize = allrs.getInt("byte");
 			imageCount = allrs.getInt("image_count");
 			allWordCount = allrs.getInt("all_word_count");
+			p(imageCount + " " + allWordCount);
 		}else{
 			allrs.close();
 		}

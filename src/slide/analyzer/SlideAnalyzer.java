@@ -15,11 +15,16 @@ public class SlideAnalyzer extends SlideMain{
 		// all_word_countをDBに挿入
 		// p("スライドを探す: " + ocw_name + " " + lecture_name + " " + slide_name);
 		if(slide_model.exist()){
+			// slide_model.query();
 			p("スライドが見つかったので値を更新");
+			p(slide_model.imageCount + " " + slide_model.allWordCount);
+			// sleep(1000);
+			int all_word_count = 0;
 			for(Sheet sheet : slide.sheets){
 				p("シートのワードをカウント: " + sheet.allwords.size());
-				slide_model.allWordCount += sheet.allwords.size();
+				all_word_count += sheet.allwords.size();
 			}
+			slide_model.allWordCount = all_word_count;
 			p(slide_model.allWordCount);
 			
 			// TODO: 仮にここでページ数もアップデートするけど、本当はここじゃないほうがいい
