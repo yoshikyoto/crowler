@@ -13,8 +13,11 @@ import slide.lectureSim.*;
 import slide.mapping.Mapping;
 import slide.SegmentSim.*;
 import slide.html.*;
+import slide.converter.Pdf2Image;
 import slide.database.*;
+
 import java.util.regex.*;
+
 
 public class SlideMain extends Base{
 	/*
@@ -32,8 +35,10 @@ public class SlideMain extends Base{
 			"ocw.nagoya-u.jp"
 		};
 		
+		// LectureModelのimage_degreeを計算する
 		LectureModel.open();
 		LectureModel.calcImageDegree();
+	    
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -45,6 +50,7 @@ public class SlideMain extends Base{
 		p("4. calc Segment similarity");
 		p("5. Segment Mapping");
 		p("6. Make HTML");
+		p("7. Convert Slide to Image");
 		
 		switch(sc.nextInt()){
 		case 0: // Crawling?
@@ -67,6 +73,9 @@ public class SlideMain extends Base{
 			break;
 		case 6: // Make HTML
 			SlideHtmlMaker.make();
+			break;
+		case 7:
+			convertSlide2Image();
 			break;
 		}
 		sc.close();
@@ -199,6 +208,21 @@ public class SlideMain extends Base{
 			}
 		}
 		*/
+		Logger.sClose();
+	}
+	
+	public static void convertSlide2Image() throws SQLException{
+		Logger.setLogName("Pdf2Image");
+		SlideModel slide_model = new SlideModel();
+		slide_model.getAll();
+		while(slide_model.next()){
+			try{
+				Pdf2Image.convert(slide_model);
+			}catch(Exception e){
+				e.printStackTrace();
+				Logger.sError(e.toString());
+			}
+		}
 		Logger.sClose();
 	}
 }

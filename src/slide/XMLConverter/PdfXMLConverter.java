@@ -27,8 +27,8 @@ class PdfXMLConverter{
 	public int page, imageCount = 0;
 	public long byteSize;
 	public File slide_dir;
-	public static long minByteSize = 1000000;
-	public static long maxByteSize = 1500000;
+	public static long minByteSize = 0;
+	public static long maxByteSize = 1000000;
 	public boolean convert(String slide_path){
 
 		// データ保存先のディレクトリを作成
@@ -96,6 +96,7 @@ class PdfXMLConverter{
 			pdpage.clear();
 			
 			// 画像にする部分
+			/*
 			for(int i = 0; i < page; i++){
 				System.gc();
 				// 変換
@@ -107,6 +108,7 @@ class PdfXMLConverter{
 				Boolean result = ImageIO.write(image, "png", image_file);
 				Logger.sPrintln("Page " + i + " 変換結果: " + result);
 			}
+			*/
 
 			PDFTextStripper pdf_text_stripper = new PDFTextStripper();
 			// String text = pdf_text_stripper.getText(document);
