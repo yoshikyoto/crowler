@@ -164,7 +164,7 @@ public class SlideMain extends Base{
 			String xml_path = slide_model.getDirName() + "/slide.xml";
 			File xml_file = new File(xml_path);
 			if(xml_file.exists()){
-				SlideAnalyzer.analyze(slide_model.ocw, slide_model.lectureName, slide_model.name);
+				SlideAnalyzer.analyze(slide_model);
 			}
 		}
 		
