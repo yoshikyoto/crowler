@@ -24,6 +24,21 @@ public class Model extends SlideMain{
 	}
 	
 	/**
+	 * Connection の初期化などを行う。Connectionがcloseされたあとだとうまく動かないと思うのでよう修正。
+	 */
+	public static void open(){
+		if(con == null){
+			try{
+				Class.forName("com.mysql.jdbc.Driver");
+				String url = "jdbc:mysql://localhost/Slide";
+				con = DriverManager.getConnection(url, "sakamoto", "Sakam0toSlide");
+			}catch(Exception e){
+				e.printStackTrace();
+			}
+		}
+	}
+	
+	/**
 	 * Connection などの close を行う。
 	 * 例外は throw されず、内部でキャッチする。
 	 */

@@ -32,6 +32,9 @@ public class SlideMain extends Base{
 			"ocw.nagoya-u.jp"
 		};
 		
+		LectureModel.open();
+		LectureModel.calcImageDegree();
+		
 		Scanner sc = new Scanner(System.in);
 		
 		p("Input Number");

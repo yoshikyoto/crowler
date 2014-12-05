@@ -5,7 +5,7 @@ import java.sql.*;
 public class LectureModel extends Model{
 	public String name, ocw;
 	public int slideCount;
-	
+	public double imageScore, wordScore, imageDegree;
 	/**
 	 * nameとocwから検索を行いslideCountを見つけてくる。
 	 * 見つからなかった場合はfalseを返し、slideCountの値は変更されない。
@@ -22,6 +22,9 @@ public class LectureModel extends Model{
 			
 			if(result){
 				slideCount = rs.getInt("slide_count");
+				imageScore = rs.getDouble("image_score");
+				wordScore = rs.getDouble("wrod_score");
+				imageDegree = rs.getDouble("image_degree");
 			}
 			pstmt.close();
 			return result;
@@ -35,11 +38,14 @@ public class LectureModel extends Model{
 	 * @throws SQLException 値が既に存在している場合
 	 */
 	public void insert() throws SQLException{
-		String sql = "insert into lecture values (?, ?, ?)";
+		String sql = "insert into lecture values (?, ?, ?, ?, ?, ?)";
 		PreparedStatement pstmt = con.prepareStatement(sql);
 		pstmt.setString(1, name);
 		pstmt.setString(2, ocw);
 		pstmt.setInt(3, slideCount);
+		pstmt.setDouble(4, imageDegree);
+		pstmt.setDouble(5, imageScore);
+		pstmt.setDouble(6, wordScore);
 		
 		pstmt.executeUpdate();
 		pstmt.close();
@@ -52,11 +58,14 @@ public class LectureModel extends Model{
 	 */
 	public void update() throws SQLException{
 		if(exist()){
-			String sql = "update lecture set slide_count = ? where name = ? and ocw = ?";
+			String sql = "update lecture set slide_count = ?, image_degree = ?, image_score = ?, word_score = ? where name = ? and ocw = ?";
 			PreparedStatement pstmt = con.prepareStatement(sql);
 			pstmt.setInt(1, slideCount);
-			pstmt.setString(2, name);
-			pstmt.setString(3, ocw);
+			pstmt.setDouble(2, imageDegree);
+			pstmt.setDouble(3, imageScore);
+			pstmt.setDouble(4, wordScore);
+			pstmt.setString(5, name);
+			pstmt.setString(6, ocw);
 			pstmt.executeUpdate();
 			pstmt.close();
 		}else{
@@ -108,6 +117,9 @@ public class LectureModel extends Model{
 			name = allrs.getString("name");
 			ocw = allrs.getString("ocw");
 			slideCount = allrs.getInt("slide_count");
+			imageDegree = allrs.getDouble("image_degree");
+			imageScore = allrs.getDouble("image_score");
+			wordScore = allrs.getDouble("word_score");
 		}else{
 			allrs.close();
 		}
@@ -129,11 +141,38 @@ public class LectureModel extends Model{
 			SlideModel slide_model = new SlideModel();
 			slide_model.getSlides(lecture_model);
 			
-			int image_score = 0, word_score = 0;
+			double image_score = 0, word_score = 0, image_degree = 1; // 各スコア
+			int slide_count = 0; // 講義に所属するスライドの数
+			
+			p("講義: " + lecture_model.name);
+			
+			// スライドをどんどん見ていく
 			while(slide_model.next()){
+				p("  スライド: " + slide_model.name);
+				
 				if(slide_model.page == 0) continue;
+				slide_count++;
 				int avg_image = slide_model.imageCount / slide_model.page;
+				int avg_word = slide_model.allWordCount / slide_model.page;
+				image_score += avg_image;
+				word_score += avg_word;
+				
+				p("  image: " + avg_image + "  word: " + avg_word);
 			}
+			
+			// スライド数で正規化
+			// 0割しないように、スライド数が0以外の時のみ
+			if(slide_count != 0){
+				image_score /= slide_count;
+				word_score /= slide_count;
+				if(word_score != 0) image_degree = image_score / word_score;
+			}
+			
+			// データベースをupdate
+			lecture_model.imageDegree = image_degree;
+			lecture_model.wordScore = word_score;
+			lecture_model.imageScore = image_score;
+			lecture_model.update();
 		}
 	}
 }

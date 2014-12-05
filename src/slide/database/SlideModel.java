@@ -169,4 +169,22 @@ public class SlideModel extends Model{
 	public String getLectureDir(){
 		return root + "/" + ocw + "/" + lectureName;
 	}
+	
+	/**
+	 * 入力された LectureModel に対するスライドの数を求める。Lectureが見つからなかったら0を返す。
+	 * @param lecture_model
+	 * @return スライドの数。講義が見つからなかったら0。
+	 * @throws SQLException
+	 */
+	public static int count(LectureModel lecture_model) throws SQLException{
+		String sql = "select count(*) from slide where ocw = ? and lectureName = ?";
+		PreparedStatement pstmt = con.prepareStatement(sql);
+		pstmt.setString(1, lecture_model.ocw);
+		pstmt.setString(2, lecture_model.name);
+		ResultSet rs = pstmt.executeQuery();
+		if(!rs.next()) return 0;
+		int count = rs.getInt(1);
+		rs.close();
+		return count;
+	}
 }
