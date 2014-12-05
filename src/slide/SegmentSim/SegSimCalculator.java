@@ -27,6 +27,7 @@ public class SegSimCalculator extends Base{
 		LectureModel lectureA_model = new LectureModel();
 		lectureA_model.getAll();
 		while(lectureA_model.next()){
+			if(!lectureA_model.name.equals("06-コンパイラ")) continue;
 			// 講義のdfを取得
 			HashMap<String, Double> lecA_dfMap = getDfMap(lectureA_model.getDirName());
 			
@@ -83,11 +84,19 @@ public class SegSimCalculator extends Base{
 		SimsegModel simseg_model = new SimsegModel();
 		
 		for(Segment segA : segmentsA){
-			simseg_model.s1 = segA.slide_model;
+			SlideModel s1 = new SlideModel();
+			s1.ocw = segA.ocw;
+			s1.lectureName = segA.lectureName;
+			s1.name = segA.slideName;
+			simseg_model.s1 = s1;
 			simseg_model.segnum1 = segA.segmentNum;
 			
 			for(Segment segB : segmentsB){
-				simseg_model.s2 = segB.slide_model;
+				SlideModel s2 = new SlideModel();
+				s2.ocw = segB.ocw;
+				s2.lectureName = segB.lectureName;
+				s2.name = segB.slideName;
+				simseg_model.s2 = s2;
 				simseg_model.segnum2 = segB.segmentNum;
 				// コサイン類似度計算
 				double cosim = Cosim.calc(segA.tfidfMap, segB.tfidfMap);
@@ -143,6 +152,8 @@ public class SegSimCalculator extends Base{
 		SlideModel slide_model = new SlideModel();
 		slide_model.getSlides(lecture_model);
 		while(slide_model.next()){
+			// p("スライドを取得: " + slide_model.name);
+			// sleep();
 			// 各セグメントを見る
 			for(int i = 0; i < slide_model.segmentCount; i++){
 				// ファイルからセグメントの単語ベクトルを取得

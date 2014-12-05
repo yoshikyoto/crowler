@@ -36,8 +36,8 @@ public class SlideMain extends Base{
 		};
 		
 		// LectureModelのimage_degreeを計算する
-		LectureModel.open();
-		LectureModel.calcImageDegree();
+		// LectureModel.open();
+		// LectureModel.calcImageDegree();
 	    
 		
 		Scanner sc = new Scanner(System.in);

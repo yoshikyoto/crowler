@@ -4,11 +4,23 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class SimsegModel extends Model{
+public class MappingModel extends Model{
 	public double score;
 	public SlideModel s1, s2;
 	public int segnum1, segnum2;
 	public static boolean DEBUG = true;
+	
+	/**
+	 * 属性が同じなので、simlec_model から値をセットするセッター
+	 * @param simseg_model
+	 */
+	public void set(SimsegModel simseg_model){
+		s1 = simseg_model.s1;
+		s2 = simseg_model.s2;
+		score = simseg_model.score;
+		segnum1 = simseg_model.segnum1;
+		segnum2 = simseg_model.segnum2;
+	}
 	
 	/**
 	 * カラムが存在している場合はupdate、存在していない場合はinsertを行う
@@ -28,7 +40,7 @@ public class SimsegModel extends Model{
 	 * @throws SQLException
 	 */
 	public void update() throws SQLException{
-		String sql = "update simseg set score = ? where ocw1 = ? and lecture_name1 = ? and slide_name1 = ? and segment1 = ?"
+		String sql = "update mapping set score = ? where ocw1 = ? and lecture_name1 = ? and slide_name1 = ? and segment1 = ?"
 					+ " and ocw2 = ? and lecture_name2 = ? and slide_name2 = ? and segment2 = ?";
 		PreparedStatement pstmt = con.prepareStatement(sql);
 		pstmt.setString(2, s1.ocw);
@@ -50,7 +62,7 @@ public class SimsegModel extends Model{
 	 * @throws SQLException
 	 */
 	public void insert() throws SQLException{
-		String sql = "insert into simseg values (?, ?, ?, ?, ?, ?, ?, ?, ?);";
+		String sql = "insert into mapping values (?, ?, ?, ?, ?, ?, ?, ?, ?);";
 		PreparedStatement pstmt = con.prepareStatement(sql);
 		pstmt.setString(1, s1.ocw);
 		pstmt.setString(2, s1.lectureName);
@@ -72,7 +84,7 @@ public class SimsegModel extends Model{
 	 */
 	public boolean exist(){
 		try{
-			String sql = "select * from simseg where ocw1 = ? and lecture_name1 = ? and slide_name1 = ? and segment1 = ?"
+			String sql = "select * from mapping where ocw1 = ? and lecture_name1 = ? and slide_name1 = ? and segment1 = ?"
 					+ " and ocw2 = ? and lecture_name2 = ? and slide_name2 = ? and segment2 = ?";
 			PreparedStatement pstmt = con.prepareStatement(sql);
 			pstmt.setString(1, s1.ocw);
@@ -93,43 +105,4 @@ public class SimsegModel extends Model{
 			return false;
 		}
 	}
-	
-	public ResultSet toprs;
-	
-	/**
-	 * slide_modelのsegment_numに対応するsimlec_modelのセグメントを取得する。（スコアが最も高いものを取得する）
-	 * @param slide_model
-	 * @param segment_num
-	 * @param lecture_name
-	 * @return
-	 * @throws SQLException
-	 */
-	public boolean getTop(SlideModel slide_model, int segment_num, SimlecModel simlec_model) throws SQLException{
-		s1 = slide_model;
-		segnum1 = segment_num;
-		
-		String sql = "select * from simseg where ocw1 = ? and lecture_name1 = ? and slide_name1 = ? and segment1 = ? and ocw2 = ? and lecture_name2 = ? order by score desc limit 5";
-		PreparedStatement pstmt = con.prepareStatement(sql);
-		pstmt.setString(1, slide_model.ocw);
-		pstmt.setString(2, slide_model.lectureName);
-		pstmt.setString(3, slide_model.name);
-		pstmt.setInt(4, segment_num);
-		pstmt.setString(5, simlec_model.ocw2);
-		pstmt.setString(6, simlec_model.name2);
-		
-		if(DEBUG) p(pstmt.toString());
-		
-		toprs = pstmt.executeQuery();
-		boolean flag = toprs.next();
-		if(flag){
-			s2 = new SlideModel();
-			s2.ocw = toprs.getString("ocw2");
-			s2.lectureName = toprs.getString("lecture_name2");
-			s2.name = toprs.getString("slide_name2");
-			segnum2 = toprs.getInt("segment2");
-			score = toprs.getDouble("score");
-		}
-		return flag;
-	}
-	
 }

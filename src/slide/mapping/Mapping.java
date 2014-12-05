@@ -9,8 +9,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import jp.dip.utakatanet.*;
-import slide.database.LectureModel;
-import slide.database.SlideModel;
+import slide.database.*;
 import slide.lectureSim.*;
 
 public class Mapping extends Base{
@@ -31,7 +30,26 @@ public class Mapping extends Base{
 			SlideModel slide_model = new SlideModel();
 			slide_model.getSlides(lecture_model);
 			while(slide_model.next()){
-				
+				p("  スライド: " + slide_model.name);
+				sleep();
+				// さらに各セグメントについて見ていく
+				for(int i = 0; i < slide_model.segmentCount; i++){
+					
+					// 類似講義を取得する。書く類似講義について見ていく。
+					SimlecModel simlec_model = new SimlecModel();
+					simlec_model.getAllSimLec(lecture_model.name, lecture_model.ocw, 0.02);
+					while(simlec_model.next()){
+						SimsegModel simseg_model = new SimsegModel();
+						simseg_model.getTop(slide_model, i, simlec_model);
+						// しきい値以上でマッピング
+						if(simseg_model.score >= 0.02){
+							p("マッピング: " + simseg_model.s2.lectureName + " " + simseg_model.score);
+							MappingModel mapping_model = new MappingModel();
+							mapping_model.set(simseg_model);
+							mapping_model.insertUpdate();
+						}
+					}
+				}
 			}
 		// }
 	}
