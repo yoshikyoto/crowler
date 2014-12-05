@@ -68,7 +68,7 @@ class SegSim extends Base{
 		// System.out.println(lecture_dir.getName() + " セグメントサイズ: " + segments.size());
 	}
 	
-	ArrayList<Segment> makeSegmentArr(File lecture_dir, HashMap<String, Double> dfm){
+	public static ArrayList<Segment> makeSegmentArr(File lecture_dir, HashMap<String, Double> dfm){
 		ArrayList<Segment> segs = new ArrayList<Segment>();
 		
 		for(File slide_dir : lecture_dir.listFiles()){

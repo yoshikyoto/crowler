@@ -77,6 +77,7 @@ public class SimlecModel extends Model{
 		}
 	}
 	
+	public PreparedStatement astmt;
 	public ResultSet allrs;
 	/**
 	 * name, ocw に対応する講義に関して、類似度が border 以上のものを取得する。
@@ -88,12 +89,12 @@ public class SimlecModel extends Model{
 	 */
 	public void getAllSimLec(String name, String ocw, double border) throws SQLException{
 		String sql = "select * from simlec where name1 = ? and ocw1 = ? and score >= ?;";
-		PreparedStatement pstmt = con.prepareStatement(sql);
-		pstmt.setString(1, name);
-		pstmt.setString(2, ocw);
-		pstmt.setDouble(3, border);
-		if(debug) System.out.println(pstmt.toString());
-		allrs = pstmt.executeQuery();
+		astmt = con.prepareStatement(sql);
+		astmt.setString(1, name);
+		astmt.setString(2, ocw);
+		astmt.setDouble(3, border);
+		if(debug) System.out.println(astmt.toString());
+		allrs = astmt.executeQuery();
 	}
 	
 	/**
@@ -110,6 +111,7 @@ public class SimlecModel extends Model{
 			ocw2 = allrs.getString("ocw2");
 			score = allrs.getDouble("score");
 		}else{
+			astmt.close();
 			allrs.close();
 		}
 		return result;

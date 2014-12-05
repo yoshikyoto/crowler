@@ -5,19 +5,21 @@ import slide.Main.*;
 import java.sql.*;
 
 public class Model extends SlideMain{
-	public Connection con;
+	public static Connection con;
 	public static String root = "/home/sakamoto/OCWData";
 	
 	/**
 	 * Connection の初期化なんかを行う
 	 */
 	Model(){
-		try{
-			Class.forName("com.mysql.jdbc.Driver");
-			String url = "jdbc:mysql://localhost/Slide";
-			con = DriverManager.getConnection(url, "sakamoto", "Sakam0toSlide");
-		}catch(Exception e){
-			e.printStackTrace();
+		if(con == null){
+			try{
+				Class.forName("com.mysql.jdbc.Driver");
+				String url = "jdbc:mysql://localhost/Slide";
+				con = DriverManager.getConnection(url, "sakamoto", "Sakam0toSlide");
+			}catch(Exception e){
+				e.printStackTrace();
+			}
 		}
 	}
 	

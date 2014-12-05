@@ -104,9 +104,10 @@ public class SlideModel extends Model{
 			return false;
 		}
 	}
+
 	
 	/**
-	 * すべての講義を取得する。
+	 * すべてのスライドを取得する。
 	 * next を使って次々に値を取得できる。
 	 */
 	private ResultSet allrs;
@@ -116,6 +117,25 @@ public class SlideModel extends Model{
 		allrs = stmt.executeQuery(sql);
 	}
 	
+	/**
+	 * 入力された LectureModel の講義スライドをすべて取得する。
+	 * nextでイテレータを回して値を取得できる。
+	 * @param lecture_model
+	 * @throws SQLException 
+	 */
+	public void getSlides(LectureModel lecture_model) throws SQLException{
+		String sql = "select * from slide where ocw = ? and lectureName = ?";
+		PreparedStatement pstmt = con.prepareStatement(sql);
+		pstmt.setString(1, lecture_model.ocw);
+		pstmt.setString(2, lecture_model.name);
+		allrs = pstmt.executeQuery();
+	}
+	
+	/**
+	 * イテレーターを回す
+	 * @return
+	 * @throws SQLException
+	 */
 	public boolean next() throws SQLException{
 		boolean result = allrs.next();
 		if(result){
@@ -140,5 +160,13 @@ public class SlideModel extends Model{
 	 */
 	public String getDirName(){
 		return root + "/" + ocw + "/" + lectureName + "/" + name;
+	}
+	
+	/**
+	 * 所属している講義のディレクトリを取得する。
+	 * @return
+	 */
+	public String getLectureDir(){
+		return root + "/" + ocw + "/" + lectureName;
 	}
 }
