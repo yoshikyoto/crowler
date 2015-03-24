@@ -1,16 +1,17 @@
 package slide.XMLConverter;
 
 import jp.dip.utakatanet.*;
+import slide.Main.SlideMain;
 import slide.database.*;
 
 import java.awt.image.BufferedImage;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.FileWriter;
 import java.io.PrintWriter;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -21,14 +22,20 @@ import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDDocumentCatalog;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.PDResources;
+import org.apache.pdfbox.pdmodel.graphics.xobject.PDXObject;
+import org.apache.pdfbox.pdmodel.graphics.xobject.PDXObjectImage;
 import org.apache.pdfbox.util.PDFTextStripper;
 
-class PdfXMLConverter{
-	public int page, imageCount = 0;
+public class PdfXMLConverter extends SlideMain{
+	public int page, imageCount = 0, totalImageCount = 0;
 	public long byteSize;
 	public File slide_dir;
 	public static long minByteSize = 0;
-	public static long maxByteSize = 1000000;
+	public static long maxByteSize = 100000000;
+	
+	ArrayList<Integer> imageNums = new ArrayList<Integer>();
+	int imageNumMin = -1;
+	
 	public boolean convert(String slide_path){
 
 		// データ保存先のディレクトリを作成
@@ -70,6 +77,7 @@ class PdfXMLConverter{
 			page = document.getNumberOfPages();
 			Logger.sPrintln("pdfページ数: " + page);
 			
+			/*
 			// まずは画像変換しようとする
 			Logger.sPrintln("imageに変換");
 			// 変換
@@ -143,13 +151,26 @@ class PdfXMLConverter{
 				 * getImages() では画像を取ってこれないパターンがあるようで、
 				 * getXObjects() で変えてくる Library から ImageObject 的なものを取ってくるのが確実な模様。
 				 */
-				Map images = resources.getImages();
+				Map<String, PDXObjectImage> images = resources.getImages();
+				
 				//System.out.println("画像: " + images.size());
 				// そのスライドに画像が含まれているかどうかだけ見ておく
-				if(images.size() > 0){
-					pw.println("<img count=\"" + images.size() + "\" />");
-					imageCount++;
+				
+				/*
+				System.out.println("ページ: "+ i + "\t画像数: " + images.size());
+				for(String s : set){
+					System.out.println("image: " + s);
+					PDXObjectImage image = images.get(s);
+					// image.write2file(root + "/image_test/page" + i + "_" + s + ".png");
+					BufferedImage bi = image.getRGBImage();
+					// FileOutputStream fos = new FileOutputStream(root + "/image_test/page" + i + "_" + s + ".png");
+					// ImageIO.write(bi, "PNG", os);
 				}
+				*/
+				
+				int images_size = images.size();
+				imageNums.add(images_size);
+				if(imageNumMin == -1 || imageNumMin > images_size) imageNumMin = images_size;
 				
 				pw.println("</body>");
 				pw.println("</slide>");
@@ -160,6 +181,16 @@ class PdfXMLConverter{
 			fis.close();
 			document.close();
 			pdf_parser.clearResources(); // TODO: このリソース解放でいい？
+			
+			// images_count の最小値 imageNumMin を背景の画像などと判断
+			imageCount = 0;
+			for(int i = 0; i < page; i++){
+				int count = imageNums.get(i) - imageNumMin;
+				imageCount += count;
+				p("page: " + i + " count: " + count);
+			}
+			p("result : " + imageCount);
+			
 			
 			return true;
 			

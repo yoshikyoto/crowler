@@ -7,7 +7,7 @@ import java.sql.Statement;
 
 public class SlideModel extends Model{
 	public String name, lectureName, ocw;
-	public int page, segmentCount = 0, byteSize, imageCount = 0, allWordCount = 0;
+	public int page, segmentCount = 0, byteSize, imageCount = 0, allWordCount = 0, nounCount = 0;
 
 	
 	/**
@@ -16,17 +16,18 @@ public class SlideModel extends Model{
 	 */
 	public void update() throws SQLException{
 		if(exist()){
-			p("存在していた");
-			String sql = "update slide set page = ?, segmentCount = ?, byte = ?, image_count = ?, all_word_count = ? where name = ? and lectureName = ? and ocw = ?";
+			// p("存在していた");
+			String sql = "update slide set page = ?, segmentCount = ?, byte = ?, image_count = ?, all_word_count = ?, noun_count = ? where name = ? and lectureName = ? and ocw = ?";
 			PreparedStatement pstmt = con.prepareStatement(sql);
 			pstmt.setInt(1, page);
 			pstmt.setInt(2, segmentCount);
 			pstmt.setInt(3, byteSize);
 			pstmt.setInt(4, imageCount);
 			pstmt.setInt(5, allWordCount);
-			pstmt.setString(6, name);
-			pstmt.setString(7, lectureName);
-			pstmt.setString(8, ocw);
+			pstmt.setInt(6, nounCount);
+			pstmt.setString(7, name);
+			pstmt.setString(8, lectureName);
+			pstmt.setString(9, ocw);
 			System.out.println(pstmt.toString());
 			pstmt.executeUpdate();
 			pstmt.close();
@@ -41,7 +42,7 @@ public class SlideModel extends Model{
 	 * @throws SQLException
 	 */
 	public void insert() throws SQLException{
-		String sql = "insert into slide values (?, ?, ?, ?, ?, ?, ?, ?);";
+		String sql = "insert into slide values (?, ?, ?, ?, ?, ?, ?, ?, ?);";
 		PreparedStatement pstmt = con.prepareStatement(sql);
 		pstmt.setString(1, name);
 		pstmt.setString(2, lectureName);
@@ -51,6 +52,7 @@ public class SlideModel extends Model{
 		pstmt.setInt(6, byteSize);
 		pstmt.setInt(7, imageCount);
 		pstmt.setInt(8, allWordCount);
+		pstmt.setInt(9, nounCount);
 		
 		pstmt.executeUpdate();
 		pstmt.close();
@@ -97,6 +99,7 @@ public class SlideModel extends Model{
 				byteSize = rs.getInt("byte");
 				imageCount = rs.getInt("image_count");
 				allWordCount = rs.getInt("all_word_count");
+				nounCount = rs.getInt("noun_count");
 			}
 			pstmt.close();
 			return result;
@@ -149,6 +152,7 @@ public class SlideModel extends Model{
 			byteSize = allrs.getInt("byte");
 			imageCount = allrs.getInt("image_count");
 			allWordCount = allrs.getInt("all_word_count");
+			nounCount = allrs.getInt("noun_count");
 		}else{
 			allrs.close();
 		}
@@ -161,6 +165,14 @@ public class SlideModel extends Model{
 	 */
 	public String getDirName(){
 		return root + "/" + ocw + "/" + lectureName + "/" + name;
+	}
+	
+	/**
+	 * サーバーで公開する際に必要となる相対パスを取得できる。
+	 * @return
+	 */
+	public String getRPath(){
+		return serverRoot + "/" + ocw + "/" + lectureName + "/" + name;
 	}
 	
 	/**

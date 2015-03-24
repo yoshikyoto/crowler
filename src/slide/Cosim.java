@@ -57,6 +57,24 @@ public class Cosim{
 		return tfidfMap;
 	}
 	
+	public static HashMap<String, Double> calcTfLogIdf(HashMap<String, Integer> tfMap, HashMap<String, Integer> dfMap, int d){
+		HashMap<String, Double> tfidfMap = new HashMap<String, Double>();
+		int tfsum = 0;
+		for(String word : tfMap.keySet()){
+			tfsum += tfMap.get(word);
+		}
+		// System.out.println(tfMap.keySet().size());
+		for(String word : tfMap.keySet()){
+			if(DEBUG) System.out.println(word + " " + dfMap.get(word));
+			double tf = (double)tfMap.get(word) / tfsum;
+			double idf = Math.log((double)d / dfMap.get(word));
+			double tfidf = tf * idf;
+			// System.out.println(tfidf);
+			tfidfMap.put(word, tfidf);
+		}
+		return tfidfMap;
+	}
+	
 	public static HashMap<String, Integer> mergeMap(HashMap<String, Integer> a, HashMap<String, Integer> b){
 		for(String word : b.keySet()){
 			if(a.containsKey(word)){

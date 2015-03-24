@@ -1,14 +1,122 @@
 package slide.html;
 
 import java.io.BufferedReader;
+
+import slide.database.*;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.SQLException;
+import java.util.ArrayList;
 
+import jp.dip.utakatanet.Logger;
 import slide.Main.*;
 
 public class SlideHtmlMaker extends SlideMain{
-	public static void make(){
+	
+	/**
+	 * データベースに存在しているスライドのhtmlを生成する
+	 * @throws SQLException
+	 */
+	public static void make() throws SQLException{
+		Logger.setLogName("MakingHtml");
+		LectureModel lecture_model = new LectureModel();
+		lecture_model.getAll();
+		while(lecture_model.next()){
+			// if(!lecture_model.name.equals("06-コンパイラ")) continue;
+			SlideModel slide_model = new SlideModel();
+			slide_model.getSlides(lecture_model);
+			while(slide_model.next()){
+				// 講義のhtmlを描画する。
+				try{
+					makeSlideHtml(slide_model);
+				}catch(Exception e){
+					Logger.sError(e.toString());
+					e.printStackTrace();
+				}
+			}
+		}
+		Logger.sClose();
+	}
+	
+	/**
+	 * 一つのスライドページを生成する
+	 * @param slide_model
+	 * @throws IOException
+	 * @throws SQLException
+	 */
+	public static void makeSlideHtml(SlideModel slide_model) throws IOException, SQLException{
+		PrintWriter pw = getPrintWriter(slide_model.getDirName(), "index.html");
+		
+		// segstrを読む
+		String segstr = getLineFromFile(slide_model.getDirName() + "/segment.txt");
+		
+		pw.println("<html>");
+		pw.println("<head>");
+		pw.println("<title>" + slide_model.name + "</title>");
+		pw.println("<meta charset=\"utf-8\">");
+		pw.println("<script async type=\"application/dart\" src=\"../../../assets/slide.dart\"></script>");
+		pw.println("<link rel=\"stylesheet\" href=\"../../../assets/style.css\" type=\"text/css\"></link>");
+		pw.println("</head>");
+		
+
+		pw.println("<body>");
+		// FIXME: 実際は Absolute path ではない
+		pw.println("<div id=\"meta\" dir=\"./\" page=\"" + slide_model.page + "\"");
+		pw.println(" segstr=\"" + segstr + "\">");
+		pw.println("<div id=\"app\"></div>");
+		
+
+		
+		// 類似講義の情報を出していく
+
+		pw.println("<section id=\"info\">");
+		pw.println("<h1>" + slide_model.name + "</h1>");
+		pw.println("<h3>類似講義</h3>");
+		pw.println("<div><ul>");
+		
+		// mappingのある講義を取得して、各講義について見ていく。
+		MappingModel.open();
+		ArrayList<LectureModel> lectures = MappingModel.getLecturees(slide_model);
+		int i = 0;
+		for(LectureModel lecture_model : lectures){
+			// pw.print(lecture_model.name + " " + lecture_model.imageDegree);
+			pw.println("<li id=\"simlec" + i + "\" dir=\"" + lecture_model.getRPath() + "\">");
+			pw.println(lecture_model.name + " (" + lecture_model.ocw + ")");
+			
+			// その中でも,mappingのあるスライドを取得する
+			pw.println("<ul>");
+			ArrayList<SlideModel> slides = MappingModel.getSlides(slide_model, lecture_model);
+			for(SlideModel sim_slide_model : slides){
+				sim_slide_model.query(); // データベースから情報を取得
+				
+				// セグメント文字列を取得
+				String sim_segstr = getLineFromFile(sim_slide_model.getDirName() + "/segment.txt");
+				
+				pw.println("<li id=\"mapinfo\""
+						+ " segstr=\"" + sim_segstr + "\""
+						+ " page=\"" + sim_slide_model.page + "\""
+						+ " simmap=\"" + MappingModel.getMapping(slide_model, sim_slide_model) + "\""
+						+ " sname=\"" + sim_slide_model.name + "\">");
+				pw.println(sim_slide_model.name);
+				pw.println("</li>");
+			}
+			pw.println("</ul>");
+			
+			pw.println("</li>");
+			i++;
+		}
+
+		pw.println("</ul></div>");
+		pw.println("</section>");
+		
+		pw.println("</body>");
+		pw.println("</html>");
+		pw.close();
+	}
+	
+	public static void old_make(){
 		for(File ocwfile : listDirs(root)){ 
 			// FIXME: とりあえず京大について
 			if(ocwfile.getName().indexOf("kyoto") == -1) continue;
@@ -28,7 +136,7 @@ public class SlideHtmlMaker extends SlideMain{
 	}
 	
 	/**
-	 * 講義の中の1スライドファイルからhtmlを生成
+	 * 講義の中の1スライドファイルからhtmlを生成(古い方)
 	 * @param sfile
 	 * @throws IOException
 	 */
@@ -113,5 +221,41 @@ public class SlideHtmlMaker extends SlideMain{
 		String strs[] = segstr.split(" ");
 		int page = Integer.parseInt(strs[strs.length - 2]);
 		return page;
+	}
+	
+	public static void makeImageDegreeRanking(ArrayList<LectureModel> lectures, String name, int span, boolean image_flag) throws SQLException, IOException{
+		
+		// 結果を出力する場所
+		PrintWriter pw = getPrintWriter(root, name);
+
+		pw.println("<html>");
+		pw.println("<head>");
+		pw.println("<meta charset=\"utf-8\">");
+		pw.println("</head>");
+		pw.println("<body>");
+		
+		for(int i = 0; i < lectures.size(); i += span){
+			LectureModel lecture_model = lectures.get(i);
+			pw.println("<h2><a href=\"" + lecture_model.getRPath() + "\">" + lecture_model.name + "</a>(" + lecture_model.ocw + ")</h2>");
+			pw.println("<div> image_degree: " + lecture_model.imageDegree + "</div>");
+			
+			if(!image_flag) continue;
+			// 適当に画像を取得する
+			SlideModel slide_model = new SlideModel();
+			slide_model.getSlides(lecture_model);
+			if(!slide_model.next()) continue;
+			pw.println("<nobr>");
+			int image_height = 200;
+			pw.println("<img src=\"" + slide_model.getRPath() + "/2.png\" height=\"" + image_height + "\">");
+			pw.println("<img src=\"" + slide_model.getRPath() + "/3.png\" height=\"" + image_height + "\">");
+			pw.println("<img src=\"" + slide_model.getRPath() + "/4.png\" height=\"" + image_height + "\">");
+			pw.println("<img src=\"" + slide_model.getRPath() + "/5.png\" height=\"" + image_height + "\">");
+			pw.println("<img src=\"" + slide_model.getRPath() + "/6.png\" height=\"" + image_height + "\">");
+			pw.println("</nobr>");
+		}
+		
+		pw.println("</body>");
+		pw.println("</html>");
+		pw.close();
 	}
 }

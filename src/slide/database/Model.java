@@ -7,6 +7,7 @@ import java.sql.*;
 public class Model extends SlideMain{
 	public static Connection con;
 	public static String root = "/home/sakamoto/OCWData";
+	public static String serverRoot = "/slide";
 	
 	/**
 	 * Connection の初期化なんかを行う

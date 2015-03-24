@@ -27,7 +27,7 @@ public class SegSimCalculator extends Base{
 		LectureModel lectureA_model = new LectureModel();
 		lectureA_model.getAll();
 		while(lectureA_model.next()){
-			if(!lectureA_model.name.equals("06-コンパイラ")) continue;
+			// if(!lectureA_model.name.equals("06-コンパイラ")) continue;
 			// 講義のdfを取得
 			HashMap<String, Double> lecA_dfMap = getDfMap(lectureA_model.getDirName());
 			

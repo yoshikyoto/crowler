@@ -1,6 +1,7 @@
 package slide.analyzer;
 
 import jp.dip.utakatanet.*;
+import slide.database.*;
 import slide.*;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -25,8 +26,8 @@ public class Sheet{
 	int page;
 	Logger logger;
 	String title, body;
-	ArrayList<String> words;
-	ArrayList<String> allwords;
+	ArrayList<String> words, allwords;
+	CountHashMap<String> words_2gram;
 	HashMap<String, Integer> tfMap;
 	
 	Sheet(String str, int pg, Logger l, File sd){
@@ -52,15 +53,17 @@ public class Sheet{
 		
 		makeWordArrayJa();
 	}
-	
 	public void makeWordArrayJa(){
 		words = new ArrayList<String>();
+		words_2gram = new CountHashMap<String>();
 		allwords = new ArrayList<String>();
 		tfMap = new HashMap<String, Integer>();
 		// FIXME: lvlの概念が存在していると解析できない
 		logger.println("makeWordArrayJp");
 		Pattern p = Pattern.compile("<p.*?>(.*?)</p>");
 		Matcher m = p.matcher(body);
+		
+		// System.out.println("page:" + page);
 		while(m.find()){
 			String paragraph = m.group(1);
 			logger.println("paragraph: " + paragraph);
@@ -71,11 +74,14 @@ public class Sheet{
 			Tokenizer tokenizer = builder.build();
 			List<Token> tokens = tokenizer.tokenize(paragraph);
 			
+			String prev_word = null;
 			// 各トークンを見ていく
 			for(Token token : tokens){
 				// 名詞以外はスルー
+				//System.out.println(token.getAllFeatures());
 				if(!token.getAllFeaturesArray()[0].equals("名詞")){
 					allwords.add(" ");
+					prev_word = null;
 					continue; 
 				}
 				String surface = token.getSurfaceForm();
@@ -88,6 +94,18 @@ public class Sheet{
 				
 				words.add(surface);
 				allwords.add(surface);
+				if(prev_word != null){
+					// 2-gram;
+					String word_2gram = prev_word + surface;
+					// System.out.println("2-gram: " + word_2gram);
+					if(WikipediaModel.hasPage(word_2gram)){
+						// System.out.println("2-gram: 追加した");
+						words_2gram.add(prev_word + surface);
+					}
+				}
+				
+				prev_word = surface;
+				
 				// TFを+1
 				int tf = 1;
 				if(tfMap.containsKey(surface)) tf += tfMap.get(surface);
@@ -124,6 +142,39 @@ public class Sheet{
 				int tf = tfMap.get(word);
 				pw.println(word + " " + tf);
 			}
+			pw.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+
+		// wikipedia tfMapを出力する
+		try {
+			File f = new File(slideDir.getAbsolutePath() + "sheet" + page + "wword.txt");
+			f.delete();
+			
+			FileWriter fw = new FileWriter(slideDir.getAbsolutePath() + "/sheet" + page + "wword.txt");
+			BufferedWriter bw = new BufferedWriter(fw);
+			PrintWriter pw = new PrintWriter(bw);
+			
+			int cnt = 0;
+			// 2-gram
+			for(String word : words_2gram.keySet()){
+				pw.println(word + " " + words_2gram.get(word));
+				System.out.println("2-gram " + word + " " + words_2gram.get(word));
+				cnt++;
+			}
+			
+			// 1-gram
+			/*
+				for(String word : tfMap.keySet()){
+					if(WikipediaModel.hasPage(word)){
+						pw.println(word + " " + tfMap.get(word));
+					}
+				}
+				*/
+			
 			pw.close();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

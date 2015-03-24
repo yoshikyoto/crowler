@@ -2,7 +2,7 @@ filename: 2006EAEH12
 xmlFile: /home/sakamoto/OCWData/ocw.kyoto-u.ac.jp/04-欧米経済史,（〜2010年）/2006EAEH12/slide.xml
 dir: /home/sakamoto/OCWData/ocw.kyoto-u.ac.jp/04-欧米経済史,（〜2010年）/2006EAEH12
 XML:
-<presentation language="ja"><slide page="1"><body><p>冷戦後の世界秩序ー二つの主要な議論「アメリカ的価値」民主主義・人権・市場原理文明の衝突/Huntington歴史の終焉/Fukuyamaイスラム世界との衝突 異文明の包摂国際協調主義単独行動主義</p></body></slide><slide page="2"><body><p>欧州＝金星？　挑戦者？『大欧州の時代—ブリュッセルからの報告』 （ 岩波新書 新赤版 ）脇阪 紀行 (著)</p><img count="1" /></body></slide><slide page="3"><body><p>欧州統合とアジア統合モデル１:仏独モデル　　　モデル２:英ー大陸６カ国モデルパリ・ボン枢軸 : 「欧州統合のエンジン」A. 独ー日 B. 仏ー中第二次大戦時: A→侵略→ B.「歴史認識」  独   :　日地域統合への対応</p><img count="1" /></body></slide><slide page="4"><body><p>European Integration / Asian IntegrationUKGermanyFranceEasternEuropeUSChina S. KoreaASEANJapanUSWith or Without UK?With orWithout Japan?</p></body></slide></presentation>
+<presentation language="ja"><slide page="1"><body><p>冷戦後の世界秩序ー二つの主要な議論「アメリカ的価値」民主主義・人権・市場原理文明の衝突/Huntington歴史の終焉/Fukuyamaイスラム世界との衝突 異文明の包摂国際協調主義単独行動主義</p></body></slide><slide page="2"><body><p>欧州＝金星？　挑戦者？『大欧州の時代—ブリュッセルからの報告』 （ 岩波新書 新赤版 ）脇阪 紀行 (著)</p></body></slide><slide page="3"><body><p>欧州統合とアジア統合モデル１:仏独モデル　　　モデル２:英ー大陸６カ国モデルパリ・ボン枢軸 : 「欧州統合のエンジン」A. 独ー日 B. 仏ー中第二次大戦時: A→侵略→ B.「歴史認識」  独   :　日地域統合への対応</p></body></slide><slide page="4"><body><p>European Integration / Asian IntegrationUKGermanyFranceEasternEuropeUSChina S. KoreaASEANJapanUSWith or Without UK?With orWithout Japan?</p></body></slide></presentation>
 ページ: 1 -----
 <slide page="1"><body><p>冷戦後の世界秩序ー二つの主要な議論「アメリカ的価値」民主主義・人権・市場原理文明の衝突/Huntington歴史の終焉/Fukuyamaイスラム世界との衝突 異文明の包摂国際協調主義単独行動主義</p></body></slide>
 in Sheet Class, page: 1
@@ -41,10 +41,10 @@ Fukuyama :	名詞,固有名詞,組織,*,*,*,*	false	1
 行動 :	名詞,サ変接続,*,*,*,*,行動,コウドウ,コードー	true	1
 主義 :	名詞,一般,*,*,*,*,主義,シュギ,シュギ	true	3
 ページ: 2 -----
-<slide page="2"><body><p>欧州＝金星？　挑戦者？『大欧州の時代—ブリュッセルからの報告』 （ 岩波新書 新赤版 ）脇阪 紀行 (著)</p><img count="1" /></body></slide>
+<slide page="2"><body><p>欧州＝金星？　挑戦者？『大欧州の時代—ブリュッセルからの報告』 （ 岩波新書 新赤版 ）脇阪 紀行 (著)</p></body></slide>
 in Sheet Class, page: 2
 title = ""
-body = "<p>欧州＝金星？　挑戦者？『大欧州の時代—ブリュッセルからの報告』 （ 岩波新書 新赤版 ）脇阪 紀行 (著)</p><img count="1" />"
+body = "<p>欧州＝金星？　挑戦者？『大欧州の時代—ブリュッセルからの報告』 （ 岩波新書 新赤版 ）脇阪 紀行 (著)</p>"
 makeWordArrayJp
 paragraph: 欧州＝金星？　挑戦者？『大欧州の時代—ブリュッセルからの報告』 （ 岩波新書 新赤版 ）脇阪 紀行 (著)
 欧州 :	名詞,固有名詞,地域,一般,*,*,欧州,オウシュウ,オーシュー	true	1
@@ -58,10 +58,10 @@ paragraph: 欧州＝金星？　挑戦者？『大欧州の時代—ブリュッ
 新書 :	名詞,一般,*,*,*,*,新書,シンショ,シンショ	true	1
 紀行 :	名詞,一般,*,*,*,*,紀行,キコウ,キコー	true	1
 ページ: 3 -----
-<slide page="3"><body><p>欧州統合とアジア統合モデル１:仏独モデル　　　モデル２:英ー大陸６カ国モデルパリ・ボン枢軸 : 「欧州統合のエンジン」A. 独ー日 B. 仏ー中第二次大戦時: A→侵略→ B.「歴史認識」  独   :　日地域統合への対応</p><img count="1" /></body></slide>
+<slide page="3"><body><p>欧州統合とアジア統合モデル１:仏独モデル　　　モデル２:英ー大陸６カ国モデルパリ・ボン枢軸 : 「欧州統合のエンジン」A. 独ー日 B. 仏ー中第二次大戦時: A→侵略→ B.「歴史認識」  独   :　日地域統合への対応</p></body></slide>
 in Sheet Class, page: 3
 title = ""
-body = "<p>欧州統合とアジア統合モデル１:仏独モデル　　　モデル２:英ー大陸６カ国モデルパリ・ボン枢軸 : 「欧州統合のエンジン」A. 独ー日 B. 仏ー中第二次大戦時: A→侵略→ B.「歴史認識」  独   :　日地域統合への対応</p><img count="1" />"
+body = "<p>欧州統合とアジア統合モデル１:仏独モデル　　　モデル２:英ー大陸６カ国モデルパリ・ボン枢軸 : 「欧州統合のエンジン」A. 独ー日 B. 仏ー中第二次大戦時: A→侵略→ B.「歴史認識」  独   :　日地域統合への対応</p>"
 makeWordArrayJp
 paragraph: 欧州統合とアジア統合モデル１:仏独モデル　　　モデル２:英ー大陸６カ国モデルパリ・ボン枢軸 : 「欧州統合のエンジン」A. 独ー日 B. 仏ー中第二次大戦時: A→侵略→ B.「歴史認識」  独   :　日地域統合への対応
 欧州 :	名詞,固有名詞,地域,一般,*,*,欧州,オウシュウ,オーシュー	true	1

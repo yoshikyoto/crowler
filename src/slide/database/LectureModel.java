@@ -1,6 +1,7 @@
 package slide.database;
 
 import java.sql.*;
+import java.util.ArrayList;
 
 public class LectureModel extends Model{
 	public static boolean DEBUG = true;
@@ -138,6 +139,14 @@ public class LectureModel extends Model{
 	}
 	
 	/**
+	 * サーバーで公開する際に必要となる相対パスを取得できる。
+	 * @return
+	 */
+	public String getRPath(){
+		return serverRoot + "/" + ocw + "/" + name;
+	}
+	
+	/**
 	 * image_degree を計算して挿入する
 	 * @throws SQLException 
 	 */
@@ -181,5 +190,119 @@ public class LectureModel extends Model{
 			lecture_model.imageScore = image_score;
 			lecture_model.update();
 		}
+	}
+	
+	public static ArrayList<LectureModel> getImageDegreeRanking() throws SQLException{
+		String sql = "select * from lecture where image_score > 0 and word_score > 0 and ocw != 'ocw.nagoya-u.jp' order by image_degree desc";
+		Statement stmt = con.createStatement();
+		ResultSet rs = stmt.executeQuery(sql);
+		
+		ArrayList<LectureModel> res = new ArrayList<LectureModel>();
+		while(rs.next()){
+			LectureModel lecture_model = new LectureModel();
+			lecture_model.ocw = rs.getString("ocw");
+			lecture_model.name = rs.getString("name");
+			lecture_model.wordScore = rs.getDouble("word_score");
+			lecture_model.imageScore = rs.getDouble("image_score");
+			lecture_model.imageDegree = rs.getDouble("image_degree");
+			
+			res.add(lecture_model);
+		}
+		return res;
+	}
+	
+	public static ArrayList<LectureModel> getAllImageDegreeRanking() throws SQLException{
+		String sql = "select * from lecture where ocw != 'ocw.nagoya-u.jp' order by image_degree desc";
+		Statement stmt = con.createStatement();
+		ResultSet rs = stmt.executeQuery(sql);
+		
+		ArrayList<LectureModel> res = new ArrayList<LectureModel>();
+		while(rs.next()){
+			LectureModel lecture_model = new LectureModel();
+			lecture_model.ocw = rs.getString("ocw");
+			lecture_model.name = rs.getString("name");
+			lecture_model.wordScore = rs.getDouble("word_score");
+			lecture_model.imageScore = rs.getDouble("image_score");
+			lecture_model.imageDegree = rs.getDouble("image_degree");
+			
+			res.add(lecture_model);
+		}
+		return res;
+	}
+	
+	public static ArrayList<LectureModel> getWordRanking() throws SQLException{
+		String sql = "select * from lecture where ocw != 'ocw.nagoya-u.jp' order by word_score desc limit 50";
+		Statement stmt = con.createStatement();
+		ResultSet rs = stmt.executeQuery(sql);
+		
+		ArrayList<LectureModel> res = new ArrayList<LectureModel>();
+		while(rs.next()){
+			LectureModel lecture_model = new LectureModel();
+			lecture_model.ocw = rs.getString("ocw");
+			lecture_model.name = rs.getString("name");
+			lecture_model.wordScore = rs.getDouble("word_score");
+			lecture_model.imageScore = rs.getDouble("image_score");
+			lecture_model.imageDegree = rs.getDouble("image_degree");
+			
+			res.add(lecture_model);
+		}
+		return res;
+	}
+	
+	public static ArrayList<LectureModel> getWordRankingAc() throws SQLException{
+		String sql = "select * from lecture where ocw != 'ocw.nagoya-u.jp' order by word_score limit 50";
+		Statement stmt = con.createStatement();
+		ResultSet rs = stmt.executeQuery(sql);
+		
+		ArrayList<LectureModel> res = new ArrayList<LectureModel>();
+		while(rs.next()){
+			LectureModel lecture_model = new LectureModel();
+			lecture_model.ocw = rs.getString("ocw");
+			lecture_model.name = rs.getString("name");
+			lecture_model.wordScore = rs.getDouble("word_score");
+			lecture_model.imageScore = rs.getDouble("image_score");
+			lecture_model.imageDegree = rs.getDouble("image_degree");
+			
+			res.add(lecture_model);
+		}
+		return res;
+	}
+	
+	public static ArrayList<LectureModel> getImageRanking() throws SQLException{
+		String sql = "select * from lecture where ocw != 'ocw.nagoya-u.jp' order by image_score desc limit 50";
+		Statement stmt = con.createStatement();
+		ResultSet rs = stmt.executeQuery(sql);
+		
+		ArrayList<LectureModel> res = new ArrayList<LectureModel>();
+		while(rs.next()){
+			LectureModel lecture_model = new LectureModel();
+			lecture_model.ocw = rs.getString("ocw");
+			lecture_model.name = rs.getString("name");
+			lecture_model.wordScore = rs.getDouble("word_score");
+			lecture_model.imageScore = rs.getDouble("image_score");
+			lecture_model.imageDegree = rs.getDouble("image_degree");
+			
+			res.add(lecture_model);
+		}
+		return res;
+	}
+	
+	public static ArrayList<LectureModel> getImageRankingAc() throws SQLException{
+		String sql = "select * from lecture where ocw != 'ocw.nagoya-u.jp' order by image_score limit 50";
+		Statement stmt = con.createStatement();
+		ResultSet rs = stmt.executeQuery(sql);
+		
+		ArrayList<LectureModel> res = new ArrayList<LectureModel>();
+		while(rs.next()){
+			LectureModel lecture_model = new LectureModel();
+			lecture_model.ocw = rs.getString("ocw");
+			lecture_model.name = rs.getString("name");
+			lecture_model.wordScore = rs.getDouble("word_score");
+			lecture_model.imageScore = rs.getDouble("image_score");
+			lecture_model.imageDegree = rs.getDouble("image_degree");
+			
+			res.add(lecture_model);
+		}
+		return res;
 	}
 }
